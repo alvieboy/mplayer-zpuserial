@@ -1,9 +1,9 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.5. Encodage avec le codec x264</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Le Lecteur Vidéo"><link rel="up" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="prev" href="menc-feat-xvid.html" title="7.4. Encodage avec le codec Xvid"><link rel="next" href="menc-feat-video-for-windows.html" title="7.6. Encoder avec la famille de codecs Video For Windows"><link rel="preface" href="howtoread.html" title="Comment lire cette documentation"><link rel="chapter" href="intro.html" title="Chapitre 1. Introduction"><link rel="chapter" href="install.html" title="Chapitre 2. Installation"><link rel="chapter" href="usage.html" title="Chapitre 3. Utilisation"><link rel="chapter" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="chapter" href="ports.html" title="Chapitre 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapitre 6. Utilisation basique de MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="chapter" href="faq.html" title="Chapitre 8. Foire Aux Questions"><link rel="appendix" href="bugreports.html" title="Annexe A. Comment rapporter les bogues"><link rel="appendix" href="skin.html" title="Annexe B. Format de skins MPlayer"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-encoding-options" title="7.5.1. Les options d'encodage de x264"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-example-settings" title="7.5.2. Exemples de paramètre d'encodage"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.5. Encodage avec le codec <code class="systemitem">x264</code></th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-xvid.html">Précédent</a> </td><th width="60%" align="center">Chapitre 7. L'encodage avec <span class="application">MEncoder</span></th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-video-for-windows.html">Suivant</a></td></tr></table><hr></div><div class="sect1" title="7.5. Encodage avec le codec x264"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-x264"></a>7.5. Encodage avec le codec <code class="systemitem">x264</code></h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.5. Encodage avec le codec x264</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Le Lecteur Vidéo"><link rel="up" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="prev" href="menc-feat-xvid.html" title="7.4. Encodage avec le codec Xvid"><link rel="next" href="menc-feat-video-for-windows.html" title="7.6. Encoder avec la famille de codecs Video For Windows"><link rel="preface" href="howtoread.html" title="Comment lire cette documentation"><link rel="chapter" href="intro.html" title="Chapitre 1. Introduction"><link rel="chapter" href="install.html" title="Chapitre 2. Installation"><link rel="chapter" href="usage.html" title="Chapitre 3. Utilisation"><link rel="chapter" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="chapter" href="ports.html" title="Chapitre 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapitre 6. Utilisation basique de MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="chapter" href="faq.html" title="Chapitre 8. Foire Aux Questions"><link rel="appendix" href="bugreports.html" title="Annexe A. Comment rapporter les bogues"><link rel="appendix" href="skin.html" title="Annexe B. Format de skins MPlayer"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-encoding-options" title="7.5.1. Les options d'encodage de x264"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-example-settings" title="7.5.2. Exemples de paramètre d'encodage"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.5. Encodage avec le codec <code class="systemitem">x264</code></th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-xvid.html">Précédent</a> </td><th width="60%" align="center">Chapitre 7. L'encodage avec <span class="application">MEncoder</span></th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-video-for-windows.html">Suivant</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-x264"></a>7.5. Encodage avec le codec <code class="systemitem">x264</code></h2></div></div></div><p>
   <code class="systemitem">x264</code> est une librairie libre pour
   encoder des flux vidéo H.264/AVC.
   Avant de commencer à encoder, vous avez besoin de <a class="link" href="codec-installation.html#x264" title="2.5.2. x264">
   paramétrer <span class="application">MEncoder</span> pour qu'il le supporte</a>.
-</p><div class="sect2" title="7.5.1. Les options d'encodage de x264"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-encoding-options"></a>7.5.1. Les options d'encodage de x264</h3></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-encoding-options"></a>7.5.1. Les options d'encodage de x264</h3></div></div></div><p>
   Veuillez commencer par passer en revue la section
   <code class="systemitem">x264</code> de la page man
   de <span class="application">MPlayer</span>.
@@ -12,7 +12,7 @@
   le plus susceptible d'intéresser la plupart des gens. La page man
   est plus laconique mais aussi plus exhaustive et offre
   parfois de bien meilleurs détails techniques.
-</p><div class="sect3" title="7.5.1.1. Introduction"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-intro"></a>7.5.1.1. Introduction</h4></div></div></div><p>
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-intro"></a>7.5.1.1. Introduction</h4></div></div></div><p>
   Ce guide considère deux principales catégories d'options d'encodage :
 </p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>Les options qui traitent principalement du compromis entre la durée d'encodage et la qualité
   </p></li><li class="listitem"><p>Les options susceptibles de satisfaire diverses préférences personnelles
@@ -49,7 +49,7 @@
   Il n'est pas toujours facile de dire si les changements de qualité sont
   principalement dûs aux changements d'options, ou si ils
   reflètent essentiellement des différences aléatoires dans le débit atteint.
-</p></div><div class="sect3" title="7.5.1.2. Options qui affectent principalement la vitesse et la qualité"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-speedvquality"></a>7.5.1.2. Options qui affectent principalement la vitesse et la qualité</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-speedvquality"></a>7.5.1.2. Options qui affectent principalement la vitesse et la qualité</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>subq</strong></span> :
   Des options qui vous permettent de jouer sur le compromis vitesse-qualité,
   <tt class="option">subq</tt> et <tt class="option">frameref</tt> (voir ci-dessous) sont
@@ -113,7 +113,7 @@
   <span class="bold"><strong>nuira</strong></span> presque certainement jamais au PSNR,
   mais les bénéfices sur la qualité sont à peine mesurables, et encore
   moins perceptibles.
-</p><div class="note" title="Note :" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note :</h3><p>
+</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note :</h3><p>
   Augmenter <tt class="option">frameref</tt> à des valeurs inutilement élevées
   <span class="bold"><strong>peut affecter</strong></span> et <span class="bold"><strong>habituellement affecte</strong></span>
   l'efficacité d'encodage si vous désactivez le CABAC.
@@ -240,7 +240,7 @@ Si vous possédez une machine multi-processeurs, vous devriez songer à utiliser
 Elle permet d'augmenter la vitesse d'encodage linéairement en fonction du nombre de coeur de CPU
 (à peu prés de 94% par coeur), tout en impliquant une réduction de qualité minime
  (aux environs de 0.005dB pour un processeur double-coeurs, 0.01dB pour une machine quadri-coeurs).
-</p></li></ul></div></div><div class="sect3" title="7.5.1.3. Options relatives à diverses préférences"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-misc-preferences"></a>7.5.1.3. Options relatives à diverses préférences</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-misc-preferences"></a>7.5.1.3. Options relatives à diverses préférences</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>Encodage en deux passes</strong></span> :
   On a suggéré ci-dessus de toujours utiliser un encodage en deux passages,
   mais il reste tout de même quelques raisons pour ne pas l'utiliser. Par exemple, si vous
@@ -398,7 +398,7 @@ Elle permet d'augmenter la vitesse d'encodage linéairement en fonction du nombr
   <tt class="option">-vf noise=8a:4a</tt> devrait camoufler la plupart des artefacts légers.
   Cela aura l'air certainement mieux que ce que vous obtiendriez en jouant
   uniquement avec le filtre de déblocage.
-</p></li></ul></div></div></div><div class="sect2" title="7.5.2. Exemples de paramètre d'encodage"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-example-settings"></a>7.5.2. Exemples de paramètre d'encodage</h3></div></div></div><p>
+</p></li></ul></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-example-settings"></a>7.5.2. Exemples de paramètre d'encodage</h3></div></div></div><p>
   Les paramètres ci-dessous sont des exemples de différentes combinaisons
   d'option de compression qui affectent le compromis entre vitesse et
   qualité pour un même débit cible.

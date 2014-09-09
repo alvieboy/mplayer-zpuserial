@@ -1,8 +1,8 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.3. DGA</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="prev" href="xv.html" title="4.2. Xv"><link rel="next" href="sdl.html" title="4.4. SDL"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.3. DGA</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="xv.html">Пред.</a> </td><th width="60%" align="center">Глава 4. Устройства вывода видео</th><td width="20%" align="right"> <a accesskey="n" href="sdl.html">След.</a></td></tr></table><hr></div><div class="sect1" title="4.3. DGA"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="dga"></a>4.3. DGA</h2></div></div></div><p title="ПРЕАМБУЛА"><b>ПРЕАМБУЛА. </b>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.3. DGA</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="prev" href="xv.html" title="4.2. Xv"><link rel="next" href="sdl.html" title="4.4. SDL"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.3. DGA</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="xv.html">Пред.</a> </td><th width="60%" align="center">Глава 4. Устройства вывода видео</th><td width="20%" align="right"> <a accesskey="n" href="sdl.html">След.</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="dga"></a>4.3. DGA</h2></div></div></div><p><b>ПРЕАМБУЛА. </b>
 Этот документ пытается сказать несколько слов о том, что такое DGA в целом и
 что можт сделать DGA драйвер  для <span class="application">MPlayer</span>
 (а что нет).
-</p><p title="ЧТО ТАКОЕ DGA"><b>ЧТО ТАКОЕ DGA. </b>
+</p><p><b>ЧТО ТАКОЕ DGA. </b>
 <acronym class="acronym">DGA</acronym> это сокращение от <span class="emphasis"><em>Direct Graphics
 Access[Прямой Доступ к Графике]</em></span>  и означает обход
 программами X сервера и прямое изменение ими памяти фреймбуфера.
@@ -26,11 +26,11 @@ DGA2 объединяет возможности расширения XVidMode �
 Однако DGA имеет некоторые недостатки. Похоже, оно каким-то образом зависит от
 используемого графического чипа и реализации видеодрайвера сервера X,
 управляющего этим чипом. Так что он работает не на всех системах.
-</p><p title="УСТАНОВКА ПОДДЕРЖКИ DGA ДЛЯ MPLAYER"><b>УСТАНОВКА ПОДДЕРЖКИ DGA ДЛЯ MPLAYER. </b>
+</p><p><b>УСТАНОВКА ПОДДЕРЖКИ DGA ДЛЯ MPLAYER. </b>
 Во-первых, убедитесь, что X загружает расширение DGA, смотрите в
 <tt class="filename">/var/log/XFree86.0.log</tt>:
 
-</p><pre class="programlisting">(II) Loading extension XFree86-DGA</pre><p title="УСТАНОВКА ПОДДЕРЖКИ DGA ДЛЯ MPLAYER">
+</p><pre class="programlisting">(II) Loading extension XFree86-DGA</pre><p>
 
 Смотрите, <span class="bold"><strong>крайне рекомендуется</strong></span> XFree86 4.0.x или старше!
 DGA драйвер программы <span class="application">MPlayer</span> определяется автоматически скриптом
@@ -53,7 +53,7 @@ chmod +s <em class="replaceable"><code>/usr/local/bin/mplayer</code></em>
 </pre><p>
 
 Теперь это работает и под обычным пользователем.
-</p><div class="caution" title="Риск безопасности" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Риск безопасности</h3><p>
+</p><div class="caution" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Риск безопасности</h3><p>
 В этом заключается <span class="bold"><strong>большой</strong></span> риск безопасности!
 <span class="bold"><strong>Никогда</strong></span> не делайте этого на сервере или комппьютере,
 к которому имеют доступ другие люди, т.к. они могут получить права root через
@@ -62,7 +62,7 @@ chmod +s <em class="replaceable"><code>/usr/local/bin/mplayer</code></em>
 Теперь используйте опцию <tt class="option">-vo dga</tt>, и вперед! (мы надеемся :)
 Можете попробовать, работает ли у вас опция <tt class="option">-vo sdl:driver=dga</tt>!
 Это намного быстрее!
-</p><p title="ПЕРЕКЛЮЧЕНИЕ РЕЖИМОВ"><a name="dga-modelines"></a><b>ПЕРЕКЛЮЧЕНИЕ РЕЖИМОВ. </b>
+</p><p><a name="dga-modelines"></a><b>ПЕРЕКЛЮЧЕНИЕ РЕЖИМОВ. </b>
 DGA драйвер позволяет переключать режимы (менять разрешение) выходного сигнала.
 Это позволяет избежать (медленного) программного масштабирования и в то же
 время предоставить полноэкранное изображение. В идеале следует переключаться в
@@ -89,13 +89,13 @@ Section "Modes"
   Modeline "352x240"  15.750 352 368 416 432   240 244 246 262 Doublescan
   Modeline "320x240"  12.588 320 336 384 400   240 245 246 262 Doublescan
 EndSection
-</pre><p title="DGA &amp; MPLAYER"><b>DGA &amp; MPLAYER. </b>
+</pre><p><b>DGA &amp; MPLAYER. </b>
 DGA используется программой <span class="application">MPlayer</span> двумя способами:
 можно указать SDL использовать его (<tt class="option">-vo sdl:driver=dga</tt>) и
 с помощью DGA драйвера (<tt class="option">-vo dga</tt>). Все сказанное выше верно для обоих;
 в следующих разделах будет рассказано как работает DGA драйвер для
 <span class="application">MPlayer</span>.
-</p><p title="ВОЗМОЖНОСТИ"><b>ВОЗМОЖНОСТИ. </b>
+</p><p><b>ВОЗМОЖНОСТИ. </b>
 DGA запускается указанием <tt class="option">-vo dga</tt> в командной строке. По-умолчанию,
 он пытается переключить режим с ближайшим к оригинальному видео разрешением.
 Он преднамеренно игнорирует опции  <tt class="option">-vm</tt> и <tt class="option">-fs</tt>
@@ -131,7 +131,7 @@ DGA запускается указанием <tt class="option">-vo dga</tt> в
 с двойной буферизацией. Однако, включение двойной буферизации  может привести
 к существенному снижению скорости (на моем K6-II+ 525 оно использует дополнительные
 20% времени CPU!) в зависимости от реализации DGA для вашего оборудования.
-</p><p title="ПРОБЛЕМЫ БЫСТРОДЕЙСТВИЯ"><b>ПРОБЛЕМЫ БЫСТРОДЕЙСТВИЯ. </b>
+</p><p><b>ПРОБЛЕМЫ БЫСТРОДЕЙСТВИЯ. </b>
 
 Проще говоря, DGA доступ к фреймбуферу должен быть настолько быстр, насколько
 быстр используемый X11 драйвер c дополнительной выгодой[benefit] получения
@@ -156,12 +156,12 @@ DGA запускается указанием <tt class="option">-vo dga</tt> в
 </p><p>
 Приходилось видеть, как некоторые AVI файлы воспроизводились на Pentium MMX 266.
 AMD K6-2 CPU может работать начиная с 400 МГц и выше.
-</p><p title="ИЗВЕСТНЫЕ ОШИБКИ"><b>ИЗВЕСТНЫЕ ОШИБКИ. </b>
+</p><p><b>ИЗВЕСТНЫЕ ОШИБКИ. </b>
 Ну, по мнению некоторых разработчиков XFree, DGA - это немного монстр.
 Они говорят, что лучше его не использовать. Его реализация не
 безупречна для любого существующего драйвера XFree.
 изъянов.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   С XFree 4.0.3 и <tt class="filename">nv.o</tt> существует ошибка приводящая
   к странным цветам.
 </p></li><li class="listitem"><p>

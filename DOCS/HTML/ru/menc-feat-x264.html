@@ -1,9 +1,9 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.5. Кодирование кодеком x264</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="prev" href="menc-feat-xvid.html" title="7.4. Кодирование кодеком Xvid"><link rel="next" href="menc-feat-video-for-windows.html" title="7.6. Кодирование семейством кодеков Video For Windows"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-encoding-options" title="7.5.1. Опции кодирования x264"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-example-settings" title="7.5.2. Примеры настроек кодирования"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.5. Кодирование кодеком <code class="systemitem">x264</code></th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-xvid.html">Пред.</a> </td><th width="60%" align="center">Глава 7. Кодирование с <span class="application">MEncoder</span></th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-video-for-windows.html">След.</a></td></tr></table><hr></div><div class="sect1" title="7.5. Кодирование кодеком x264"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-x264"></a>7.5. Кодирование кодеком <code class="systemitem">x264</code></h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.5. Кодирование кодеком x264</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="prev" href="menc-feat-xvid.html" title="7.4. Кодирование кодеком Xvid"><link rel="next" href="menc-feat-video-for-windows.html" title="7.6. Кодирование семейством кодеков Video For Windows"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-encoding-options" title="7.5.1. Опции кодирования x264"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-example-settings" title="7.5.2. Примеры настроек кодирования"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.5. Кодирование кодеком <code class="systemitem">x264</code></th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-xvid.html">Пред.</a> </td><th width="60%" align="center">Глава 7. Кодирование с <span class="application">MEncoder</span></th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-video-for-windows.html">След.</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-x264"></a>7.5. Кодирование кодеком <code class="systemitem">x264</code></h2></div></div></div><p>
 <code class="systemitem">x264</code> — это свободная библиотека для
 кодирования H.264/AVC видео потоков.
 Перед началом кодирования Вы должны <a class="link" href="codec-installation.html#x264" title="2.5.2. x264">
 настроить <span class="application">MEncoder</span> для его поддержки</a>.
-</p><div class="sect2" title="7.5.1. Опции кодирования x264"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-encoding-options"></a>7.5.1. Опции кодирования x264</h3></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-encoding-options"></a>7.5.1. Опции кодирования x264</h3></div></div></div><p>
 Начните, пожалуйста с просмотра раздела
 <code class="systemitem">x264</code>
 man страницы <span class="application">MPlayer</span>'а.
@@ -11,7 +11,7 @@ man страницы <span class="application">MPlayer</span>'а.
 Здесь Вы найдете быстрые подсказки о том, какие опции чаще всего интересуют
 большинство людей. Страница man более лаконична, но также более полна и порой
 намного лучше преподносит технические детали.
-</p><div class="sect3" title="7.5.1.1. Введение"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-intro"></a>7.5.1.1. Введение</h4></div></div></div><p>
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-intro"></a>7.5.1.1. Введение</h4></div></div></div><p>
 Это руководство рассматривает две главные категории опций кодирования:
 </p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>
   Опции, в основном влияющие на соотношение скорость-качество.
@@ -51,7 +51,7 @@ man страницы <span class="application">MPlayer</span>'а.
 Не всегда можно с легкостью сказать, изменилось ли качество в основном за счет
 изменения опций, или оно по большей части отражает случайные изменения
 в полученном битпотоке.
-</p></div><div class="sect3" title="7.5.1.2. Опции, затрагивающие, в основном, скорость и качество"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-speedvquality"></a>7.5.1.2. Опции, затрагивающие, в основном, скорость и качество</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-speedvquality"></a>7.5.1.2. Опции, затрагивающие, в основном, скорость и качество</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>subq</strong></span>:
   Из всех опций, позволяющих выбирать между скоростью и качеством,
   <tt class="option">subq</tt> и <tt class="option">frameref</tt> (смотрите ниже), пожалуй,
@@ -114,7 +114,7 @@ man страницы <span class="application">MPlayer</span>'а.
   действительно хорошая вешь, о которой может быть сказано, состоит в том, что
   дальнейшее ее увеличение почти никогда не будет <span class="bold"><strong>вредить</strong></span> PSNR, но увеличение качества будет трудно даже
   измерить, не говоря уже о его заметности.
-  </p><div class="note" title="Замечание:" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Замечание:</h3><p>
+  </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Замечание:</h3><p>
   Увеличение <tt class="option">frameref</tt> до чрезмерно высоких значений
   <span class="bold"><strong>может</strong></span> и
   <span class="bold"><strong>обычно наносит</strong></span>
@@ -242,7 +242,7 @@ man страницы <span class="application">MPlayer</span>'а.
   в зависимости от числа CPU ядер (около 94% на ядро), незначительно уменьшая PSNR
   (примерно 0.005 дБ для двухпроцессорной, 0.01 дБ — для
   четырехпроцессорной машины).
-  </p></li></ul></div></div><div class="sect3" title="7.5.1.3. Опции, относящиеся к различным предпочтениям"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-misc-preferences"></a>7.5.1.3. Опции, относящиеся к различным предпочтениям</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+  </p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-misc-preferences"></a>7.5.1.3. Опции, относящиеся к различным предпочтениям</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>Двухпроходное кодирование</strong></span>:
   Выше советовалось всегда использовать кодирование в два прохода, но все же
   существуют причины этого не делать. Например, если Вы захватываете TV
@@ -396,7 +396,7 @@ man страницы <span class="application">MPlayer</span>'а.
   <tt class="option">-vf noise=8a:4a</tt> должна скрыть большинство мелких артефактов.
   Ее результат почти наверняка будет выглядеть лучше, чем полученный при помощи
   махинаций с фильтром удаления блочности.
-  </p></li></ul></div></div></div><div class="sect2" title="7.5.2. Примеры настроек кодирования"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-example-settings"></a>7.5.2. Примеры настроек кодирования</h3></div></div></div><p>
+  </p></li></ul></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-example-settings"></a>7.5.2. Примеры настроек кодирования</h3></div></div></div><p>
 Последующие настройки — это примеры различных комбинаций опций кодирования,
 которые влияют на соотношения скорость-качество при той же величине целевого
 битпотока.

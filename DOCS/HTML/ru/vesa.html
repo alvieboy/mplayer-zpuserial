@@ -1,11 +1,11 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.13. VESA - вывод в VESA BIOS</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="prev" href="caca.html" title="4.12. libcaca - Цветная ASCII Art библиотека"><link rel="next" href="x11.html" title="4.14. X11"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.13. VESA - вывод в VESA BIOS</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="caca.html">Пред.</a> </td><th width="60%" align="center">Глава 4. Устройства вывода видео</th><td width="20%" align="right"> <a accesskey="n" href="x11.html">След.</a></td></tr></table><hr></div><div class="sect1" title="4.13. VESA - вывод в VESA BIOS"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="vesa"></a>4.13. VESA - вывод в VESA BIOS</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.13. VESA - вывод в VESA BIOS</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="prev" href="caca.html" title="4.12. libcaca - Цветная ASCII Art библиотека"><link rel="next" href="x11.html" title="4.14. X11"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.13. VESA - вывод в VESA BIOS</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="caca.html">Пред.</a> </td><th width="60%" align="center">Глава 4. Устройства вывода видео</th><td width="20%" align="right"> <a accesskey="n" href="x11.html">След.</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="vesa"></a>4.13. VESA - вывод в VESA BIOS</h2></div></div></div><p>
 Этот драйвер был разработатн и представлен как <span class="bold"><strong>универсальный
 драйвер</strong></span> для любых карт с VESA VBE 2.0 совместимым BIOS.
 Другое преимущество этого драйвера заключается в том ,что он пытается принудительно
 включить TV вывод.
 <em class="citetitle">VESA BIOS EXTENSION (VBE) Версия 3.0 Дата: 16 сентября, 1998</em>
 (Страница 70) гласит:
-</p><div class="blockquote"><blockquote class="blockquote"><p title="Dual-Controller Designs"><b>Dual-Controller Designs. </b>
+</p><div class="blockquote"><blockquote class="blockquote"><p><b>Dual-Controller Designs. </b>
 VBE 3.0 поддерживает дизайн с двумя контроллерами, предполагая, что поскольку
 оба контроллера обычно имеют одного производителя, и управляются единственной
 BIOS ROM на той же карте, то возможно скрыть от приложения факт наличия на самом
@@ -20,7 +20,7 @@ BIOS ROM на той же карте, то возможно скрыть от п
 Так что у вас ест шанс получить работающий TV выход, используя этот драйвер.
 (Предполагается, что TV-выход - отдельный контроллер[standalone head] или
 отдельный выход как минимум.)
-</p><div class="itemizedlist" title="ПРЕИМУЩЕСТВА"><p class="title"><b>ПРЕИМУЩЕСТВА</b></p><ul class="itemizedlist" type="disc" compact><li class="listitem"><p>
+</p><div class="itemizedlist"><p class="title"><b>ПРЕИМУЩЕСТВА</b></p><ul class="itemizedlist compact" style="list-style-type: disc; "><li class="listitem"><p>
   У вас есть шанс смотреть фильмы, <span class="bold"><strong>даже если Linux
   не знает</strong></span> ваше видео оборудование.
 </p></li><li class="listitem"><p>
@@ -46,22 +46,22 @@ BIOS ROM на той же карте, то возможно скрыть от п
   частоту обновления. (Используя General Timing Formula). Чтобы задействовать
   эту возможность, вы должны указать <span class="bold"><strong>все</strong></span> опции
   вашего монитора.
-</p></li></ul></div><div class="itemizedlist" title="НЕДОСТАТКИ"><p class="title"><b>НЕДОСТАТКИ</b></p><ul class="itemizedlist" type="disc" compact><li class="listitem"><p>
+</p></li></ul></div><div class="itemizedlist"><p class="title"><b>НЕДОСТАТКИ</b></p><ul class="itemizedlist compact" style="list-style-type: disc; "><li class="listitem"><p>
    Это работает только на <span class="bold"><strong>x86 системах</strong></span>.
 </p></li><li class="listitem"><p>
   Может использоваться только пользователем <code class="systemitem">root</code>.
 </p></li><li class="listitem"><p>
   В данный момент доступно только для <span class="bold"><strong>Linux</strong></span>.
-</p></li></ul></div><div class="important" title="Важно" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Важно</h3><p>
+</p></li></ul></div><div class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Важно</h3><p>
 Не используйте этот драйвер с <span class="bold"><strong>GCC 2.96</strong></span>!
 Он не будет работать!
-</p></div><div class="variablelist" title="ОПЦИИ КОМАНДНОЙ СТРОКИ, ДОСТУПНЫЕ ДЛЯ VESA"><p class="title"><b>ОПЦИИ КОМАНДНОЙ СТРОКИ, ДОСТУПНЫЕ ДЛЯ VESA</b></p><dl><dt><span class="term"><tt class="option">-vo vesa:<em class="replaceable"><code>опции</code></em></tt></span></dt><dd><p>
+</p></div><div class="variablelist"><p class="title"><b>ОПЦИИ КОМАНДНОЙ СТРОКИ, ДОСТУПНЫЕ ДЛЯ VESA</b></p><dl class="variablelist"><dt><span class="term"><tt class="option">-vo vesa:<em class="replaceable"><code>опции</code></em></tt></span></dt><dd><p>
     данный момент распознаются: <code class="literal">dga</code> для включения режима dga
     и <code class="literal">nodga</code> для его отключения. В dga режиме вы можете включить
     двойную буферизацию опцией <tt class="option">-double</tt>. Замечание: вы можете
     опустить эти параметры для <span class="bold"><strong>автоопределения</strong></span>
     режима dga.
-  </p></dd></dl></div><div class="itemizedlist" title="ИЗВЕСТНЫЕ ПРОБЛЕМЫ И СПОСОБЫ ИХ РЕШЕНИЯ"><p class="title"><b>ИЗВЕСТНЫЕ ПРОБЛЕМЫ И СПОСОБЫ ИХ РЕШЕНИЯ</b></p><ul class="itemizedlist" type="disc" compact><li class="listitem"><p>
+  </p></dd></dl></div><div class="itemizedlist"><p class="title"><b>ИЗВЕСТНЫЕ ПРОБЛЕМЫ И СПОСОБЫ ИХ РЕШЕНИЯ</b></p><ul class="itemizedlist compact" style="list-style-type: disc; "><li class="listitem"><p>
   Если вы установили <span class="bold"><strong>NLS</strong></span> шрифт на вашем
   Linux и запускаете VESA драйвер из текстового режима, то после завершения
   <span class="application">MPlayer</span> у вас окажется загруженным

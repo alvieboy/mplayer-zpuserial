@@ -1,9 +1,9 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.3. Kereskedelmi Unix</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="ports.html" title="7. fejezet - Portok"><link rel="prev" href="bsd.html" title="7.2. *BSD"><link rel="next" href="windows.html" title="7.4. Windows"><link rel="preface" href="howtoread.html" title="Hogyan olvasd ezt a dokumentációt"><link rel="chapter" href="intro.html" title="1. fejezet - Bevezetés"><link rel="chapter" href="install.html" title="2. fejezet - Telepítés"><link rel="chapter" href="usage.html" title="3. fejezet - Használat"><link rel="chapter" href="tv-input.html" title="4. fejezet - TV bemenet"><link rel="chapter" href="tv-teletext.html" title="5. fejezet - Teletext"><link rel="chapter" href="video.html" title="6. fejezet - Videó kimeneti eszközök"><link rel="chapter" href="ports.html" title="7. fejezet - Portok"><link rel="chapter" href="mencoder.html" title="8. fejezet - A MEncoder használatának alapjai"><link rel="chapter" href="encoding-guide.html" title="9. fejezet - Kódolás a MEncoderrel"><link rel="chapter" href="faq.html" title="10. fejezet - Gyakran ismételt kérdések"><link rel="appendix" href="bugreports.html" title="A. függelék - Hogyan jelentsd a hibákat"><link rel="appendix" href="skin.html" title="B. függelék - MPlayer skin formátum"><link rel="subsection" href="unix.html#solaris" title="7.3.1. Solaris"><link rel="subsection" href="unix.html#hp-ux" title="7.3.2. HP-UX"><link rel="subsection" href="unix.html#aix" title="7.3.3. AIX"><link rel="subsection" href="unix.html#qnx" title="7.3.4. QNX"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.3. Kereskedelmi Unix</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bsd.html">Vissza</a> </td><th width="60%" align="center">7. fejezet - Portok</th><td width="20%" align="right"> <a accesskey="n" href="windows.html">Előre</a></td></tr></table><hr></div><div class="sect1" title="7.3. Kereskedelmi Unix"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="unix"></a>7.3. Kereskedelmi Unix</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.3. Kereskedelmi Unix</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="ports.html" title="7. fejezet - Portok"><link rel="prev" href="bsd.html" title="7.2. *BSD"><link rel="next" href="windows.html" title="7.4. Windows"><link rel="preface" href="howtoread.html" title="Hogyan olvasd ezt a dokumentációt"><link rel="chapter" href="intro.html" title="1. fejezet - Bevezetés"><link rel="chapter" href="install.html" title="2. fejezet - Telepítés"><link rel="chapter" href="usage.html" title="3. fejezet - Használat"><link rel="chapter" href="tv-input.html" title="4. fejezet - TV bemenet"><link rel="chapter" href="tv-teletext.html" title="5. fejezet - Teletext"><link rel="chapter" href="video.html" title="6. fejezet - Videó kimeneti eszközök"><link rel="chapter" href="ports.html" title="7. fejezet - Portok"><link rel="chapter" href="mencoder.html" title="8. fejezet - A MEncoder használatának alapjai"><link rel="chapter" href="encoding-guide.html" title="9. fejezet - Kódolás a MEncoderrel"><link rel="chapter" href="faq.html" title="10. fejezet - Gyakran ismételt kérdések"><link rel="appendix" href="bugreports.html" title="A. függelék - Hogyan jelentsd a hibákat"><link rel="appendix" href="skin.html" title="B. függelék - MPlayer skin formátum"><link rel="subsection" href="unix.html#solaris" title="7.3.1. Solaris"><link rel="subsection" href="unix.html#hp-ux" title="7.3.2. HP-UX"><link rel="subsection" href="unix.html#aix" title="7.3.3. AIX"><link rel="subsection" href="unix.html#qnx" title="7.3.4. QNX"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.3. Kereskedelmi Unix</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bsd.html">Vissza</a> </td><th width="60%" align="center">7. fejezet - Portok</th><td width="20%" align="right"> <a accesskey="n" href="windows.html">Előre</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="unix"></a>7.3. Kereskedelmi Unix</h2></div></div></div><p>
 Az <span class="application">MPlayer</span> számos kereskedelmi Unix variánsra
 portolva lett. Mivel a fejlesztő környezet ezeken a rendszereken másfajta,
 mint a szabad Unix-okon, lehet, hogy némi kézi beállítást igényel a
 fordítás.
-</p><div class="sect2" title="7.3.1. Solaris"><div class="titlepage"><div><div><h3 class="title"><a name="solaris"></a>7.3.1. Solaris</h3></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="solaris"></a>7.3.1. Solaris</h3></div></div></div><p>
 A Solarisnak még mindig rossz, POSIX-inkompatibilis rendszer eszközei és shell-je
 van az alapértelmezett helyeken. Amíg nem tesznek egy bölcs lépést a számítástechnikai
 kőkorszak leváltására, addig a <tt class="filename">/usr/xpg4/bin</tt> könyvtárat
@@ -23,7 +23,7 @@ Egy 400Mhz-es CPU elég, hogy élvezhetően lejátsz egy VOB filet.
 Szükséged lesz egy felinstallált
 <a class="ulink" href="http://www.sun.com/sparc/vis/mediaLib.html" target="_top"><code class="systemitem">mLib</code></a>-re
 is.
-</p><p><span class="bold"><strong>Figyelmeztetés:</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><p><span class="bold"><strong>Figyelmeztetés:</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   A <span class="bold"><strong>mediaLib</strong></span>
   <span class="bold"><strong>jelenleg le van tiltva</strong></span> alapértelmezésben
   az <span class="application">MPlayer</span>ben, mivel hibás. A SPARC felhasználók,
@@ -49,7 +49,7 @@ használd a
 <tt class="option">--as=<em class="replaceable"><code>/ahova/installalva/lett/a/gnu-as</code></em></tt>
 kapcsolót, hogy megadd a <tt class="filename">configure</tt>nak az "as" helyét
 a rendszeredben).
-</p><p>Megoldások a gyakori problémákra:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><p>Megoldások a gyakori problémákra:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Hibaüzenet a <tt class="filename">configure</tt>-tól egy Solaris x86-os
   rendszeren GNU assembler nélküli GCC használata esetén:
   </p><pre class="screen">
@@ -95,7 +95,7 @@ MPlayer interrupted by signal 11 in module: init_audio_codec
 </p></li><li class="listitem"><p>
 A Solaris 8 hibái miatt nem biztos,
 hogy le tudsz játszani 4 GB-nál nagyobb DVD lemezt:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
   Az sd(7D) vezérlőnek a Solaris 8 x86-ban van egy hibája a &gt;4GB lemez blokkok
   elérésénél egy eszközön, melyen a logikai blokkméret != DEV_BSIZE-zel
   (pl. CD-ROM és DVD média).
@@ -109,7 +109,7 @@ hogy le tudsz játszani 4 GB-nál nagyobb DVD lemezt:
   (<a class="ulink" href="http://groups.yahoo.com/group/solarisonintel/message/22592" target="_top">http://groups.yahoo.com/group/solarisonintel/message/22592</a>).
   Ez a hiba a 109764-04 (SPARC) / 109765-04
   (x86) jelzésű patch-ek telepítése után megszűnik.
-</p></li></ul></div></li></ul></div></div><div class="sect2" title="7.3.2. HP-UX"><div class="titlepage"><div><div><h3 class="title"><a name="hp-ux"></a>7.3.2. HP-UX</h3></div></div></div><p>
+</p></li></ul></div></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="hp-ux"></a>7.3.2. HP-UX</h3></div></div></div><p>
 Joe Page ad helyet egy részletes HP-UX <span class="application">MPlayer</span>
 <a class="ulink" href="http://users.rcn.com/joepage/mplayer_on_hpux11.htm" target="_top">HOGYAN</a>-nak
 a weboldalán, amit Martin Gansser írt. Ezekkel az utasításokkal a fordítás után
@@ -152,7 +152,7 @@ Például:
 </p><p>
 Itt van pár gyakori probléma megoldása:
 
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   A rendzser összeomlik indításkor a következő hibaüzenettel:
   </p><pre class="screen">
 /usr/lib/dld.sl: Unresolved symbol: finite (code) from /usr/local/lib/gcc-lib/hppa2.0n-hp-hpux11.00/3.2/../../../libGL.sl</pre><p>
@@ -185,7 +185,7 @@ Segmentation fault</pre><p>
   paramétert is az egy program által használható maximum adatmennyiséghez.
   Az alkalmazásaidon múlik, hogy az alapértelmezett 64MB elég vagy sem.)
   </p></li></ul></div><p>
-</p></div><div class="sect2" title="7.3.3. AIX"><div class="titlepage"><div><div><h3 class="title"><a name="aix"></a>7.3.3. AIX</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="aix"></a>7.3.3. AIX</h3></div></div></div><p>
 Az <span class="application">MPlayer</span> sikeresen fordul AIX 5.1-en,
 5.2-n és 5.3-on, GCC 3.3 vagy újabbal. Az
 <span class="application">MPlayer</span> fordítását AIX 4.3.3 és
@@ -195,9 +195,9 @@ vagy ha POWER5-ön forgatsz, GCC 4.0 szükséges.
 </p><p>
 A CPU detektálás még fejlesztés alatt áll.
 A következő architektúrákat teszteltük:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>604e</p></li><li class="listitem"><p>POWER3</p></li><li class="listitem"><p>POWER4</p></li></ul></div><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>604e</p></li><li class="listitem"><p>POWER3</p></li><li class="listitem"><p>POWER4</p></li></ul></div><p>
 A következő architektúrák nem lettek tesztelve, de működhetnek:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>POWER</p></li><li class="listitem"><p>POWER2</p></li><li class="listitem"><p>POWER5</p></li></ul></div><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>POWER</p></li><li class="listitem"><p>POWER2</p></li><li class="listitem"><p>POWER5</p></li></ul></div><p>
 </p><p>
 Az Ultimedia Services-en keresztüli hang nem támogatott, mert az Ultimedia-t
 dobták az AIX 5.1-ben; ezért az egyetlen lehetőség az AIX Open
@@ -207,7 +207,7 @@ A 4Front Technologies szabadon biztosítja az OSS vezérlőket az AIX 5.1-hez
 nem-üzleti felhasználásra; azonban jelenleg nincs hang kimeneti vezérlő
 AIX 5.2 és 5.3 alá. Ez azt jelenti, hogy az <span class="bold"><strong>AIX 5.2
 és 5.3 alatt jelenleg az MPlayer nem képes audió kimenetre.</strong></span>
-</p><p>Megoldás a gyakori problémákra:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><p>Megoldás a gyakori problémákra:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Ha ezt a hibaüzenetet kapod a <tt class="filename">configure</tt>-tól:
   </p><pre class="screen">
 $ ./configure
@@ -220,7 +220,7 @@ Messages in the GTK-2 interface will be broken then.</pre><p>
   ezért az MPlayer kimenetének másik kódlapra konvertálása jelenleg
   nem támogatott. A megoldás:
   </p><pre class="screen">$ ./configure --charset=noconv</pre><p>
-  </p></li></ul></div></div><div class="sect2" title="7.3.4. QNX"><div class="titlepage"><div><div><h3 class="title"><a name="qnx"></a>7.3.4. QNX</h3></div></div></div><p>
+  </p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="qnx"></a>7.3.4. QNX</h3></div></div></div><p>
 Le kell töltened és telepítened kell az SDL-t a QNX-re. Majd futtasd az
 <span class="application">MPlayer</span>t a <tt class="option">-vo sdl:driver=photon</tt>
 és <tt class="option">-ao sdl:nto</tt> kapcsolókkal, így gyors lesz.

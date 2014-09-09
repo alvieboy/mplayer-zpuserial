@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.18. MPEG декодеры</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="prev" href="dfbmga.html" title="4.17. DirectFB/Matrox (dfbmga)"><link rel="next" href="other.html" title="4.19. Другое оборудование вывода видео"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"><link rel="subsection" href="mpeg_decoders.html#dvb" title="4.18.1. DVB ввод и вывод"><link rel="subsection" href="mpeg_decoders.html#dxr2" title="4.18.2. DXR2"><link rel="subsection" href="mpeg_decoders.html#dxr3" title="4.18.3. DXR3/Hollywood+"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.18. MPEG декодеры</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="dfbmga.html">Пред.</a> </td><th width="60%" align="center">Глава 4. Устройства вывода видео</th><td width="20%" align="right"> <a accesskey="n" href="other.html">След.</a></td></tr></table><hr></div><div class="sect1" title="4.18. MPEG декодеры"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mpeg_decoders"></a>4.18. MPEG декодеры</h2></div></div></div><div class="sect2" title="4.18.1. DVB ввод и вывод"><div class="titlepage"><div><div><h3 class="title"><a name="dvb"></a>4.18.1. DVB ввод и вывод</h3></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.18. MPEG декодеры</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="prev" href="dfbmga.html" title="4.17. DirectFB/Matrox (dfbmga)"><link rel="next" href="other.html" title="4.19. Другое оборудование вывода видео"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"><link rel="subsection" href="mpeg_decoders.html#dvb" title="4.18.1. DVB ввод и вывод"><link rel="subsection" href="mpeg_decoders.html#dxr2" title="4.18.2. DXR2"><link rel="subsection" href="mpeg_decoders.html#dxr3" title="4.18.3. DXR3/Hollywood+"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.18. MPEG декодеры</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="dfbmga.html">Пред.</a> </td><th width="60%" align="center">Глава 4. Устройства вывода видео</th><td width="20%" align="right"> <a accesskey="n" href="other.html">След.</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mpeg_decoders"></a>4.18. MPEG декодеры</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="dvb"></a>4.18.1. DVB ввод и вывод</h3></div></div></div><p>
 <span class="application">MPlayer</span> поддерживает карты с чипсетом Siemens DVB и
 таких производителей, как Siemens, Technotrend, Galaxis или Hauppauge.
 Последние DVB драйверы доступны с <a class="ulink" href="http://www.linuxtv.org" target="_top">сайта Linux TV</a>.
@@ -12,10 +12,10 @@
 ./configure --extra-cflags=<em class="replaceable"><code>каталог исходников DVB</code></em>/ost/include
 </pre><p>
 Затем компилируйте и устанавливайте как обычно.
-</p><p title="ИСПОЛЬЗОВАНИЕ"><b>ИСПОЛЬЗОВАНИЕ. </b>
+</p><p><b>ИСПОЛЬЗОВАНИЕ. </b>
 Аппаратное декодирование потоков, содержащих MPEG-1/2 видео и/или MPEG аудио, может быть
 выполнено следующей командой:
-</p><pre class="screen">mplayer -ao mpegpes -vo mpegpes <em class="replaceable"><code>file.mpg|vob</code></em></pre><p title="ИСПОЛЬЗОВАНИЕ">
+</p><pre class="screen">mplayer -ao mpegpes -vo mpegpes <em class="replaceable"><code>file.mpg|vob</code></em></pre><p>
 </p><p>
 Декодирование любых других видео потоков требует транскодирования в MPEG-1,
 поэтому оно медленно и, возможно, не стоит неприятностей, особенно если ваш
@@ -68,7 +68,7 @@ mplayer -ao mpegpes -vo mpegpes -vf scale=352:288 <em class="replaceable"><code>
 for a  4:3 TV: -vf dvbscale,scale=-1:0,expand=-1:576:-1:-1:1
 for a 16:9 TV: -vf dvbscale=1024,scale=-1:0,expand=-1:576:-1:-1:1
 </pre><p>
-</p><p title="Цифровое TV (DVB драйвер ввода )"><b>Цифровое TV (DVB драйвер ввода ). </b>Вы можете использовать DVB карту для просмотра Цифрового TV.</p><p>
+</p><p><b>Цифровое TV (DVB драйвер ввода ). </b>Вы можете использовать DVB карту для просмотра Цифрового TV.</p><p>
 Вы должны иметь установленные программы <span class="command"><strong>scan</strong></span> и
 <span class="command"><strong>szap/tzap/czap/azap</strong></span>; все они входят в пакет драйверов.
 </p><p>
@@ -169,7 +169,7 @@ mencoder -o <em class="replaceable"><code>r1.avi</code></em> -ovc xvid -xvidenco
 </pre><p>
 </p><p>
 Полный список опций для DVB драйвера ввода можно найти на странице руководства man.
-</p><p title="БУДУЩЕЕ"><b>БУДУЩЕЕ. </b>
+</p><p><b>БУДУЩЕЕ. </b>
 Если у вас есть вопросы, или вы хотите получать сообщения о новых возможностях и
 принять участие в дискуссиях на эту тему, подпишитесь на список рассылки
 <a class="ulink" href="http://lists.mplayerhq.hu/mailman/listinfo/mplayer-dvb" target="_top">MPlayer-DVB</a>.
@@ -177,13 +177,13 @@ mencoder -o <em class="replaceable"><code>r1.avi</code></em> -ovc xvid -xvidenco
 </p><p>
 В будущем вы можете рассчитывать на возможность отображения OSD и субтитров,
 используя встроенные OSD возможности DVB карт.
-</p></div><div class="sect2" title="4.18.2. DXR2"><div class="titlepage"><div><div><h3 class="title"><a name="dxr2"></a>4.18.2. DXR2</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="dxr2"></a>4.18.2. DXR2</h3></div></div></div><p>
 <span class="application">MPlayer</span> поддерживает аппаратное ускорение воспроизведения
 с картами Creative DXR2.
 </p><p>
 Прежде всего вам потребуется правильно установленные DXR2 драйверы. Их и руководство по
 установке можно найти на сайте <a class="ulink" href="http://dxr2.sf.net/" target="_top">Ресурсного Центра DXR2</a>.
-</p><div class="variablelist" title="ИСПОЛЬЗОВАНИЕ"><p class="title"><b>ИСПОЛЬЗОВАНИЕ</b></p><dl><dt><span class="term"><tt class="option">-vo dxr2</tt></span></dt><dd><p>Включить TV выход.</p></dd><dt><span class="term"><tt class="option">-vo dxr2:x11</tt> or <tt class="option">-vo dxr2:xv</tt></span></dt><dd><p>Включить вывод через оверлей в X11.</p></dd><dt><span class="term"><tt class="option">-dxr2 &lt;option1:option2:...&gt;</tt></span></dt><dd><p>Эта опция используется для управления драйвером DXR2.</p></dd></dl></div><p>
+</p><div class="variablelist"><p class="title"><b>ИСПОЛЬЗОВАНИЕ</b></p><dl class="variablelist"><dt><span class="term"><tt class="option">-vo dxr2</tt></span></dt><dd><p>Включить TV выход.</p></dd><dt><span class="term"><tt class="option">-vo dxr2:x11</tt> or <tt class="option">-vo dxr2:xv</tt></span></dt><dd><p>Включить вывод через оверлей в X11.</p></dd><dt><span class="term"><tt class="option">-dxr2 &lt;option1:option2:...&gt;</tt></span></dt><dd><p>Эта опция используется для управления драйвером DXR2.</p></dd></dl></div><p>
 Чипсет оверлея, использовавшийся на DXR2 довольно плохого качества, но
 с настройками по-умолчанию будет работать у всех. OSD может работать
 с оверлеем (не на TV), отрисовывая себя в ключевом цвете[colorkey].
@@ -191,7 +191,7 @@ mencoder -o <em class="replaceable"><code>r1.avi</code></em> -ovc xvid -xvidenco
 разные результаты, скорее всего увидите ключевой цвет[colorkey] вокруг
 символов или другие забавные эффекты. Но при правильных настройках,
 можно получить вполне приемлемый результат.
-</p><p>Смотрите страницу man руководства для списка доступных опций.</p></div><div class="sect2" title="4.18.3. DXR3/Hollywood+"><div class="titlepage"><div><div><h3 class="title"><a name="dxr3"></a>4.18.3. DXR3/Hollywood+</h3></div></div></div><p>
+</p><p>Смотрите страницу man руководства для списка доступных опций.</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="dxr3"></a>4.18.3. DXR3/Hollywood+</h3></div></div></div><p>
 <span class="application">MPlayer</span> поддерживает аппаратно ускоренное воспроизведение
 картами Creative DXR3 и Sigma Designs Hollywood Plus. Обе эти карты используют
 MPEG декодер на чипе em8300 от Sigma Designs
@@ -201,7 +201,7 @@ MPEG декодер на чипе em8300 от Sigma Designs
 сайте <a class="ulink" href="http://dxr3.sf.net/" target="_top">DXR3 &amp; Hollywood Plus для Linux</a>
 <tt class="filename">configure</tt> должен автоматически определить вашу карту,
 компиляция должна пройти без проблем.
-</p><div class="variablelist" title="ИСПОЛЬЗОВАНИЕ"><p class="title"><b>ИСПОЛЬЗОВАНИЕ</b></p><dl><dt><span class="term"><tt class="option">-vo dxr3:prebuf:sync:norm=x:<em class="replaceable"><code>device</code></em></tt></span></dt><dd><p>
+</p><div class="variablelist"><p class="title"><b>ИСПОЛЬЗОВАНИЕ</b></p><dl class="variablelist"><dt><span class="term"><tt class="option">-vo dxr3:prebuf:sync:norm=x:<em class="replaceable"><code>device</code></em></tt></span></dt><dd><p>
 Опция <tt class="option">overlay</tt> активирует оверлей вместо TV-out. Для корректной работы
 она требует его правильной настройки. Самый простой способ правильно его
 настроить - сначала запустить autocal, затем запустить mplayer с драйвером

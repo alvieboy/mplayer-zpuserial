@@ -1,8 +1,8 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.19. TV-out support</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="video.html" title="Chapter 4. Video output devices"><link rel="prev" href="blinkenlights.html" title="4.18. Blinkenlights"><link rel="next" href="ports.html" title="Chapter 5. Ports"><link rel="preface" href="howtoread.html" title="How to read this documentation"><link rel="chapter" href="intro.html" title="Chapter 1. Introduction"><link rel="chapter" href="install.html" title="Chapter 2. Installation"><link rel="chapter" href="usage.html" title="Chapter 3. Usage"><link rel="chapter" href="video.html" title="Chapter 4. Video output devices"><link rel="chapter" href="ports.html" title="Chapter 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapter 6. Basic usage of MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapter 7. Encoding with MEncoder"><link rel="chapter" href="faq.html" title="Chapter 8. Frequently Asked Questions"><link rel="appendix" href="bugreports.html" title="Appendix A. How to report bugs"><link rel="appendix" href="skin.html" title="Appendix B. MPlayer skin format"><link rel="subsection" href="tvout.html#tvout-mga-g400" title="4.19.1. Matrox G400 cards"><link rel="subsection" href="tvout.html#tv-out_matrox_g450" title="4.19.2. Matrox G450/G550 cards"><link rel="subsection" href="tvout.html#tv-out_matrox_cable" title="4.19.3. Building a Matrox TV-out cable"><link rel="subsection" href="tvout.html#tvout-ati" title="4.19.4. ATI cards"><link rel="subsection" href="tvout.html#tvout-nvidia" title="4.19.5. nVidia"><link rel="subsection" href="tvout.html#tvout-neomagic" title="4.19.6. NeoMagic"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.19. TV-out support</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="blinkenlights.html">Prev</a> </td><th width="60%" align="center">Chapter 4. Video output devices</th><td width="20%" align="right"> <a accesskey="n" href="ports.html">Next</a></td></tr></table><hr></div><div class="sect1" title="4.19. TV-out support"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="tvout"></a>4.19. TV-out support</h2></div></div></div><div class="sect2" title="4.19.1. Matrox G400 cards"><div class="titlepage"><div><div><h3 class="title"><a name="tvout-mga-g400"></a>4.19.1. Matrox G400 cards</h3></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.19. TV-out support</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="video.html" title="Chapter 4. Video output devices"><link rel="prev" href="blinkenlights.html" title="4.18. Blinkenlights"><link rel="next" href="ports.html" title="Chapter 5. Ports"><link rel="preface" href="howtoread.html" title="How to read this documentation"><link rel="chapter" href="intro.html" title="Chapter 1. Introduction"><link rel="chapter" href="install.html" title="Chapter 2. Installation"><link rel="chapter" href="usage.html" title="Chapter 3. Usage"><link rel="chapter" href="video.html" title="Chapter 4. Video output devices"><link rel="chapter" href="ports.html" title="Chapter 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapter 6. Basic usage of MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapter 7. Encoding with MEncoder"><link rel="chapter" href="faq.html" title="Chapter 8. Frequently Asked Questions"><link rel="appendix" href="bugreports.html" title="Appendix A. How to report bugs"><link rel="appendix" href="skin.html" title="Appendix B. MPlayer skin format"><link rel="subsection" href="tvout.html#tvout-mga-g400" title="4.19.1. Matrox G400 cards"><link rel="subsection" href="tvout.html#tv-out_matrox_g450" title="4.19.2. Matrox G450/G550 cards"><link rel="subsection" href="tvout.html#tv-out_matrox_cable" title="4.19.3. Building a Matrox TV-out cable"><link rel="subsection" href="tvout.html#tvout-ati" title="4.19.4. ATI cards"><link rel="subsection" href="tvout.html#tvout-nvidia" title="4.19.5. nVidia"><link rel="subsection" href="tvout.html#tvout-neomagic" title="4.19.6. NeoMagic"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.19. TV-out support</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="blinkenlights.html">Prev</a> </td><th width="60%" align="center">Chapter 4. Video output devices</th><td width="20%" align="right"> <a accesskey="n" href="ports.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="tvout"></a>4.19. TV-out support</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="tvout-mga-g400"></a>4.19.1. Matrox G400 cards</h3></div></div></div><p>
 Under Linux you have two methods to get G400 TV out working:
-</p><div class="important" title="Important" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Important</h3><p>
+</p><div class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Important</h3><p>
 for Matrox G450/G550 TV-out instructions, please see the next section!
-</p></div><div class="variablelist"><dl><dt><span class="term">XFree86</span></dt><dd><p>
+</p></div><div class="variablelist"><dl class="variablelist"><dt><span class="term">XFree86</span></dt><dd><p>
     Using the driver and the HAL module, available from the <a class="ulink" href="http://www.matrox.com" target="_top">Matrox site</a>. This will give you X
     on the TV.
     </p><p>
@@ -26,13 +26,13 @@ for Matrox G450/G550 TV-out instructions, please see the next section!
     You'll also need to enable I2C and put the tools
     <span class="application">matroxset</span>, <span class="application">fbset</span>
     and <span class="application">con2fb</span> in your path.
-    </p><div class="procedure"><ol class="procedure" type="1"><li class="step" title="Step 1"><p>
+    </p><div class="procedure"><ol class="procedure" type="1"><li class="step"><p>
       Then load the <code class="systemitem">matroxfb_Ti3026, matroxfb_maven, i2c-matroxfb,
       matroxfb_crtc2</code> modules into your kernel. Your text-mode
       console will enter into framebuffer mode (no way back!).
-    </p></li><li class="step" title="Step 2"><p>
+    </p></li><li class="step"><p>
       Next, set up your monitor and TV to your liking using the above tools.
-    </p></li><li class="step" title="Step 3"><p>
+    </p></li><li class="step"><p>
       Yoh. Next task is to make the cursor on tty1 (or whatever) to
       disappear, and turn off screen blanking. Execute the following
       commands:
@@ -49,7 +49,7 @@ setterm -blank 0</pre><p>
       screen. To turn the cursor back:
       </p><pre class="screen">echo -e '\033[?25h'</pre><p> or
       </p><pre class="screen">setterm -cursor on</pre><p>
-    </p></li><li class="step" title="Step 4"><p>
+    </p></li><li class="step"><p>
       Yeah kewl. Start movie playing with
       </p><pre class="screen">
 mplayer -vo mga -fs -screenw 640 -screenh 512 <em class="replaceable"><code>filename</code></em></pre><p>
@@ -58,10 +58,10 @@ mplayer -vo mga -fs -screenw 640 -screenh 512 <em class="replaceable"><code>file
       <span class="keycap"><b>Ctrl</b></span>+<span class="keycap"><b>Alt</b></span>+<span class="keycap"><b>F1</b></span>.)
       Change <code class="literal">640</code> and <code class="literal">512</code> if you set
       the resolution to other...
-    </p></li><li class="step" title="Step 5"><p>
+    </p></li><li class="step"><p>
       <span class="bold"><strong>Enjoy the ultra-fast ultra-featured Matrox TV
       output (better than Xv)!</strong></span>
-    </p></li></ol></div></dd></dl></div></div><div class="sect2" title="4.19.2. Matrox G450/G550 cards"><div class="titlepage"><div><div><h3 class="title"><a name="tv-out_matrox_g450"></a>4.19.2. Matrox G450/G550 cards</h3></div></div></div><p>
+    </p></li></ol></div></dd></dl></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="tv-out_matrox_g450"></a>4.19.2. Matrox G450/G550 cards</h3></div></div></div><p>
 TV output support for these cards has only been recently introduced, and is
 not yet in the mainstream kernel.
 Currently the <span class="bold"><strong>mga_vid</strong></span> module can't be used
@@ -79,21 +79,21 @@ recommended for G400, see the section above.
 </p><p>
 The necessary kernel patch and the detailed HOWTO is downloadable from
 <a class="ulink" href="http://www.bglug.ca/matrox_tvout/" target="_top">http://www.bglug.ca/matrox_tvout/</a>
-</p></div><div class="sect2" title="4.19.3. Building a Matrox TV-out cable"><div class="titlepage"><div><div><h3 class="title"><a name="tv-out_matrox_cable"></a>4.19.3. Building a Matrox TV-out cable</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="tv-out_matrox_cable"></a>4.19.3. Building a Matrox TV-out cable</h3></div></div></div><p>
 No one takes any responsibility, nor guarantee for any damage caused
 by this documentation.
-</p><p title="Cable for G400"><b>Cable for G400. </b>
+</p><p><b>Cable for G400. </b>
 The CRTC2 connector's fourth pin is the composite video signal. The
 ground are the sixth, seventh and eighth pins. (info contributed
 from Balázs Rácz)
-</p><p title="Cable for G450"><b>Cable for G450. </b>
+</p><p><b>Cable for G450. </b>
 The CRTC2 connector's first pin is the composite video signal. The
 ground are the fifth, sixth, seventh, and fifteenth (5, 6, 7, 15)
 pins. (info contributed from Balázs Kerekes)
-</p></div><div class="sect2" title="4.19.4. ATI cards"><div class="titlepage"><div><div><h3 class="title"><a name="tvout-ati"></a>4.19.4. ATI cards</h3></div></div></div><p title="PREAMBLE"><b>PREAMBLE. </b>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="tvout-ati"></a>4.19.4. ATI cards</h3></div></div></div><p><b>PREAMBLE. </b>
 Currently ATI doesn't want to support any of its TV-out chips under Linux,
 because of their licensed Macrovision technology.
-</p><div class="itemizedlist" title="ATI CARDS TV-OUT STATUS ON LINUX"><p class="title"><b>ATI CARDS TV-OUT STATUS ON LINUX</b></p><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><p class="title"><b>ATI CARDS TV-OUT STATUS ON LINUX</b></p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>ATI Mach64</strong></span>:
   supported by <a class="ulink" href="http://gatos.sf.net" target="_top">GATOS</a>.
 </p></li><li class="listitem"><p>
@@ -115,7 +115,7 @@ without VIDIX. Powerful CPU is needed, though.
 Only thing you need to do - <span class="bold"><strong>Have the TV connector
 plugged in before booting your PC</strong></span> since video BIOS initializes
 itself only once during POST procedure.
-</p></div><div class="sect2" title="4.19.5. nVidia"><div class="titlepage"><div><div><h3 class="title"><a name="tvout-nvidia"></a>4.19.5. nVidia</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="tvout-nvidia"></a>4.19.5. nVidia</h3></div></div></div><p>
 First, you MUST download the closed-source drivers from
 <a class="ulink" href="http://nvidia.com" target="_top">http://nvidia.com</a>.
 I will not describe the installation and configuration process because it does
@@ -145,10 +145,10 @@ EndSection
 </pre><p>
 </p><p>
 Of course the important thing is the TwinView part.
-</p></div><div class="sect2" title="4.19.6. NeoMagic"><div class="titlepage"><div><div><h3 class="title"><a name="tvout-neomagic"></a>4.19.6. NeoMagic</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="tvout-neomagic"></a>4.19.6. NeoMagic</h3></div></div></div><p>
 The NeoMagic chip is found in a variety of laptops, some of them are equipped
 with a simple analog TV encoder, some have a more advanced one.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>Analog encoder chip</strong></span>:
   It has been reported that reliable TV out can be obtained by using
   <tt class="option">-vo fbdev</tt> or <tt class="option">-vo fbdev2</tt>.
@@ -176,7 +176,7 @@ with a simple analog TV encoder, some have a more advanced one.
   You must use <tt class="option">-vo vesa:neotv_pal</tt> for PAL or
   <tt class="option">-vo vesa:neotv_ntsc</tt> for NTSC.
   It will provide TV output function in the following 16 bpp and 8 bpp modes:
-  </p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p>NTSC 320x240, 640x480 and maybe 800x600 too.</p></li><li class="listitem"><p>PAL  320x240, 400x300, 640x480, 800x600.</p></li></ul></div><p>Mode 512x384 is not supported in BIOS. You must scale the image
+  </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>NTSC 320x240, 640x480 and maybe 800x600 too.</p></li><li class="listitem"><p>PAL  320x240, 400x300, 640x480, 800x600.</p></li></ul></div><p>Mode 512x384 is not supported in BIOS. You must scale the image
   to a different resolution to activate TV out. If you can see an image on the
   screen in 640x480 or in 800x600 but not in 320x240 or other smaller
   resolution you need to replace two tables in <tt class="filename">vbelib.c</tt>.

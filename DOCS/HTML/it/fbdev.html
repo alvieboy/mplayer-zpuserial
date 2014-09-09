@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.6. Uscita su framebuffer (FBdev)</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Il Visualizzatore di film"><link rel="up" href="video.html" title="Capitolo 4. Dispositivi di uscita video"><link rel="prev" href="svgalib.html" title="4.5. SVGAlib"><link rel="next" href="mga_vid.html" title="4.7. Framebuffer Matrox (mga_vid)"><link rel="preface" href="howtoread.html" title="Come leggere questa documentazione"><link rel="chapter" href="intro.html" title="Capitolo 1. Introduzione"><link rel="chapter" href="install.html" title="Capitolo 2. Installazione"><link rel="chapter" href="usage.html" title="Capitolo 3. Utilizzo"><link rel="chapter" href="video.html" title="Capitolo 4. Dispositivi di uscita video"><link rel="chapter" href="ports.html" title="Capitolo 5. Ports"><link rel="chapter" href="mencoder.html" title="Capitolo 6. Utilizzo base di MEncoder"><link rel="chapter" href="encoding-guide.html" title="Capitolo 7. La codifica con MEncoder"><link rel="chapter" href="faq.html" title="Capitolo 8. Frequently Asked Questions"><link rel="appendix" href="bugreports.html" title="Appendice A. Come segnalare i bug (errori)"><link rel="appendix" href="skin.html" title="Appendice B. MPlayer skin format"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.6. Uscita su framebuffer (FBdev)</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="svgalib.html">Indietro</a> </td><th width="60%" align="center">Capitolo 4. Dispositivi di uscita video</th><td width="20%" align="right"> <a accesskey="n" href="mga_vid.html">Avanti</a></td></tr></table><hr></div><div class="sect1" title="4.6. Uscita su framebuffer (FBdev)"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="fbdev"></a>4.6. Uscita su framebuffer (FBdev)</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.6. Uscita su framebuffer (FBdev)</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Il Visualizzatore di film"><link rel="up" href="video.html" title="Capitolo 4. Dispositivi di uscita video"><link rel="prev" href="svgalib.html" title="4.5. SVGAlib"><link rel="next" href="mga_vid.html" title="4.7. Framebuffer Matrox (mga_vid)"><link rel="preface" href="howtoread.html" title="Come leggere questa documentazione"><link rel="chapter" href="intro.html" title="Capitolo 1. Introduzione"><link rel="chapter" href="install.html" title="Capitolo 2. Installazione"><link rel="chapter" href="usage.html" title="Capitolo 3. Utilizzo"><link rel="chapter" href="video.html" title="Capitolo 4. Dispositivi di uscita video"><link rel="chapter" href="ports.html" title="Capitolo 5. Ports"><link rel="chapter" href="mencoder.html" title="Capitolo 6. Utilizzo base di MEncoder"><link rel="chapter" href="encoding-guide.html" title="Capitolo 7. La codifica con MEncoder"><link rel="chapter" href="faq.html" title="Capitolo 8. Frequently Asked Questions"><link rel="appendix" href="bugreports.html" title="Appendice A. Come segnalare i bug (errori)"><link rel="appendix" href="skin.html" title="Appendice B. MPlayer skin format"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.6. Uscita su framebuffer (FBdev)</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="svgalib.html">Indietro</a> </td><th width="60%" align="center">Capitolo 4. Dispositivi di uscita video</th><td width="20%" align="right"> <a accesskey="n" href="mga_vid.html">Avanti</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="fbdev"></a>4.6. Uscita su framebuffer (FBdev)</h2></div></div></div><p>
 Se compilare l'uscita FBdev o no viene rilevato automaticamente da
 <tt class="filename">./configure</tt>. Leggi nei sorgenti del kernel la
 documentazione sul framebuffer (<tt class="filename">Documentation/fb/*</tt>) per
@@ -11,7 +11,7 @@ prima di avviare Linux. Usa un disco di avvio DOS o qualcosa del genere. E non
 dimenticare di registrare il tuo UniVBE ;))
 </p><p>
 L'uscita su FBdev richiede principalmente alcuni parametri addizionali:
-</p><div class="variablelist"><dl><dt><span class="term"><tt class="option">-fb</tt></span></dt><dd><p>
+</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><tt class="option">-fb</tt></span></dt><dd><p>
     specifica il dispositivo framebuffer da usare (default:
     <tt class="filename">/dev/fb0</tt>)
   </p></dd><dt><span class="term"><tt class="option">-fbmode</tt></span></dt><dd><p>
@@ -27,7 +27,7 @@ Se vuoi passare a una modalità particolare, allora usa
 </p><pre class="screen">
 mplayer -vm -fbmode <em class="replaceable"><code>nome_modalità</code></em> <em class="replaceable"><code>nomefile</code></em>
 </pre><p>
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <tt class="option">-vm</tt> da sola può scegliere la modalità più adatta da
   <tt class="filename">/etc/fb.modes</tt>. Può essere usata anche insieme con le
   opzioni <tt class="option">-x</tt> e <tt class="option">-y</tt>. L'opzione
@@ -49,7 +49,7 @@ mplayer -vm -fbmode <em class="replaceable"><code>nome_modalità</code></em> <em
   </p><pre class="screen">echo -e '\033[?25h'</pre><p>
   o
   </p><pre class="screen">setterm -cursor on</pre><p>
-</p></li></ul></div><div class="note" title="Nota" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Nota</h3><p>
+</p></li></ul></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Nota</h3><p>
 La modifica della modalità video di FBdev <span class="emphasis"><em>non funziona</em></span>
 con il framebuffer VESA, e non chiederla, visto che non è una limitazione di
 <span class="application">MPlayer</span>.

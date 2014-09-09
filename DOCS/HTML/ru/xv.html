@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.2. Xv</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="prev" href="mtrr.html" title="4.1. Настройка MTRR"><link rel="next" href="dga.html" title="4.3. DGA"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"><link rel="subsection" href="xv.html#tdfx" title="4.2.1. 3dfx карты"><link rel="subsection" href="xv.html#s3" title="4.2.2. S3 карты"><link rel="subsection" href="xv.html#nvidia" title="4.2.3. nVidia карты"><link rel="subsection" href="xv.html#ati" title="4.2.4. ATI карты"><link rel="subsection" href="xv.html#neomagic" title="4.2.5. NeoMagic карты"><link rel="subsection" href="xv.html#trident" title="4.2.6. Trident карты"><link rel="subsection" href="xv.html#kyro" title="4.2.7. Kyro/PowerVR карты"><link rel="subsection" href="xv.html#intel" title="4.2.8. Карты Intel"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.2. Xv</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="mtrr.html">Пред.</a> </td><th width="60%" align="center">Глава 4. Устройства вывода видео</th><td width="20%" align="right"> <a accesskey="n" href="dga.html">След.</a></td></tr></table><hr></div><div class="sect1" title="4.2. Xv"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="xv"></a>4.2. Xv</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.2. Xv</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="prev" href="mtrr.html" title="4.1. Настройка MTRR"><link rel="next" href="dga.html" title="4.3. DGA"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"><link rel="subsection" href="xv.html#tdfx" title="4.2.1. 3dfx карты"><link rel="subsection" href="xv.html#s3" title="4.2.2. S3 карты"><link rel="subsection" href="xv.html#nvidia" title="4.2.3. nVidia карты"><link rel="subsection" href="xv.html#ati" title="4.2.4. ATI карты"><link rel="subsection" href="xv.html#neomagic" title="4.2.5. NeoMagic карты"><link rel="subsection" href="xv.html#trident" title="4.2.6. Trident карты"><link rel="subsection" href="xv.html#kyro" title="4.2.7. Kyro/PowerVR карты"><link rel="subsection" href="xv.html#intel" title="4.2.8. Карты Intel"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.2. Xv</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="mtrr.html">Пред.</a> </td><th width="60%" align="center">Глава 4. Устройства вывода видео</th><td width="20%" align="right"> <a accesskey="n" href="dga.html">След.</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="xv"></a>4.2. Xv</h2></div></div></div><p>
 Под XFree86 4.0.2 или новее, вы можете использовать функции работы с YUV[YUV routines]
 вашей видеокарты, используя расширение XVideo, то, которое используется при указании опциии
 <tt class="option">-vo xv</tt>.
@@ -18,7 +18,7 @@ DivX кодека DirectShow, который везде это поддержи�
   X загружают расширение XVideo, это похоже на:
   </p><pre class="programlisting">(II) Loading extension XVideo</pre><p>
   в <tt class="filename">/var/log/XFree86.0.log</tt>
-  </p><div class="note" title="Примечание" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Примечание</h3><p>
+  </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Примечание</h3><p>
    Это всего лишь загружается расширение XVideo. При нормальной установке оно грузится
    всегда, это не означает, что загружена <span class="bold"><strong>аппаратная</strong></span>
    поддержка XVideo.
@@ -59,7 +59,7 @@ screen #0
   Если поддержка 'xv' включена, то увидите похожую строку:
   </p><pre class="screen">  xv      X11/Xv</pre><p>
 </p></li></ol></div><p>
-</p><div class="sect2" title="4.2.1. 3dfx карты"><div class="titlepage"><div><div><h3 class="title"><a name="tdfx"></a>4.2.1. 3dfx карты</h3></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="tdfx"></a>4.2.1. 3dfx карты</h3></div></div></div><p>
 Хорошо известно, что старые 3dfx драйвера имеют проблемы с ускорением XVideo, они не
 поддерживают ни YUY2 ни YV12, ни т.п. Проверьте, что у вас XFree86 версии
 4.2.0 или новее, он может работать с YV12 и YUY2, в то время как предыдущие версии,
@@ -71,7 +71,7 @@ screen #0
 </p><p>
 <span class="bold"><strong>ИЛИ</strong></span>, попробуйте НОВЫЙ
 <tt class="option">-vo tdfxfb</tt> драйвер! Смотрите раздел <a class="link" href="tdfxfb.html" title="4.8. Поддержка 3Dfx YUV">tdfxfb</a>.
-</p></div><div class="sect2" title="4.2.2. S3 карты"><div class="titlepage"><div><div><h3 class="title"><a name="s3"></a>4.2.2. S3 карты</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="s3"></a>4.2.2. S3 карты</h3></div></div></div><p>
 S3 Savage3D, должны прекрасно работать, но для Savage4 используйте XFree86 версии 4.0.3 или
 выше (в случае проблем с изображением попробуйте 16bpp). По поводу S3 Virge:
 она поддерживает xv, но карта сама по себе слишком медленная, так что лучше будет ее
@@ -82,12 +82,12 @@ tdfxfb. Настройте ваш фреймбуфер (например, ука
 "<tt class="option">vga=792 video=vesa:mtrr</tt>") и воспользуйтесь
 <tt class="option">-vo s3fb</tt> (<tt class="option">-vf yuy2</tt> и <tt class="option">-dr</tt>
 тоже помогут).
-</p><div class="note" title="Примечание" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Примечание</h3><p>
+</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Примечание</h3><p>
 Пока не ясно в каких моделях Savage отсутствует поддержка YV12, и преобразование
 осуществляется драйвером (медленно). Если вы грешите на свою карту, возьмите
 свежий драйвер иди вежливо спросите в списке рассылки MPlayer-users
 о драйвере с поддержкой MMX/3DNow!.
-</p></div></div><div class="sect2" title="4.2.3. nVidia карты"><div class="titlepage"><div><div><h3 class="title"><a name="nvidia"></a>4.2.3. nVidia карты</h3></div></div></div><p>
+</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="nvidia"></a>4.2.3. nVidia карты</h3></div></div></div><p>
 nVidia под Linux - не всегда хороший выбор ... Открытые драйвера XFree86
 поддерживают большинство этих карт, но в некоторых случаях придется
 использовать закрытый бинарный драйвер от nVidia, доступный на
@@ -102,7 +102,7 @@ nVidia под Linux - не всегда хороший выбор ... Откры
 <a class="link" href="vidix.html" title="4.15. VIDIX">VIDIX</a> драйвер для большинства карт nVidia. Сейчас он
 в стадии беты и имеет некоторые недостатки. За подробостями обращайтесь
 к разделу <a class="link" href="vidix.html#vidix-nvidia" title="4.15.5. nVidia карты">nVidia VIDIX</a>.
-</p></div><div class="sect2" title="4.2.4. ATI карты"><div class="titlepage"><div><div><h3 class="title"><a name="ati"></a>4.2.4. ATI карты</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="ati"></a>4.2.4. ATI карты</h3></div></div></div><p>
 <a class="ulink" href="http://gatos.sf.net" target="_top">Драйвер GATOS</a>
 (который стоит использовать, если у вас не Rage128 или Radeon) по-умолчанию имеет включенную
 опцию VSYNC. Это значит, что скорость декодирования (!) синхронизирована с частотой обновления
@@ -114,7 +114,7 @@ Radeon VE - если нужен X, используйте XFree86 4.2.0 или �
 получить <span class="bold"><strong>ускоренное</strong></span> отображение, с или без
 <span class="bold"><strong>TV-выхода</strong></span>, без каких-либо библиотек X.
 Читайте раздел <a class="link" href="vidix.html" title="4.15. VIDIX">VIDIX</a>.
-</p></div><div class="sect2" title="4.2.5. NeoMagic карты"><div class="titlepage"><div><div><h3 class="title"><a name="neomagic"></a>4.2.5. NeoMagic карты</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="neomagic"></a>4.2.5. NeoMagic карты</h3></div></div></div><p>
 Эти карты можно найти во многих ноутбуках. Вы должны использовать XFree86 4.3.0 или
 более новый, или использовать
 <a class="ulink" href="http://www.mplayerhq.hu/MPlayer/contrib/NeoMagic-driver/" target="_top">Xv-совместимые драйвера</a>.
@@ -134,18 +134,18 @@ Section "Device"
     <span class="emphasis"><em>Option "OverlayMem" "829440"</em></span>
     [...]
 EndSection</pre><p>
-</p></div><div class="sect2" title="4.2.6. Trident карты"><div class="titlepage"><div><div><h3 class="title"><a name="trident"></a>4.2.6. Trident карты</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="trident"></a>4.2.6. Trident карты</h3></div></div></div><p>
 Если хотите использовать Xv с картой Trident, учитывая, что они не работают с
 4.1.0, установите XFree 4.2.0.
 4.2.0 добавляет поддержку полноэкранного Xv с картой Cyberblade XP.
 </p><p>
 Другой вариант: <span class="application">MPlayer</span> имеет
 <a class="link" href="vidix.html" title="4.15. VIDIX">VIDIX</a> драйвер для карт Cyberblade/i1.
-</p></div><div class="sect2" title="4.2.7. Kyro/PowerVR карты"><div class="titlepage"><div><div><h3 class="title"><a name="kyro"></a>4.2.7. Kyro/PowerVR карты</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="kyro"></a>4.2.7. Kyro/PowerVR карты</h3></div></div></div><p>
 Если хотите использовать Xv с картами на базе Kyro (например,
 Hercules Prophet 4000XT), следует скачать драйверы с
 <a class="ulink" href="http://www.powervr.com/" target="_top">сайта PowerVR</a>.
-</p></div><div class="sect2" title="4.2.8. Карты Intel"><div class="titlepage"><div><div><h3 class="title"><a name="intel"></a>4.2.8. Карты Intel</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="intel"></a>4.2.8. Карты Intel</h3></div></div></div><p>
 Эти карты можно обнаружить во многих ноутбуках. Рекомендуется Xorg последней версии.
 </p><p>
 Для воспроизведения контента размера DVD (и более) поправьте

@@ -1,8 +1,8 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.3. DGA</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Multimediální přehrávač"><link rel="up" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="prev" href="xv.html" title="4.2. Xv"><link rel="next" href="sdl.html" title="4.4. SDL"><link rel="preface" href="howtoread.html" title="Jak číst tuto dokumentaci"><link rel="chapter" href="intro.html" title="Kapitola 1. Představení"><link rel="chapter" href="install.html" title="Kapitola 2. Instalace"><link rel="chapter" href="usage.html" title="Kapitola 3. Použití"><link rel="chapter" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="chapter" href="ports.html" title="Kapitola 5. Porty"><link rel="chapter" href="mencoder.html" title="Kapitola 6. Základní použití MEncoderu"><link rel="chapter" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="chapter" href="faq.html" title="Kapitola 8. Často Kladené Dotazy (FAQ)"><link rel="appendix" href="bugreports.html" title="Příloha A. Jak hlásit chyby"><link rel="appendix" href="skin.html" title="Příloha B. Formát skinů MPlayeru"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.3. DGA</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="xv.html">Předcházející</a> </td><th width="60%" align="center">Kapitola 4. Výstupní video zařízení/rozhraní</th><td width="20%" align="right"> <a accesskey="n" href="sdl.html">Další</a></td></tr></table><hr></div><div class="sect1" title="4.3. DGA"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="dga"></a>4.3. DGA</h2></div></div></div><p title="PŘEDMLUVA"><b>PŘEDMLUVA. </b>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.3. DGA</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Multimediální přehrávač"><link rel="up" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="prev" href="xv.html" title="4.2. Xv"><link rel="next" href="sdl.html" title="4.4. SDL"><link rel="preface" href="howtoread.html" title="Jak číst tuto dokumentaci"><link rel="chapter" href="intro.html" title="Kapitola 1. Představení"><link rel="chapter" href="install.html" title="Kapitola 2. Instalace"><link rel="chapter" href="usage.html" title="Kapitola 3. Použití"><link rel="chapter" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="chapter" href="ports.html" title="Kapitola 5. Porty"><link rel="chapter" href="mencoder.html" title="Kapitola 6. Základní použití MEncoderu"><link rel="chapter" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="chapter" href="faq.html" title="Kapitola 8. Často Kladené Dotazy (FAQ)"><link rel="appendix" href="bugreports.html" title="Příloha A. Jak hlásit chyby"><link rel="appendix" href="skin.html" title="Příloha B. Formát skinů MPlayeru"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.3. DGA</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="xv.html">Předcházející</a> </td><th width="60%" align="center">Kapitola 4. Výstupní video zařízení/rozhraní</th><td width="20%" align="right"> <a accesskey="n" href="sdl.html">Další</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="dga"></a>4.3. DGA</h2></div></div></div><p><b>PŘEDMLUVA. </b>
 Tento dokument se několika slovy snaží vysvětlit co je to DGA a co
 výstupní videorozhraní DGA pro <span class="application">MPlayer</span>
 udělat může (a co ne).
-</p><p title="CO JE DGA"><b>CO JE DGA. </b>
+</p><p><b>CO JE DGA. </b>
 <acronym class="acronym">DGA</acronym> je zkratka pro <span class="emphasis"><em>Direct Graphics
 Access</em></span>, což je program pro obejití X servru a
 přímou modifikaci paměti framebufferu. Technicky to znamená mapování paměti
@@ -27,11 +27,11 @@ s hloubkou 32 bitů a přepnout na barevnou hloubku 15 bitů a naopak.
 DGA má ovšem i jisté obtíže. Zdá se, že je nějak závislé na grafickém čipu,
 který používáte a na implementaci video ovladače X serveru, který tento čip
 obsluhuje. Takže nefunguje na všech systémech...
-</p><p title="INSTALACE PODPORY DGA PRO MPLAYER"><b>INSTALACE PODPORY DGA PRO MPLAYER. </b>
+</p><p><b>INSTALACE PODPORY DGA PRO MPLAYER. </b>
 Nejprve si ověřte, že X nahrávají rozšíření DGA, viz v
 <tt class="filename">/var/log/XFree86.0.log</tt>:
 
-</p><pre class="programlisting">(II) Loading extension XFree86-DGA</pre><p title="INSTALACE PODPORY DGA PRO MPLAYER">
+</p><pre class="programlisting">(II) Loading extension XFree86-DGA</pre><p>
 
 XFree86 4.0.x nebo vyšší je
 <span class="bold"><strong>vřele doporučován</strong></span>!
@@ -56,7 +56,7 @@ chmod +s <em class="replaceable"><code>/usr/local/bin/mplayer</code></em>
 </pre><p>
 
 A nyní to bude pracovat také pod obyčejným uživatelem.
-</p><div class="caution" title="Bezpečnostní riziko" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Bezpečnostní riziko</h3><p>
+</p><div class="caution" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Bezpečnostní riziko</h3><p>
 Toto je <span class="bold"><strong>velké</strong></span> bezpečnostní riziko!
 <span class="bold"><strong>Nikdy</strong></span> to nedělejte na serveru nebo počítači
 ke kterému mohou mít přístup ostatní lidé, jelikož ti mohou získat
@@ -67,7 +67,7 @@ Nyní použijte volbu <tt class="option">-vo dga</tt> a je to! (doufám:)
 Také byste měli vyzkoušet, jestli vám pracuje volba
 <tt class="option">-vo sdl:dga</tt>!
 Je mnohem rychlejší!
-</p><p title="PŘEPÍNÁNÍ ROZLIŠENÍ"><a name="dga-modelines"></a><b>PŘEPÍNÁNÍ ROZLIŠENÍ. </b>
+</p><p><a name="dga-modelines"></a><b>PŘEPÍNÁNÍ ROZLIŠENÍ. </b>
 Rozhraní DGA umožňuje přepínání rozlišení výstupního signálu.
 To odstraňuje potřebu (pomalého) softwarového škálování a zároveň
 poskytuje obraz na celou obrazovku. Ideálně by se mělo přepnout na přesné
@@ -94,13 +94,13 @@ Section "Modes"
   Modeline "352x240"  15.750 352 368 416 432   240 244 246 262 Doublescan
   Modeline "320x240"  12.588 320 336 384 400   240 245 246 262 Doublescan
 EndSection
-</pre><p title="DGA &amp; MPLAYER"><b>DGA &amp; MPLAYER. </b>
+</pre><p><b>DGA &amp; MPLAYER. </b>
 DGA je v <span class="application">MPlayer</span>u použito na dvou místech: SDL
 rozhraní může být nastaveno pro jeho použití (<tt class="option">-vo sdl:dga</tt>) a
 přímé DGA rozhraní (<tt class="option">-vo dga</tt>). Výše uvedené je platné
 pro obě varianty; v následující sekci vysvětlíme jak pracuje DGA rozhraní
 <span class="application">MPlayer</span>u.
-</p><p title="VLASTNOSTI"><b>VLASTNOSTI. </b>
+</p><p><b>VLASTNOSTI. </b>
 DGA rozhraní je použito zadáním volby <tt class="option">-vo dga</tt> na příkazovém
 řádku. Výchozím chováním je přepnout na rozlišení co nejbižší originálním
 rozměrům videa. Zcela záměrně se ignorují volby <tt class="option">-vm</tt> a
@@ -137,7 +137,7 @@ pracovat pouze při zapnuté dvojité vyrovnávací paměti.
 Zapnutí dvojité vyrovnávací paměti však může vyústit velkou ztrátou výkonu
 (na mé K6-II+ 525 to použije dalších 20% CPU výkonu!) v závislosti na
 implementaci DGA pro váš hardware.
-</p><p title="OTÁZKA RYCHLOSTI"><b>OTÁZKA RYCHLOSTI. </b>
+</p><p><b>OTÁZKA RYCHLOSTI. </b>
 Obecně by přístup přes DGA framebuffer měl být alespoň tak rychlý jako
 použití rozhraní X11 navíc s celoobrazovkovým režimem.
 Procentní hodnoty rychlosti vypisované
@@ -159,11 +159,11 @@ režimu 32/32.
 </p><p>
 Viděl jsem pár AVI souborů přehrávat na Pentiu MMX 266. Procesory AMD K6-2
 pracují při 400 MHZ a výše.
-</p><p title="ZNÁMÉ CHYBY"><b>ZNÁMÉ CHYBY. </b>
+</p><p><b>ZNÁMÉ CHYBY. </b>
 Podle některých vývojářů XFree je DGA zvěrstvo. Říkají, abyste je raději
 nepoužívali. Jeho implementace není vždy bezproblémová v každém dostupném
 ovladači pro XFree.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   V XFree 4.0.3 je v <tt class="filename">nv.o</tt> chyba vedoucí
   k podivným barvám.
 </p></li><li class="listitem"><p>

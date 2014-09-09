@@ -1,11 +1,11 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.1. Haciendo un MPEG4 ("DivX") de alta calidad al ripear una película en DVD</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - El reproductor de Películas para LINUX"><link rel="up" href="encoding-guide.html" title="Capítulo 7. Codificando con MEncoder"><link rel="prev" href="encoding-guide.html" title="Capítulo 7. Codificando con MEncoder"><link rel="next" href="menc-feat-telecine.html" title="7.2. Cómo tratar con telecine y entrelazado con DVDs NTSC"><link rel="preface" href="howtoread.html" title="Como leer esta documentación"><link rel="chapter" href="intro.html" title="Capítulo 1. Introducción"><link rel="chapter" href="install.html" title="Capítulo 2. Instalación"><link rel="chapter" href="usage.html" title="Capítulo 3. Uso"><link rel="chapter" href="video-dev.html" title="Capítulo 4. Dispositivos de salida de video"><link rel="chapter" href="ports.html" title="Capítulo 5. Adaptaciones"><link rel="chapter" href="mencoder.html" title="Capítulo 6. Codificación básica con MEncoder"><link rel="chapter" href="encoding-guide.html" title="Capítulo 7. Codificando con MEncoder"><link rel="chapter" href="faq.html" title="Capítulo 8. Preguntas de Usuario Frecuentes"><link rel="appendix" href="bugreports.html" title="Apéndice A. Cómo reportar errores"><link rel="appendix" href="skin.html" title="Apéndice B. Formato del skin de MPlayer"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-crop" title="7.1.1. Recortando"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-quality" title="7.1.2. Nivel de calidad"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-2gb" title="7.1.3. Archivos más grandes de 2GB"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-deinterlacing" title="7.1.4. Desentrelazado"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-telecine" title="7.1.5. Inversión de telecine"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-scaling" title="7.1.6. Escalado y razón de aspecto"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-summary" title="7.1.7. Sumando todo esto"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.1. Haciendo un MPEG4 ("DivX") de alta calidad al ripear una película en DVD</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="encoding-guide.html">Anterior</a> </td><th width="60%" align="center">Capítulo 7. Codificando con <span class="application">MEncoder</span></th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-telecine.html">Siguiente</a></td></tr></table><hr></div><div class="sect1" title='7.1. Haciendo un MPEG4 ("DivX") de alta calidad al ripear una película en DVD'><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-dvd-mpeg4"></a>7.1. Haciendo un MPEG4 ("DivX") de alta calidad al ripear una película en DVD</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.1. Haciendo un MPEG4 ("DivX") de alta calidad al ripear una película en DVD</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - El reproductor de Películas para LINUX"><link rel="up" href="encoding-guide.html" title="Capítulo 7. Codificando con MEncoder"><link rel="prev" href="encoding-guide.html" title="Capítulo 7. Codificando con MEncoder"><link rel="next" href="menc-feat-telecine.html" title="7.2. Cómo tratar con telecine y entrelazado con DVDs NTSC"><link rel="preface" href="howtoread.html" title="Como leer esta documentación"><link rel="chapter" href="intro.html" title="Capítulo 1. Introducción"><link rel="chapter" href="install.html" title="Capítulo 2. Instalación"><link rel="chapter" href="usage.html" title="Capítulo 3. Uso"><link rel="chapter" href="video-dev.html" title="Capítulo 4. Dispositivos de salida de video"><link rel="chapter" href="ports.html" title="Capítulo 5. Adaptaciones"><link rel="chapter" href="mencoder.html" title="Capítulo 6. Codificación básica con MEncoder"><link rel="chapter" href="encoding-guide.html" title="Capítulo 7. Codificando con MEncoder"><link rel="chapter" href="faq.html" title="Capítulo 8. Preguntas de Usuario Frecuentes"><link rel="appendix" href="bugreports.html" title="Apéndice A. Cómo reportar errores"><link rel="appendix" href="skin.html" title="Apéndice B. Formato del skin de MPlayer"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-crop" title="7.1.1. Recortando"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-quality" title="7.1.2. Nivel de calidad"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-2gb" title="7.1.3. Archivos más grandes de 2GB"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-deinterlacing" title="7.1.4. Desentrelazado"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-telecine" title="7.1.5. Inversión de telecine"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-scaling" title="7.1.6. Escalado y razón de aspecto"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-summary" title="7.1.7. Sumando todo esto"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.1. Haciendo un MPEG4 ("DivX") de alta calidad al ripear una película en DVD</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="encoding-guide.html">Anterior</a> </td><th width="60%" align="center">Capítulo 7. Codificando con <span class="application">MEncoder</span></th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-telecine.html">Siguiente</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-dvd-mpeg4"></a>7.1. Haciendo un MPEG4 ("DivX") de alta calidad al ripear una película en DVD</h2></div></div></div><p>
   Ripear un título de DVD en un archivo MPEG4 (DivX) de alta calidad
   involucra algunas consideraciones. Más abajo encontrará un ejemplo
   del proceso cuando el objetivo no es conseguir un tamaño determinado
   para el archivo (sino quizá ajustar el resultado en 2GB).
   <code class="systemitem">libavcodec</code> será usado para el
   video, y el audio será copiado como esté sin cambios.
-</p><div class="sect2" title="7.1.1. Recortando"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-crop"></a>7.1.1. Recortando</h3></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-crop"></a>7.1.1. Recortando</h3></div></div></div><p>
   Reproduzca el DVD y ejecute el filtro de detección de recorte
   (<tt class="option">-vf cropdetect</tt>) en él. Esto le dará un rectángulo de
   recorte para usar en la codificación. La razón para el recorte es que muchas
@@ -15,7 +15,7 @@
   calidad de la imagen porque el filo de las bandas negras consume un montón
   de bits. Un aspecto común es 2.35, el que se llama cinemascope. La mayoría
   de las películas de blockbuster tienen esta razón de aspecto.
-</p></div><div class="sect2" title="7.1.2. Nivel de calidad"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-quality"></a>7.1.2. Nivel de calidad</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-quality"></a>7.1.2. Nivel de calidad</h3></div></div></div><p>
   A continuación debe elegir el nivel de calidad deseado. Cuando no necesite
   ajustar el tamaño resultante en un CD o en lo que sea, usar una cuantización
   constante, AKA calidad constante es una buena elección. De este modo cada
@@ -28,12 +28,12 @@
   <tt class="option">vqscale=3</tt> debe darle un archivo por debajo de los 2GB
   de tamaño, dependiendo principalmente de la duración de la película y del
   ruido en el video (a más ruido, más difícil de comprimir será).
-</p></div><div class="sect2" title="7.1.3. Archivos más grandes de 2GB"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-2gb"></a>7.1.3. Archivos más grandes de 2GB</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-2gb"></a>7.1.3. Archivos más grandes de 2GB</h3></div></div></div><p>
   Si el archivo resultante codificado con calidad constante es más grande
   de 2GB, deberá crear un índice para poder luego verlos correctamente.
   Puede
 
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   reproducir el archivo con <tt class="option">-forceidx</tt> para crear un
   índice sobre la marcha o bien
   </p></li><li class="listitem"><p>
@@ -61,7 +61,7 @@
   causados por la compresión MPEG. Escalar a un tamaño menor también reduce
   de manera efectiva el ruido en la imagen, lo que es aún mejor, ya que
   el ruido es más dificil de comprimir.
-</p></div><div class="sect2" title="7.1.4. Desentrelazado"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-deinterlacing"></a>7.1.4. Desentrelazado</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-deinterlacing"></a>7.1.4. Desentrelazado</h3></div></div></div><p>
   Si la película está entrelazada, puede que quiera desentrelazarla como
   parte del ripeo. Es debatible si debe desentrelazarse en esta etaba. El
   beneficio es que al desentrelazar mientras convierte a MPEG4 ocasiona
@@ -83,7 +83,7 @@
   si el desplazamiento de recorte es vertical y múltiplo de 2 pixels. Sin
   embargo con algunos otros filtros, como dering, deberá siempre hacer el recorte
   lo último, es un buen hábito poner el filtro de recortado el último.
-</p></div><div class="sect2" title="7.1.5. Inversión de telecine"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-telecine"></a>7.1.5. Inversión de telecine</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-telecine"></a>7.1.5. Inversión de telecine</h3></div></div></div><p>
   Si está ripeando un DVD PAL, con 25 fps, no necesita pensar en
   los fps. Use directamente 25 fps. Los DVDs NTSC por otro lado están
   a 29.97 fps (a menudo rondan los 30 fps, pero no tiene por qué).
@@ -102,7 +102,7 @@
   y muy mal. Puede usar <tt class="option">-ofps 23.976</tt> para ello. Cualquier
   cosas que esté en películas y necesite telecine inverso, no se
   mostrará en TV.
-</p></div><div class="sect2" title="7.1.6. Escalado y razón de aspecto"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-scaling"></a>7.1.6. Escalado y razón de aspecto</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-scaling"></a>7.1.6. Escalado y razón de aspecto</h3></div></div></div><p>
   Para mejor calidad, no escale la película durante el ripeo. El
   escalado a tamaño menor obviamente pierde detalle, y el escalado
   a mayor tamaño causa artefactos y hace el archivo mayor en tamaño. Los
@@ -117,7 +117,7 @@
   <span class="application">MEncoder</span> y las cosas funcionarán
   bien automágicamente. Si debe escalar la película, tenga
   cuidado con el tamaño dado especialmente si está recortándola.
-</p></div><div class="sect2" title="7.1.7. Sumando todo esto"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-summary"></a>7.1.7. Sumando todo esto</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-summary"></a>7.1.7. Sumando todo esto</h3></div></div></div><p>
   Con todo lo mencionado más arriba en mente, se puede usar una órden
   de codificación como la siguiente
 

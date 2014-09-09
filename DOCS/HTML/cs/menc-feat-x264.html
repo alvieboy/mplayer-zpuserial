@@ -1,11 +1,11 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.5. Enkódování x264 kodekem</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Multimediální přehrávač"><link rel="up" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="prev" href="menc-feat-xvid.html" title="7.4. Enkódování pomocí kodeku Xvid"><link rel="next" href="menc-feat-video-for-windows.html" title="7.6. Enkódování rodinou kodeků Video For Windows"><link rel="preface" href="howtoread.html" title="Jak číst tuto dokumentaci"><link rel="chapter" href="intro.html" title="Kapitola 1. Představení"><link rel="chapter" href="install.html" title="Kapitola 2. Instalace"><link rel="chapter" href="usage.html" title="Kapitola 3. Použití"><link rel="chapter" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="chapter" href="ports.html" title="Kapitola 5. Porty"><link rel="chapter" href="mencoder.html" title="Kapitola 6. Základní použití MEncoderu"><link rel="chapter" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="chapter" href="faq.html" title="Kapitola 8. Často Kladené Dotazy (FAQ)"><link rel="appendix" href="bugreports.html" title="Příloha A. Jak hlásit chyby"><link rel="appendix" href="skin.html" title="Příloha B. Formát skinů MPlayeru"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-encoding-options" title="7.5.1. Enkódovací volby x264"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-example-settings" title="7.5.2. Příklady nastavení enkódování"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.5. Enkódování
-  <code class="systemitem">x264</code> kodekem</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-xvid.html">Předcházející</a> </td><th width="60%" align="center">Kapitola 7. Enkódování s <span class="application">MEncoder</span>em</th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-video-for-windows.html">Další</a></td></tr></table><hr></div><div class="sect1" title="7.5. Enkódování x264 kodekem"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-x264"></a>7.5. Enkódování
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.5. Enkódování x264 kodekem</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Multimediální přehrávač"><link rel="up" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="prev" href="menc-feat-xvid.html" title="7.4. Enkódování pomocí kodeku Xvid"><link rel="next" href="menc-feat-video-for-windows.html" title="7.6. Enkódování rodinou kodeků Video For Windows"><link rel="preface" href="howtoread.html" title="Jak číst tuto dokumentaci"><link rel="chapter" href="intro.html" title="Kapitola 1. Představení"><link rel="chapter" href="install.html" title="Kapitola 2. Instalace"><link rel="chapter" href="usage.html" title="Kapitola 3. Použití"><link rel="chapter" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="chapter" href="ports.html" title="Kapitola 5. Porty"><link rel="chapter" href="mencoder.html" title="Kapitola 6. Základní použití MEncoderu"><link rel="chapter" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="chapter" href="faq.html" title="Kapitola 8. Často Kladené Dotazy (FAQ)"><link rel="appendix" href="bugreports.html" title="Příloha A. Jak hlásit chyby"><link rel="appendix" href="skin.html" title="Příloha B. Formát skinů MPlayeru"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-encoding-options" title="7.5.1. Enkódovací volby x264"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-example-settings" title="7.5.2. Příklady nastavení enkódování"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.5. Enkódování
+  <code class="systemitem">x264</code> kodekem</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-xvid.html">Předcházející</a> </td><th width="60%" align="center">Kapitola 7. Enkódování s <span class="application">MEncoder</span>em</th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-video-for-windows.html">Další</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-x264"></a>7.5. Enkódování
   <code class="systemitem">x264</code> kodekem</h2></div></div></div><p>
 <code class="systemitem">x264</code> je svobodná knihovna pro
 enkódování H.264/AVC video proudů.
 Pře zahájením enkódování budete muset
 <a class="link" href="codec-installation.html#x264" title="2.5.2. x264">nastavit její podporu v <span class="application">MEncoder</span>u</a>.
-</p><div class="sect2" title="7.5.1. Enkódovací volby x264"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-encoding-options"></a>7.5.1. Enkódovací volby x264</h3></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-encoding-options"></a>7.5.1. Enkódovací volby x264</h3></div></div></div><p>
 Začněte prosím prohlídkou sekce
 <code class="systemitem">x264</code> man stránky
 <span class="application">MPlayer</span>u.
@@ -13,7 +13,7 @@ Tato sekce je zamýšlena jako doplněk manuálové stránky.
 Zde naleznete tipy, které volby budou nejspíše zajímat většinu lidí.
 Man stránka je více uhlazená, ale také více vyčerpávající a
 občas nabízí mnohem lepší technické detaily.
-</p><div class="sect3" title="7.5.1.1. Úvodem"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-intro"></a>7.5.1.1. Úvodem</h4></div></div></div><p>
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-intro"></a>7.5.1.1. Úvodem</h4></div></div></div><p>
 Tato příručka pokrývá dvě hlavní kategorie enkódovacích voleb:
 </p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>
   Volby které mění dobu enkódování za kvalitu
@@ -51,7 +51,7 @@ výsledcích je pochybné, jelikož se datový tok značně liší s každým
 enkódováním.
 Není vždy snadné určit, zda se změnila kvalita díky změně voleb, nebo
 z větší části odpovídají změnám datového toku.
-</p></div><div class="sect3" title="7.5.1.2. Volby které primárně ovlivňují rychlost a kvalitu"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-speedvquality"></a>7.5.1.2. Volby které primárně ovlivňují rychlost a kvalitu</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-speedvquality"></a>7.5.1.2. Volby které primárně ovlivňují rychlost a kvalitu</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>subq</strong></span>:
   Z voleb, které umožňují vyměnit čas za kvalitu, jsou obvykle nejdůležitější
   <tt class="option">subq</tt> a <tt class="option">frameref</tt> (viz níže).
@@ -113,7 +113,7 @@ z větší části odpovídají změnám datového toku.
   jedinou dobrou věc, a to že jejich další zvyšování téměř nikdy
   <span class="bold"><strong>nesníží</strong></span> PSNR, ale další zisk kvality
   je stěží měřitelný, natož viditelný.
-  </p><div class="note" title="Poznámka:" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Poznámka:</h3><p>
+  </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Poznámka:</h3><p>
   Zvýšení <tt class="option">frameref</tt> na nemístně vysokou hodnotu
   <span class="bold"><strong>může</strong></span> a
   <span class="bold"><strong>obvykle taky sníží</strong></span>
@@ -237,7 +237,7 @@ z větší části odpovídají změnám datového toku.
   lineárně zvýšit rychlost podle počtu procesorových jader
   (okolo 94% na jádro) při velmi malém snížení kvality (asi 0,005dB pro duální procesor
   a okolo 0,01dB pro čtyřprocesorový stroj).
-  </p></li></ul></div></div><div class="sect3" title="7.5.1.3. Volby náležející různým preferencím"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-misc-preferences"></a>7.5.1.3. Volby náležející různým preferencím</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+  </p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-misc-preferences"></a>7.5.1.3. Volby náležející různým preferencím</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>Dvouprůchodové enkodování</strong></span>:
   Výše jsme doporučovali vždy používat dvouprůchodové enkódování, ale
   stále existují důvody proč jej nepoužít. Například pokud zachytáváte
@@ -378,7 +378,7 @@ z větší části odpovídají změnám datového toku.
   artefaktů.
   Téměř určitě to bude vypadat lépe, než výsledky, které byste mohli dosáhnout
   pohráváním si s deblokovacím filtrem.
-  </p></li></ul></div></div></div><div class="sect2" title="7.5.2. Příklady nastavení enkódování"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-example-settings"></a>7.5.2. Příklady nastavení enkódování</h3></div></div></div><p>
+  </p></li></ul></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-example-settings"></a>7.5.2. Příklady nastavení enkódování</h3></div></div></div><p>
 Následující nastavení jsou příklady nastavení různých kombinací voleb
 enkodéru, které ovlivňují poměr rychlost versus kvalita při shodném
 cílovém datovém toku.

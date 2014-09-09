@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.18. Décodeurs MPEG</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Le Lecteur Vidéo"><link rel="up" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="prev" href="dfbmga.html" title="4.17. DirectFB/Matrox (dfbmga)"><link rel="next" href="other.html" title="4.19. Autres matériels de visualisation"><link rel="preface" href="howtoread.html" title="Comment lire cette documentation"><link rel="chapter" href="intro.html" title="Chapitre 1. Introduction"><link rel="chapter" href="install.html" title="Chapitre 2. Installation"><link rel="chapter" href="usage.html" title="Chapitre 3. Utilisation"><link rel="chapter" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="chapter" href="ports.html" title="Chapitre 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapitre 6. Utilisation basique de MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="chapter" href="faq.html" title="Chapitre 8. Foire Aux Questions"><link rel="appendix" href="bugreports.html" title="Annexe A. Comment rapporter les bogues"><link rel="appendix" href="skin.html" title="Annexe B. Format de skins MPlayer"><link rel="subsection" href="mpeg_decoders.html#dvb" title="4.18.1. sorties et entrées DVB"><link rel="subsection" href="mpeg_decoders.html#dxr2" title="4.18.2. DXR2"><link rel="subsection" href="mpeg_decoders.html#dxr3" title="4.18.3. DXR3/Hollywood+"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.18. Décodeurs MPEG</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="dfbmga.html">Précédent</a> </td><th width="60%" align="center">Chapitre 4. Sorties vidéo</th><td width="20%" align="right"> <a accesskey="n" href="other.html">Suivant</a></td></tr></table><hr></div><div class="sect1" title="4.18. Décodeurs MPEG"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mpeg_decoders"></a>4.18. Décodeurs MPEG</h2></div></div></div><div class="sect2" title="4.18.1. sorties et entrées DVB"><div class="titlepage"><div><div><h3 class="title"><a name="dvb"></a>4.18.1. sorties et entrées DVB</h3></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.18. Décodeurs MPEG</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Le Lecteur Vidéo"><link rel="up" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="prev" href="dfbmga.html" title="4.17. DirectFB/Matrox (dfbmga)"><link rel="next" href="other.html" title="4.19. Autres matériels de visualisation"><link rel="preface" href="howtoread.html" title="Comment lire cette documentation"><link rel="chapter" href="intro.html" title="Chapitre 1. Introduction"><link rel="chapter" href="install.html" title="Chapitre 2. Installation"><link rel="chapter" href="usage.html" title="Chapitre 3. Utilisation"><link rel="chapter" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="chapter" href="ports.html" title="Chapitre 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapitre 6. Utilisation basique de MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="chapter" href="faq.html" title="Chapitre 8. Foire Aux Questions"><link rel="appendix" href="bugreports.html" title="Annexe A. Comment rapporter les bogues"><link rel="appendix" href="skin.html" title="Annexe B. Format de skins MPlayer"><link rel="subsection" href="mpeg_decoders.html#dvb" title="4.18.1. sorties et entrées DVB"><link rel="subsection" href="mpeg_decoders.html#dxr2" title="4.18.2. DXR2"><link rel="subsection" href="mpeg_decoders.html#dxr3" title="4.18.3. DXR3/Hollywood+"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.18. Décodeurs MPEG</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="dfbmga.html">Précédent</a> </td><th width="60%" align="center">Chapitre 4. Sorties vidéo</th><td width="20%" align="right"> <a accesskey="n" href="other.html">Suivant</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mpeg_decoders"></a>4.18. Décodeurs MPEG</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="dvb"></a>4.18.1. sorties et entrées DVB</h3></div></div></div><p>
 <span class="application">MPlayer</span> supporte les cartes équipées du chipset DVB
 Siemens
 des vendeurs tels que Siemens, Technotrend, Galaxis ou Hauppauge. Les derniers
@@ -18,12 +18,12 @@ ce chemin avec
 ./configure --extra-cflags=
 <em class="replaceable"><code>répertoire source DVB</code></em>/ost/include
 </pre><p>
-Ensuite compilez et installez comme d'habitude.</p><p title="UTILISATION"><b>UTILISATION. </b>
+Ensuite compilez et installez comme d'habitude.</p><p><b>UTILISATION. </b>
 Le décodage matériel de flux contenants des vidéos MPEG-1/2 et/ou du son MPEG
 peut être fait avec cette commande :
 </p><pre class="screen">mplayer -ao mpegpes -vo mpegpes
 <em class="replaceable"><code>fichier.mpg|vob</code></em>
-</pre><p title="UTILISATION">
+</pre><p>
 </p><p>
   Décoder n'importe quel autre type de flux vidéo nécessite le recodage en
 MPEG-1, donc c'est lent et peut ne pas valoir la chandelle, surtout si votre
@@ -95,7 +95,7 @@ utilisez le nouveau filtre dvbscale :
 pour une TV 4:3:  -vf dvbscale,scale=-1:0,expand=-1:576:-1:-1:1
 pour une TV 16:9: -vf dvbscale=1024,scale=-1:0,expand=-1:576:-1:-1:1
 </pre><p>
-</p><p title="TV numérique (module d'entrée DVB)"><b>TV numérique (module d'entrée DVB). </b>Vous pouvez utiliser votre carte DVB pour regarder la TV numérique.
+</p><p><b>TV numérique (module d'entrée DVB). </b>Vous pouvez utiliser votre carte DVB pour regarder la TV numérique.
 </p><p>
   Vous devriez également avoir les programmes <span class="command"><strong>scan</strong></span> et
   <span class="command"><strong>szap/tzap/czap/azap</strong></span> installés; ils sont inclus dans le
@@ -215,7 +215,7 @@ dvb://<em class="replaceable"><code>R1</code></em>
 </p><p>
   Lisez la page de man pour avoir une liste des options que vous pouvez passer
   au module d'entrée DVB.
-</p><p title="FUTUR"><b>FUTUR. </b>
+</p><p><b>FUTUR. </b>
 Si vous avez des questions ou voulez entendre les annonces de fonctionnalités
 et
 participer aux discussions sur ce sujet, rejoignez notre liste de diffusion
@@ -226,13 +226,13 @@ SVP, rappelez-vous que la langue de la liste est l'anglais.
 </p><p>
 Dans le futur vous pouvez vous attendre à pouvoir afficher l'OSD et les
 sous-titres en utilisant la fonction OSD native des cartes DVB.
-</p></div><div class="sect2" title="4.18.2. DXR2"><div class="titlepage"><div><div><h3 class="title"><a name="dxr2"></a>4.18.2. DXR2</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="dxr2"></a>4.18.2. DXR2</h3></div></div></div><p>
 <span class="application">MPlayer</span> supporte l'affichage accéléré avec la
 carte Creative DXR2.</p><p>
 Tout d'abord vous devrez avoir les pilotes correctement installés. Vous pouvez
 trouver les pilotes et les instructions d'installation sur le site
 <a class="ulink" href="http://dxr2.sf.net/" target="_top">DXR2 Resource Center</a>.
-</p><div class="variablelist" title="UTILISATION"><p class="title"><b>UTILISATION</b></p><dl><dt><span class="term"><tt class="option">-vo dxr2</tt></span></dt><dd><p>Active la sortie TV</p></dd><dt><span class="term"><tt class="option">-vo dxr2:x11</tt> ou <tt class="option">-vo dxr2:xv</tt></span></dt><dd><p>Active la sortie Overlay sous X11</p></dd><dt><span class="term"><tt class="option">-dxr2 &lt;option1:option2:...&gt;</tt></span></dt><dd><p>Cette option est utilisée pour contrôler le pilote
+</p><div class="variablelist"><p class="title"><b>UTILISATION</b></p><dl class="variablelist"><dt><span class="term"><tt class="option">-vo dxr2</tt></span></dt><dd><p>Active la sortie TV</p></dd><dt><span class="term"><tt class="option">-vo dxr2:x11</tt> ou <tt class="option">-vo dxr2:xv</tt></span></dt><dd><p>Active la sortie Overlay sous X11</p></dd><dt><span class="term"><tt class="option">-dxr2 &lt;option1:option2:...&gt;</tt></span></dt><dd><p>Cette option est utilisée pour contrôler le pilote
   DXR2.</p></dd></dl></div><p>
 Le chipset overlay utilisé sur la DXR2 est d'assez mauvaise qualité mais les
 paramètres
@@ -247,7 +247,7 @@ vous
 ajustez correctement les paramètres de couleur-clé vous devriez pouvoir
 obtenir des
 résultats acceptables.
-</p><p>Veuillez lire la page de man pour les options disponibles.</p></div><div class="sect2" title="4.18.3. DXR3/Hollywood+"><div class="titlepage"><div><div><h3 class="title"><a name="dxr3"></a>4.18.3. DXR3/Hollywood+</h3></div></div></div><p>
+</p><p>Veuillez lire la page de man pour les options disponibles.</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="dxr3"></a>4.18.3. DXR3/Hollywood+</h3></div></div></div><p>
 <span class="application">MPlayer</span> supporte l'accélération matérielle avec les
 cartes
 Creative DXR3 et Sigma Designs Hollywood Plus. Ces cartes ont toutes deux le
@@ -262,7 +262,7 @@ d'installation sur le site
 <tt class="filename">configure</tt> devrait détecter votre carte automatiquement,
 la compilation devrait se
 faire sans problèmes.
-</p><div class="variablelist" title="UTILISATION"><p class="title"><b>UTILISATION</b></p><dl><dt><span class="term"><tt class="option">-vo
+</p><div class="variablelist"><p class="title"><b>UTILISATION</b></p><dl class="variablelist"><dt><span class="term"><tt class="option">-vo
 dxr3:prebuf:sync:norm=x:<em class="replaceable"><code>périph.</code></em></tt></span></dt><dd><p>
 <tt class="option">overlay</tt> active l'overlay à la place de TV-Out. Cela requiert
 que vous ayez correctement configuré l'overlay. La manière la plus facile de

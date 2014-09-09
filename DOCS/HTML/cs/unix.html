@@ -1,9 +1,9 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>5.3. Komerční Unix</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Multimediální přehrávač"><link rel="up" href="ports.html" title="Kapitola 5. Porty"><link rel="prev" href="bsd.html" title="5.2. *BSD"><link rel="next" href="windows.html" title="5.4. Windows"><link rel="preface" href="howtoread.html" title="Jak číst tuto dokumentaci"><link rel="chapter" href="intro.html" title="Kapitola 1. Představení"><link rel="chapter" href="install.html" title="Kapitola 2. Instalace"><link rel="chapter" href="usage.html" title="Kapitola 3. Použití"><link rel="chapter" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="chapter" href="ports.html" title="Kapitola 5. Porty"><link rel="chapter" href="mencoder.html" title="Kapitola 6. Základní použití MEncoderu"><link rel="chapter" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="chapter" href="faq.html" title="Kapitola 8. Často Kladené Dotazy (FAQ)"><link rel="appendix" href="bugreports.html" title="Příloha A. Jak hlásit chyby"><link rel="appendix" href="skin.html" title="Příloha B. Formát skinů MPlayeru"><link rel="subsection" href="unix.html#solaris" title="5.3.1. Solaris"><link rel="subsection" href="unix.html#hp-ux" title="5.3.2. HP-UX"><link rel="subsection" href="unix.html#aix" title="5.3.3. AIX"><link rel="subsection" href="unix.html#qnx" title="5.3.4. QNX"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.3. Komerční Unix</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bsd.html">Předcházející</a> </td><th width="60%" align="center">Kapitola 5. Porty</th><td width="20%" align="right"> <a accesskey="n" href="windows.html">Další</a></td></tr></table><hr></div><div class="sect1" title="5.3. Komerční Unix"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="unix"></a>5.3. Komerční Unix</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>5.3. Komerční Unix</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Multimediální přehrávač"><link rel="up" href="ports.html" title="Kapitola 5. Porty"><link rel="prev" href="bsd.html" title="5.2. *BSD"><link rel="next" href="windows.html" title="5.4. Windows"><link rel="preface" href="howtoread.html" title="Jak číst tuto dokumentaci"><link rel="chapter" href="intro.html" title="Kapitola 1. Představení"><link rel="chapter" href="install.html" title="Kapitola 2. Instalace"><link rel="chapter" href="usage.html" title="Kapitola 3. Použití"><link rel="chapter" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="chapter" href="ports.html" title="Kapitola 5. Porty"><link rel="chapter" href="mencoder.html" title="Kapitola 6. Základní použití MEncoderu"><link rel="chapter" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="chapter" href="faq.html" title="Kapitola 8. Často Kladené Dotazy (FAQ)"><link rel="appendix" href="bugreports.html" title="Příloha A. Jak hlásit chyby"><link rel="appendix" href="skin.html" title="Příloha B. Formát skinů MPlayeru"><link rel="subsection" href="unix.html#solaris" title="5.3.1. Solaris"><link rel="subsection" href="unix.html#hp-ux" title="5.3.2. HP-UX"><link rel="subsection" href="unix.html#aix" title="5.3.3. AIX"><link rel="subsection" href="unix.html#qnx" title="5.3.4. QNX"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.3. Komerční Unix</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bsd.html">Předcházející</a> </td><th width="60%" align="center">Kapitola 5. Porty</th><td width="20%" align="right"> <a accesskey="n" href="windows.html">Další</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="unix"></a>5.3. Komerční Unix</h2></div></div></div><p>
 <span class="application">MPlayer</span> byl portován na mnoho komerčních variant
 Unixu. Jelikož vývojová prostředí na těchto systémech bývají odlišná od těch
 na svobodných Unixech, budete muset provést ruční úpravy, aby se kompilace
 povedla.
-</p><div class="sect2" title="5.3.1. Solaris"><div class="titlepage"><div><div><h3 class="title"><a name="solaris"></a>5.3.1. Solaris</h3></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="solaris"></a>5.3.1. Solaris</h3></div></div></div><p>
 <span class="application">MPlayer</span> by měl běžet na Solarisu 2.6 nebo novějším.
 Použijte SUN audio rozhraní pomocí volby <tt class="option">-ao sun</tt> pro přehrávání
 zvuku.
@@ -18,7 +18,7 @@ a <code class="systemitem">libavcodec</code>, ale nikoli v
 <code class="systemitem">mp3lib</code>. Můžete přehrávat VOB soubor
 na 400MHz CPU. Budete k tomu potřebovat nainstalovanou
 <a class="ulink" href="http://www.sun.com/sparc/vis/mediaLib.html" target="_top"><code class="systemitem">mLib</code></a>.
-</p><p><span class="bold"><strong>Caveat:</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Podpora <span class="bold"><strong>mediaLib</strong></span> je
+</p><p><span class="bold"><strong>Caveat:</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Podpora <span class="bold"><strong>mediaLib</strong></span> je
 <span class="bold"><strong>v současnosti vypnutá</strong></span> ve výchozím nastavení
 <span class="application">MPlayer</span>u kvůli chybovosti. Uživatelé SPARCu
 překládající MPlayer s podporou mediaLib hlásili tlustý zelený pruh
@@ -52,7 +52,7 @@ vaším příkazem "gcc" (v případě že autodetekce selže, použijte volbu
 <tt class="option">--as=<em class="replaceable"><code>/kdekoli/máte/nainstalován/gnu-as</code></em></tt>
 pro nastavení <tt class="filename">configure</tt> skriptu tak, aby našel GNU
 "as" na vašem systému).
-</p><p>Řešení běžných potíží:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><p>Řešení běžných potíží:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Chybová zpráva z <tt class="filename">configure</tt> na systému Solaris x86
   s použitím GCC bez GNU assembleru:
   </p><pre class="screen">
@@ -98,7 +98,7 @@ MPlayer interrupted by signal 11 in module: init_audio_codec
 </p></li><li class="listitem"><p>
 Díky chybám v Solarisu 8,
 nemůžete přehrávat DVD disky větší než 4 GB:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
   Ovladač sd(7D) na Solarisu 8 x86 má chybu v přístupu k diskovému bloku &gt;4GB
   na zařízeních, které mají logical blocksize != DEV_BSIZE (čili CD-ROM a DVD média).
   Díky 32Bit int overflow, dostanete přístupovou diskovou adresu modulo 4GB
@@ -111,7 +111,7 @@ nemůžete přehrávat DVD disky větší než 4 GB:
   (<a class="ulink" href="http://groups.yahoo.com/group/solarisonintel/message/22592" target="_top">http://groups.yahoo.com/group/solarisonintel/message/22592</a>).
   Problém hsfs může být odstraněn nainstalováním
   patche 109764-04 (sparc) / 109765-04 (x86).
-</p></li></ul></div></li></ul></div></div><div class="sect2" title="5.3.2. HP-UX"><div class="titlepage"><div><div><h3 class="title"><a name="hp-ux"></a>5.3.2. HP-UX</h3></div></div></div><p>
+</p></li></ul></div></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="hp-ux"></a>5.3.2. HP-UX</h3></div></div></div><p>
 Joe Page hostuje podrobné HP-UX <span class="application">MPlayer</span>
 <a class="ulink" href="http://users.rcn.com/joepage/mplayer_on_hpux11.htm" target="_top">HOWTO</a>
 od Martina Ganssera na jeho domácí stránce. Podle těchto instrukcí by kompilace
@@ -153,7 +153,7 @@ Příklad:
 </p><p>
 Níže uvádíme řešení některých běžných problémů:
 
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Spadne při startu s hlášením:
   </p><pre class="screen">
 /usr/lib/dld.sl: Unresolved symbol: finite (code) from /usr/local/lib/gcc-lib/hppa2.0n-hp-hpux11.00/3.2/../../../libGL.sl</pre><p>
@@ -186,7 +186,7 @@ Segmentation fault</pre><p>
   pro maximální množství paměti, které může program použít.
   Závisí na vašich aplikacích, jestli je výchozích 64MB dost nebo ne.)
   </p></li></ul></div><p>
-</p></div><div class="sect2" title="5.3.3. AIX"><div class="titlepage"><div><div><h3 class="title"><a name="aix"></a>5.3.3. AIX</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="aix"></a>5.3.3. AIX</h3></div></div></div><p>
 <span class="application">MPlayer</span> lze úspěšně přeložit na AIX 5.1,
 5.2 a 5.3, pomocí GCC 3.3 nebo vyšší. Kompilace
 <span class="application">MPlayer</span>u na AIX 4.3.3 a nížsích nebyla
@@ -202,9 +202,9 @@ Ujistěte se, že používáte GNU make
 </p><p>
 Detekce procesoru je stále nedokončena.
 Testovány byly následující architektury:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>604e</p></li><li class="listitem"><p>POWER3</p></li><li class="listitem"><p>POWER4</p></li></ul></div><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>604e</p></li><li class="listitem"><p>POWER3</p></li><li class="listitem"><p>POWER4</p></li></ul></div><p>
 Následující architektury nebyly testovány, ale měly by pracovat:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>POWER</p></li><li class="listitem"><p>POWER2</p></li><li class="listitem"><p>POWER5</p></li></ul></div><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>POWER</p></li><li class="listitem"><p>POWER2</p></li><li class="listitem"><p>POWER5</p></li></ul></div><p>
 </p><p>
 Zvuk přes Ultimedia Services není podporován, jelikož Ultimedia byla
 opuštěna v AIX 5.1; tudíš je jedinou možností použití ovladačů AIX Open
@@ -214,7 +214,7 @@ Sound System (OSS) od 4Front Technologies z
 nekomerční použití; zatím však neexistují zvukové ovladače
 pro AIX 5.2 nebo 5.3. To znamená, že <span class="bold"><strong>AIX 5.2
 a 5.3 nejsou nyní schopny provozovat MPlayer se zvukem.</strong></span>
-</p><p>Řešení běžných potíží:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><p>Řešení běžných potíží:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Pokud dostanete tuto chybovou hlášku z <tt class="filename">configure</tt>:
   </p><pre class="screen">
 $ ./configure
@@ -227,7 +227,7 @@ Messages in the GTK-2 interface will be broken then.</pre><p>
   konverze výstupu MPlayeru do jiné znakové sady není zatím podporována.
   Řešením je:
   </p><pre class="screen">$ ./configure --charset=noconv</pre><p>
-  </p></li></ul></div></div><div class="sect2" title="5.3.4. QNX"><div class="titlepage"><div><div><h3 class="title"><a name="qnx"></a>5.3.4. QNX</h3></div></div></div><p>
+  </p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="qnx"></a>5.3.4. QNX</h3></div></div></div><p>
 Musíte si stáhnout a nainstalovat SDL pro QNX. Pak spusťte
 <span class="application">MPlayer</span> s volbami <tt class="option">-vo sdl:driver=photon</tt>
 a <tt class="option">-ao sdl:nto</tt>, mělo by to být rychlé.

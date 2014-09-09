@@ -1,11 +1,11 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>9.5. Kódolás az x264 codec-kel</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="encoding-guide.html" title="9. fejezet - Kódolás a MEncoderrel"><link rel="prev" href="menc-feat-xvid.html" title="9.4. Kódolás az Xvid codec-kal"><link rel="next" href="menc-feat-video-for-windows.html" title="9.6. Kódolás a Video For Windows codec családdal"><link rel="preface" href="howtoread.html" title="Hogyan olvasd ezt a dokumentációt"><link rel="chapter" href="intro.html" title="1. fejezet - Bevezetés"><link rel="chapter" href="install.html" title="2. fejezet - Telepítés"><link rel="chapter" href="usage.html" title="3. fejezet - Használat"><link rel="chapter" href="tv-input.html" title="4. fejezet - TV bemenet"><link rel="chapter" href="tv-teletext.html" title="5. fejezet - Teletext"><link rel="chapter" href="video.html" title="6. fejezet - Videó kimeneti eszközök"><link rel="chapter" href="ports.html" title="7. fejezet - Portok"><link rel="chapter" href="mencoder.html" title="8. fejezet - A MEncoder használatának alapjai"><link rel="chapter" href="encoding-guide.html" title="9. fejezet - Kódolás a MEncoderrel"><link rel="chapter" href="faq.html" title="10. fejezet - Gyakran ismételt kérdések"><link rel="appendix" href="bugreports.html" title="A. függelék - Hogyan jelentsd a hibákat"><link rel="appendix" href="skin.html" title="B. függelék - MPlayer skin formátum"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-encoding-options" title="9.5.1. Az x264 kódolási opciói"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-example-settings" title="9.5.2. Kódolás beállítási példák"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">9.5. Kódolás az
-  <code class="systemitem">x264</code> codec-kel</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-xvid.html">Vissza</a> </td><th width="60%" align="center">9. fejezet - Kódolás a <span class="application">MEncoder</span>rel</th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-video-for-windows.html">Előre</a></td></tr></table><hr></div><div class="sect1" title="9.5. Kódolás az x264 codec-kel"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-x264"></a>9.5. Kódolás az
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>9.5. Kódolás az x264 codec-kel</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="encoding-guide.html" title="9. fejezet - Kódolás a MEncoderrel"><link rel="prev" href="menc-feat-xvid.html" title="9.4. Kódolás az Xvid codec-kal"><link rel="next" href="menc-feat-video-for-windows.html" title="9.6. Kódolás a Video For Windows codec családdal"><link rel="preface" href="howtoread.html" title="Hogyan olvasd ezt a dokumentációt"><link rel="chapter" href="intro.html" title="1. fejezet - Bevezetés"><link rel="chapter" href="install.html" title="2. fejezet - Telepítés"><link rel="chapter" href="usage.html" title="3. fejezet - Használat"><link rel="chapter" href="tv-input.html" title="4. fejezet - TV bemenet"><link rel="chapter" href="tv-teletext.html" title="5. fejezet - Teletext"><link rel="chapter" href="video.html" title="6. fejezet - Videó kimeneti eszközök"><link rel="chapter" href="ports.html" title="7. fejezet - Portok"><link rel="chapter" href="mencoder.html" title="8. fejezet - A MEncoder használatának alapjai"><link rel="chapter" href="encoding-guide.html" title="9. fejezet - Kódolás a MEncoderrel"><link rel="chapter" href="faq.html" title="10. fejezet - Gyakran ismételt kérdések"><link rel="appendix" href="bugreports.html" title="A. függelék - Hogyan jelentsd a hibákat"><link rel="appendix" href="skin.html" title="B. függelék - MPlayer skin formátum"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-encoding-options" title="9.5.1. Az x264 kódolási opciói"><link rel="subsection" href="menc-feat-x264.html#menc-feat-x264-example-settings" title="9.5.2. Kódolás beállítási példák"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">9.5. Kódolás az
+  <code class="systemitem">x264</code> codec-kel</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-xvid.html">Vissza</a> </td><th width="60%" align="center">9. fejezet - Kódolás a <span class="application">MEncoder</span>rel</th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-video-for-windows.html">Előre</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-x264"></a>9.5. Kódolás az
   <code class="systemitem">x264</code> codec-kel</h2></div></div></div><p>
 Az <code class="systemitem">x264</code> egy szabad függvénykönyvtár
 a H.264/AVC videó folyamok kódolásához.
 Mielőtt elkezdenél kódolni, <a class="link" href="codec-installation.html#x264" title="2.5.2. x264">be kell
 állítanod a <span class="application">MEncoder</span>ben a támogatását</a>.
-</p><div class="sect2" title="9.5.1. Az x264 kódolási opciói"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-encoding-options"></a>9.5.1. Az x264 kódolási opciói</h3></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-encoding-options"></a>9.5.1. Az x264 kódolási opciói</h3></div></div></div><p>
 Kérlek kezd az olvasást az <span class="application">MPlayer</span>
 man oldalának <code class="systemitem">x264</code>
 részével.
@@ -14,7 +14,7 @@ Itt csak rövid tanácsokat találhatsz, hogy mely opciók
 érdekelhetik a letöbb embert. A man oldal tömörebb, de
 ugyanakkor kimerítőbb is és esetenként több technikai
 információval szolgál.
-</p><div class="sect3" title="9.5.1.1. Bevezetés"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-intro"></a>9.5.1.1. Bevezetés</h4></div></div></div><p>
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-intro"></a>9.5.1.1. Bevezetés</h4></div></div></div><p>
 Ez a leírás a kódolási opciók két fő kategóriáját tárgyalja:
 </p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>
   Opciók, melyekkel a kódolási idő vs. minőség arány szabályozható
@@ -53,7 +53,7 @@ gyakran jelentősen változik a kódolások között.
 Nem minden esetben könnyű megmondani, hogy a minőségi változás a
 megváltozott opciók miatt következett-e be vagy a főként véletlenül
 elért bitráta különbségből adódik.
-</p></div><div class="sect3" title="9.5.1.2. Elsősorban a sebességet és a minőséget érintő opciók"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-speedvquality"></a>9.5.1.2. Elsősorban a sebességet és a minőséget érintő opciók</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-speedvquality"></a>9.5.1.2. Elsősorban a sebességet és a minőséget érintő opciók</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>subq</strong></span>:
   Azon opciók közül, amik segítségével a sebesség és minőség közötti arányt
   befolyásolhatod, a <tt class="option">subq</tt> és a <tt class="option">frameref</tt>
@@ -116,7 +116,7 @@ elért bitráta különbségből adódik.
   igazán jó dolog, amit mondhatunk, hogy a további növelés szinte
   soha sem <span class="bold"><strong>árt</strong></span> a PSNR-nek, de a minőségi
   javulás szinte alig mérhető és nem is észrevehető.
-  </p><div class="note" title="Megjegyzés:" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Megjegyzés:</h3><p>
+  </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Megjegyzés:</h3><p>
   A <tt class="option">frameref</tt> növelése szükségtelenül magas értékekre
   <span class="bold"><strong>ronthatja</strong></span> és
   <span class="bold"><strong>általában rontja is</strong></span>
@@ -246,7 +246,7 @@ elért bitráta különbségből adódik.
   mivel a CPU magokkal arányosan megnövelheti a kódolási sebességet
   (kb. 94% CPU magonként), nagyon kicsi minőségromlással (kb. 0.005dB
   dual processzornál, 0.01dB quad processzoros gépnél).
-  </p></li></ul></div></div><div class="sect3" title="9.5.1.3. Különböző igényekhez tartozó opciók"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-misc-preferences"></a>9.5.1.3. Különböző igényekhez tartozó opciók</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+  </p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-x264-encoding-options-misc-preferences"></a>9.5.1.3. Különböző igényekhez tartozó opciók</h4></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>Két lépéses kódolás</strong></span>:
   Fentebb azt javasoltuk, hogy mindig használj két lépéses kódolást,
   azonban vannak indokok az elkerülése mellett is. Például ha élő TV
@@ -399,7 +399,7 @@ elért bitráta különbségből adódik.
   el kell tüntetnie.
   Majdnem biztos, hogy jobb eredményt kapsz, mint a deblocking
   szűrővel való pepecseléssel.
-  </p></li></ul></div></div></div><div class="sect2" title="9.5.2. Kódolás beállítási példák"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-example-settings"></a>9.5.2. Kódolás beállítási példák</h3></div></div></div><p>
+  </p></li></ul></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-x264-example-settings"></a>9.5.2. Kódolás beállítási példák</h3></div></div></div><p>
 A következő beállítások példák a különböző kódolási opciók
 kombinációjára, amik érintik a sebességet vagy a minőséget
 ugyan annál a cél bitrátánál.

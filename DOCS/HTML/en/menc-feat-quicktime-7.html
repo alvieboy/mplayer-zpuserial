@@ -1,9 +1,9 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.7. Using MEncoder to create QuickTime-compatible files</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="encoding-guide.html" title="Chapter 7. Encoding with MEncoder"><link rel="prev" href="menc-feat-video-for-windows.html" title="7.6.  Encoding with the Video For Windows codec family"><link rel="next" href="menc-feat-vcd-dvd.html" title="7.8. Using MEncoder to create VCD/SVCD/DVD-compliant files"><link rel="preface" href="howtoread.html" title="How to read this documentation"><link rel="chapter" href="intro.html" title="Chapter 1. Introduction"><link rel="chapter" href="install.html" title="Chapter 2. Installation"><link rel="chapter" href="usage.html" title="Chapter 3. Usage"><link rel="chapter" href="video.html" title="Chapter 4. Video output devices"><link rel="chapter" href="ports.html" title="Chapter 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapter 6. Basic usage of MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapter 7. Encoding with MEncoder"><link rel="chapter" href="faq.html" title="Chapter 8. Frequently Asked Questions"><link rel="appendix" href="bugreports.html" title="Appendix A. How to report bugs"><link rel="appendix" href="skin.html" title="Appendix B. MPlayer skin format"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-why-use-it" title="7.7.1. Why would one want to produce QuickTime-compatible Files?"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-constraints" title="7.7.2. QuickTime 7 limitations"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-crop" title="7.7.3. Cropping"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-scale" title="7.7.4. Scaling"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-avsync" title="7.7.5. A/V sync"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-bitrate" title="7.7.6. Bitrate"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-example" title="7.7.7. Encoding example"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-remux" title="7.7.8. Remuxing as MP4"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-metadata" title="7.7.9. Adding metadata tags"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.7. Using <span class="application">MEncoder</span> to create
-<span class="application">QuickTime</span>-compatible files</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-video-for-windows.html">Prev</a> </td><th width="60%" align="center">Chapter 7. Encoding with <span class="application">MEncoder</span></th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-vcd-dvd.html">Next</a></td></tr></table><hr></div><div class="sect1" title="7.7. Using MEncoder to create QuickTime-compatible files"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-quicktime-7"></a>7.7. Using <span class="application">MEncoder</span> to create
-<span class="application">QuickTime</span>-compatible files</h2></div></div></div><div class="sect2" title="7.7.1. Why would one want to produce QuickTime-compatible Files?"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-why-use-it"></a>7.7.1. Why would one want to produce <span class="application">QuickTime</span>-compatible Files?</h3></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.7. Using MEncoder to create QuickTime-compatible files</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="encoding-guide.html" title="Chapter 7. Encoding with MEncoder"><link rel="prev" href="menc-feat-video-for-windows.html" title="7.6.  Encoding with the Video For Windows codec family"><link rel="next" href="menc-feat-vcd-dvd.html" title="7.8. Using MEncoder to create VCD/SVCD/DVD-compliant files"><link rel="preface" href="howtoread.html" title="How to read this documentation"><link rel="chapter" href="intro.html" title="Chapter 1. Introduction"><link rel="chapter" href="install.html" title="Chapter 2. Installation"><link rel="chapter" href="usage.html" title="Chapter 3. Usage"><link rel="chapter" href="video.html" title="Chapter 4. Video output devices"><link rel="chapter" href="ports.html" title="Chapter 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapter 6. Basic usage of MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapter 7. Encoding with MEncoder"><link rel="chapter" href="faq.html" title="Chapter 8. Frequently Asked Questions"><link rel="appendix" href="bugreports.html" title="Appendix A. How to report bugs"><link rel="appendix" href="skin.html" title="Appendix B. MPlayer skin format"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-why-use-it" title="7.7.1. Why would one want to produce QuickTime-compatible Files?"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-constraints" title="7.7.2. QuickTime 7 limitations"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-crop" title="7.7.3. Cropping"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-scale" title="7.7.4. Scaling"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-avsync" title="7.7.5. A/V sync"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-bitrate" title="7.7.6. Bitrate"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-example" title="7.7.7. Encoding example"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-remux" title="7.7.8. Remuxing as MP4"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-metadata" title="7.7.9. Adding metadata tags"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.7. Using <span class="application">MEncoder</span> to create
+<span class="application">QuickTime</span>-compatible files</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-video-for-windows.html">Prev</a> </td><th width="60%" align="center">Chapter 7. Encoding with <span class="application">MEncoder</span></th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-vcd-dvd.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-quicktime-7"></a>7.7. Using <span class="application">MEncoder</span> to create
+<span class="application">QuickTime</span>-compatible files</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-why-use-it"></a>7.7.1. Why would one want to produce <span class="application">QuickTime</span>-compatible Files?</h3></div></div></div><p>
   There are several reasons why producing
   <span class="application">QuickTime</span>-compatible files can be desirable.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   You want any computer illiterate to be able to watch your encode on
   any major platform (Windows, Mac OS X, Unices …).
 </p></li><li class="listitem"><p>
@@ -17,7 +17,7 @@
   <span class="application">QuickTime</span> 7 supports the next-generation codec H.264,
   which yields significantly better picture quality than previous codec
   generations (MPEG-2, MPEG-4 …).
-</p></li></ul></div></div><div class="sect2" title="7.7.2. QuickTime 7 limitations"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-constraints"></a>7.7.2. <span class="application">QuickTime</span> 7 limitations</h3></div></div></div><p>
+</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-constraints"></a>7.7.2. <span class="application">QuickTime</span> 7 limitations</h3></div></div></div><p>
   <span class="application">QuickTime</span> 7 supports H.264 video and AAC audio,
   but it does not support them muxed in the AVI container format.
   However, you can use <span class="application">MEncoder</span> to encode
@@ -32,7 +32,7 @@
   <span class="application">QuickTime</span> 7 does not support,
   <span class="application">QuickTime</span>-based players will show you a pretty
   white screen instead of your expected video.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>B-frames</strong></span>:
   <span class="application">QuickTime</span> 7 supports a maximum of 1 B-frame, i.e.
   <tt class="option">-x264encopts bframes=1</tt>. This means that
@@ -51,7 +51,7 @@
   <a class="link" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-scale" title="7.7.4. Scaling">the section on scaling</a>
   for a workaround. <span class="application">QuickTime</span> X no longer has this
   limitation.
-</p></li></ul></div></div><div class="sect2" title="7.7.3. Cropping"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-crop"></a>7.7.3. Cropping</h3></div></div></div><p>
+</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-crop"></a>7.7.3. Cropping</h3></div></div></div><p>
   Suppose you want to rip your freshly bought copy of "The Chronicles of
   Narnia". Your DVD is region 1,
   which means it is NTSC. The example below would still apply to PAL,
@@ -69,7 +69,7 @@
   Next, you need to crop out the black bars from the top and bottom of the
   video, as detailed in <a class="link" href="menc-feat-enc-libavcodec.html#menc-feat-dvd-mpeg4-example-crop">this</a>
   previous section.
-</p></div><div class="sect2" title="7.7.4. Scaling"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-scale"></a>7.7.4. Scaling</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-scale"></a>7.7.4. Scaling</h3></div></div></div><p>
   The next step is truly heartbreaking.
   <span class="application">QuickTime</span> 7 does not support MPEG-4 videos
   with a sample aspect ratio other than 1, so you will need to upscale
@@ -86,7 +86,7 @@
   Remember that if you are cropping, you should crop first, then scale:
 
   </p><pre class="screen">-vf crop=720:352:0:62,scale=-10:-1</pre><p>
-</p></div><div class="sect2" title="7.7.5. A/V sync"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-avsync"></a>7.7.5. A/V sync</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-avsync"></a>7.7.5. A/V sync</h3></div></div></div><p>
   Because you will be remuxing into a different container, you should
   always use the <tt class="option">harddup</tt> option to ensure that duplicated
   frames are actually duplicated in the video output. Without this option,
@@ -97,7 +97,7 @@
 </p><p>
   The final filter chain looks like this:
   </p><pre class="screen">-vf crop=720:352:0:62,scale=-10:-1,harddup</pre><p>
-</p></div><div class="sect2" title="7.7.6. Bitrate"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-bitrate"></a>7.7.6. Bitrate</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-bitrate"></a>7.7.6. Bitrate</h3></div></div></div><p>
   As always, the selection of bitrate is a matter of the technical properties
   of the source, as explained
   <a class="link" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-resolution-bitrate" title="7.1.5. Choosing resolution and bitrate">here</a>, as
@@ -108,7 +108,7 @@
   this movie at 900kbps, and thought that it looked very good.
   You may decrease bitrate if you need to save more space, or increase
   it if you need to improve quality.
-</p></div><div class="sect2" title="7.7.7. Encoding example"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-example"></a>7.7.7. Encoding example</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-example"></a>7.7.7. Encoding example</h3></div></div></div><p>
   You are now ready to encode the video. Since you care about
   quality, of course you will be doing a two-pass encode. To shave off
   some encoding time, you can specify the <tt class="option">turbo</tt> option
@@ -150,7 +150,7 @@ me=umh:partitions=all:trellis=1:qp_step=4:qcomp=0.7:direct_pred=auto:keyint=300 
   <span class="application">QuickTime</span> can not play it because it does
   not support H.264 muxed in AVI.
   So the next step is to remux the video into an MP4 container.
-</p></div><div class="sect2" title="7.7.8. Remuxing as MP4"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-remux"></a>7.7.8. Remuxing as MP4</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-remux"></a>7.7.8. Remuxing as MP4</h3></div></div></div><p>
   There are several ways to remux AVI files to MP4. You can use
   <span class="application">mp4creator</span>, which is part of the
   <a class="ulink" href="http://mpeg4ip.sourceforge.net/" target="_top">MPEG4IP suite</a>.
@@ -201,7 +201,7 @@ mp4creator -optimize narnia.mp4</pre><p>
 3       hint    Payload mpeg4-generic for track 1
 4       hint    Payload H264 for track 2
 </pre><p>
-</p></div><div class="sect2" title="7.7.9. Adding metadata tags"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-metadata"></a>7.7.9. Adding metadata tags</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-metadata"></a>7.7.9. Adding metadata tags</h3></div></div></div><p>
   If you want to add tags to your video that show up in iTunes, you can use
   <a class="ulink" href="http://atomicparsley.sourceforge.net/" target="_top">AtomicParsley</a>.
 

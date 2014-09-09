@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.2. Cómo tratar con telecine y entrelazado con DVDs NTSC</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - El reproductor de Películas para LINUX"><link rel="up" href="encoding-guide.html" title="Capítulo 7. Codificando con MEncoder"><link rel="prev" href="menc-feat-dvd-mpeg4.html" title='7.1. Haciendo un MPEG4 ("DivX") de alta calidad al ripear una película en DVD'><link rel="next" href="faq.html" title="Capítulo 8. Preguntas de Usuario Frecuentes"><link rel="preface" href="howtoread.html" title="Como leer esta documentación"><link rel="chapter" href="intro.html" title="Capítulo 1. Introducción"><link rel="chapter" href="install.html" title="Capítulo 2. Instalación"><link rel="chapter" href="usage.html" title="Capítulo 3. Uso"><link rel="chapter" href="video-dev.html" title="Capítulo 4. Dispositivos de salida de video"><link rel="chapter" href="ports.html" title="Capítulo 5. Adaptaciones"><link rel="chapter" href="mencoder.html" title="Capítulo 6. Codificación básica con MEncoder"><link rel="chapter" href="encoding-guide.html" title="Capítulo 7. Codificando con MEncoder"><link rel="chapter" href="faq.html" title="Capítulo 8. Preguntas de Usuario Frecuentes"><link rel="appendix" href="bugreports.html" title="Apéndice A. Cómo reportar errores"><link rel="appendix" href="skin.html" title="Apéndice B. Formato del skin de MPlayer"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-ident" title="7.2.1. Cómo decir el tipo de video que tiene"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-encode" title="7.2.2. Cómo codificar cada categoría"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-footnotes" title="7.2.3. Notas a pie de página"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.2. Cómo tratar con telecine y entrelazado con DVDs NTSC</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-dvd-mpeg4.html">Anterior</a> </td><th width="60%" align="center">Capítulo 7. Codificando con <span class="application">MEncoder</span></th><td width="20%" align="right"> <a accesskey="n" href="faq.html">Siguiente</a></td></tr></table><hr></div><div class="sect1" title="7.2. Cómo tratar con telecine y entrelazado con DVDs NTSC"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-telecine"></a>7.2. Cómo tratar con telecine y entrelazado con DVDs NTSC</h2></div></div></div><p title="Introducción"><b>Introducción. </b>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.2. Cómo tratar con telecine y entrelazado con DVDs NTSC</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - El reproductor de Películas para LINUX"><link rel="up" href="encoding-guide.html" title="Capítulo 7. Codificando con MEncoder"><link rel="prev" href="menc-feat-dvd-mpeg4.html" title='7.1. Haciendo un MPEG4 ("DivX") de alta calidad al ripear una película en DVD'><link rel="next" href="faq.html" title="Capítulo 8. Preguntas de Usuario Frecuentes"><link rel="preface" href="howtoread.html" title="Como leer esta documentación"><link rel="chapter" href="intro.html" title="Capítulo 1. Introducción"><link rel="chapter" href="install.html" title="Capítulo 2. Instalación"><link rel="chapter" href="usage.html" title="Capítulo 3. Uso"><link rel="chapter" href="video-dev.html" title="Capítulo 4. Dispositivos de salida de video"><link rel="chapter" href="ports.html" title="Capítulo 5. Adaptaciones"><link rel="chapter" href="mencoder.html" title="Capítulo 6. Codificación básica con MEncoder"><link rel="chapter" href="encoding-guide.html" title="Capítulo 7. Codificando con MEncoder"><link rel="chapter" href="faq.html" title="Capítulo 8. Preguntas de Usuario Frecuentes"><link rel="appendix" href="bugreports.html" title="Apéndice A. Cómo reportar errores"><link rel="appendix" href="skin.html" title="Apéndice B. Formato del skin de MPlayer"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-ident" title="7.2.1. Cómo decir el tipo de video que tiene"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-encode" title="7.2.2. Cómo codificar cada categoría"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-footnotes" title="7.2.3. Notas a pie de página"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.2. Cómo tratar con telecine y entrelazado con DVDs NTSC</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-dvd-mpeg4.html">Anterior</a> </td><th width="60%" align="center">Capítulo 7. Codificando con <span class="application">MEncoder</span></th><td width="20%" align="right"> <a accesskey="n" href="faq.html">Siguiente</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-telecine"></a>7.2. Cómo tratar con telecine y entrelazado con DVDs NTSC</h2></div></div></div><p><b>Introducción. </b>
   Le sugiero que visite esta página si no entiende mucho lo que está
   escrito en este documento:
   <a class="ulink" href="http://www.divx.com/support/guides/guide.php?gid=10" target="_top">http://www.divx.com/support/guides/guide.php?gid=10</a>
@@ -39,7 +39,7 @@
   campo-tras-campo.
 </p><p>
 Notas:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Esta sección solo se aplica a DVDs NTSC, y no a PAL.
   </p></li><li class="listitem"><p>
   El ejemplo <span class="application">MEncoder</span> que hay a lo largo del
@@ -52,7 +52,7 @@ Notas:
   Hay un montón de notas a pie de página específicas en esta guia, enlazadas
   como esto:
   <a class="link" href="menc-feat-telecine.html#menc-feat-telecine-footnotes" title="7.2.3. Notas a pie de página">[1]</a>
-  </p></li></ul></div><div class="sect2" title="7.2.1. Cómo decir el tipo de video que tiene"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-ident"></a>7.2.1. Cómo decir el tipo de video que tiene</h3></div></div></div><div class="sect3" title="7.2.1.1. Progresivo"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-progressive"></a>7.2.1.1. Progresivo</h4></div></div></div><p>
+  </p></li></ul></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-ident"></a>7.2.1. Cómo decir el tipo de video que tiene</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-progressive"></a>7.2.1.1. Progresivo</h4></div></div></div><p>
   Video progresivo fue grabado originalmente a 23.976 fps, y almacenado
   en el DVD sin alteración.
 </p><p>
@@ -85,7 +85,7 @@ Notas:
 </p><p>
   Algunas veces el video progresivo es referido como "soft-telecine"
   porque está pensado para ser procesado en telecine por el reproductor de DVD.
-</p></div><div class="sect3" title="7.2.1.2. Telecine"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-telecined"></a>7.2.1.2. Telecine</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-telecined"></a>7.2.1.2. Telecine</h4></div></div></div><p>
   Video con telecine fue grabado originalmente a 23.976 fps, pero fue
   pasado por proceso de telecine <span class="emphasis"><em>antes</em></span> de ser
   escrito en el DVD.
@@ -109,7 +109,7 @@ Notas:
     </p></li></ol></div><p>
 </p><p>
   Algunas veces el video telecine es referido como "hard-telecine".
-</p></div><div class="sect3" title="7.2.1.3. Entrelazado"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-interlaced"></a>7.2.1.3. Entrelazado</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-interlaced"></a>7.2.1.3. Entrelazado</h4></div></div></div><p>
   El video entrelazado fue originalmente grabado a 59.94 campos por segundo,
   y almacenado en el DVD como 29.97 marcos por segundo. El entreñazado
   es el resultado de combinar pares de campos en marcos, porque en cada
@@ -121,7 +121,7 @@ Notas:
 </p><p>
   Cuando ve video entrelazado de cerca con <tt class="option">-speed 0.1</tt>,
   puede ver que cada marco simple es entrelazado.
-</p></div><div class="sect3" title="7.2.1.4. Mezcla progresiva y telecine"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-mixedpt"></a>7.2.1.4. Mezcla progresiva y telecine</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-mixedpt"></a>7.2.1.4. Mezcla progresiva y telecine</h4></div></div></div><p>
   Todo video "mezcla progresivo y telecine" originalmente es a
   23.976 marcos por segundo, pero algunas partes de él terminan siendo en
   telecine.
@@ -134,26 +134,26 @@ Notas:
 </p><p>
   Deberá consultar las secciones de "30fps NTSC" para
   asegurarse de que es telecine, y no simplemente entrelazado.
-</p></div><div class="sect3" title="7.2.1.5. Mezcla de progresivo y entrelazado"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-mixedpi"></a>7.2.1.5. Mezcla de progresivo y entrelazado</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-mixedpi"></a>7.2.1.5. Mezcla de progresivo y entrelazado</h4></div></div></div><p>
   En el contenido "mezcla de progresivo y entrelazado", el
   video progresivo y entrelazado se colocan juntos.
 </p><p>
   Esta categoría es similar a "mezcla progresivo y telecine",
   hasta que examine las secciones de 30fps y vea que no tiene el patrón
   de telecine.
-</p></div></div><div class="sect2" title="7.2.2. Cómo codificar cada categoría"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-encode"></a>7.2.2. Cómo codificar cada categoría</h3></div></div></div><p>
+</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-encode"></a>7.2.2. Cómo codificar cada categoría</h3></div></div></div><p>
   Como dije antes al principio, las líneas de ejemplo de
   <span class="application">MEncoder</span> de más abajo <span class="bold"><strong>no</strong></span>
   son para ser usadas; solo son para demostrar los parámetros mínimos para codificar
   en cada categoría.
-</p><div class="sect3" title="7.2.2.1. Progresivo"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-progressive"></a>7.2.2.1. Progresivo</h4></div></div></div><p>
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-progressive"></a>7.2.2.1. Progresivo</h4></div></div></div><p>
   El video progresivo no requiere un filtrado especial para codificarlo. El
   único parámetro que seguramente necesita usar es <tt class="option">-ofps 23.976</tt>.
   Si no lo hace, <span class="application">MEncoder</span> intentará codificar a
   29.97 fps y marcos duplicados.
 </p><p>
   </p><pre class="screen">mencoder dvd://1 -nosound -ovc lavc -ofps 23.976</pre><p>
-</p></div><div class="sect3" title="7.2.2.2. Telecine"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-telecined"></a>7.2.2.2. Telecine</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-telecined"></a>7.2.2.2. Telecine</h4></div></div></div><p>
   Telecine puede ser invertido para obtener el contenido 23.976 original,
   usando un proceso llamado telecine-inverso.
   <span class="application">MPlayer</span> contiene dos filtros para
@@ -167,7 +167,7 @@ Notas:
   necesitará <tt class="option">-ofps 23.976</tt> también.
 </p><p>
   </p><pre class="screen">mencoder dvd://1 -nosound -vf ivtc=1 -ovc lavc -ofps 23.976</pre><p>
-</p></div><div class="sect3" title="7.2.2.3. Entrelazado"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-interlaced"></a>7.2.2.3. Entrelazado</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-interlaced"></a>7.2.2.3. Entrelazado</h4></div></div></div><p>
   Para la mayor parte de los casos prácticos no es posible obtener un
   video progresivo completo de un contenido entrelazado. La única manera
   de hacerlo sin perder la mitad de la resolución vertical es doblar la
@@ -234,13 +234,13 @@ Notas:
   escalar apropiadamente. Recuerde que tiene que ajustar la escala para
   compensar la resolución vertical que está siendo perdida.
   </p><pre class="screen">mencoder dvd://1 -nosound -vf field=0 -ovc lavc</pre><p>
-  </p></li></ol></div></div><div class="sect3" title="7.2.2.4. Mezcla de progresivo y telecine"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-mixedpt"></a>7.2.2.4. Mezcla de progresivo y telecine</h4></div></div></div><p>
+  </p></li></ol></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-mixedpt"></a>7.2.2.4. Mezcla de progresivo y telecine</h4></div></div></div><p>
   Para mezclar video progresivo y telecine en un video completamente
   progresivo, las partes en telecine tienen que pasar por el proceso
   de telecine-inverso. Hay dos filtros que realizan esto nativamente, pero
   una solución mejor casi siempre es usar dos filtros conjuntamente
   (lea más adelante para más detalles).
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Actualmente el método más fiable para tratar este tipo de video
   es, en lugar de hacer telecine-inverso con las partes en telecine,
   pasar a telecine las partes que no lo son y luego hacer telecine-inverso
@@ -289,11 +289,11 @@ Notas:
     menos perder algún tiempo haciendo un ajuste fino de las opciones
     y viendo la salida para asegurarse de que no está haciendolo mal.
     </p></blockquote></div><p>
-  </p></li></ul></div></div><div class="sect3" title="7.2.2.5. Mezcla de progresivo y entrelazado"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-mixedpi"></a>7.2.2.5. Mezcla de progresivo y entrelazado</h4></div></div></div><p>
+  </p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-mixedpi"></a>7.2.2.5. Mezcla de progresivo y entrelazado</h4></div></div></div><p>
   Hay dos opciones para tratar esta categoría, cada una con sus
   compromisos. Debe decidir si se quiere basar en la duración
   o localización de cada tipo.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Trátelo como progresivo. Las partes entrelazadas parecen entrelazadas,
   y algunos campos entrelazados son descartados, resultando en un
   poco dispares y con saltos. Puede usar un filtro de postprocesado
@@ -328,7 +328,7 @@ Notas:
   progresivas serán tratadas por duplicado, resultando en una imagen
   a saltos. De nuevo, los filtros de desentrelazado pueden degradar
   ligeramente las partes progresivas.
-  </p></li></ul></div></div></div><div class="sect2" title="7.2.3. Notas a pie de página"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-footnotes"></a>7.2.3. Notas a pie de página</h3></div></div></div><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p title="Acerca del recortado:"><b>Acerca del recortado: </b>
+  </p></li></ul></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-footnotes"></a>7.2.3. Notas a pie de página</h3></div></div></div><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p><b>Acerca del recortado: </b>
   Los datos de video de los DVDs son almacenados en un formato llamado
   YUV 4:2:0. En video YUV, la luminancia ("brillo") y la
   crominancia ("color") se almacenan por separado. Debido
@@ -363,7 +363,7 @@ Notas:
   Para video entrelazado (no telecine), siempre debe recortar
   verticalmente por múltiplos de cuatro a menos que use
   <tt class="option">-vf field</tt> antes de recortar.
-  </p></li><li class="listitem"><p title="Acerca de los parámetros de codificado y la calidad:"><b>Acerca de los parámetros de codificado y la calidad: </b>
+  </p></li><li class="listitem"><p><b>Acerca de los parámetros de codificado y la calidad: </b>
   Solo porque yo recomiendo <tt class="option">mbd=2</tt> aquí no significa que
   deba ser usado siempre. Junto con <tt class="option">trell</tt>,
   <tt class="option">mbd=2</tt> es una de las dos opciones de

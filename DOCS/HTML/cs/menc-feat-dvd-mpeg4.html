@@ -1,5 +1,5 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.1. Vytvoření MPEG-4 ("DivX") ripu DVD filmu ve vysoké kvalitě</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Multimediální přehrávač"><link rel="up" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="prev" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="next" href="menc-feat-telecine.html" title="7.2. Jak naložit s telecine a prokladem v NTSC DVD"><link rel="preface" href="howtoread.html" title="Jak číst tuto dokumentaci"><link rel="chapter" href="intro.html" title="Kapitola 1. Představení"><link rel="chapter" href="install.html" title="Kapitola 2. Instalace"><link rel="chapter" href="usage.html" title="Kapitola 3. Použití"><link rel="chapter" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="chapter" href="ports.html" title="Kapitola 5. Porty"><link rel="chapter" href="mencoder.html" title="Kapitola 6. Základní použití MEncoderu"><link rel="chapter" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="chapter" href="faq.html" title="Kapitola 8. Často Kladené Dotazy (FAQ)"><link rel="appendix" href="bugreports.html" title="Příloha A. Jak hlásit chyby"><link rel="appendix" href="skin.html" title="Příloha B. Formát skinů MPlayeru"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-preparing-encode" title="7.1.1. Příprava na enkódování: Určení zdrojového materiálu a datového toku"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-2pass" title="7.1.2. Pevný kvantizer vs. více průchodů"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-constraints" title="7.1.3. Omezení pro efektivní enkódování"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-crop" title="7.1.4. Ořezávání a škálování"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-resolution-bitrate" title="7.1.5. Volba rozlišení a datového toku"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-filtering" title="7.1.6. Filtrování"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-interlacing" title="7.1.7. Prokládání a Telecine"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-encoding-interlaced" title="7.1.8. Enkódování prokládaného videa"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-av-sync" title="7.1.9. Poznámky k Audio/Video synchronizaci"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-codec" title="7.1.10. Výběr video kodeku"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-audio" title="7.1.11. Zvuk"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-muxing" title="7.1.12. Muxování (multiplexování)"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.1. Vytvoření MPEG-4 ("DivX")
-ripu DVD filmu ve vysoké kvalitě</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="encoding-guide.html">Předcházející</a> </td><th width="60%" align="center">Kapitola 7. Enkódování s <span class="application">MEncoder</span>em</th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-telecine.html">Další</a></td></tr></table><hr></div><div class="sect1" title='7.1. Vytvoření MPEG-4 ("DivX") ripu DVD filmu ve vysoké kvalitě'><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-dvd-mpeg4"></a>7.1. Vytvoření MPEG-4 ("DivX")
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.1. Vytvoření MPEG-4 ("DivX") ripu DVD filmu ve vysoké kvalitě</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Multimediální přehrávač"><link rel="up" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="prev" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="next" href="menc-feat-telecine.html" title="7.2. Jak naložit s telecine a prokladem v NTSC DVD"><link rel="preface" href="howtoread.html" title="Jak číst tuto dokumentaci"><link rel="chapter" href="intro.html" title="Kapitola 1. Představení"><link rel="chapter" href="install.html" title="Kapitola 2. Instalace"><link rel="chapter" href="usage.html" title="Kapitola 3. Použití"><link rel="chapter" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="chapter" href="ports.html" title="Kapitola 5. Porty"><link rel="chapter" href="mencoder.html" title="Kapitola 6. Základní použití MEncoderu"><link rel="chapter" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="chapter" href="faq.html" title="Kapitola 8. Často Kladené Dotazy (FAQ)"><link rel="appendix" href="bugreports.html" title="Příloha A. Jak hlásit chyby"><link rel="appendix" href="skin.html" title="Příloha B. Formát skinů MPlayeru"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-preparing-encode" title="7.1.1. Příprava na enkódování: Určení zdrojového materiálu a datového toku"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-2pass" title="7.1.2. Pevný kvantizer vs. více průchodů"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-constraints" title="7.1.3. Omezení pro efektivní enkódování"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-crop" title="7.1.4. Ořezávání a škálování"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-resolution-bitrate" title="7.1.5. Volba rozlišení a datového toku"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-filtering" title="7.1.6. Filtrování"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-interlacing" title="7.1.7. Prokládání a Telecine"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-encoding-interlaced" title="7.1.8. Enkódování prokládaného videa"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-av-sync" title="7.1.9. Poznámky k Audio/Video synchronizaci"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-codec" title="7.1.10. Výběr video kodeku"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-audio" title="7.1.11. Zvuk"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-muxing" title="7.1.12. Muxování (multiplexování)"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.1. Vytvoření MPEG-4 ("DivX")
+ripu DVD filmu ve vysoké kvalitě</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="encoding-guide.html">Předcházející</a> </td><th width="60%" align="center">Kapitola 7. Enkódování s <span class="application">MEncoder</span>em</th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-telecine.html">Další</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-dvd-mpeg4"></a>7.1. Vytvoření MPEG-4 ("DivX")
 ripu DVD filmu ve vysoké kvalitě</h2></div></div></div><p>
 Velmi častou otázkou je "Jak mohu vytvořit rip v nejvyšší možné kvalitě pro
 danou velikost?". Další otázkou je "Jak vytvořím DVD rip v nejvyšší možné
@@ -27,7 +27,7 @@ na naší stránce odvozených projektů.
 Takto budete schopni dosahovat vysoce kvalitních ripů bez velkého přemýšlení,
 protože většina těchto nástrojů je navržena tak, aby dělala vhodná rozhodnutí
 za vás.
-</p><div class="sect2" title="7.1.1. Příprava na enkódování: Určení zdrojového materiálu a datového toku"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-preparing-encode"></a>7.1.1. Příprava na enkódování: Určení zdrojového materiálu a datového toku</h3></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-preparing-encode"></a>7.1.1. Příprava na enkódování: Určení zdrojového materiálu a datového toku</h3></div></div></div><p>
 Předtím než i jen pomyslíte na enkódování filmu, budete muset učinit
 několik přípravných kroků.
 </p><p>
@@ -48,10 +48,10 @@ zahozených snímků.
 Kromě toho, že budete mít nekvalitní obraz, artefakty rovněž snižují
 efektivitu kódování:
 Dosáhnete horší kvalitu na jednotku datového toku.
-</p><div class="sect3" title="7.1.1.1. Zjištění snímkové rychlosti zdroje"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-preparing-encode-fps"></a>7.1.1.1. Zjištění snímkové rychlosti zdroje</h4></div></div></div><p>
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-preparing-encode-fps"></a>7.1.1.1. Zjištění snímkové rychlosti zdroje</h4></div></div></div><p>
 Zde máte seznam běžných typů zdrojového materiálu, kde na který nejspíš
 narazíte a jejich volby:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>Standardní film</strong></span>: Vytvořený pro promítání
   v kině při 24fps.
 </p></li><li class="listitem"><p>
@@ -80,7 +80,7 @@ narazíte a jejich volby:
   sekundu jsou typické pro NTSC a 25 snímků za sekundu zase pro PAL.
 </p></li><li class="listitem"><p>
   <span class="bold"><strong>Starý film</strong></span>: Různé nižší snímkové rychlosti.
-</p></li></ul></div></div><div class="sect3" title="7.1.1.2. Určení zdrojového materiálu"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-preparing-encode-material"></a>7.1.1.2. Určení zdrojového materiálu</h4></div></div></div><p>
+</p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-preparing-encode-material"></a>7.1.1.2. Určení zdrojového materiálu</h4></div></div></div><p>
 Filmy sestávající ze snímků jsou nazývány progresivní,
 zatímco ty složené z nezávislých půlsnímků buď prokládané, nebo
 jen video – ačkoli druhý termín je zavádějící.
@@ -96,7 +96,7 @@ Různé metody jak toho lze dosáhnout jsou souhrnně nazývány "telecine" a
 nechvalně známé NTSC "3:2 pulldown" je jednou z variant.
 Pokud nebyl základ vašeho filmu rovněž půlsnímkový (se stejnou půlsnímkovou
 rychlostí), máte film v jiném formátu, než byl původně.
-</p><div class="itemizedlist" title="Zde je několik běžných typů pulldown:"><p class="title"><b>Zde je několik běžných typů pulldown:</b></p><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><p class="title"><b>Zde je několik běžných typů pulldown:</b></p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>PAL 2:2 pulldown</strong></span>: Je nejhezčí z nich.
   Každý snímek je zobrazován po dobu dvou půlsnímků tak, že se oddělí liché
   a sudé řádky a zobrazují se střídavě.
@@ -147,7 +147,7 @@ ve výsledném MPEG-2.
 Postupy pro tyto případy budou uvedeny
 <a class="link" href="menc-feat-telecine.html" title="7.2. Jak naložit s telecine a prokladem v NTSC DVD">později v této příručce</a>.
 Prozatím si řekneme několik návodů pro identifikaci o jaký typ materiálu jde:
-</p><div class="itemizedlist" title="NTSC regiony:"><p class="title"><b>NTSC regiony:</b></p><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><p class="title"><b>NTSC regiony:</b></p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Pokud <span class="application">MPlayer</span> při přehrávání vypíše, že se snímková
   rychlost změnila na 24000/1001 a již se to nezmění, pak se nejspíš jedná
   o progresivní obsah, který byl "soft telecinován".
@@ -168,20 +168,20 @@ Prozatím si řekneme několik návodů pro identifikaci o jaký typ materiálu 
   Pokud <span class="application">MPlayer</span> neukáže změnu snímkové rychlosti
   a dva snímky z pěti vypadají zubatě, má vaše video "hard telecinovaný"
   24000/1001fps obsah.
-</p></li></ul></div><div class="itemizedlist" title="PAL regiony:"><p class="title"><b>PAL regiony:</b></p><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p></li></ul></div><div class="itemizedlist"><p class="title"><b>PAL regiony:</b></p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Pokud není nikde vidět žádné zubatění, je váš film 2:2 pulldown.
 </p></li><li class="listitem"><p>
   Pokud vidíte jak se objevuje a mizí zubatění každou půlsekundu,
   pak je váš film 2:2:2:2:2:2:2:2:2:2:2:3 pulldown.
 </p></li><li class="listitem"><p>
   Pokud je zubatění vidět stále, je to PAL video s 50 půlsnímky za sekundu.
-</p></li></ul></div><div class="note" title="Rada:" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Rada:</h3><p>
+</p></li></ul></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Rada:</h3><p>
   <span class="application">MPlayer</span> umí spomalit přehrávání videa
   pomocí volby -speed.
   Zkuste použít <tt class="option">-speed</tt> 0.2 pro velmi pomalé přehrávání
   nebo opakovaně stiskejte klávesu "<span class="keycap"><b>.</b></span>" pro krokováníé po
   snímcích a najděte vzor, pokud jej nevidíte při plné rychlosti.
-</p></div></div></div><div class="sect2" title="7.1.2. Pevný kvantizer vs. více průchodů"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-2pass"></a>7.1.2. Pevný kvantizer vs. více průchodů</h3></div></div></div><p>
+</p></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-2pass"></a>7.1.2. Pevný kvantizer vs. více průchodů</h3></div></div></div><p>
 Enkódování vašeho videa je možné provést v široké škále kvality.
 S moderními video enkodéry a trochou předkodekové komprese
 (zmenšení a odšumování) je možné dosáhnout velmi dobré kvality v 700 MB,
@@ -200,7 +200,7 @@ datový tok budoucích scén a tak nemohou překročit požadovaný střední
 datový tok na dlouhou dobu.
 Pokročilejší režimy, jako je víceprůchodové enkódování, umí vzít v
 potaz statistiky z předchozích režimů, což odstraní výše zmíněný problém.
-</p><div class="note" title="Poznámka:" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Poznámka:</h3><p>
+</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Poznámka:</h3><p>
 Většina kodeků, které podporují ABR enkódování, podporují pouze dvouprůchodové
 enkódování, zatímco ostatní jako <code class="systemitem">x264</code>,
 <code class="systemitem">Xvid</code>
@@ -287,7 +287,7 @@ Například abyste nacpali dvouhodinový film na 702MB CD, se 60MB zvukovou
 stopou, bude muset být datový tok videa:
 <code class="systemitem">(702 - 60) * 1024 * 1024 / (120*60) * 8 / 1000
 = 740kbps (kilobitů za sekundu)</code>
-</p></div><div class="sect2" title="7.1.3. Omezení pro efektivní enkódování"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-constraints"></a>7.1.3. Omezení pro efektivní enkódování</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-constraints"></a>7.1.3. Omezení pro efektivní enkódování</h3></div></div></div><p>
 Ze samé podstaty komprese typu MPEG vyplývají určitá omezení, která byste měli
 ctít, pokud chcete maximální kvalitu.
 MPEG rozdělí video na čtverce 16x16 nazývané makrobloky, které se skládají
@@ -357,7 +357,7 @@ blízko originálu, jak je to jen možné, mohou protestovat proti tomuto ořez�
 ale pokud nehodláte enkódovat s konstantním kvantizerem, kvalita kterou
 dostanete díky ořezání znatelně převýší množství ztracených informací na
 okrajích.
-</p></div><div class="sect2" title="7.1.4. Ořezávání a škálování"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-crop"></a>7.1.4. Ořezávání a škálování</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-crop"></a>7.1.4. Ořezávání a škálování</h3></div></div></div><p>
 Připomeňme z předchozí části, že konečná velikost obrázku by měla mít
 jak šířku, tak výšku beze zbytku dělitelnou 16, čehož můžete dosáhnout
 pomocí ořezání, škálování, nebo kombinací obou.
@@ -441,7 +441,7 @@ přehrávání, kdy přehrávač použije poměr stran uložený v AVI pro zaji�
 správného rozlišení.
 Naneštěstí ne všechny přehrávače uplatňují tuto autoškálovací informaci,
 takže můžete přece jen chtít škálovat.
-</p></div><div class="sect2" title="7.1.5. Volba rozlišení a datového toku"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-resolution-bitrate"></a>7.1.5. Volba rozlišení a datového toku</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-resolution-bitrate"></a>7.1.5. Volba rozlišení a datového toku</h3></div></div></div><p>
 Pokud nebudete enkódovat v režimu konstantního kvantizeru, musíte zvolit
 velikost datového toku.
 Koncepce datového toku je velmi jednoduchá.
@@ -487,14 +487,14 @@ množstvím pohybu atd, je beznadějné vytvořit obecná doporučení pro poče
 bitů na délku diagonály (analogie bitů na pixel, avšak používá plochu obrazu).
 </p><p>
 Tolik k obtížnosti volby datového toku a rozlišení.
-</p><div class="sect3" title="7.1.5.1. Výpočet rozlišení"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-resolution-bitrate-compute"></a>7.1.5.1. Výpočet rozlišení</h4></div></div></div><p>
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-resolution-bitrate-compute"></a>7.1.5.1. Výpočet rozlišení</h4></div></div></div><p>
 Následující kroky vás provedou výpočty rozlišení výsledného filmu tak,
 abyste příliš nesnížili kvalitu videa s přihlédnutím k několika typům
 informací o zdrojovém videu.
 Nejdřív byste si měli spočítat enkódovaný poměr stran:
 <code class="systemitem">PSo = (Šo x (PSa / PRdvd )) / Vo</code>
 
-</p><div class="itemizedlist" title="kde:"><p class="title"><b>kde:</b></p><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><p class="title"><b>kde:</b></p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Šo a Vo jsou šířka a výška ořezaného videa,
 </p></li><li class="listitem"><p>
   PSa je zobrazovaný poměr stran, jež je obvykle 4/3 nebo 16/9,
@@ -545,7 +545,7 @@ Na druhou stranu je zbytečné zvyšovat CQ výš než 0.30, jelikož budete pl�
 bity za minimální zisk kvality.
 Také berte v potaz, jak jsme již řekli, že videa s nízkým rozlišením
 vyžadují vyšší CQ (v porovnání s např. DVD rozlišením), aby vypadala dobře.
-</p></div></div><div class="sect2" title="7.1.6. Filtrování"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-filtering"></a>7.1.6. Filtrování</h3></div></div></div><p>
+</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-filtering"></a>7.1.6. Filtrování</h3></div></div></div><p>
 Naučit se používat video filtry <span class="application">MEncoder</span>u je
 základem pro produkci dobrých videí.
 Veškeré úpravy videa jsou prováděny pomocí filtrů  -- ořezání, škálování,
@@ -599,7 +599,7 @@ Zvýšením parametrů pro <tt class="option">hqdn3d</tt> dále zvýší komprim
 ale pokud zvýšíte hodnoty příliš, riskujete zhoršení viditelnosti obrazu.
 Výše zmíněné hodnoty (<tt class="option">2:1:2</tt>) jsou dost konzervativní;
 měli byste si zaexperimentovat s vyššími hodnotami a zhodnotit výsledky sami.
-</p></div><div class="sect2" title="7.1.7. Prokládání a Telecine"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-interlacing"></a>7.1.7. Prokládání a Telecine</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-interlacing"></a>7.1.7. Prokládání a Telecine</h3></div></div></div><p>
 Téměř veškeré filmy jsou natáčeny při 24 snímcích/s. Jelikož NTSC má
 snímkovou rychlost 30000/1001 snímků/s, je třeba provést úpravu těchto
 24 snímků/s videí, aby měly správnou NTSC snímkovou rychlost. Tato úprava se
@@ -633,7 +633,7 @@ a naučili se jak využít různé možnosti.
 Pokud ovšem většinou ripujete pouze filmy, nejspíš se setkáváte
 s neprokládaným nebo prokládaným videem 24 snímků/s. V tom případě můžete
 použít <tt class="option">pullup</tt> filtr <tt class="option">-vf pullup,softskip</tt>.
-</p></div><div class="sect2" title="7.1.8. Enkódování prokládaného videa"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-encoding-interlaced"></a>7.1.8. Enkódování prokládaného videa</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-encoding-interlaced"></a>7.1.8. Enkódování prokládaného videa</h3></div></div></div><p>
 Pokud je film, který chcete enkódovat, prokládaný (NTSC video nebo
 PAL video), budete si muset vybrat, zda jej chcete "odproložit" nebo ne.
 Zatímco odstranění prokladu učiní váš film použitelným na progresivně
@@ -668,7 +668,7 @@ mencoder <em class="replaceable"><code>capture.avi</code></em> -mc 0 -oac lavc -
     vcodec=mpeg2video:vbitrate=6000:ilme:ildct:acodec=mp2:abitrate=224
 </pre><p>
 Povšimněte si voleb <tt class="option">ilme</tt> a <tt class="option">ildct</tt>.
-</p></div><div class="sect2" title="7.1.9. Poznámky k Audio/Video synchronizaci"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-av-sync"></a>7.1.9. Poznámky k Audio/Video synchronizaci</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-av-sync"></a>7.1.9. Poznámky k Audio/Video synchronizaci</h3></div></div></div><p>
 <span class="application">MEncoder</span>ovy audio/video synchronizační
 algoritmy byly navrženy se záměrem obnovy souborů s vadnou synchronizací.
 V některých případech však můžou působit zbytečné zahazování a duplikaci snímků
@@ -703,18 +703,18 @@ o něm vůbec zmínili!
 Existují rovněž hlášení o A/V desynchronizaci při enkódování ze stdin
 <span class="application">MEncoder</span>em.
 Nedělejte to! Vždy použijte jako zdroj soubor nebo CD/DVD/atd zařízení.
-</p></div><div class="sect2" title="7.1.10. Výběr video kodeku"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-codec"></a>7.1.10. Výběr video kodeku</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-codec"></a>7.1.10. Výběr video kodeku</h3></div></div></div><p>
 Výběr vhodného video kodeku k použití závisí na několika faktorech,
 jako je velikost, kvalita, schopnost přehrávání po síti, použitelnost nebo
 obliba, z nichž některé jsou čistě věcí osobního vkusu, jiné závisí
 na technických omezeních.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>Účinost komprimace</strong></span>:
   Jednoduše můžeme říct, že většina kodeků novější generace je vytvořena
   tak, aby dosahovala vyšší kvality a komrimace než předchozí generace.
   Proto se autoři této příručky a mnoho jiných lidí, domnívají že
   neuděláte chybu,
-  <sup>[<a name="fn-menc-feat-dvd-mpeg4-codec-cpu" href="#ftn.fn-menc-feat-dvd-mpeg4-codec-cpu" class="footnote">1</a>]</sup>
+  <a href="#ftn.fn-menc-feat-dvd-mpeg4-codec-cpu" class="footnote" name="fn-menc-feat-dvd-mpeg4-codec-cpu"><sup class="footnote">[1]</sup></a>
   když zvolíte MPEG-4 AVC kodeky, jako
   <code class="systemitem">x264</code> místo MPEG-4 ASP kodeků
   jako jsou <code class="systemitem">libavcodec</code> MPEG-4, nebo
@@ -781,11 +781,11 @@ na technických omezeních.
   enkódování a kodeky, abyste nalezli ten, který vám vyhovuje nejlépe.
   Nejlepší kodek je ten, který nejlépe
   ovládáte a který vypadá nejlépe na vaší obrazovce
-  <sup>[<a name="fn-menc-feat-dvd-mpeg4-codec-playback" href="#ftn.fn-menc-feat-dvd-mpeg4-codec-playback" class="footnote">2</a>]</sup>!
+  <a href="#ftn.fn-menc-feat-dvd-mpeg4-codec-playback" class="footnote" name="fn-menc-feat-dvd-mpeg4-codec-playback"><sup class="footnote">[2]</sup></a>!
   </p></li></ul></div><p>
 Seznam podporovaných kodeků najdete v sekci
 <a class="link" href="menc-feat-selecting-codec.html" title="6.1. Výběr kodeků a nosných formátů">výběr kodeků a nosných formátů</a>.
-</p></div><div class="sect2" title="7.1.11. Zvuk"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-audio"></a>7.1.11. Zvuk</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-audio"></a>7.1.11. Zvuk</h3></div></div></div><p>
 Zvuk je mnohem jednodušší problém k řešení: pokud prahnete po kvalitě, prostě
 jej nechte jak je.
 Dokonce i AC–3 5.1 datové proudy mají nanejvýš 448Kbitů/s a stojí za každý bit.
@@ -873,7 +873,7 @@ mít problémy s udržením audio/video synchronizace, pokud je přítomen VBR z
 jako je Vorbis.
 Nemějte obavy, v tomto dokumentu vám ukážeme, jak to lze udělat pomocí
 programů třetích stran.
-</p></div><div class="sect2" title="7.1.12. Muxování (multiplexování)"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-muxing"></a>7.1.12. Muxování (multiplexování)</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-muxing"></a>7.1.12. Muxování (multiplexování)</h3></div></div></div><p>
 Nyní, když máte své video enkódované, budete jej nejspíš chtít muxovat
 s jednou nebo více zvukovými stopami do nosného filmového formátu, jako je
 AVI, MPEG, Matroska nebo NUT.
@@ -906,7 +906,7 @@ dne lepší) a bude funkční pouze pokud jste zkompilovali
 <span class="application">MPlayer</span> s podporou pro
 <code class="systemitem">libavformat</code> (což znamená, že
 předkompilovaná binární verze nebude většinou fungovat).
-</p><div class="sect3" title="7.1.12.1. Zlepšování spolehlivosti muxování a A/V synchronizace"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-muxing-filter-issues"></a>7.1.12.1. Zlepšování spolehlivosti muxování a A/V synchronizace</h4></div></div></div><p>
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-muxing-filter-issues"></a>7.1.12.1. Zlepšování spolehlivosti muxování a A/V synchronizace</h4></div></div></div><p>
 Můžete se dostat do vážných problémů s A/V sychronizací, pokud se snažíte
 muxovat video a některé zvukové stopy, kdy bez ohledu na nastavení zpoždění
 zvuku nedosáhnete správné synchronizace.
@@ -930,7 +930,7 @@ nosnými formáty, které nejsou těsně spjaty s
 <span class="application">MEncoder</span>em, jako jsou ty, které jsou podporovány
 přes <code class="systemitem">libavformat</code>, které nemusí
 podporovat duplikaci na úrovni nosného formátu.
-</p></div><div class="sect3" title="7.1.12.2. Limitace nosného formátu AVI"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-muxing-avi-limitations"></a>7.1.12.2. Limitace nosného formátu AVI</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-muxing-avi-limitations"></a>7.1.12.2. Limitace nosného formátu AVI</h4></div></div></div><p>
 Ačkoli je to po MPEG-1 nejpodporovanější nosný formát, má AVI i jisté
 zásadní nedostatky. Snad nejviditelnější je režie.
 Na každý chunk AVI souboru je 24 bajtů ztraceno na hlavičky a index.
@@ -962,7 +962,7 @@ Nemusíte to však považovat za omezení, jestliže je
 enkódování. Nakonec je možné použít <span class="application">MEncoder</span>
 pouze pro enkódování videa a pak použít externí nástroje pro enkódování
 zvuku a namuxování do jiného nosného formátu.
-</p></div><div class="sect3" title="7.1.12.3. Muxování do nosného formátu Matroska"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-muxing-matroska"></a>7.1.12.3. Muxování do nosného formátu Matroska</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-muxing-matroska"></a>7.1.12.3. Muxování do nosného formátu Matroska</h4></div></div></div><p>
 Matroska je svobodný a otevřený standard nosného formátu, zaměřený na
 nabídku mnoha pokročilých vlastností, které starší nosné formáty, jako AVI,
 nemohou poskytnout.
@@ -996,11 +996,11 @@ Matroska, jak jsme již řekli, umí mnohem víc než to, jako více zvukových 
 (včetně doladění audio/video synchronizace), kapitoly, titulky, stříhání,
 atd...
 Detaily naleznete v dokumentaci k těmto aplikacím.
-</p></div></div><div class="footnotes"><br><hr width="100" align="left"><div class="footnote"><p><sup>[<a id="ftn.fn-menc-feat-dvd-mpeg4-codec-cpu" href="#fn-menc-feat-dvd-mpeg4-codec-cpu" class="para">1</a>] </sup>
+</p></div></div><div class="footnotes"><br><hr style="width:100; text-align:left;margin-left: 0"><div id="ftn.fn-menc-feat-dvd-mpeg4-codec-cpu" class="footnote"><p><a href="#fn-menc-feat-dvd-mpeg4-codec-cpu" class="para"><sup class="para">[1] </sup></a>
   Buďte však opartní: Dekódování MPEG-4 AVC videa v DVD
   rozlišení vyžaduje rychlý stroj (např.Pentium 4 nad 1.5GHz, nebo
   Pentium M nad 1GHz).
-  </p></div><div class="footnote"><p><sup>[<a id="ftn.fn-menc-feat-dvd-mpeg4-codec-playback" href="#fn-menc-feat-dvd-mpeg4-codec-playback" class="para">2</a>] </sup>
+  </p></div><div id="ftn.fn-menc-feat-dvd-mpeg4-codec-playback" class="footnote"><p><a href="#fn-menc-feat-dvd-mpeg4-codec-playback" class="para"><sup class="para">[2] </sup></a>
   Stejný film nemusí vypadat stejně na monitoru někoho jiného, nebo
   když je přehráván jiným dekodérem, takže si prověřujte své výtvory
   přehráváním na různých sestavách.

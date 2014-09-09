@@ -1,23 +1,23 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>3.11. Entrée TV</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Le Lecteur Vidéo"><link rel="up" href="usage.html" title="Chapitre 3. Utilisation"><link rel="prev" href="advaudio.html" title="3.10. Audio Avancé"><link rel="next" href="tv-teletext.html" title="3.12. Télétexte"><link rel="preface" href="howtoread.html" title="Comment lire cette documentation"><link rel="chapter" href="intro.html" title="Chapitre 1. Introduction"><link rel="chapter" href="install.html" title="Chapitre 2. Installation"><link rel="chapter" href="usage.html" title="Chapitre 3. Utilisation"><link rel="chapter" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="chapter" href="ports.html" title="Chapitre 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapitre 6. Utilisation basique de MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="chapter" href="faq.html" title="Chapitre 8. Foire Aux Questions"><link rel="appendix" href="bugreports.html" title="Annexe A. Comment rapporter les bogues"><link rel="appendix" href="skin.html" title="Annexe B. Format de skins MPlayer"><link rel="subsection" href="tv-input.html#tv-compilation" title="3.11.1. Compilation"><link rel="subsection" href="tv-input.html#tv-tips" title="3.11.2. Astuces d'utilisation"><link rel="subsection" href="tv-input.html#tv-examples" title="3.11.3. Exemples"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.11. Entrée TV</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="advaudio.html">Précédent</a> </td><th width="60%" align="center">Chapitre 3. Utilisation</th><td width="20%" align="right"> <a accesskey="n" href="tv-teletext.html">Suivant</a></td></tr></table><hr></div><div class="sect1" title="3.11. Entrée TV"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="tv-input"></a>3.11. Entrée TV</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>3.11. Entrée TV</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Le Lecteur Vidéo"><link rel="up" href="usage.html" title="Chapitre 3. Utilisation"><link rel="prev" href="advaudio.html" title="3.10. Audio Avancé"><link rel="next" href="tv-teletext.html" title="3.12. Télétexte"><link rel="preface" href="howtoread.html" title="Comment lire cette documentation"><link rel="chapter" href="intro.html" title="Chapitre 1. Introduction"><link rel="chapter" href="install.html" title="Chapitre 2. Installation"><link rel="chapter" href="usage.html" title="Chapitre 3. Utilisation"><link rel="chapter" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="chapter" href="ports.html" title="Chapitre 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapitre 6. Utilisation basique de MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="chapter" href="faq.html" title="Chapitre 8. Foire Aux Questions"><link rel="appendix" href="bugreports.html" title="Annexe A. Comment rapporter les bogues"><link rel="appendix" href="skin.html" title="Annexe B. Format de skins MPlayer"><link rel="subsection" href="tv-input.html#tv-compilation" title="3.11.1. Compilation"><link rel="subsection" href="tv-input.html#tv-tips" title="3.11.2. Astuces d'utilisation"><link rel="subsection" href="tv-input.html#tv-examples" title="3.11.3. Exemples"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.11. Entrée TV</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="advaudio.html">Précédent</a> </td><th width="60%" align="center">Chapitre 3. Utilisation</th><td width="20%" align="right"> <a accesskey="n" href="tv-teletext.html">Suivant</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="tv-input"></a>3.11. Entrée TV</h2></div></div></div><p>
 Cette section concerne l'activation de la <span class="bold"><strong>lecture/enregistrement
 à partir d'un tuner TV compatible V4L.</strong></span> Voir la page de man pour une
 description des options TV et des contrôles clavier.
 
-</p><div class="sect2" title="3.11.1. Compilation"><div class="titlepage"><div><div><h3 class="title"><a name="tv-compilation"></a>3.11.1. Compilation</h3></div></div></div><div class="procedure"><ol class="procedure" type="1"><li class="step" title="Étape 1"><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="tv-compilation"></a>3.11.1. Compilation</h3></div></div></div><div class="procedure"><ol class="procedure" type="1"><li class="step"><p>
   D'abord, vous devez recompiler.
   <tt class="filename">./configure</tt> autodétectera les entêtes v4l du noyau et
 l'existence des entrées <tt class="filename">/dev/video*</tt>.
 Si elles existent, le support TV sera activé
   (voir le résultat de <tt class="filename">./configure</tt>).
-  </p></li><li class="step" title="Étape 2"><p>
+  </p></li><li class="step"><p>
   Assurez-vous que votre tuner fonctionne avec d'autres logiciels TV pour
 Linux.
 Par exemple avec <span class="application">XawTV</span>.
-  </p></li></ol></div></div><div class="sect2" title="3.11.2. Astuces d'utilisation"><div class="titlepage"><div><div><h3 class="title"><a name="tv-tips"></a>3.11.2. Astuces d'utilisation</h3></div></div></div><p>
+  </p></li></ol></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="tv-tips"></a>3.11.2. Astuces d'utilisation</h3></div></div></div><p>
 La liste complète des options est disponible sur la page de man. Voici juste
 quelques astuces :
 
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
 Utilisez l'option <tt class="option">channels</tt>.
 Exemple :
 </p><pre class="screen">-tv channels=26-MTV1,23-TV2</pre><p>
@@ -115,7 +115,7 @@ Si vous avez une carte son full duplex (presque toutes les cartes décentes
 le supportent aujourd'hui), et que vous utilisez KDE, essayez d'activer
 l'option "full duplex" dans le menu des préférences du serveur de son.
 </p></li></ul></div><p>
-</p></div><div class="sect2" title="3.11.3. Exemples"><div class="titlepage"><div><div><h3 class="title"><a name="tv-examples"></a>3.11.3. Exemples</h3></div></div></div><div class="informalexample"><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="tv-examples"></a>3.11.3. Exemples</h3></div></div></div><div class="informalexample"><p>
 Sortie muette, vers AAlib :)
 </p><pre class="screen">
 mplayer -tv driver=dummy:width=640:height=480 -vo aa tv://</pre><p>

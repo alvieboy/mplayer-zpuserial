@@ -1,10 +1,10 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.2. Как работать с телесином и чересстрочной развёрткой на NTSC DVD</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="prev" href="menc-feat-dvd-mpeg4.html" title='7.1. Создание высококачественного MPEG-4 ("DivX") рипа из DVD фильма'><link rel="next" href="menc-feat-enc-libavcodec.html" title="7.3. Кодирование семейством кодеков libavcodec"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-intro" title="7.2.1. Введение"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-ident" title="7.2.2. Как распознать тип Вашего видео"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-encode" title="7.2.3. Как кодировать каждую категорию"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-footnotes" title="7.2.4. Примечания"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.2. Как работать с телесином и чересстрочной развёрткой на NTSC DVD</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-dvd-mpeg4.html">Пред.</a> </td><th width="60%" align="center">Глава 7. Кодирование с <span class="application">MEncoder</span></th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-enc-libavcodec.html">След.</a></td></tr></table><hr></div><div class="sect1" title="7.2. Как работать с телесином и чересстрочной развёрткой на NTSC DVD"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-telecine"></a>7.2. Как работать с телесином и чересстрочной развёрткой на NTSC DVD</h2></div></div></div><div class="sect2" title="7.2.1. Введение"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-intro"></a>7.2.1. Введение</h3></div></div></div><p title="Что такое телесин?"><b>Что такое телесин? </b>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.2. Как работать с телесином и чересстрочной развёрткой на NTSC DVD</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="prev" href="menc-feat-dvd-mpeg4.html" title='7.1. Создание высококачественного MPEG-4 ("DivX") рипа из DVD фильма'><link rel="next" href="menc-feat-enc-libavcodec.html" title="7.3. Кодирование семейством кодеков libavcodec"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-intro" title="7.2.1. Введение"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-ident" title="7.2.2. Как распознать тип Вашего видео"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-encode" title="7.2.3. Как кодировать каждую категорию"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-footnotes" title="7.2.4. Примечания"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.2. Как работать с телесином и чересстрочной развёрткой на NTSC DVD</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-dvd-mpeg4.html">Пред.</a> </td><th width="60%" align="center">Глава 7. Кодирование с <span class="application">MEncoder</span></th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-enc-libavcodec.html">След.</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-telecine"></a>7.2. Как работать с телесином и чересстрочной развёрткой на NTSC DVD</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-intro"></a>7.2.1. Введение</h3></div></div></div><p><b>Что такое телесин? </b>
 Если Вы не понимаете многое из того, что здесь написано,
 прочтите
 <a class="ulink" href="http://en.wikipedia.org/wiki/Telecine" target="_top">статью Википедии о телесине</a>.
 Это понятное и разумно обширное описание того, что такое
 телесин.
-</p><p title="Замечание о числах."><b>Замечание о числах. </b>
+</p><p><b>Замечание о числах. </b>
 Многие документы, включая указанную выше статью, ссылаются
 на количество полей в секунду 59.94 для NTSC видео и
 соответствующие кадровые частоты 29.97 (для подверженного
@@ -30,7 +30,7 @@
 </p><p>
 <tt class="option">-ofps 23.976</tt> — неправильно.
 Взамен нужно использовать <tt class="option">-ofps 24000/1001</tt>.
-</p><p title="Как используется телесин."><b>Как используется телесин. </b>
+</p><p><b>Как используется телесин. </b>
 Всё видео, предназначенное для просмотра на NTSC телевидении
 должно быть с 60000/1001 полями в секунду. Фильмы, сделанные
 для показа на TV часто снимаются непосредственно при 60000/1001
@@ -64,7 +64,7 @@ DVD плееры читают флаг, включенный в видеопот
 выглядит скверно по двум причинам: монитор обладает более высоким
 разрешением и видео показывается покадрово, вместо отображения по
 полям.
-</p><div class="itemizedlist" title="Замечания:"><p class="title"><b>Замечания:</b></p><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><p class="title"><b>Замечания:</b></p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
 Этот раздел применим только к NTSC DVD, а не к PAL.
 </p></li><li class="listitem"><p>
 Примеры командных строк <span class="application">MEncoder</span>
@@ -82,7 +82,7 @@ DVD плееры читают флаг, включенный в видеопот
 Есть несколько сносок, специфичных для данного руководства,
 обозначенных следующим образом:
   <a class="link" href="menc-feat-telecine.html#menc-feat-telecine-footnotes" title="7.2.4. Примечания">[1]</a>
-</p></li></ul></div></div><div class="sect2" title="7.2.2. Как распознать тип Вашего видео"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-ident"></a>7.2.2. Как распознать тип Вашего видео</h3></div></div></div><div class="sect3" title="7.2.2.1. Построчная развёртка"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-progressive"></a>7.2.2.1. Построчная развёртка</h4></div></div></div><p>
+</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-ident"></a>7.2.2. Как распознать тип Вашего видео</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-progressive"></a>7.2.2.1. Построчная развёртка</h4></div></div></div><p>
 Видео с построчной развёрткой изначально записывается на
 24000/1001 fps и сохраняется на DVD без чередования.
 </p><p>
@@ -120,7 +120,7 @@ DVD плееры читают флаг, включенный в видеопот
 Иногда видео на DVD с построчной развёрткой называют
 "мягким телесином", поскольку предполагается, что
 телесин будет выполнен DVD плеером.
-</p></div><div class="sect3" title="7.2.2.2. Телесин"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-telecined"></a>7.2.2.2. Телесин</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-telecined"></a>7.2.2.2. Телесин</h4></div></div></div><p>
 Телесиненное видео изначально снимается на 24000/1001 кадр/сек,
 но подвергается телесину <span class="emphasis"><em>до</em></span> записи на DVD.
 </p><p>
@@ -164,7 +164,7 @@ DVD плееры читают флаг, включенный в видеопот
 материал для его идентификации, это может быть полезно для автоматизации
 процедуры кодирования или выполнения вышеуказанной процедуры удаленно через
 медленное соединение.
-</p></div><div class="sect3" title="7.2.2.3. Чересстрочная развертка"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-interlaced"></a>7.2.2.3. Чересстрочная развертка</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-interlaced"></a>7.2.2.3. Чересстрочная развертка</h4></div></div></div><p>
 Чересстрочное видео изначально снималось на 60000/1001 полями в секунду,
 и сохранялось на DVD с 30000/1001 кадрами в секунду. Эффект чересстрочности
 (часто называемый "гребёнкой") — результат объединения пары полей в кадры.
@@ -177,7 +177,7 @@ DVD плееры читают флаг, включенный в видеопот
 </p><p>
 Внимательно, кадр за кадром (при помощи клавиши <span class="keycap"><b>.</b></span>) рассматривая
 чересстрочное видео, Вы увидите, что каждый отдельный кадр — чересстрочный.
-</p></div><div class="sect3" title="7.2.2.4. Смешанные построчная развертка и телесин"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-mixedpt"></a>7.2.2.4. Смешанные построчная развертка и телесин</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-mixedpt"></a>7.2.2.4. Смешанные построчная развертка и телесин</h4></div></div></div><p>
 Все видео со "смешанными построчной разверткой и телесином" изначально было с
 24000/1001 кадрами в секунду, но некоторые его части оказались подвержены
 телесину.
@@ -191,19 +191,19 @@ DVD плееры читают флаг, включенный в видеопот
 Вам следует проверить разделы с "30000/1001 кадров/сек NTSC содержимым",
 чтобы убедиться, что видео действительно телесиненное, а не просто
 чересстрочное.
-</p></div><div class="sect3" title="7.2.2.5. Смешанные построчная и чересстрочная развертки"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-mixedpi"></a>7.2.2.5. Смешанные построчная и чересстрочная развертки</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-mixedpi"></a>7.2.2.5. Смешанные построчная и чересстрочная развертки</h4></div></div></div><p>
 В содержимом со "смешанными построчной и чересстрочной развертками",
 построчное и чересстрочное видео переплетаются друг с другом.
 </p><p>
 Эта категория выглядит также, как и "смешанные построчная развертка и телесин",
 до тех пор, пока не проверите разделы 30000/1001 кадр/сек и не увидите,
 что структура телесина отсутствует.
-</p></div></div><div class="sect2" title="7.2.3. Как кодировать каждую категорию"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-encode"></a>7.2.3. Как кодировать каждую категорию</h3></div></div></div><p>
+</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-encode"></a>7.2.3. Как кодировать каждую категорию</h3></div></div></div><p>
 Как уже было сказано выше, последующие примеры командных строк
 <span class="application">MEncoder</span> <span class="bold"><strong>не</strong></span> означают,
 что надо использовать именно их; они всего лишь примеры минимального набора параметров
 для правильного кодирования каждой категории.
-</p><div class="sect3" title="7.2.3.1. Построчная развертка"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-progressive"></a>7.2.3.1. Построчная развертка</h4></div></div></div><p>
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-progressive"></a>7.2.3.1. Построчная развертка</h4></div></div></div><p>
 Видео с построчной разверткой не требует специальной обработки для кодирования.
 Единственный нужный Вам для уверенности параметр — это
 <tt class="option">-ofps 24000/1001</tt>.
@@ -218,14 +218,14 @@ DVD плееры читают флаг, включенный в видеопот
 <a class="link" href="menc-feat-telecine.html#menc-feat-telecine-encode-mixedpt" title="7.2.3.4. Смешанные построчная развертка и телесин">смешанными построчной
 разверткой телесином</a>.
 Потеря скорости невелика<a class="link" href="menc-feat-telecine.html#menc-feat-telecine-footnotes" title="7.2.4. Примечания">[3]</a>.
-</p></div><div class="sect3" title="7.2.3.2. Телесин"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-telecined"></a>7.2.3.2. Телесин</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-telecined"></a>7.2.3.2. Телесин</h4></div></div></div><p>
 Телесин может быть обращён для получения оригинального 24000/1001 содержимого
 при помощи процесса, называемого обратный телесин.
 <span class="application">MPlayer</span> содержит несколько фильтров для выполнения
 этого; лучший из них, <tt class="option">pullup</tt> описан в разделе
 <a class="link" href="menc-feat-telecine.html#menc-feat-telecine-encode-mixedpt" title="7.2.3.4. Смешанные построчная развертка и телесин">смешанные построчная развертка
 и телесин</a>.
-</p></div><div class="sect3" title="7.2.3.3. Чересстрочная развертка"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-interlaced"></a>7.2.3.3. Чересстрочная развертка</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-interlaced"></a>7.2.3.3. Чересстрочная развертка</h4></div></div></div><p>
 На практике в большинстве случаев невозможно получить полностью построчное
 видео из чересстрочного содержимого.
 Единственный способ сделать это без потери половины вертикального разрешения
@@ -293,7 +293,7 @@ mencoder dvd://1 -oac copy -vf tfields=2 -ovc lavc \
   соответствующим образом. Помните, что потребуется скорректировать масштабирование
   для компенсации уменьшенного вдвое вертикального разрешения.
   </p><pre class="screen">mencoder dvd://1 -oac copy -vf field=0 -ovc lavc</pre><p>
-</p></li></ol></div></div><div class="sect3" title="7.2.3.4. Смешанные построчная развертка и телесин"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-mixedpt"></a>7.2.3.4. Смешанные построчная развертка и телесин</h4></div></div></div><p>
+</p></li></ol></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-mixedpt"></a>7.2.3.4. Смешанные построчная развертка и телесин</h4></div></div></div><p>
 Для преобразования видео со смешанными построчной разверткой и телесином в
 полностью построчное необходимо к подверженным телесину частям применить
 обратный телесин. Есть три описанных ниже способа добиться этого.
@@ -303,7 +303,7 @@ mencoder dvd://1 -oac copy -vf tfields=2 -ovc lavc \
 <a class="link" href="menc-feat-telecine.html#menc-feat-telecine-footnotes" title="7.2.4. Примечания">[1]</a>.
 <tt class="option">-ofps 24000/1001</tt> здесь необходима, поскольку видео на выходе
 будет с 24000/1001 кадрами в секунду.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <tt class="option">-vf pullup</tt> разработана для обратного телесина материала,
   телесину подверженного, оставляя построчные данные как есть. Для правильной
   работы после <tt class="option">pullup</tt> <span class="bold"><strong>должен</strong></span>
@@ -341,10 +341,10 @@ mencoder dvd://1 -oac copy -vf filmdint -ovc lavc -ofps 24000/1001</pre><p>
   </p><pre class="screen">
 mencoder dvd://1 -oac copy -vf softpulldown,ivtc=1 -ovc lavc -ofps 24000/1001
   </pre><p>
-</p></li></ul></div></div><div class="sect3" title="7.2.3.5. Смешанные построчная и чересстрочная развертки"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-mixedpi"></a>7.2.3.5. Смешанные построчная и чересстрочная развертки</h4></div></div></div><p>
+</p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-mixedpi"></a>7.2.3.5. Смешанные построчная и чересстрочная развертки</h4></div></div></div><p>
 Существует две опции для этой категории, каждая из которых — это компромисс. Вы
 должны выбрать, исходя из продолжительности/положения каждого типа.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Рассматривайте видео как построчное. Чересстрочные части будут выглядеть
   чересстрочными, и потребуется удаление некоторых из чересстрочных полей, что
   даст в результате некоторое скачкообразное дрожание. Вы можете использовать
@@ -379,7 +379,7 @@ mencoder dvd://1 -oac copy -vf softpulldown,ivtc=1 -ovc lavc -ofps 24000/1001
   Считайте его чересстрочным. Некоторые кадры построчной части потребуют
   дублирования, что даст в результате некоторое скачкообразное дрожание. И
   снова, фильтры деинтерлейсинга могут несколько ухудшить построчные части.
-</p></li></ul></div></div></div><div class="sect2" title="7.2.4. Примечания"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-footnotes"></a>7.2.4. Примечания</h3></div></div></div><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p title="Об усечении сторон:"><b>Об усечении сторон: </b>
+</p></li></ul></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-footnotes"></a>7.2.4. Примечания</h3></div></div></div><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p><b>Об усечении сторон: </b>
   Видеоданные на DVD хранятся в формате, называемом YUV 4:2:0. В YUV
   видео, люма ("яркость") и хрома ("цвет") хранятся отдельно.
   Поскольку человеческий глаз отчасти менее чувствителен к цвету, чем к яркости,
@@ -413,7 +413,7 @@ mencoder dvd://1 -oac copy -vf softpulldown,ivtc=1 -ovc lavc -ofps 24000/1001
   Для чересстрочного (не подверженного телесину) видео, Вы всегда должны
   производить усечение с вертикальными размерностями, кратными четырем, если
   только не используете <tt class="option">-vf field</tt> перед усечением.
-  </p></li><li class="listitem"><p title="О параметрах кодирования и качестве:"><b>О параметрах кодирования и качестве: </b>
+  </p></li><li class="listitem"><p><b>О параметрах кодирования и качестве: </b>
   Если я здесь рекомендую <tt class="option">mbd=2</tt>, это еще не значит, что эту
   опцию не следует использовать где-либо еще. Совместно с <tt class="option">trell</tt>,
   <tt class="option">mbd=2</tt> является одной из двух опций
@@ -424,7 +424,7 @@ mencoder dvd://1 -oac copy -vf softpulldown,ivtc=1 -ovc lavc -ofps 24000/1001
   <code class="systemitem">libavcodec</code> опций, улучшающих качество
   (и замедляющих кодирование), но их описание выходит за рамки этого
   документа.
-  </p></li><li class="listitem"><p title="О производительности pullup:"><b>О производительности pullup: </b>
+  </p></li><li class="listitem"><p><b>О производительности pullup: </b>
   Использование <tt class="option">pullup</tt> (совместно с <tt class="option">softskip</tt>)
   для видео с построчной развёрткой вполне безопасно и обычно является хорошей
   идеей, если только про источник не известно достоверно, что он полностью

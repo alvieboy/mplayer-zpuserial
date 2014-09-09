@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>3.7. Přehrávání VCD</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Multimediální přehrávač"><link rel="up" href="usage.html" title="Kapitola 3. Použití"><link rel="prev" href="dvd.html" title="3.6. Přehrávání DVD"><link rel="next" href="edl.html" title="3.8. Seznamy editačních zásahů (EDL)"><link rel="preface" href="howtoread.html" title="Jak číst tuto dokumentaci"><link rel="chapter" href="intro.html" title="Kapitola 1. Představení"><link rel="chapter" href="install.html" title="Kapitola 2. Instalace"><link rel="chapter" href="usage.html" title="Kapitola 3. Použití"><link rel="chapter" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="chapter" href="ports.html" title="Kapitola 5. Porty"><link rel="chapter" href="mencoder.html" title="Kapitola 6. Základní použití MEncoderu"><link rel="chapter" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="chapter" href="faq.html" title="Kapitola 8. Často Kladené Dotazy (FAQ)"><link rel="appendix" href="bugreports.html" title="Příloha A. Jak hlásit chyby"><link rel="appendix" href="skin.html" title="Příloha B. Formát skinů MPlayeru"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.7. Přehrávání VCD</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="dvd.html">Předcházející</a> </td><th width="60%" align="center">Kapitola 3. Použití</th><td width="20%" align="right"> <a accesskey="n" href="edl.html">Další</a></td></tr></table><hr></div><div class="sect1" title="3.7. Přehrávání VCD"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="vcd"></a>3.7. Přehrávání VCD</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>3.7. Přehrávání VCD</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Multimediální přehrávač"><link rel="up" href="usage.html" title="Kapitola 3. Použití"><link rel="prev" href="dvd.html" title="3.6. Přehrávání DVD"><link rel="next" href="edl.html" title="3.8. Seznamy editačních zásahů (EDL)"><link rel="preface" href="howtoread.html" title="Jak číst tuto dokumentaci"><link rel="chapter" href="intro.html" title="Kapitola 1. Představení"><link rel="chapter" href="install.html" title="Kapitola 2. Instalace"><link rel="chapter" href="usage.html" title="Kapitola 3. Použití"><link rel="chapter" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="chapter" href="ports.html" title="Kapitola 5. Porty"><link rel="chapter" href="mencoder.html" title="Kapitola 6. Základní použití MEncoderu"><link rel="chapter" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="chapter" href="faq.html" title="Kapitola 8. Často Kladené Dotazy (FAQ)"><link rel="appendix" href="bugreports.html" title="Příloha A. Jak hlásit chyby"><link rel="appendix" href="skin.html" title="Příloha B. Formát skinů MPlayeru"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.7. Přehrávání VCD</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="dvd.html">Předcházející</a> </td><th width="60%" align="center">Kapitola 3. Použití</th><td width="20%" align="right"> <a accesskey="n" href="edl.html">Další</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="vcd"></a>3.7. Přehrávání VCD</h2></div></div></div><p>
 Úplný seznam dostupných voleb naleznete v man stránce. Syntaxe pro standardní
 Video CD (VCD) je následující:
 </p><pre class="screen">mplayer vcd://<em class="replaceable"><code>&lt;stopa&gt;</code></em> [-cdrom-device <em class="replaceable"><code>&lt;zařízení&gt;</code></em>]</pre><p>
@@ -7,7 +7,7 @@ Příklad:
 Výchozím VCD zařízením je <tt class="filename">/dev/cdrom</tt>. Pokud se vaše nastavení
 liší, vytvořte symlink nebo uveďte správné zařízení na příkazovém řádku pomocí volby
 <tt class="option">-cdrom-device</tt>.
-</p><div class="note" title="Poznámka" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Poznámka</h3><p>
+</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Poznámka</h3><p>
 Minimálně SCSI CD-ROM mechaniky Plextor a Toshiba vykazují mizerný výkon
 při čtení VCD. To proto, že CDROMREADRAW <code class="systemitem">ioctl</code>
 není pro tyto mechaniky plně implementováno. Pokud máte zkušenosti se
@@ -18,10 +18,10 @@ implementovat obecnou SCSI podporu pro VCD.
 Mezitím můžete extrahovat data z VCD pomocí
 <a class="ulink" href="http://ftp.ntut.edu.tw/ftp/OS/Linux/packages/X/viewers/readvcd/" target="_top">readvcd</a>
 a výsledný soubor přehrát v <span class="application">MPlayer</span>u.
-</p><p title="Struktura VCD"><b>Struktura VCD. </b>
+</p><p><b>Struktura VCD. </b>
 Video CD (VCD) je tvořeno CD-ROM XA sektory, čili stopy CD-ROM mode 2
 třída 1 a 2:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   První stopa je ve formátu mode 2 třída 2 což znamená, že používá L2
   korekci chyb. Stopa obsahuje souborový systém ISO-9660 s 2048
   bajty/sektor. Tento souborový systém obsahuje VCD metadata informace,
@@ -50,8 +50,8 @@ třída 1 a 2:
   Philips „White Book“ a není obecně přístupná online, ale musí být zakoupena
   od Philipsu. Podrobnější informace o Video CD můžete nalézt
   <a class="ulink" href="http://www.vcdimager.org/pub/vcdimager/manuals/0.7/vcdimager.html#SEC4" target="_top">v dokumentaci programu vcdimager</a>.
-</p></li></ul></div><p title="Struktura VCD">
-</p><p title="Pár slov o .DAT souborech"><b>Pár slov o .DAT souborech. </b>
+</p></li></ul></div><p>
+</p><p><b>Pár slov o .DAT souborech. </b>
 Soubor veliký ~600 MB viditelný v první stopě připojeného VCD není
 skutečným souborem! Je to takzvaná ISO gateway, vytvořená proto,
 aby mohl Windows přistupovat k těmto stopám (Windows vůbec neumožňuje

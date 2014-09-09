@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>3.7. VCD-Wiedergabe</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Movie Player"><link rel="up" href="usage.html" title="Kapitel 3. Gebrauch"><link rel="prev" href="dvd.html" title="3.6. DVD-Wiedergabe"><link rel="next" href="edl.html" title="3.8. Edit Decision Lists (EDL)"><link rel="preface" href="howtoread.html" title="Wie diese Dokumentation gelesen werden soll"><link rel="chapter" href="intro.html" title="Kapitel 1. Einführung"><link rel="chapter" href="install.html" title="Kapitel 2. Installation"><link rel="chapter" href="usage.html" title="Kapitel 3. Gebrauch"><link rel="chapter" href="video.html" title="Kapitel 4. Videoausgabegeräte"><link rel="chapter" href="ports.html" title="Kapitel 5. Portierungen"><link rel="chapter" href="mencoder.html" title="Kapitel 6. Allgemeiner Gebrauch von MEncoder"><link rel="chapter" href="encoding-guide.html" title="Kapitel 7. Encodieren mit MEncoder"><link rel="chapter" href="faq.html" title="Kapitel 8. Häufig gestellte Fragen"><link rel="appendix" href="bugreports.html" title="Anhang A. Wie Fehler (Bugs) berichtet werden"><link rel="appendix" href="skin.html" title="Anhang B. MPlayers Skinformat"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.7. VCD-Wiedergabe</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="dvd.html">Zurück</a> </td><th width="60%" align="center">Kapitel 3. Gebrauch</th><td width="20%" align="right"> <a accesskey="n" href="edl.html">Weiter</a></td></tr></table><hr></div><div class="sect1" title="3.7. VCD-Wiedergabe"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="vcd"></a>3.7. VCD-Wiedergabe</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>3.7. VCD-Wiedergabe</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Movie Player"><link rel="up" href="usage.html" title="Kapitel 3. Gebrauch"><link rel="prev" href="dvd.html" title="3.6. DVD-Wiedergabe"><link rel="next" href="edl.html" title="3.8. Edit Decision Lists (EDL)"><link rel="preface" href="howtoread.html" title="Wie diese Dokumentation gelesen werden soll"><link rel="chapter" href="intro.html" title="Kapitel 1. Einführung"><link rel="chapter" href="install.html" title="Kapitel 2. Installation"><link rel="chapter" href="usage.html" title="Kapitel 3. Gebrauch"><link rel="chapter" href="video.html" title="Kapitel 4. Videoausgabegeräte"><link rel="chapter" href="ports.html" title="Kapitel 5. Portierungen"><link rel="chapter" href="mencoder.html" title="Kapitel 6. Allgemeiner Gebrauch von MEncoder"><link rel="chapter" href="encoding-guide.html" title="Kapitel 7. Encodieren mit MEncoder"><link rel="chapter" href="faq.html" title="Kapitel 8. Häufig gestellte Fragen"><link rel="appendix" href="bugreports.html" title="Anhang A. Wie Fehler (Bugs) berichtet werden"><link rel="appendix" href="skin.html" title="Anhang B. MPlayers Skinformat"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.7. VCD-Wiedergabe</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="dvd.html">Zurück</a> </td><th width="60%" align="center">Kapitel 3. Gebrauch</th><td width="20%" align="right"> <a accesskey="n" href="edl.html">Weiter</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="vcd"></a>3.7. VCD-Wiedergabe</h2></div></div></div><p>
 Für eine komplette Liste an verfügbaren Optionen lies bitte die
 Manpage. Die Syntax für eine Standard Video CD (VCS) lautet wie folgt:
 </p><pre class="screen">mplayer vcd://<em class="replaceable"><code>&lt;Track&gt;</code></em> [-cdrom-device <em class="replaceable"><code>&lt;Gerät&gt;</code></em>]</pre><p>
@@ -7,7 +7,7 @@ Beispiel:
 Das Standard-VCD-Gerät ist <tt class="filename">/dev/cdrom</tt>. Wenn deine
 Installation davon abweicht, erstelle einen Symlink oder gib das genaue Gerät auf
 der Kommandozeile an mit der Option <tt class="option">-cdrom-device</tt>.
-</p><div class="note" title="Anmerkung" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Anmerkung</h3><p>
+</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Anmerkung</h3><p>
 
 Mindenstens Plextor und einige SCSI-CD-ROM-Laufwerke von Toshiba haben eine
 schreckliche VCD-Leseleistung. Das liegt daran, daß der
@@ -20,10 +20,10 @@ Inzwischen kannst du die Daten von VCDs mit
 <a class="ulink" href="http://ftp.ntut.edu.tw/ftp/OS/Linux/packages/X/viewers/readvcd/" target="_top">readvcd</a>
 extrahieren und die ausgegebene Datei mit <span class="application">MPlayer</span>
 abspielen.
-</p><p title="VCD-Struktur"><b>VCD-Struktur. </b>
+</p><p><b>VCD-Struktur. </b>
 Eine Video CD (VCD) besteht aus CD-ROM XA Sektoren, z.B. CD-ROM Mode 2
 Form 1 und 2 Tracks:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
 Der erste Track ist im Format Mode 2 Form 2, was bedeutet, dass es
 L2-Fehlerkorrektur benutzt. Der Track enthält ein ISO-9660 Dateisystem
 mit 2048 Bytes/Sektor. Das Dateisystem enthält VCD Metadata-Informationen
@@ -52,7 +52,7 @@ Die Definition des Video-CD-Standards wird Philips "White Book" genannt und ist
 im Allgemeinen nicht online verfügbar, da es von Philips käuflich erworben werden
 muss. Detailliertere Informationen über Video-CDs befindet sich in der
 <a class="ulink" href="http://www.vcdimager.org/pub/vcdimager/manuals/0.7/vcdimager.html#SEC4" target="_top">vcdimager- Documentation</a>.
-</p></li></ul></div><p title=".DAT Dateien"><b>.DAT Dateien. </b>
+</p></li></ul></div><p><b>.DAT Dateien. </b>
 Die ~600 MB Datei, die auf dem ersten Track einer gemounteten VCD sichtbar
 ist, ist keine richtige Datei! Es ist ein sogenanntes ISO-Gateway, geschaffen,
 um Windows den Zugriff auf solche Tracks zu geben (Windows erlaubt überhaupt

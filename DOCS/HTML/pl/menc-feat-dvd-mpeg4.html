@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.1. Rippowanie DVD do wysokiej jakości pliku MPEG-4 ("DivX")</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Odtwarzacz filmów"><link rel="up" href="encoding-guide.html" title="Rozdział 7. Kodowanie przy użyciu MEncodera"><link rel="prev" href="encoding-guide.html" title="Rozdział 7. Kodowanie przy użyciu MEncodera"><link rel="next" href="menc-feat-telecine.html" title="7.2. How to deal with telecine and interlacing within NTSC DVDs"><link rel="preface" href="howtoread.html" title="Jak czytać tę dokumentację"><link rel="chapter" href="intro.html" title="Rozdział 1. Wprowadzenie"><link rel="chapter" href="install.html" title="Rozdział 2. Instalacja"><link rel="chapter" href="usage.html" title="Rozdział 3. Sposób użycia"><link rel="chapter" href="video.html" title="Rozdział 4. Urządzenia wyjścia video"><link rel="chapter" href="ports.html" title="Rozdział 5. Porty"><link rel="chapter" href="mencoder.html" title="Rozdział 6. Podstawy używania MEncodera"><link rel="chapter" href="encoding-guide.html" title="Rozdział 7. Kodowanie przy użyciu MEncodera"><link rel="chapter" href="faq.html" title="Rozdział 8. FAQ - Często Zadawane Pytania"><link rel="appendix" href="bugreports.html" title="Dodatek A. Jak zgłaszać błędy"><link rel="appendix" href="skin.html" title="Dodatek B. Format skórki MPlayera"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-preparing-encode" title="7.1.1. Przygotowanie do kodowania: Identyfikowanie materiału źródłowego i framerate"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-2pass" title="7.1.2. Stały kwantyzator a tryb wieloprzebiegowy"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-constraints" title="7.1.3. Ograniczenia efektywnego kodowania"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-crop" title="7.1.4. Kadrowanie i skalowanie"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-resolution-bitrate" title="7.1.5. Dobieranie rozdzielczości i bitrate"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-filtering" title="7.1.6. Filtrowanie"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-interlacing" title="7.1.7. Przeplot i telecine"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-encoding-interlaced" title="7.1.8. Encoding interlaced video"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-av-sync" title="7.1.9. Notes on Audio/Video synchronization"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-codec" title="7.1.10. Choosing the video codec"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-audio" title="7.1.11. Audio"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-muxing" title="7.1.12. Muxing"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.1. Rippowanie DVD do wysokiej jakości pliku MPEG-4 ("DivX")</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="encoding-guide.html">Poprzedni</a> </td><th width="60%" align="center">Rozdział 7. Kodowanie przy użyciu <span class="application">MEncodera</span></th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-telecine.html">Następny</a></td></tr></table><hr></div><div class="sect1" title='7.1. Rippowanie DVD do wysokiej jakości pliku MPEG-4 ("DivX")'><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-dvd-mpeg4"></a>7.1. Rippowanie DVD do wysokiej jakości pliku MPEG-4 ("DivX")</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.1. Rippowanie DVD do wysokiej jakości pliku MPEG-4 ("DivX")</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Odtwarzacz filmów"><link rel="up" href="encoding-guide.html" title="Rozdział 7. Kodowanie przy użyciu MEncodera"><link rel="prev" href="encoding-guide.html" title="Rozdział 7. Kodowanie przy użyciu MEncodera"><link rel="next" href="menc-feat-telecine.html" title="7.2. How to deal with telecine and interlacing within NTSC DVDs"><link rel="preface" href="howtoread.html" title="Jak czytać tę dokumentację"><link rel="chapter" href="intro.html" title="Rozdział 1. Wprowadzenie"><link rel="chapter" href="install.html" title="Rozdział 2. Instalacja"><link rel="chapter" href="usage.html" title="Rozdział 3. Sposób użycia"><link rel="chapter" href="video.html" title="Rozdział 4. Urządzenia wyjścia video"><link rel="chapter" href="ports.html" title="Rozdział 5. Porty"><link rel="chapter" href="mencoder.html" title="Rozdział 6. Podstawy używania MEncodera"><link rel="chapter" href="encoding-guide.html" title="Rozdział 7. Kodowanie przy użyciu MEncodera"><link rel="chapter" href="faq.html" title="Rozdział 8. FAQ - Często Zadawane Pytania"><link rel="appendix" href="bugreports.html" title="Dodatek A. Jak zgłaszać błędy"><link rel="appendix" href="skin.html" title="Dodatek B. Format skórki MPlayera"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-preparing-encode" title="7.1.1. Przygotowanie do kodowania: Identyfikowanie materiału źródłowego i framerate"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-2pass" title="7.1.2. Stały kwantyzator a tryb wieloprzebiegowy"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-constraints" title="7.1.3. Ograniczenia efektywnego kodowania"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-crop" title="7.1.4. Kadrowanie i skalowanie"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-resolution-bitrate" title="7.1.5. Dobieranie rozdzielczości i bitrate"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-filtering" title="7.1.6. Filtrowanie"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-interlacing" title="7.1.7. Przeplot i telecine"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-encoding-interlaced" title="7.1.8. Encoding interlaced video"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-av-sync" title="7.1.9. Notes on Audio/Video synchronization"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-codec" title="7.1.10. Choosing the video codec"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-audio" title="7.1.11. Audio"><link rel="subsection" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-muxing" title="7.1.12. Muxing"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.1. Rippowanie DVD do wysokiej jakości pliku MPEG-4 ("DivX")</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="encoding-guide.html">Poprzedni</a> </td><th width="60%" align="center">Rozdział 7. Kodowanie przy użyciu <span class="application">MEncodera</span></th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-telecine.html">Następny</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-dvd-mpeg4"></a>7.1. Rippowanie DVD do wysokiej jakości pliku MPEG-4 ("DivX")</h2></div></div></div><p>
   Jednym z często zadawanych pytań jest "Jak zrobić rip najlepszej jakości
   przy danej objętości?". Innym pytaniem jest "Jak zrobić najlepszy możliwy
   rip? Nie ważne jaka będzie objętość, chcę najlepszej jakości."
@@ -26,7 +26,7 @@
   W ten sposób, powinno się udać otrzymać ripy wysokiej jakości bez zbyt
   myślenia za dużo, ponieważ te narzędzia są projektowane by podejmować za
   Ciebie mądre decyzje.
-</p><div class="sect2" title="7.1.1. Przygotowanie do kodowania: Identyfikowanie materiału źródłowego i framerate"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-preparing-encode"></a>7.1.1. Przygotowanie do kodowania: Identyfikowanie materiału źródłowego
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-preparing-encode"></a>7.1.1. Przygotowanie do kodowania: Identyfikowanie materiału źródłowego
 i framerate</h3></div></div></div><p>
   Zanim w ogóle zaczniesz myśleć o kodowaniu filmu, musisz przejść kilka
   wstępnych kroków.
@@ -46,10 +46,10 @@ i framerate</h3></div></div></div><p>
   brzydkie artefakty przeplotu i powtórzone albo zagubione klatki.
   Poza tym że są brzydkie, artefakty są też szkodliwe dla kodowania:
   Dostaniesz gorszą jakość na jednostkę bitrate.
-</p><div class="sect3" title="7.1.1.1. Ustalanie źródłowego framerate"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-preparing-encode-fps"></a>7.1.1.1. Ustalanie źródłowego framerate</h4></div></div></div><p>
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-preparing-encode-fps"></a>7.1.1.1. Ustalanie źródłowego framerate</h4></div></div></div><p>
   Poniżej jest lista popularnych typów materiału źródłowego, gdzie można je
   najczęściej znaleźć i ich własności:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>Typowy film</strong></span>: Tworzony do wyświetlania przy
   24fps.
 </p></li><li class="listitem"><p>
@@ -77,7 +77,7 @@ i framerate</h3></div></div></div><p>
   sekundę są typowe dla NTSC, a 25fps jest typowe dla PAL.
 </p></li><li class="listitem"><p>
   <span class="bold"><strong>Stary film</strong></span>: Rozmaite niższe framerate.
-</p></li></ul></div></div><div class="sect3" title="7.1.1.2. Identyfikowanie materiału źródłowego"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-preparing-encode-material"></a>7.1.1.2. Identyfikowanie materiału źródłowego</h4></div></div></div><p>
+</p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-preparing-encode-material"></a>7.1.1.2. Identyfikowanie materiału źródłowego</h4></div></div></div><p>
   Filmy składające się z klatek nazywa się progresywnymi,
   podczas gdy te składające się z niezależnych pól nazywa się
   z przeplotem, albo filmem - chociaż ten drugi termin jest niejasny.
@@ -92,7 +92,7 @@ i framerate</h3></div></div></div><p>
   a niesławne "3:2 pulldown" z NTSC jest jednym z jego rodzajów.
   Jeżeli oryginał nie był też oparty na polach (z tą samą prędkością),
   dostajesz film w innym formacie niż oryginał.
-</p><div class="itemizedlist" title="Jest kilka popularnych typów pulldown:"><p class="title"><b>Jest kilka popularnych typów pulldown:</b></p><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><p class="title"><b>Jest kilka popularnych typów pulldown:</b></p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>pulldown PAL 2:2</strong></span>: Najprzyjemniejszy z nich
   wszystkich.
   Każda klatka jest pokazywana przez czas dwóch pól, poprzez wydobycie
@@ -144,7 +144,7 @@ i framerate</h3></div></div></div><p>
   <a class="link" href="menc-feat-telecine.html" title="7.2. How to deal with telecine and interlacing within NTSC DVDs">w dalszej części przewodnika</a>.
   Teraz podamy tylko kilka wskazówek jak identyfikować z jakim typem materiału
   mamy do czynienia.
-</p><div class="itemizedlist" title="Regiony NTSC:"><p class="title"><b>Regiony NTSC:</b></p><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><p class="title"><b>Regiony NTSC:</b></p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Jeśli <span class="application">MPlayer</span> wyświetla w trakcie oglądania filmu
   że framerate zostało zmienione na 24000/1001 i nigdy nie powraca, to jest
   to prawie na pewno progresywny materiał na którym zastosowano "miękkie
@@ -166,7 +166,7 @@ i framerate</h3></div></div></div><p>
   Jeśli <span class="application">MPlayer</span> nigdy nie pokazuje informacji
   o zmianie framerate i dwie klatki z każdych pięciu mają grzebienie, to film
   jest 24000/1001 fps poddanym "twardemu telecine".
-</p></li></ul></div><div class="itemizedlist" title="Regiony PAL:"><p class="title"><b>Regiony PAL:</b></p><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p></li></ul></div><div class="itemizedlist"><p class="title"><b>Regiony PAL:</b></p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Jeśli nie widzisz grzebieni, to jest to 2:2 pulldown.
 </p></li><li class="listitem"><p>
   Jeśli na przemian przez pół sekundy widzisz grzebienie a potem nie, to masz
@@ -175,7 +175,7 @@ i framerate</h3></div></div></div><p>
   Jeśli zawsze widzisz grzebienie w trakcie ruchu, to film jest filmem PAL
   wyświetlanym z 50 polami na sekundę.
   
-</p></li></ul></div><div class="note" title="Podpowiedź:" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Podpowiedź:</h3><p>
+</p></li></ul></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Podpowiedź:</h3><p>
   <span class="application">MPlayer</span> może zwolnić odtwarzanie filmu opcją
   -speed albo odtwarzać klatka po klatce.
   Spróbuj użyć opcji <tt class="option">-speed</tt> 0.2 żeby oglądać film bardzo
@@ -183,7 +183,7 @@ i framerate</h3></div></div></div><p>
   wyświetlać klatka po klatce.
   Może to pomóc zidentyfikować wzorzec jeśli
   nie możesz go dostrzec przy pełnej prędkości.
-</p></div></div></div><div class="sect2" title="7.1.2. Stały kwantyzator a tryb wieloprzebiegowy"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-2pass"></a>7.1.2. Stały kwantyzator a tryb wieloprzebiegowy</h3></div></div></div><p>
+</p></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-2pass"></a>7.1.2. Stały kwantyzator a tryb wieloprzebiegowy</h3></div></div></div><p>
   Jest możliwe zakodowanie filmu z szeroką gamą jakości.
   Z nowoczesnymi koderami i odrobiną kompresji przed kodekiem (zmniejszenie
   rozdzielczości i usuwanie szumu), możliwe jest osiągnięcie bardzo dobrej
@@ -203,7 +203,7 @@ i framerate</h3></div></div></div><p>
   wymaganego bitrate.
   Bardziej zaawansowane tryby, takie jak kodowanie wieloprzebiegowe, potrafią
   wziąć pod uwagę statystyki z poprzednich przebiegów, co naprawia ten problem.
-</p><div class="note" title="Uwaga:" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Uwaga:</h3><p>
+</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Uwaga:</h3><p>
   Większość kodeków obsługujących kodowanie ABR obsługuje tylko kodowanie
   dwuprzebiegowe, podczas gdy niektóre inne, na przykład
   <code class="systemitem">x264</code> albo
@@ -290,7 +290,7 @@ i framerate</h3></div></div></div><p>
   dźwiękowej, bitrate video musi być:
   <code class="systemitem">(702 - 60) * 1024 * 1024 / (120*60) * 8 / 1000
   = 740kbps</code>
-</p></div><div class="sect2" title="7.1.3. Ograniczenia efektywnego kodowania"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-constraints"></a>7.1.3. Ograniczenia efektywnego kodowania</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-constraints"></a>7.1.3. Ograniczenia efektywnego kodowania</h3></div></div></div><p>
 Ze względu na naturę kodowania typu MPEG istnieją różne ograniczenia których
 warto się trzymać żeby osiągnąć najlepszą jakość.
 MPEG dzieli obraz na kwadraty 16x16 pikseli nazywane makroblokami,
@@ -368,7 +368,7 @@ go również poprawi efektywność kodowania.
 Puryści, którzy chcą możliwie dokładnie zachować oryginał mogą się sprzeciwiać,
 ale jeśli nie planujesz używać stałego kwantyzatora to jakość uzyskana dzięki
 skadrowaniu znacząco przewyższy utratę informacji przy brzegach.
-</p></div><div class="sect2" title="7.1.4. Kadrowanie i skalowanie"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-crop"></a>7.1.4. Kadrowanie i skalowanie</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-crop"></a>7.1.4. Kadrowanie i skalowanie</h3></div></div></div><p>
 Przypomnijmy z poprzedniej części że ostateczna wielkość (wysokość i szerokość)
 obrazu do kodowania powinna być wielokrotnością 16.
 Można to osiągnąć kadrowaniem, skalowaniem albo kombinacją obydwu.
@@ -455,7 +455,7 @@ Skalowanie powinno być robione przy odtwarzaniu, a odtwarzacz używa informacji
 o proporcjach zapisanych w AVI żeby określić prawidłową rozdzielczość.
 Niestety, nie wszystkie odtwarzacze uznają te informacje,
 dlatego mimo wszystko możesz chcieć przeskalować.
-</p></div><div class="sect2" title="7.1.5. Dobieranie rozdzielczości i bitrate"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-resolution-bitrate"></a>7.1.5. Dobieranie rozdzielczości i bitrate</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-resolution-bitrate"></a>7.1.5. Dobieranie rozdzielczości i bitrate</h3></div></div></div><p>
 Jeśli nie kodujesz w trybie stałego kwantyzatora, musisz wybrać bitrate.
 Jest to dość prosta rzecz – to (średnia) ilość bitów jaka będzie
 używana do zakodowania jednej sekundy filmu.
@@ -502,14 +502,14 @@ szczegóły, ilość ruchu itp. bezsensowne jest podawanie ogólnych zaleceń na
 na przekątą (analogia bitów na piksel używająca pierwiastka).
 </p><p>
 Omówiliśmy więc problemy z wyborem bitrate i rozdzielczości.
-</p><div class="sect3" title="7.1.5.1. Obliczanie rozdzielczości"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-resolution-bitrate-compute"></a>7.1.5.1. Obliczanie rozdzielczości</h4></div></div></div><p>
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-resolution-bitrate-compute"></a>7.1.5.1. Obliczanie rozdzielczości</h4></div></div></div><p>
 Następne kroki przeprowadzą Cię przez obliczenie rozdzielczości dla Twojego
 filmu bez zniekształcania go za bardzo, biorąc pod uwagę kilka typów informacji
 o źródłowym filmie.
 Najpierw powinieneś policzyć zakodowane proporcje:
 <code class="systemitem">ARc = (Wc x (ARa / PRdvd )) / Hc</code>
 
-</p><div class="itemizedlist" title="gdzie:"><p class="title"><b>gdzie:</b></p><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><p class="title"><b>gdzie:</b></p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Hc i Wc to wysokość i szerokość skadrowanego filmu.
 </p></li><li class="listitem"><p>
   ARa do wyświetlane proporcje, zazwyczaj 4/3 lub 16/9.
@@ -563,7 +563,7 @@ Z drugiej strony, bezsensowne jest podnoszenie CQ powyżej 0,30 jako że marnuje
 Pamiętajmy też że, jak było wspomniane wcześniej, filmy w niższej
 rozdzielczości potrzebują większego CQ (w porównaniu do na przykład
 rozdzielczości DVD) żeby dobrze wyglądać.
-</p></div></div><div class="sect2" title="7.1.6. Filtrowanie"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-filtering"></a>7.1.6. Filtrowanie</h3></div></div></div><p>
+</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-filtering"></a>7.1.6. Filtrowanie</h3></div></div></div><p>
 Bardzo ważne do robienia dobrych kodowań jest nauczenie się posługiwania
 systemem filtrów <span class="application">MEncodera</span>.
 Całe przetwarzanie video jest wykonywane przez filtry – kadrowanie, skalowanie,
@@ -618,7 +618,7 @@ Zwiększenie parametrów dla <tt class="option">hqdn3d</tt> jeszcze bardziej pop
 kompresowalność, ale jeśli przesadzisz to zauważalnie zniekształcisz obraz.
 Wartości sugerowane powyżej (<tt class="option">2:1:2</tt>) są dość konserwatywne; nie
 bój się eksperymentować z wyższymi wartościami i samemu oceniać wyniki.
-</p></div><div class="sect2" title="7.1.7. Przeplot i telecine"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-interlacing"></a>7.1.7. Przeplot i telecine</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-interlacing"></a>7.1.7. Przeplot i telecine</h3></div></div></div><p>
 Prawie wszystkie filmy są kręcone przy 24 fps.
 Ponieważ NTSC ma 30000/1001 fps potrzebna jest pewna przeróbka żeby film 24 fps
 mógł być wyświetlany z prawidłową szybkością NTSC.
@@ -659,7 +659,7 @@ Jednak jeśli zazwyczaj tylko ripujesz filmy, prawdopodobnie masz doczynienia
 z filmem 24 fps progresywnym lub poddanym telecine, a w takim przypadku możesz
 użyć filtra <tt class="option">pullup</tt> podając parametr
 <tt class="option">-vf pullup,softskip</tt>.
-</p></div><div class="sect2" title="7.1.8. Encoding interlaced video"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-encoding-interlaced"></a>7.1.8. Encoding interlaced video</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-encoding-interlaced"></a>7.1.8. Encoding interlaced video</h3></div></div></div><p>
 If the movie you want to encode is interlaced (NTSC video or
 PAL video), you will need to choose whether you want to
 deinterlace or not.
@@ -697,7 +697,7 @@ mencoder <em class="replaceable"><code>capture.avi</code></em> -mc 0 -oac lavc -
     vcodec=mpeg2video:vbitrate=6000:ilme:ildct:acodec=mp2:abitrate=224
 </pre><p>
 Note the <tt class="option">ilme</tt> and <tt class="option">ildct</tt> options.
-</p></div><div class="sect2" title="7.1.9. Notes on Audio/Video synchronization"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-av-sync"></a>7.1.9. Notes on Audio/Video synchronization</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-av-sync"></a>7.1.9. Notes on Audio/Video synchronization</h3></div></div></div><p>
 <span class="application">MEncoder</span>'s audio/video synchronization
 algorithms were designed with the intention of recovering files with
 broken sync.
@@ -734,17 +734,17 @@ even mentioned it!
 There have also been reports of A/V desync when encoding from stdin
 with <span class="application">MEncoder</span>.
 Do not do this! Always use a file or CD/DVD/etc device as input.
-</p></div><div class="sect2" title="7.1.10. Choosing the video codec"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-codec"></a>7.1.10. Choosing the video codec</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-codec"></a>7.1.10. Choosing the video codec</h3></div></div></div><p>
 Which video codec is best to choose depends on several factors,
 like size, quality, streamability, usability and popularity, some of
 which widely depend on personal taste and technical constraints.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>Compression efficiency</strong></span>:
   It is quite easy to understand that most newer-generation codecs are
   made to increase quality and compression.
   Therefore, the authors of this guide and many other people suggest that
   you cannot go wrong
-  <sup>[<a name="fn-menc-feat-dvd-mpeg4-codec-cpu" href="#ftn.fn-menc-feat-dvd-mpeg4-codec-cpu" class="footnote">1</a>]</sup>
+  <a href="#ftn.fn-menc-feat-dvd-mpeg4-codec-cpu" class="footnote" name="fn-menc-feat-dvd-mpeg4-codec-cpu"><sup class="footnote">[1]</sup></a>
   when choosing MPEG-4 AVC codecs like
   <code class="systemitem">x264</code> instead of MPEG-4 ASP codecs
   such as <code class="systemitem">libavcodec</code> MPEG-4 or
@@ -814,12 +814,12 @@ which widely depend on personal taste and technical constraints.
   encoding options and codecs to find one that suits you best.
   The best codec is the one you master, and the one that looks
   best to your eyes on your display
-  <sup>[<a name="fn-menc-feat-dvd-mpeg4-codec-playback" href="#ftn.fn-menc-feat-dvd-mpeg4-codec-playback" class="footnote">2</a>]</sup>!
+  <a href="#ftn.fn-menc-feat-dvd-mpeg4-codec-playback" class="footnote" name="fn-menc-feat-dvd-mpeg4-codec-playback"><sup class="footnote">[2]</sup></a>!
   </p></li></ul></div><p>
 Please refer to the section
 <a class="link" href="menc-feat-selecting-codec.html" title="6.1. Wybieranie kodeka i formatu">selecting codecs and container formats</a>
 to get a list of supported codecs.
-</p></div><div class="sect2" title="7.1.11. Audio"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-audio"></a>7.1.11. Audio</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-audio"></a>7.1.11. Audio</h3></div></div></div><p>
 Audio is a much simpler problem to solve: if you care about quality, just
 leave it as is.
 Even AC-3 5.1 streams are at most 448Kbit/s, and they are worth every bit.
@@ -910,7 +910,7 @@ playback synchronization problems with some players when the AVI file
 contain VBR audio streams such as Vorbis.
 Do not worry, this document will show you how you can do that with third
 party programs.
-</p></div><div class="sect2" title="7.1.12. Muxing"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-muxing"></a>7.1.12. Muxing</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-dvd-mpeg4-muxing"></a>7.1.12. Muxing</h3></div></div></div><p>
 Now that you have encoded your video, you will most likely want
 to mux it with one or more audio tracks into a movie container, such
 as AVI, MPEG, Matroska or NUT.
@@ -943,7 +943,7 @@ better every day), and will only work if you compiled
 <span class="application">MPlayer</span> with the support for
 <code class="systemitem">libavformat</code> enabled (which
 means that a pre-packaged binary version will not work in most cases).
-</p><div class="sect3" title="7.1.12.1. Improving muxing and A/V sync reliability"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-muxing-filter-issues"></a>7.1.12.1. Improving muxing and A/V sync reliability</h4></div></div></div><p>
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-muxing-filter-issues"></a>7.1.12.1. Improving muxing and A/V sync reliability</h4></div></div></div><p>
 You may experience some serious A/V sync problems while trying to mux
 your video and some audio tracks, where no matter how you adjust the
 audio delay, you will never get proper sync.
@@ -969,7 +969,7 @@ container formats that are not too tightly linked with
 <span class="application">MEncoder</span> such as the ones supported through
 <code class="systemitem">libavformat</code>, which may not
 support frame duplication at the container level.
-</p></div><div class="sect3" title="7.1.12.2. Limitations of the AVI container"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-muxing-avi-limitations"></a>7.1.12.2. Limitations of the AVI container</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-muxing-avi-limitations"></a>7.1.12.2. Limitations of the AVI container</h4></div></div></div><p>
 Although it is the most widely-supported container format after MPEG-1,
 AVI also has some major drawbacks.
 Perhaps the most obvious is the overhead.
@@ -1005,7 +1005,7 @@ only tool you will be using to produce your encodes.
 However, it is possible to use <span class="application">MEncoder</span>
 only for video encoding, and then use external tools to encode
 audio and mux it into another container format.
-</p></div><div class="sect3" title="7.1.12.3. Muxing into the Matroska container"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-muxing-matroska"></a>7.1.12.3. Muxing into the Matroska container</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-dvd-mpeg4-muxing-matroska"></a>7.1.12.3. Muxing into the Matroska container</h4></div></div></div><p>
 Matroska is a free, open standard container format, aiming
 to offer a lot of advanced features, which older containers
 like AVI cannot handle.
@@ -1041,11 +1041,11 @@ multiple audio tracks (including fine-tuning of audio/video
 synchronization), chapters, subtitles, splitting, etc...
 Please refer to the documentation of those applications for
 more details.
-</p></div></div><div class="footnotes"><br><hr width="100" align="left"><div class="footnote"><p><sup>[<a id="ftn.fn-menc-feat-dvd-mpeg4-codec-cpu" href="#fn-menc-feat-dvd-mpeg4-codec-cpu" class="para">1</a>] </sup>
+</p></div></div><div class="footnotes"><br><hr style="width:100; text-align:left;margin-left: 0"><div id="ftn.fn-menc-feat-dvd-mpeg4-codec-cpu" class="footnote"><p><a href="#fn-menc-feat-dvd-mpeg4-codec-cpu" class="para"><sup class="para">[1] </sup></a>
   Be careful, however: Decoding DVD-resolution MPEG-4 AVC videos
   requires a fast machine (i.e. a Pentium 4 over 1.5GHz or a Pentium M
   over 1GHz).
-  </p></div><div class="footnote"><p><sup>[<a id="ftn.fn-menc-feat-dvd-mpeg4-codec-playback" href="#fn-menc-feat-dvd-mpeg4-codec-playback" class="para">2</a>] </sup>
+  </p></div><div id="ftn.fn-menc-feat-dvd-mpeg4-codec-playback" class="footnote"><p><a href="#fn-menc-feat-dvd-mpeg4-codec-playback" class="para"><sup class="para">[2] </sup></a>
   The same encode may not look the same on someone else's monitor or
   when played back by a different decoder, so future-proof your encodes by
   playing them back on different setups.

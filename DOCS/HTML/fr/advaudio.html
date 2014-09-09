@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>3.10. Audio Avancé</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Le Lecteur Vidéo"><link rel="up" href="usage.html" title="Chapitre 3. Utilisation"><link rel="prev" href="edl.html" title="3.9. Listes d'Edition de Décision (EDL)"><link rel="next" href="tv-input.html" title="3.11. Entrée TV"><link rel="preface" href="howtoread.html" title="Comment lire cette documentation"><link rel="chapter" href="intro.html" title="Chapitre 1. Introduction"><link rel="chapter" href="install.html" title="Chapitre 2. Installation"><link rel="chapter" href="usage.html" title="Chapitre 3. Utilisation"><link rel="chapter" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="chapter" href="ports.html" title="Chapitre 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapitre 6. Utilisation basique de MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="chapter" href="faq.html" title="Chapitre 8. Foire Aux Questions"><link rel="appendix" href="bugreports.html" title="Annexe A. Comment rapporter les bogues"><link rel="appendix" href="skin.html" title="Annexe B. Format de skins MPlayer"><link rel="subsection" href="advaudio.html#advaudio-surround" title="3.10.1. Lecture Surround/Multi-canal"><link rel="subsection" href="advaudio.html#advaudio-channels" title="3.10.2. Manipulation de Canal"><link rel="subsection" href="advaudio.html#advaudio-volume" title="3.10.3. Ajustement Logiciel du Volume"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.10. Audio Avancé</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="edl.html">Précédent</a> </td><th width="60%" align="center">Chapitre 3. Utilisation</th><td width="20%" align="right"> <a accesskey="n" href="tv-input.html">Suivant</a></td></tr></table><hr></div><div class="sect1" title="3.10. Audio Avancé"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="advaudio"></a>3.10. Audio Avancé</h2></div></div></div><div class="sect2" title="3.10.1. Lecture Surround/Multi-canal"><div class="titlepage"><div><div><h3 class="title"><a name="advaudio-surround"></a>3.10.1. Lecture Surround/Multi-canal</h3></div></div></div><div class="sect3" title="3.10.1.1. DVDs"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-surround-DVD"></a>3.10.1.1. DVDs</h4></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>3.10. Audio Avancé</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Le Lecteur Vidéo"><link rel="up" href="usage.html" title="Chapitre 3. Utilisation"><link rel="prev" href="edl.html" title="3.9. Listes d'Edition de Décision (EDL)"><link rel="next" href="tv-input.html" title="3.11. Entrée TV"><link rel="preface" href="howtoread.html" title="Comment lire cette documentation"><link rel="chapter" href="intro.html" title="Chapitre 1. Introduction"><link rel="chapter" href="install.html" title="Chapitre 2. Installation"><link rel="chapter" href="usage.html" title="Chapitre 3. Utilisation"><link rel="chapter" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="chapter" href="ports.html" title="Chapitre 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapitre 6. Utilisation basique de MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="chapter" href="faq.html" title="Chapitre 8. Foire Aux Questions"><link rel="appendix" href="bugreports.html" title="Annexe A. Comment rapporter les bogues"><link rel="appendix" href="skin.html" title="Annexe B. Format de skins MPlayer"><link rel="subsection" href="advaudio.html#advaudio-surround" title="3.10.1. Lecture Surround/Multi-canal"><link rel="subsection" href="advaudio.html#advaudio-channels" title="3.10.2. Manipulation de Canal"><link rel="subsection" href="advaudio.html#advaudio-volume" title="3.10.3. Ajustement Logiciel du Volume"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.10. Audio Avancé</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="edl.html">Précédent</a> </td><th width="60%" align="center">Chapitre 3. Utilisation</th><td width="20%" align="right"> <a accesskey="n" href="tv-input.html">Suivant</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="advaudio"></a>3.10. Audio Avancé</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="advaudio-surround"></a>3.10.1. Lecture Surround/Multi-canal</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-surround-DVD"></a>3.10.1.1. DVDs</h4></div></div></div><p>
 La plupart des DVDs et beaucoup d'autres fichiers incluent le son surround.
 <span class="application">MPlayer</span> supporte la lecture surround mais ne les
 activent pas par défaut parce que les équipement stéréos sont de loin plus communs.
@@ -19,7 +19,7 @@ ligne:
 
 <span class="application">MPlayer</span> sortira alors l'audio en quatre canaux quand
 les quatres canaux sont tous disponibles.
-</p></div><div class="sect3" title="3.10.1.2. Lire des fichiers stéréo sur quatre haut-parleurs"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-surround-stereoinfour"></a>3.10.1.2. Lire des fichiers stéréo sur quatre haut-parleurs</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-surround-stereoinfour"></a>3.10.1.2. Lire des fichiers stéréo sur quatre haut-parleurs</h4></div></div></div><p>
 <span class="application">MPlayer</span> ne duplique aucun canal par défaut,
 et la plupart des pilotes audio ne le font pas non plus. Si vous voulez le faire manuellement:
 
@@ -28,7 +28,7 @@ et la plupart des pilotes audio ne le font pas non plus. Si vous voulez le faire
 Voir la section sur
 <a class="link" href="advaudio.html#advaudio-channels-copying" title="3.10.2.3. Copier/Déplacer le canal">canal en copie</a> pour une
 explication.
-</p></div><div class="sect3" title="3.10.1.3. AC-3/DTS Passthrough"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-surround-passthrough"></a>3.10.1.3. AC-3/DTS Passthrough</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-surround-passthrough"></a>3.10.1.3. AC-3/DTS Passthrough</h4></div></div></div><p>
 Les DVDs ont habituellement l'audio surround encodé en format AC-3 (Dolby Digital) ou DTS
 (Digital Theater System). Certains équipements audio moderne sont capables de
 décoder ces formats de façon interne. <span class="application">MPlayer</span> peut être
@@ -39,14 +39,14 @@ votre carte son.
 Si votre équipement audio peux décoder AC-3 et DTS, vous pouvez sans risque activer
 le passthrough pour les deux formats. Autrement, activez le passthrough pour le seul format
 que votre équipement supporte.
-</p><div class="itemizedlist" title="Pour activer le passthrough en ligne de commande:"><p class="title"><b>Pour activer le passthrough en ligne de commande:</b></p><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><p class="title"><b>Pour activer le passthrough en ligne de commande:</b></p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
 Pour l'AC-3 seul, utilisez <tt class="option">-ac hwac3</tt>
 </p></li><li class="listitem"><p>
 Pour le DTS seul, utilisez <tt class="option">-ac hwdts</tt>
 </p></li><li class="listitem"><p>
 Pour l'ensemble AC-3 et DTS, utilisez <tt class="option">-afm hwac3</tt>
-</p></li></ul></div><div class="itemizedlist" title="Pour activer le passthrough dans le fichier de configuration de MPlayer:"><p class="title"><b>Pour activer le passthrough dans le fichier de configuration
-de <span class="application">MPlayer</span>: </b></p><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p></li></ul></div><div class="itemizedlist"><p class="title"><b>Pour activer le passthrough dans le fichier de configuration
+de <span class="application">MPlayer</span>: </b></p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
 Pour l'AC-3 seul, utilisez <tt class="option">ac=hwac3,</tt>
 </p></li><li class="listitem"><p>
 Pour le DTS seul, utilisez <tt class="option">ac=hwdts,</tt>
@@ -61,7 +61,7 @@ pas l'audio en AC-3 ou DTS.
 <tt class="option">afm=hwac3</tt> n'a pas besoin d'une virgule; de toute façon
 <span class="application">MPlayer</span> reviendra en arrière lorsqu'une famille
 d'audio est spécifiée.
-</p></div><div class="sect3" title="3.10.1.4. PasseBande audio MPEG"><div class="titlepage"><div><div><h4 class="title"><a name="hwmpa-surround-passthrough"></a>3.10.1.4. PasseBande audio MPEG</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="hwmpa-surround-passthrough"></a>3.10.1.4. PasseBande audio MPEG</h4></div></div></div><p>
 Les transmissions TV numérique (comme DVB et ATSC) et certains DVD ont
 habituellement des flux audio MPEG (en particulier MP2).
 Certains décodeurs matériels MPEG comme les cartes DVB complètes et les
@@ -71,7 +71,7 @@ données audio sans les décoder.
 </p><p>
 Pour utiliser ce codec:
 </p><pre class="screen"> mplayer -ac hwmpa </pre><p>
-</p></div><div class="sect3" title="3.10.1.5. Audio à encodage matriciel"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-surround-matrix"></a>3.10.1.5. Audio à encodage matriciel</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-surround-matrix"></a>3.10.1.5. Audio à encodage matriciel</h4></div></div></div><p>
 <span class="emphasis"><em>***TODO***</em></span>
 </p><p>
 Cette section doit encore être écrite et ne peut être complétée tant que personne ne nous
@@ -84,12 +84,12 @@ Mettez "[matrix-encoded audio]" en sujet du mail.
 Si aucuns fichiers ou de plus amples informations ne sont reçues cette section sera enlevée.
 </p><p>
 Liens Bon:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
 <a class="ulink" href="http://electronics.howstuffworks.com/surround-sound5.htm" target="_top">http://electronics.howstuffworks.com/surround-sound5.htm</a>
 </p></li><li class="listitem"><p>
 <a class="ulink" href="http://www.extremetech.com/article2/0,1697,1016875,00.asp" target="_top">http://www.extremetech.com/article2/0,1697,1016875,00.asp</a>
 </p></li></ul></div><p>
-</p></div><div class="sect3" title="3.10.1.6. Emulation Surround dans les écouteurs"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-surround-hrtf"></a>3.10.1.6. Emulation Surround dans les écouteurs</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-surround-hrtf"></a>3.10.1.6. Emulation Surround dans les écouteurs</h4></div></div></div><p>
 <span class="application">MPlayer</span> inclu un filtre HRTF (Head Related Transfer
 Function) basé sur un
 <a class="ulink" href="http://sound.media.mit.edu/KEMAR.html" target="_top">projet MIT</a>
@@ -119,28 +119,28 @@ d'échantillonnage différent que celui que vous voulez jouer en utilisant
 
 </p><pre class="screen">mplayer <em class="replaceable"><code>filename</code></em> -channels 6 -af resample=48000,hrtf</pre><p>
 
-</p></div><div class="sect3" title="3.10.1.7. Dépannage"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-surround-troubleshooting"></a>3.10.1.7. Dépannage</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-surround-troubleshooting"></a>3.10.1.7. Dépannage</h4></div></div></div><p>
 Si vous n'entendez aucun son provenant de vos canaux surround, controler
 vos paramètres de mixeur avec un programme de mixeur comme
 <span class="application">alsamixer</span>; les sorties audio sont souvent muettes
 et le volume réglé à zéro par défaut.
-</p></div></div><div class="sect2" title="3.10.2. Manipulation de Canal"><div class="titlepage"><div><div><h3 class="title"><a name="advaudio-channels"></a>3.10.2. Manipulation de Canal</h3></div></div></div><div class="sect3" title="3.10.2.1. Information Générale"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-channels-general"></a>3.10.2.1. Information Générale</h4></div></div></div><p>
+</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="advaudio-channels"></a>3.10.2. Manipulation de Canal</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-channels-general"></a>3.10.2.1. Information Générale</h4></div></div></div><p>
 Malheureusement, il n'y a pas de standard qui montrent comment les canaux sont ordonnés.
 Les ordres listés ci-dessous sont ceux de l'AC-3 et sont assez typiques;
 essayez-les et voyez si votre source correspond.
 Les canaux sont numérotés à partir de par 0.
 
-</p><div class="orderedlist" title="mono"><p class="title"><b>mono</b></p><ol class="orderedlist" type="1" compact><li class="listitem" value="0"><p>centre</p></li></ol></div><p>
+</p><div class="orderedlist"><p class="title"><b>mono</b></p><ol class="orderedlist compact" type="1"><li class="listitem" value="0"><p>centre</p></li></ol></div><p>
 
-</p><div class="orderedlist" title="stéréo"><p class="title"><b>stéréo</b></p><ol class="orderedlist" type="1" compact><li class="listitem" value="0"><p>gauche</p></li><li class="listitem"><p>droite</p></li></ol></div><p>
+</p><div class="orderedlist"><p class="title"><b>stéréo</b></p><ol class="orderedlist compact" type="1"><li class="listitem" value="0"><p>gauche</p></li><li class="listitem"><p>droite</p></li></ol></div><p>
 
-</p><div class="orderedlist" title="quadraphonique"><p class="title"><b>quadraphonique</b></p><ol class="orderedlist" type="1" compact><li class="listitem" value="0"><p>devant gauche</p></li><li class="listitem"><p>devant droite</p></li><li class="listitem"><p>arrière gauche</p></li><li class="listitem"><p>arrière droite</p></li></ol></div><p>
+</p><div class="orderedlist"><p class="title"><b>quadraphonique</b></p><ol class="orderedlist compact" type="1"><li class="listitem" value="0"><p>devant gauche</p></li><li class="listitem"><p>devant droite</p></li><li class="listitem"><p>arrière gauche</p></li><li class="listitem"><p>arrière droite</p></li></ol></div><p>
 
-</p><div class="orderedlist" title="surround 4.0"><p class="title"><b>surround 4.0</b></p><ol class="orderedlist" type="1" compact><li class="listitem" value="0"><p>devant gauche</p></li><li class="listitem"><p>devant droite</p></li><li class="listitem"><p>arrière centre</p></li><li class="listitem"><p>devant centre</p></li></ol></div><p>
+</p><div class="orderedlist"><p class="title"><b>surround 4.0</b></p><ol class="orderedlist compact" type="1"><li class="listitem" value="0"><p>devant gauche</p></li><li class="listitem"><p>devant droite</p></li><li class="listitem"><p>arrière centre</p></li><li class="listitem"><p>devant centre</p></li></ol></div><p>
 
-</p><div class="orderedlist" title="surround 5.0"><p class="title"><b>surround 5.0</b></p><ol class="orderedlist" type="1" compact><li class="listitem" value="0"><p>devant gauche</p></li><li class="listitem"><p>devant droite</p></li><li class="listitem"><p>arrière gauche</p></li><li class="listitem"><p>arrière droite</p></li><li class="listitem"><p>devant centre</p></li></ol></div><p>
+</p><div class="orderedlist"><p class="title"><b>surround 5.0</b></p><ol class="orderedlist compact" type="1"><li class="listitem" value="0"><p>devant gauche</p></li><li class="listitem"><p>devant droite</p></li><li class="listitem"><p>arrière gauche</p></li><li class="listitem"><p>arrière droite</p></li><li class="listitem"><p>devant centre</p></li></ol></div><p>
 
-</p><div class="orderedlist" title="surround 5.1"><p class="title"><b>surround 5.1</b></p><ol class="orderedlist" type="1" compact><li class="listitem" value="0"><p>devant gauche</p></li><li class="listitem"><p>devant droite</p></li><li class="listitem"><p>arrière gauche</p></li><li class="listitem"><p>arrière droite</p></li><li class="listitem"><p>devant centre</p></li><li class="listitem"><p>caisson de basse</p></li></ol></div><p>
+</p><div class="orderedlist"><p class="title"><b>surround 5.1</b></p><ol class="orderedlist compact" type="1"><li class="listitem" value="0"><p>devant gauche</p></li><li class="listitem"><p>devant droite</p></li><li class="listitem"><p>arrière gauche</p></li><li class="listitem"><p>arrière droite</p></li><li class="listitem"><p>devant centre</p></li><li class="listitem"><p>caisson de basse</p></li></ol></div><p>
 
 </p><p>
 L'option <tt class="option">-channels</tt> est utilisée pour demander le nombre
@@ -155,7 +155,7 @@ où le codec MP3 ne produira pas de canaux suplémentaires.
 Le filtre audio <tt class="option">channels</tt> peut être utilisé pour créer ou enléver
 des canaux et, est utile pour contrôler le nombre de canaux envoyés à la carte son.
 Voir les sections suivantes pour plus d'informations sur la manipulation de canaux.
-</p></div><div class="sect3" title="3.10.2.2. Jouer en mono avec deux enceintes"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-channels-mono"></a>3.10.2.2. Jouer en mono avec deux enceintes</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-channels-mono"></a>3.10.2.2. Jouer en mono avec deux enceintes</h4></div></div></div><p>
 Mono sonne beaucoup mieux quand il est joué au travers de deux enceintes -
 particulièrement quand des écouteurs sont utilisés.
 Les fichiers Audio qui ont vraiment un canal sont automatiquement joués
@@ -177,12 +177,12 @@ trouver la bonne valeur. Par exemple:
 
 </p><pre class="screen">mplayer <em class="replaceable"><code>nom_fichier</code></em> -af extrastereo=0,volume=5</pre><p>
 
-</p></div><div class="sect3" title="3.10.2.3. Copier/Déplacer le canal"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-channels-copying"></a>3.10.2.3. Copier/Déplacer le canal</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-channels-copying"></a>3.10.2.3. Copier/Déplacer le canal</h4></div></div></div><p>
 Le filtre <tt class="option">channels</tt> peut déplacer n'importe lequel ou tous les canaux.
 Parametrer toutes les sous-options pour le filtre <tt class="option">channels</tt>
 peut être compliqué et prend peu d'attention.
 
-</p><div class="orderedlist"><ol class="orderedlist" type="1" compact><li class="listitem"><p>
+</p><div class="orderedlist"><ol class="orderedlist compact" type="1"><li class="listitem"><p>
 Décidez combien de canaux de sortie vous avez besoin.
 Ceci est la première sous-option.
 </p></li><li class="listitem"><p>
@@ -205,7 +205,7 @@ longtemps qu'ils sont correctement groupés en
 <em class="replaceable"><code>source:destination</code></em> paires.
 </p></li></ol></div><p>
 
-</p><h5><a name="idp5972608"></a>Exemple: un canal en deux enceintes</h5><p>
+</p><h5><a name="idp55745904"></a>Exemple: un canal en deux enceintes</h5><p>
 Ici un exemple d'une autre manière de jouer un canal sur les deux enceintes. On suppose
 pour cette exemple que le canal de gauche devra être joué et le canal de droite annulé.
 En suivant les étapes ci-dessus:
@@ -229,7 +229,7 @@ L'avantage de cette exemple par rapport à <tt class="option">extrastereo</tt> e
 volume de chaque canal de sortie est le même que le canal d'entrée. Le désavantage
 étant que les sous-options doivent être changées à "2:2:1:0:1:1" quand l'audio désirée
 est dans le canal de droite. Il est aussi plus difficile de s'en souvenir et de le taper.
-</p><h5><a name="idp5979856"></a>Exemple: canal gauche vers deux enceintes raccourci</h5><p>
+</p><h5><a name="idp55753152"></a>Exemple: canal gauche vers deux enceintes raccourci</h5><p>
 Il y a couramment une façon plus simple d'utiliser le filtre <tt class="option">channels</tt>
 pour jouer le canal de gauche vers les deux enceintes:
 
@@ -239,7 +239,7 @@ Le second canal est enlevé et, sans plus de sous-options, le seul canal
 qui reste est celui de gauche. Les pilotes de carte son jouent automatiquement
 l'audio d'un seul canal vers les deux enceintes. cela ne fonctionne que quand
 le canal voulu est sur la gauche.
-</p><h5><a name="idp5982784"></a>Exemple: dupliquer les canaux frontaux sur l'arrière</h5><p>
+</p><h5><a name="idp55756080"></a>Exemple: dupliquer les canaux frontaux sur l'arrière</h5><p>
 Une autre opération commune est de dupliquer les canaux frontaux et de leur
 faire rejouer sur les enceintes arrière d'un paramètrage quadraphonique.
 </p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>
@@ -257,7 +257,7 @@ Combinez toutes les sous-options pour obtenir:
 
 </p><pre class="screen">mplayer <em class="replaceable"><code>nom_fichier</code></em> -af channels=4:4:0:2:0:0:1:3:1:1</pre><p>
 
-</p></div><div class="sect3" title="3.10.2.4. Mixage de canal"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-channels-mixing"></a>3.10.2.4. Mixage de canal</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="advaudio-channels-mixing"></a>3.10.2.4. Mixage de canal</h4></div></div></div><p>
 Le filtre <tt class="option">pan</tt> peut mixer les canaux selon des proportions spécifiées
 par l'utilisateur. Ceci tient compte de tout que le filtre de <tt class="option">channels</tt>
 peut faire et plus. Malheureusement, les sous-options sont beaucoup plus complexes.
@@ -284,7 +284,7 @@ pouvez faire suivre <tt class="option">pan</tt> avec <tt class="option">,volume<
 mais c'est mieux de garder les valeurs de <tt class="option">pan</tt> suffisamment basses pour que la
 coupure ne soit pas nécessaire.
 </p></li></ol></div><p>
-</p><h5><a name="idp5998880"></a>Exemple: un canal dans deux enceintes</h5><p>
+</p><h5><a name="idp55772176"></a>Exemple: un canal dans deux enceintes</h5><p>
 Voici encore un autre exemple pour jouer le canal gauche dans deux enceintes. Suivez
 les étapes ci-dessus:
 </p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>
@@ -307,7 +307,7 @@ Mettre ces options ensemble donne:
 
 Si le canal de droite est préféré à la place du gauche, les sous-options pour
 <tt class="option">pan</tt> seront "2:0:0:1:1".
-</p><h5><a name="idp6004592"></a>Exemple: canal de gauche dans deux enceintes raccourci</h5><p>
+</p><h5><a name="idp55777888"></a>Exemple: canal de gauche dans deux enceintes raccourci</h5><p>
 Comme avec <tt class="option">channels</tt>, il y a un raccourci qui ne fonctionne que avec le
 canal de gauche:
 
@@ -316,7 +316,7 @@ canal de gauche:
 Puisque <tt class="option">pan</tt> a seulement un canal d'entrée (l'autre canal étant
 rejeté), il n'y a seulement qu'un ensemble avec une sous-option, qui indique que le
 seul canal obtient 100% de lui-même.
-</p><h5><a name="idp6007584"></a>Exemple: Mixage (downmixing) PCM 6-canaux</h5><p>
+</p><h5><a name="idp55780880"></a>Exemple: Mixage (downmixing) PCM 6-canaux</h5><p>
 Le décodeur de <span class="application">MPlayer</span> pour le PCM 6-canaux
 n'est pas capable de le mixer (downmixing).
 Voici une façon de mixager (downmixing) PCM en utilisant <tt class="option">pan</tt>:
@@ -349,7 +349,7 @@ Mettez tout ça ensemble, pour:
 </p><pre class="screen">mplayer <em class="replaceable"><code>6-canaux.wav</code></em> -af pan=2:1:0:0:1:1:0:0:1:0.5:0.5:1:1</pre><p>
 
 Les pourcentages listés ci-dessus sont seulement un exemple approximatif. Vous êtes libres de les ajuster.
-</p><h5><a name="idp6015488"></a>Exemple: Jouer de l'audio 5.1 sur de grosses enceintes sans un caisson de basse (subwoofer)</h5><p>
+</p><h5><a name="idp55788784"></a>Exemple: Jouer de l'audio 5.1 sur de grosses enceintes sans un caisson de basse (subwoofer)</h5><p>
 Si vous avez une paire d'enceintes frontales énormes, vous ne voudriez pas
 gaspiller de l'argent sur l'achat d'un caisson de basse (subwoofer) pour
 un système son 5.1 complet.
@@ -366,7 +366,7 @@ Puisque <tt class="option">pan</tt> a besoin d'examiner chacun des six canaux, s
 <tt class="option">pan</tt> sort vers seulement cinq canaux, la première sous-option est 5.
 </p></li><li class="listitem"><p>
 Six canaux d'entrées et cinq de sortie signifient six ensembles de cinq sous-options.
-  </p><div class="itemizedlist"><ul class="itemizedlist" type="disc" compact><li class="listitem"><p>
+  </p><div class="itemizedlist"><ul class="itemizedlist compact" style="list-style-type: disc; "><li class="listitem"><p>
   Le canal avant gauche ne se réplique que vers lui-même:
   "1:0:0:0:0"
   </p></li><li class="listitem"><p>
@@ -391,7 +391,7 @@ Combinez toutes ces options pour obtenir:
 
 </p><pre class="screen">mplayer <em class="replaceable"><code>dvd://1</code></em> -channels 6 -af pan=5:1:0:0:0:0:0:1:0:0:0:0:0:1:0:0:0:0:0:1:0:0:0:0:0:1:0.5:0.5:0:0:0</pre><p>
 
-</p></div></div><div class="sect2" title="3.10.3. Ajustement Logiciel du Volume"><div class="titlepage"><div><div><h3 class="title"><a name="advaudio-volume"></a>3.10.3. Ajustement Logiciel du Volume</h3></div></div></div><p>
+</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="advaudio-volume"></a>3.10.3. Ajustement Logiciel du Volume</h3></div></div></div><p>
 Certaines pistes audio sont trop silencieuses pour être entendues confortablement
 sans amplification. Cela devient un problème quand votre équipement audio ne peut
 amplifier le signal à votre place. L'option <tt class="option">-softvol</tt> oblige

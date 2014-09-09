@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>3.6. VCD playback</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="usage.html" title="Chapter 3. Usage"><link rel="prev" href="dvd.html" title="3.5. DVD playback"><link rel="next" href="edl.html" title="3.7. Edit Decision Lists (EDL)"><link rel="preface" href="howtoread.html" title="How to read this documentation"><link rel="chapter" href="intro.html" title="Chapter 1. Introduction"><link rel="chapter" href="install.html" title="Chapter 2. Installation"><link rel="chapter" href="usage.html" title="Chapter 3. Usage"><link rel="chapter" href="video.html" title="Chapter 4. Video output devices"><link rel="chapter" href="ports.html" title="Chapter 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapter 6. Basic usage of MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapter 7. Encoding with MEncoder"><link rel="chapter" href="faq.html" title="Chapter 8. Frequently Asked Questions"><link rel="appendix" href="bugreports.html" title="Appendix A. How to report bugs"><link rel="appendix" href="skin.html" title="Appendix B. MPlayer skin format"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.6. VCD playback</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="dvd.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Usage</th><td width="20%" align="right"> <a accesskey="n" href="edl.html">Next</a></td></tr></table><hr></div><div class="sect1" title="3.6. VCD playback"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="vcd"></a>3.6. VCD playback</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>3.6. VCD playback</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="usage.html" title="Chapter 3. Usage"><link rel="prev" href="dvd.html" title="3.5. DVD playback"><link rel="next" href="edl.html" title="3.7. Edit Decision Lists (EDL)"><link rel="preface" href="howtoread.html" title="How to read this documentation"><link rel="chapter" href="intro.html" title="Chapter 1. Introduction"><link rel="chapter" href="install.html" title="Chapter 2. Installation"><link rel="chapter" href="usage.html" title="Chapter 3. Usage"><link rel="chapter" href="video.html" title="Chapter 4. Video output devices"><link rel="chapter" href="ports.html" title="Chapter 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapter 6. Basic usage of MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapter 7. Encoding with MEncoder"><link rel="chapter" href="faq.html" title="Chapter 8. Frequently Asked Questions"><link rel="appendix" href="bugreports.html" title="Appendix A. How to report bugs"><link rel="appendix" href="skin.html" title="Appendix B. MPlayer skin format"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3.6. VCD playback</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="dvd.html">Prev</a> </td><th width="60%" align="center">Chapter 3. Usage</th><td width="20%" align="right"> <a accesskey="n" href="edl.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="vcd"></a>3.6. VCD playback</h2></div></div></div><p>
 For the complete list of available options, please read the man page. The
 Syntax for a standard Video CD (VCD) is as follows:
 </p><pre class="screen">mplayer vcd://<em class="replaceable"><code>&lt;track&gt;</code></em> [-cdrom-device <em class="replaceable"><code>&lt;device&gt;</code></em>]</pre><p>
@@ -7,7 +7,7 @@ Example:
 The default VCD device is <tt class="filename">/dev/cdrom</tt>. If your setup
 differs, make a symlink or specify the correct device on the command line
 with the <tt class="option">-cdrom-device</tt> option.
-</p><div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
 At least Plextor and some Toshiba SCSI CD-ROM drives have horrible performance
 reading VCDs. This is because the CDROMREADRAW <code class="systemitem">ioctl</code>
 is not fully implemented for these drives. If you have some knowledge of SCSI
@@ -17,10 +17,10 @@ implement generic SCSI support for VCDs.
 In the meantime you can extract data from VCDs with
 <a class="ulink" href="http://ftp.ntut.edu.tw/ftp/OS/Linux/packages/X/viewers/readvcd/" target="_top">readvcd</a>
 and play the resulting file with <span class="application">MPlayer</span>.
-</p><p title="VCD structure"><b>VCD structure. </b>
+</p><p><b>VCD structure. </b>
 A Video CD (VCD) is made up of CD-ROM XA sectors, i.e. CD-ROM mode 2
 form 1 and 2 tracks:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   The first track is in mode 2 form 2 format which means it uses L2
   error correction. The track contains an ISO-9660 file system with 2048
   bytes/sector. This file system contains VCD metadata information, as
@@ -50,8 +50,8 @@ form 1 and 2 tracks:
   must be purchased from Philips. More detailed information about Video
   CDs can be found in the
   <a class="ulink" href="http://www.vcdimager.org/pub/vcdimager/manuals/0.7/vcdimager.html#SEC4" target="_top">vcdimager documentation</a>.
-</p></li></ul></div><p title="VCD structure">
-</p><p title="About .DAT files"><b>About .DAT files. </b>
+</p></li></ul></div><p>
+</p><p><b>About .DAT files. </b>
 The ~600 MB file visible on the first track of the mounted VCD is not a real
 file! It is a so called ISO gateway, created to allow Windows to handle such
 tracks (Windows does not allow raw device access to applications at all).

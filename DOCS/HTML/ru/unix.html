@@ -1,8 +1,8 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>5.3. Коммерческие Unix</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="ports.html" title="Глава 5. Портинг"><link rel="prev" href="bsd.html" title="5.2. *BSD"><link rel="next" href="windows.html" title="5.4. Windows"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"><link rel="subsection" href="unix.html#solaris" title="5.3.1. Solaris"><link rel="subsection" href="unix.html#hp-ux" title="5.3.2. HP-UX"><link rel="subsection" href="unix.html#aix" title="5.3.3. AIX"><link rel="subsection" href="unix.html#qnx" title="5.3.4. QNX"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.3. Коммерческие Unix</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bsd.html">Пред.</a> </td><th width="60%" align="center">Глава 5. Портинг</th><td width="20%" align="right"> <a accesskey="n" href="windows.html">След.</a></td></tr></table><hr></div><div class="sect1" title="5.3. Коммерческие Unix"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="unix"></a>5.3. Коммерческие Unix</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>5.3. Коммерческие Unix</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="ports.html" title="Глава 5. Портинг"><link rel="prev" href="bsd.html" title="5.2. *BSD"><link rel="next" href="windows.html" title="5.4. Windows"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"><link rel="subsection" href="unix.html#solaris" title="5.3.1. Solaris"><link rel="subsection" href="unix.html#hp-ux" title="5.3.2. HP-UX"><link rel="subsection" href="unix.html#aix" title="5.3.3. AIX"><link rel="subsection" href="unix.html#qnx" title="5.3.4. QNX"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.3. Коммерческие Unix</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bsd.html">Пред.</a> </td><th width="60%" align="center">Глава 5. Портинг</th><td width="20%" align="right"> <a accesskey="n" href="windows.html">След.</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="unix"></a>5.3. Коммерческие Unix</h2></div></div></div><p>
 <span class="application">MPlayer</span> был портирован на некоторые коммерческие варианты Unix.
 Поскольку окружения разработки этих систем отличаются от свободных Unix'ов,
 вам придется самостоятельно произвести некоторые действия, чтобы сборка заработала.
-</p><div class="sect2" title="5.3.1. Solaris"><div class="titlepage"><div><div><h3 class="title"><a name="solaris"></a>5.3.1. Solaris</h3></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="solaris"></a>5.3.1. Solaris</h3></div></div></div><p>
 <span class="application">MPlayer</span> должен работать под Solaris 2.6 и более
 новыми версиями. Для звука используйте звуковой драйвер SUN с
 опцией <tt class="option">-ao sun</tt>.
@@ -16,7 +16,7 @@ and <code class="systemitem">libavcodec</code>, но не в
 <code class="systemitem">mp3lib</code>. Вы сможете просматривать VOB'ы
 на 400MHz CPU. Вам потребуется установленная
 <a class="ulink" href="http://www.sun.com/sparc/vis/mediaLib.html" target="_top"><code class="systemitem">mLib</code></a>.
-</p><p><span class="bold"><strong>Предостережение:</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><p><span class="bold"><strong>Предостережение:</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>mediaLib</strong></span> в данный
   момент отключена по умолчанию в
   <span class="application">MPlayer</span> из-за поломанности.
@@ -53,7 +53,7 @@ make: Fatal error in reader: Makefile, line 25: Unexpected end of line seen
 <tt class="option">--as=<em class="replaceable"><code>/там/где/у/Вас/установлен/gnu-as</code></em></tt>,
 чтобы сообщить скрипту <tt class="filename">configure</tt>, где можно обнаружить
 GNU "as" на Вашей системе).
-</p><p>Решение общих проблем:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><p>Решение общих проблем:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Сообщения об ошибках <tt class="filename">configure</tt> на Solaris x86 системах при
   использовании GCC без GNU ассемблера:
   </p><pre class="screen">
@@ -98,7 +98,7 @@ MPlayer interrupted by signal 11 in module: init_audio_codec
 </p></li><li class="listitem"><p>
 В связи с ошибками в Solaris 8, Вы не сможете проигрывать DVD диски, размером
 больше 4 Гб:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
   Под Solaris 8 x86 драйвер sd(7D) содержит ошибку, проявляющуюся при доступе
   к дискам, размером &gt; 4 Гб на устройствах с логическим размером блока !=
   DEV_BSIZE (например CD-ROM и DVD диски).
@@ -113,7 +113,7 @@ MPlayer interrupted by signal 11 in module: init_audio_codec
   (<a class="ulink" href="http://groups.yahoo.com/group/solarisonintel/message/22592" target="_top">http://groups.yahoo.com/group/solarisonintel/message/22592</a>).
   Проблемы с hsfs могут быть исправлены установкой патча 109764-04 (sparc) /
   109765-04 (x86).
-</p></li></ul></div></li></ul></div></div><div class="sect2" title="5.3.2. HP-UX"><div class="titlepage"><div><div><h3 class="title"><a name="hp-ux"></a>5.3.2. HP-UX</h3></div></div></div><p>
+</p></li></ul></div></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="hp-ux"></a>5.3.2. HP-UX</h3></div></div></div><p>
 Joe Page на своей домашней странице держит подробное
 <a class="ulink" href="http://users.rcn.com/joepage/mplayer_on_hpux11.htm" target="_top">HOWTO</a>
 по <span class="application">MPlayer</span> на HP-UX, написанное Martin Gansser.
@@ -158,7 +158,7 @@ ln -s /dev/rdsk/c<em class="replaceable"><code>&lt;SCSI bus instance&gt;</code><
 </p><p>
 Далее следуют решения некоторых общих проблем:
 
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Крах при запуске с таким сообщением об ошибке:
   </p><pre class="screen">
 /usr/lib/dld.sl: Unresolved symbol: finite (code) from /usr/local/lib/gcc-lib/hppa2.0n-hp-hpux11.00/3.2/../../../libGL.sl</pre><p>
@@ -191,7 +191,7 @@ Segmentation fault</pre><p>
   максимального количества данных, которые могут использоваться программами.
   64 Мб по умолчанию может хватить или не хватить в зависимости от Ваших приложений.)
   </p></li></ul></div><p>
-</p></div><div class="sect2" title="5.3.3. AIX"><div class="titlepage"><div><div><h3 class="title"><a name="aix"></a>5.3.3. AIX</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="aix"></a>5.3.3. AIX</h3></div></div></div><p>
 <span class="application">MPlayer</span> успешно собирается на AIX 5.1,
 5.2, и 5.3, используя GCC 3.3 или новее. Сборка
 <span class="application">MPlayer</span> не проверена на AIX 4.3.3 и более ранних.
@@ -207,9 +207,9 @@ GCC 4.0, если собираете на POWER5.
 
 По-прежнему ведется работа над кодом определения CPU.
 Проверены следующие архитектуры:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>604e</p></li><li class="listitem"><p>POWER3</p></li><li class="listitem"><p>POWER4</p></li></ul></div><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>604e</p></li><li class="listitem"><p>POWER3</p></li><li class="listitem"><p>POWER4</p></li></ul></div><p>
 На следующих архитектурах не проверялось, но должно работать:
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>POWER</p></li><li class="listitem"><p>POWER2</p></li><li class="listitem"><p>POWER5</p></li></ul></div><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>POWER</p></li><li class="listitem"><p>POWER2</p></li><li class="listitem"><p>POWER5</p></li></ul></div><p>
 </p><p>
 Вывод звука через Ultimedia Services не поддерживается, т.к.
 Ultimedia была убрана из AIX 5.1; таким образом, остается единственный
@@ -221,7 +221,7 @@ Ultimedia была убрана из AIX 5.1; таким образом, ост�
 на текущий день нет драйверов вывода звука для AIX 5.2 или 5.3.
 drivers for AIX 5.2 or 5.3. Это означает, что сейчас
 <span class="bold"><strong>AIX 5.2 и 5.3 несовместимы с выводом звука MPlayer.</strong></span>
-</p><p>Решения для общих проблем:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><p>Решения для общих проблем:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Если вы столкнулись с такой ошибкой <tt class="filename">configure</tt>:
   </p><pre class="screen">
 $ ./configure
@@ -234,7 +234,7 @@ Messages in the GTK-2 interface will be broken then.</pre><p>
   поэтому перекодировка сообщений в данный момент не работает.
   Решение - использовать:
   </p><pre class="screen">$ ./configure --charset=noconv</pre><p>
-  </p></li></ul></div></div><div class="sect2" title="5.3.4. QNX"><div class="titlepage"><div><div><h3 class="title"><a name="qnx"></a>5.3.4. QNX</h3></div></div></div><p>
+  </p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="qnx"></a>5.3.4. QNX</h3></div></div></div><p>
 Вам нужно скачать и установить SDL для QNX. Затем запустите
 <span class="application">MPlayer</span> с опциями <tt class="option">-vo sdl:photon</tt>
 и <tt class="option">-ao sdl:nto</tt>, и все будет работать быстро.

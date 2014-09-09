@@ -1,11 +1,11 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.11. VESA - output to VESA BIOS</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="video.html" title="Chapter 4. Video output devices"><link rel="prev" href="caca.html" title="4.10.  libcaca – Color ASCII Art library"><link rel="next" href="x11.html" title="4.12. X11"><link rel="preface" href="howtoread.html" title="How to read this documentation"><link rel="chapter" href="intro.html" title="Chapter 1. Introduction"><link rel="chapter" href="install.html" title="Chapter 2. Installation"><link rel="chapter" href="usage.html" title="Chapter 3. Usage"><link rel="chapter" href="video.html" title="Chapter 4. Video output devices"><link rel="chapter" href="ports.html" title="Chapter 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapter 6. Basic usage of MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapter 7. Encoding with MEncoder"><link rel="chapter" href="faq.html" title="Chapter 8. Frequently Asked Questions"><link rel="appendix" href="bugreports.html" title="Appendix A. How to report bugs"><link rel="appendix" href="skin.html" title="Appendix B. MPlayer skin format"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.11. VESA - output to VESA BIOS</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="caca.html">Prev</a> </td><th width="60%" align="center">Chapter 4. Video output devices</th><td width="20%" align="right"> <a accesskey="n" href="x11.html">Next</a></td></tr></table><hr></div><div class="sect1" title="4.11. VESA - output to VESA BIOS"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="vesa"></a>4.11. VESA - output to VESA BIOS</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.11. VESA - output to VESA BIOS</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="video.html" title="Chapter 4. Video output devices"><link rel="prev" href="caca.html" title="4.10.  libcaca – Color ASCII Art library"><link rel="next" href="x11.html" title="4.12. X11"><link rel="preface" href="howtoread.html" title="How to read this documentation"><link rel="chapter" href="intro.html" title="Chapter 1. Introduction"><link rel="chapter" href="install.html" title="Chapter 2. Installation"><link rel="chapter" href="usage.html" title="Chapter 3. Usage"><link rel="chapter" href="video.html" title="Chapter 4. Video output devices"><link rel="chapter" href="ports.html" title="Chapter 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapter 6. Basic usage of MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapter 7. Encoding with MEncoder"><link rel="chapter" href="faq.html" title="Chapter 8. Frequently Asked Questions"><link rel="appendix" href="bugreports.html" title="Appendix A. How to report bugs"><link rel="appendix" href="skin.html" title="Appendix B. MPlayer skin format"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.11. VESA - output to VESA BIOS</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="caca.html">Prev</a> </td><th width="60%" align="center">Chapter 4. Video output devices</th><td width="20%" align="right"> <a accesskey="n" href="x11.html">Next</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="vesa"></a>4.11. VESA - output to VESA BIOS</h2></div></div></div><p>
 This driver was designed and introduced as a <span class="bold"><strong>generic
 driver</strong></span> for any video card which has VESA VBE 2.0 compatible
 BIOS. Another advantage of this driver is that it tries to force TV output
 on.
 <em class="citetitle">VESA BIOS EXTENSION (VBE) Version 3.0 Date: September 16,
 1998</em> (Page 70) says:
-</p><div class="blockquote"><blockquote class="blockquote"><p title="Dual-Controller Designs"><b>Dual-Controller Designs. </b>
+</p><div class="blockquote"><blockquote class="blockquote"><p><b>Dual-Controller Designs. </b>
 VBE 3.0 supports the dual-controller design by assuming that since both
 controllers are typically provided by the same OEM, under control of a
 single BIOS ROM on the same graphics card, it is possible to hide the fact
@@ -21,7 +21,7 @@ controller.
 So you have chances to get working TV-out by using this driver.
 (I guess that TV-out frequently is standalone head or standalone output
 at least.)
-</p><div class="itemizedlist" title="ADVANTAGES"><p class="title"><b>ADVANTAGES</b></p><ul class="itemizedlist" type="disc" compact><li class="listitem"><p>
+</p><div class="itemizedlist"><p class="title"><b>ADVANTAGES</b></p><ul class="itemizedlist compact" style="list-style-type: disc; "><li class="listitem"><p>
   You have chances to watch movies <span class="bold"><strong>if Linux even doesn't
   know</strong></span> your video hardware.
 </p></li><li class="listitem"><p>
@@ -46,19 +46,19 @@ at least.)
   (config file, or command line) you will get the highest possible refresh rate.
   (Using General Timing Formula). To enable this feature you have to specify
   <span class="bold"><strong>all</strong></span> your monitor options.
-</p></li></ul></div><div class="itemizedlist" title="DISADVANTAGES"><p class="title"><b>DISADVANTAGES</b></p><ul class="itemizedlist" type="disc" compact><li class="listitem"><p>
+</p></li></ul></div><div class="itemizedlist"><p class="title"><b>DISADVANTAGES</b></p><ul class="itemizedlist compact" style="list-style-type: disc; "><li class="listitem"><p>
    It works only on <span class="bold"><strong>x86 systems</strong></span>.
 </p></li><li class="listitem"><p>
   It can be used only by <code class="systemitem">root</code>.
 </p></li><li class="listitem"><p>
   Currently it's available only for <span class="bold"><strong>Linux</strong></span>.
-</p></li></ul></div><div class="variablelist" title="COMMAND LINE OPTIONS AVAILABLE FOR VESA"><p class="title"><b>COMMAND LINE OPTIONS AVAILABLE FOR VESA</b></p><dl><dt><span class="term"><tt class="option">-vo vesa:<em class="replaceable"><code>opts</code></em></tt></span></dt><dd><p>
+</p></li></ul></div><div class="variablelist"><p class="title"><b>COMMAND LINE OPTIONS AVAILABLE FOR VESA</b></p><dl class="variablelist"><dt><span class="term"><tt class="option">-vo vesa:<em class="replaceable"><code>opts</code></em></tt></span></dt><dd><p>
     currently recognized: <code class="literal">dga</code> to force dga mode and
     <code class="literal">nodga</code> to disable dga mode. In dga mode you can enable
     double buffering via the <tt class="option">-double</tt> option. Note: you may omit
     these parameters to enable <span class="bold"><strong>autodetection</strong></span> of
     dga mode.
-  </p></dd></dl></div><div class="itemizedlist" title="KNOWN PROBLEMS AND WORKAROUNDS"><p class="title"><b>KNOWN PROBLEMS AND WORKAROUNDS</b></p><ul class="itemizedlist" type="disc" compact><li class="listitem"><p>
+  </p></dd></dl></div><div class="itemizedlist"><p class="title"><b>KNOWN PROBLEMS AND WORKAROUNDS</b></p><ul class="itemizedlist compact" style="list-style-type: disc; "><li class="listitem"><p>
   If you have installed <span class="bold"><strong>NLS</strong></span> font on your
   Linux box and run VESA driver from text-mode then after terminating
   <span class="application">MPlayer</span> you will have

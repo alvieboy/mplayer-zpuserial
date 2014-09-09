@@ -1,10 +1,10 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.3. DGA</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Le Lecteur Vidéo"><link rel="up" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="prev" href="xv.html" title="4.2. Xv"><link rel="next" href="sdl.html" title="4.4. SDL"><link rel="preface" href="howtoread.html" title="Comment lire cette documentation"><link rel="chapter" href="intro.html" title="Chapitre 1. Introduction"><link rel="chapter" href="install.html" title="Chapitre 2. Installation"><link rel="chapter" href="usage.html" title="Chapitre 3. Utilisation"><link rel="chapter" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="chapter" href="ports.html" title="Chapitre 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapitre 6. Utilisation basique de MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="chapter" href="faq.html" title="Chapitre 8. Foire Aux Questions"><link rel="appendix" href="bugreports.html" title="Annexe A. Comment rapporter les bogues"><link rel="appendix" href="skin.html" title="Annexe B. Format de skins MPlayer"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.3. DGA</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="xv.html">Précédent</a> </td><th width="60%" align="center">Chapitre 4. Sorties vidéo</th><td width="20%" align="right"> <a accesskey="n" href="sdl.html">Suivant</a></td></tr></table><hr></div><div class="sect1" title="4.3. DGA"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="dga"></a>4.3. DGA</h2></div></div></div><p title="PRÉAMBULE"><b>PRÉAMBULE. </b>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.3. DGA</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Le Lecteur Vidéo"><link rel="up" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="prev" href="xv.html" title="4.2. Xv"><link rel="next" href="sdl.html" title="4.4. SDL"><link rel="preface" href="howtoread.html" title="Comment lire cette documentation"><link rel="chapter" href="intro.html" title="Chapitre 1. Introduction"><link rel="chapter" href="install.html" title="Chapitre 2. Installation"><link rel="chapter" href="usage.html" title="Chapitre 3. Utilisation"><link rel="chapter" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="chapter" href="ports.html" title="Chapitre 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapitre 6. Utilisation basique de MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="chapter" href="faq.html" title="Chapitre 8. Foire Aux Questions"><link rel="appendix" href="bugreports.html" title="Annexe A. Comment rapporter les bogues"><link rel="appendix" href="skin.html" title="Annexe B. Format de skins MPlayer"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.3. DGA</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="xv.html">Précédent</a> </td><th width="60%" align="center">Chapitre 4. Sorties vidéo</th><td width="20%" align="right"> <a accesskey="n" href="sdl.html">Suivant</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="dga"></a>4.3. DGA</h2></div></div></div><p><b>PRÉAMBULE. </b>
 Ce document tente d'expliquer en quelques mots ce qu'est le DGA en général et
 ce que peut faire le pilote de sortie DGA pour
 <span class="application">MPlayer</span>
 (et ce qu'il ne peut pas faire).
 
-</p><p title="QU'EST CE QUE LE DGA"><b>QU'EST CE QUE LE DGA. </b>
+</p><p><b>QU'EST CE QUE LE DGA. </b>
 <acronym class="acronym">DGA</acronym> est l'abréviation de <span class="emphasis"><em>Direct Graphics
 Access</em></span> et permet aux programmes de passer outre le serveur X et de
 modifier directement la mémoire dans le framebuffer. Techniquement parlant,
@@ -33,11 +33,11 @@ Cependant DGA a quelques défauts. Il semble qu'il reste dépendant de la
 carte graphique utilisée et de la mise en place du pilote de votre serveur
 X contrôlant cette carte.
 Cela peut donc ne pas fonctionner sur tous les systèmes...
-</p><p title="INSTALLER LE SUPPORT DGA POUR MPLAYER"><b>INSTALLER LE SUPPORT DGA POUR MPLAYER. </b>
+</p><p><b>INSTALLER LE SUPPORT DGA POUR MPLAYER. </b>
 Assurez vous d'abord que X charge l'extension DGA, regardez dans
 <tt class="filename">/var/log/XFree86.0.log</tt> :
 
-</p><pre class="programlisting">(II) Loading extension XFree86-DGA</pre><p title="INSTALLER LE SUPPORT DGA POUR MPLAYER">
+</p><pre class="programlisting">(II) Loading extension XFree86-DGA</pre><p>
 
 XFree86 4.0.x ou plus est <span class="bold"><strong>hautement
 recommandé</strong></span> !
@@ -63,7 +63,7 @@ chmod +s <em class="replaceable"><code>/usr/local/bin/mplayer</code></em>
 </pre><p>
 
 Maintenant cela fonctionne aussi avec les droits d'un simple utilisateur.
-</p><div class="caution" title="Faille de sécurité" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Faille de sécurité</h3><p>
+</p><div class="caution" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Faille de sécurité</h3><p>
 Cela présente une <span class="bold"><strong>grosse</strong></span> faille de
 sécurité !
 Ne faites <span class="bold"><strong>jamais</strong></span> ceci sur un serveur ou un
@@ -74,7 +74,7 @@ Utilisez maintenant l'option <tt class="option">-vo dga</tt> et c'est parti !
 (Enfin on peut l'espérer :)) Vous pouvez alors essayer l'option
 <tt class="option">-vo sdl:pilote=dga</tt> !
 C'est beaucoup plus rapide !
-</p><p title="CHANGEMENT DE RÉSOLUTION"><a name="dga-modelines"></a><b>CHANGEMENT DE RÉSOLUTION. </b>
+</p><p><a name="dga-modelines"></a><b>CHANGEMENT DE RÉSOLUTION. </b>
 Le pilote DGA vous permet de changer la résolution du signal de sortie. Cela
 permet
 d'éviter un redimensionnement logiciel, beaucoup plus lent, et offre une image
@@ -108,13 +108,13 @@ Section "Modes"
   Modeline "352x240"  15.750 352 368 416 432   240 244 246 262 Doublescan
   Modeline "320x240"  12.588 320 336 384 400   240 245 246 262 Doublescan
 EndSection
-</pre><p title="DGA &amp; MPLAYER"><b>DGA &amp; MPLAYER. </b>
+</pre><p><b>DGA &amp; MPLAYER. </b>
   DGA est utilisé en deux endroits par
 <span class="application">MPlayer</span> : Le pilote SDL peut se compiler pour
 en faire usage (<tt class="option">-vo sdl:pilote=dga</tt>) et dans le pilote DGA
 (<tt class="option">-vo dga</tt>). Dans les sections suivantes je vous expliquerai
 comment fonctionne le pilote DGA pour <span class="application">MPlayer</span>.
-</p><p title="FONCTIONNALITÉS"><b>FONCTIONNALITÉS. </b>
+</p><p><b>FONCTIONNALITÉS. </b>
 Le pilote DGA s'invoque en spécifiant <tt class="option">-vo dga</tt> en ligne de
 commande.
 L'action par défaut consiste à passer dans une résolution s'approchant au
@@ -168,7 +168,7 @@ supplémentaires
 au processeur (sur mon K6-II+ 525 il utilisait 20% de temps CPU en
 plus !),
 ceci dépendant de l'implémentation du DGA pour votre matériel.
-</p><p title="PROBLÈMES DE VITESSE"><b>PROBLÈMES DE VITESSE. </b>
+</p><p><b>PROBLÈMES DE VITESSE. </b>
 Généralement, l'accès au framebuffer DGA peut s'avérer aussi rapide que le
 pilote X11,
 apportant en plus l'avantage de bénéficier d'une image plein écran. Les
@@ -200,13 +200,13 @@ mode 32/32.
 J'ai vu certains fichiers AVI passer sur des Pentium MMX 266. Les processeurs
 AMD K6-2
 s'avèrent utilisables à partir de 400 MHz.
-</p><p title="BOGUES CONNUS"><b>BOGUES CONNUS. </b>
+</p><p><b>BOGUES CONNUS. </b>
 A vrai dire, selon certains développeurs de XFree, DGA est une usine à gaz.
 Ils
 recommandent d'éviter son utilisation. Son implémentation n'est pas parfaite
 avec
 chaque chipset pour XFree.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Avec XFree 4.0.3 et <tt class="filename">nv.o</tt> un bogue affiche des couleurs
 étranges.
   </p></li><li class="listitem"><p>

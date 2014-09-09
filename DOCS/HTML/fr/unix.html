@@ -1,10 +1,10 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>5.3. Unix Commercial</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Le Lecteur Vidéo"><link rel="up" href="ports.html" title="Chapitre 5. Ports"><link rel="prev" href="bsd.html" title="5.2. *BSD"><link rel="next" href="windows.html" title="5.4. Windows"><link rel="preface" href="howtoread.html" title="Comment lire cette documentation"><link rel="chapter" href="intro.html" title="Chapitre 1. Introduction"><link rel="chapter" href="install.html" title="Chapitre 2. Installation"><link rel="chapter" href="usage.html" title="Chapitre 3. Utilisation"><link rel="chapter" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="chapter" href="ports.html" title="Chapitre 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapitre 6. Utilisation basique de MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="chapter" href="faq.html" title="Chapitre 8. Foire Aux Questions"><link rel="appendix" href="bugreports.html" title="Annexe A. Comment rapporter les bogues"><link rel="appendix" href="skin.html" title="Annexe B. Format de skins MPlayer"><link rel="subsection" href="unix.html#solaris" title="5.3.1. Solaris"><link rel="subsection" href="unix.html#hp-ux" title="5.3.2. HP-UX"><link rel="subsection" href="unix.html#aix" title="5.3.3. AIX"><link rel="subsection" href="unix.html#qnx" title="5.3.4. QNX"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.3. Unix Commercial</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bsd.html">Précédent</a> </td><th width="60%" align="center">Chapitre 5. Ports</th><td width="20%" align="right"> <a accesskey="n" href="windows.html">Suivant</a></td></tr></table><hr></div><div class="sect1" title="5.3. Unix Commercial"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="unix"></a>5.3. Unix Commercial</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>5.3. Unix Commercial</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Le Lecteur Vidéo"><link rel="up" href="ports.html" title="Chapitre 5. Ports"><link rel="prev" href="bsd.html" title="5.2. *BSD"><link rel="next" href="windows.html" title="5.4. Windows"><link rel="preface" href="howtoread.html" title="Comment lire cette documentation"><link rel="chapter" href="intro.html" title="Chapitre 1. Introduction"><link rel="chapter" href="install.html" title="Chapitre 2. Installation"><link rel="chapter" href="usage.html" title="Chapitre 3. Utilisation"><link rel="chapter" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="chapter" href="ports.html" title="Chapitre 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapitre 6. Utilisation basique de MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="chapter" href="faq.html" title="Chapitre 8. Foire Aux Questions"><link rel="appendix" href="bugreports.html" title="Annexe A. Comment rapporter les bogues"><link rel="appendix" href="skin.html" title="Annexe B. Format de skins MPlayer"><link rel="subsection" href="unix.html#solaris" title="5.3.1. Solaris"><link rel="subsection" href="unix.html#hp-ux" title="5.3.2. HP-UX"><link rel="subsection" href="unix.html#aix" title="5.3.3. AIX"><link rel="subsection" href="unix.html#qnx" title="5.3.4. QNX"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.3. Unix Commercial</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bsd.html">Précédent</a> </td><th width="60%" align="center">Chapitre 5. Ports</th><td width="20%" align="right"> <a accesskey="n" href="windows.html">Suivant</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="unix"></a>5.3. Unix Commercial</h2></div></div></div><p>
 <span class="application">MPlayer</span> a été porté sur un grand nombre d'Unix
 commerciaux.
 Étant donné que les environements de dévelopement sur ces systèmes
 ont tendances à être différent de ceux trouvé sur les Unix libres, vous devrez
 peut-être faire quelques ajustements manuels pour que le build fonctionne.
-</p><div class="sect2" title="5.3.1. Solaris"><div class="titlepage"><div><div><h3 class="title"><a name="solaris"></a>5.3.1. Solaris</h3></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="solaris"></a>5.3.1. Solaris</h3></div></div></div><p>
 <span class="application">MPlayer</span> devrait fonctionner sous Solaris 2.6
 ou supérieur.
 Utilisez le pilote audio de SUN avec l'option <tt class="option">-ao sun</tt>
@@ -20,7 +20,7 @@ dans <code class="systemitem">mp3lib</code>. Vous pouvez regarder
 un fichier VOB sur un CPU à 400MHz. Vous aurez besoin d'avoir
 <a class="ulink" href="http://www.sun.com/sparc/vis/mediaLib.html" target="_top"><code class="systemitem">mLib</code></a>
 installé.
-</p><p><span class="bold"><strong>Attention :</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><p><span class="bold"><strong>Attention :</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
    <span class="bold"><strong>mediaLib</strong></span> est
    <span class="bold"><strong>actuellement désactivé</strong></span> par défaut dans
    <span class="application">MPlayer</span> pour cause d'inconsistance. Les utilisateurs SPARC
@@ -59,7 +59,7 @@ l'autodétection échoue, utilisez l'option
 <tt class="option">--as=<em class="replaceable"><code>/endroit/ou/vous/avez/installe/gnu-as</code></em></tt>
 pour indiquer au script <tt class="filename">configure</tt> où il peut trouver
 GNU "as" sur votre système).
-</p><p>Solutions aux problèmes courants :</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><p>Solutions aux problèmes courants :</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
 Message d'erreur de <tt class="filename">configure</tt> sur un système Solaris
 x86 en utilisant GCC sans assembleur GNU :
 </p><pre class="screen">
@@ -106,7 +106,7 @@ suivante : <a class="ulink" href="http://bugs.opensolaris.org/bugdatabase/view_
  </p></li><li class="listitem"><p>
 A cause de bogues dans Solaris 8, il se peut que vous ne puissiez pas lire
 de disques DVD plus gros que 4 Go :
-</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
 Le pilote sd(7D) de Solaris 8 x86 a un bogue quand on accède à un bloc disque
 &gt;4Go sur un périphérique en utilisant une taille de bloc logique
 != DEV_BSIZE (c-a-d. CD-ROM et DVD).
@@ -122,7 +122,7 @@ toutes les données sont accédées modulo 4Go.
 (<a class="ulink" href="http://groups.yahoo.com/group/solarisonintel/message/22592" target="_top">http://groups.yahoo.com/group/solarisonintel/message/22592</a>).
 Le problème hsfs peut être résolu en installant le patch 109764-04 (sparc)
 / 109765-04 (x86).
-</p></li></ul></div></li></ul></div></div><div class="sect2" title="5.3.2. HP-UX"><div class="titlepage"><div><div><h3 class="title"><a name="hp-ux"></a>5.3.2. HP-UX</h3></div></div></div><p>
+</p></li></ul></div></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="hp-ux"></a>5.3.2. HP-UX</h3></div></div></div><p>
 Joe Page héberge un
 <a class="ulink" href="http://users.rcn.com/joepage/mplayer_on_hpux11.htm" target="_top">HOWTO</a>
 <span class="application">MPlayer</span> sous HP-UX écrit par Martin Gansser sur
@@ -166,7 +166,7 @@ Exemple :
 </p><pre class="screen">ln -s /dev/rdsk/c1t2d0 /dev/dvd</pre><p>
 </p><p>
 Ci-dessous sont exposées les solutions pour certains problèmes communs :
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
 Plante au démarrage avec le message d'erreur suivant :
 </p><pre class="screen">
 /usr/lib/dld.sl: Unresolved symbol: finite (code) from /usr/local/lib/gcc-lib/hppa2.0n-hp-hpux11.00/3.2/../../../libGL.sl
@@ -204,7 +204,7 @@ Vous pouvez utiliser SAM pour ce faire.
 pour le montant maximum de données qu'un programme peut utiliser.
 Cela dépend de vos applications, si la valeur par défaut de 64MO est
 suffisante ou non.)
-</p></li></ul></div></div><div class="sect2" title="5.3.3. AIX"><div class="titlepage"><div><div><h3 class="title"><a name="aix"></a>5.3.3. AIX</h3></div></div></div><p>
+</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="aix"></a>5.3.3. AIX</h3></div></div></div><p>
 <span class="application">MPlayer</span> se compile parfaitement sous AIX 5.1,
 5.2 et 5.3, en utilisant GCC 3.3 ou plus.
 La compilation de <span class="application">MPlayer</span> sous AIX 4.3.3
@@ -219,10 +219,10 @@ des problèmes si vous utilisez <tt class="filename">/usr/ccs/bin/make</tt>.
 </p><p>
 La détection CPU est toujours un travail en cours.
 Les architectures suivantes ont été testé :
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>604e</p></li><li class="listitem"><p>POWER3</p></li><li class="listitem"><p>POWER4</p></li></ul></div><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>604e</p></li><li class="listitem"><p>POWER3</p></li><li class="listitem"><p>POWER4</p></li></ul></div><p>
 Les architectures suivantes n'ont pas été testé, mais devraient quand
 même marcher :
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>POWER</p></li><li class="listitem"><p>POWER2</p></li><li class="listitem"><p>POWER5</p></li></ul></div><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>POWER</p></li><li class="listitem"><p>POWER2</p></li><li class="listitem"><p>POWER5</p></li></ul></div><p>
 </p><p>
 Le son à travers les Services Ultimedia n'est pas supporté, comme Ultimedia a
 été abondonné dans AIX 5.1; , la seule option est d'utiliser les pilotes AIX OSS
@@ -231,7 +231,7 @@ de 4Front Technologies depuis
 4Front Technologies fourni librement les pilotes OSS pour AIX 5.1 pour
 un usage personnel et non-commercial. Cependant, il n'y a actuellement
 pas de pilote de son pour AIX 5.2 ou 5.3. Cela signifie qu'à l'heure actuelle <span class="bold"><strong>MPlayer ne produit pas de son sous AIX 5.2 et 5.3.</strong></span>
-</p><p>Solutions aux problèmes courants :</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><p>Solutions aux problèmes courants :</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
 Si vous rencontrez ce message d'erreur de <tt class="filename">configure</tt> :
 </p><pre class="screen">
 $ ./configure
@@ -248,7 +248,7 @@ est d'utiliser :
 </p><pre class="screen">
 $ ./configure --charset=noconv
 </pre><p>
-</p></li></ul></div></div><div class="sect2" title="5.3.4. QNX"><div class="titlepage"><div><div><h3 class="title"><a name="qnx"></a>5.3.4. QNX</h3></div></div></div><p>
+</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="qnx"></a>5.3.4. QNX</h3></div></div></div><p>
 Vous aurez besoin de télécharger et installer SDL pour QNX. Puis de lancer
 <span class="application">MPlayer</span> avec les options <tt class="option">-vo sdl:driver=photon</tt> et
 <tt class="option">-ao sdl:nto</tt>, cela devrait être rapide.

@@ -1,10 +1,10 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.7. Použití MEncoderu pro vytvoření QuickTime-kompatibilních souborů</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Multimediální přehrávač"><link rel="up" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="prev" href="menc-feat-video-for-windows.html" title="7.6. Enkódování rodinou kodeků Video For Windows"><link rel="next" href="menc-feat-vcd-dvd.html" title="7.8. Použití MEncoderu k vytváření VCD/SVCD/DVD-kompatibilních souborů."><link rel="preface" href="howtoread.html" title="Jak číst tuto dokumentaci"><link rel="chapter" href="intro.html" title="Kapitola 1. Představení"><link rel="chapter" href="install.html" title="Kapitola 2. Instalace"><link rel="chapter" href="usage.html" title="Kapitola 3. Použití"><link rel="chapter" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="chapter" href="ports.html" title="Kapitola 5. Porty"><link rel="chapter" href="mencoder.html" title="Kapitola 6. Základní použití MEncoderu"><link rel="chapter" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="chapter" href="faq.html" title="Kapitola 8. Často Kladené Dotazy (FAQ)"><link rel="appendix" href="bugreports.html" title="Příloha A. Jak hlásit chyby"><link rel="appendix" href="skin.html" title="Příloha B. Formát skinů MPlayeru"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-why-use-it" title="7.7.1. Proč by někdo chtěl vytvářet QuickTime-kompatibilní soubory?"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-constraints" title="7.7.2. QuickTime 7 omezení"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-crop" title="7.7.3. Ořez"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-scale" title="7.7.4. Škálování"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-avsync" title="7.7.5. A/V synchronizace"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-bitrate" title="7.7.6. Datový tok"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-example" title="7.7.7. Příklad enkódování"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-remux" title="7.7.8. Přemuxování do MP4"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-metadata" title="7.7.9. Přidání stop s meta daty"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.7. Použití <span class="application">MEncoder</span>u pro vytvoření
-<span class="application">QuickTime</span>-kompatibilních souborů</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-video-for-windows.html">Předcházející</a> </td><th width="60%" align="center">Kapitola 7. Enkódování s <span class="application">MEncoder</span>em</th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-vcd-dvd.html">Další</a></td></tr></table><hr></div><div class="sect1" title="7.7. Použití MEncoderu pro vytvoření QuickTime-kompatibilních souborů"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-quicktime-7"></a>7.7. Použití <span class="application">MEncoder</span>u pro vytvoření
-<span class="application">QuickTime</span>-kompatibilních souborů</h2></div></div></div><div class="sect2" title="7.7.1. Proč by někdo chtěl vytvářet QuickTime-kompatibilní soubory?"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-why-use-it"></a>7.7.1. Proč by někdo chtěl vytvářet
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.7. Použití MEncoderu pro vytvoření QuickTime-kompatibilních souborů</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Multimediální přehrávač"><link rel="up" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="prev" href="menc-feat-video-for-windows.html" title="7.6. Enkódování rodinou kodeků Video For Windows"><link rel="next" href="menc-feat-vcd-dvd.html" title="7.8. Použití MEncoderu k vytváření VCD/SVCD/DVD-kompatibilních souborů."><link rel="preface" href="howtoread.html" title="Jak číst tuto dokumentaci"><link rel="chapter" href="intro.html" title="Kapitola 1. Představení"><link rel="chapter" href="install.html" title="Kapitola 2. Instalace"><link rel="chapter" href="usage.html" title="Kapitola 3. Použití"><link rel="chapter" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="chapter" href="ports.html" title="Kapitola 5. Porty"><link rel="chapter" href="mencoder.html" title="Kapitola 6. Základní použití MEncoderu"><link rel="chapter" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="chapter" href="faq.html" title="Kapitola 8. Často Kladené Dotazy (FAQ)"><link rel="appendix" href="bugreports.html" title="Příloha A. Jak hlásit chyby"><link rel="appendix" href="skin.html" title="Příloha B. Formát skinů MPlayeru"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-why-use-it" title="7.7.1. Proč by někdo chtěl vytvářet QuickTime-kompatibilní soubory?"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-constraints" title="7.7.2. QuickTime 7 omezení"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-crop" title="7.7.3. Ořez"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-scale" title="7.7.4. Škálování"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-avsync" title="7.7.5. A/V synchronizace"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-bitrate" title="7.7.6. Datový tok"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-example" title="7.7.7. Příklad enkódování"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-remux" title="7.7.8. Přemuxování do MP4"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-metadata" title="7.7.9. Přidání stop s meta daty"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.7. Použití <span class="application">MEncoder</span>u pro vytvoření
+<span class="application">QuickTime</span>-kompatibilních souborů</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-video-for-windows.html">Předcházející</a> </td><th width="60%" align="center">Kapitola 7. Enkódování s <span class="application">MEncoder</span>em</th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-vcd-dvd.html">Další</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-quicktime-7"></a>7.7. Použití <span class="application">MEncoder</span>u pro vytvoření
+<span class="application">QuickTime</span>-kompatibilních souborů</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-why-use-it"></a>7.7.1. Proč by někdo chtěl vytvářet
 <span class="application">QuickTime</span>-kompatibilní soubory?</h3></div></div></div><p>
   Je několik důvodů, proč můžete chtít vytvářet
   <span class="application">QuickTime</span>-kompatibilní soubory.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Chcete, aby byl každý počítačový anlfabet schopen sledovat vaše
   videa na jakékoli rozšířené platformě (Windows, Mac OS X, Unixy …).
 </p></li><li class="listitem"><p>
@@ -18,7 +18,7 @@
   <span class="application">QuickTime</span> 7 podporuje H.264, kodek nové
   generace, který poskytuje podstatně lepší kvalitu obrazu, než předchozí
   generace kodeků (MPEG-2, MPEG-4 …).
-</p></li></ul></div></div><div class="sect2" title="7.7.2. QuickTime 7 omezení"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-constraints"></a>7.7.2. <span class="application">QuickTime</span> 7 omezení</h3></div></div></div><p>
+</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-constraints"></a>7.7.2. <span class="application">QuickTime</span> 7 omezení</h3></div></div></div><p>
   <span class="application">QuickTime</span> 7 podporuje H.264 video a AAC zvuk,
   ale nepodporuje je, pokud jsou namuxovány v AVI kontejneru.
   Můžete však použít <span class="application">MEncoder</span> pro enkódování
@@ -33,7 +33,7 @@
   <span class="application">QuickTime</span> 7 nepodporuje,
   budou přehrávače založené na <span class="application">QuickTime</span>
   zobrazovat pouze hezky bílou obrazovku, místo očekávaného videa.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>B-snímky</strong></span>:
   <span class="application">QuickTime</span> 7 podporuje maximálně 1 B-snímek, čili
   <tt class="option">-x264encopts bframes=1</tt>. To znamená, že
@@ -51,7 +51,7 @@
   aspect ratio) informace v MPEG-4 souborech; předpokládá, že SAR=1. Přečtěte
   si <a class="link" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-scale" title="7.7.4. Škálování">sekci o škálování</a>,
   abyste to obešli.
-</p></li></ul></div></div><div class="sect2" title="7.7.3. Ořez"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-crop"></a>7.7.3. Ořez</h3></div></div></div><p>
+</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-crop"></a>7.7.3. Ořez</h3></div></div></div><p>
   Řekněme, že chcete ripnout svou nově zakoupenou kopii "Letopisů
   Narnie". Vaše DVD je region 1,
   což znamená že je v NTSC. Příklad níže lze aplikovat na PAL,
@@ -69,7 +69,7 @@
   Dále potřebujete odstřihnout černé okraje na zhora a zdola obrazu, podle postupu
   uvedeného v <a class="link" href="menc-feat-enc-libavcodec.html#menc-feat-dvd-mpeg4-example-crop">této</a>
   předešlé sekci.
-</p></div><div class="sect2" title="7.7.4. Škálování"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-scale"></a>7.7.4. Škálování</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-scale"></a>7.7.4. Škálování</h3></div></div></div><p>
   Další krok je opravdu srdcervoucí.
   <span class="application">QuickTime</span> 7 nepodporuje MPEG-4 videa
   se vzorkovým poměrem stran jiným než 1, takže budete muset obraz roztáhnout
@@ -87,7 +87,7 @@
   škálovat:
 
   </p><pre class="screen">-vf crop=720:352:0:62,scale=-10:-1</pre><p>
-</p></div><div class="sect2" title="7.7.5. A/V synchronizace"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-avsync"></a>7.7.5. A/V synchronizace</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-avsync"></a>7.7.5. A/V synchronizace</h3></div></div></div><p>
   Protože budete muxovat do odlišného nosného formátu, měli byste
   vždy použít volbu <tt class="option">harddup</tt>, abyste se ujistili, že
   duplikované snímky budou duplikovány ve video výstupu. Bez této volby
@@ -98,7 +98,7 @@
 </p><p>
   Celý řetěz filtrů pak vypadá takto:
   </p><pre class="screen">-vf crop=720:352:0:62,scale=-10:-1,harddup</pre><p>
-</p></div><div class="sect2" title="7.7.6. Datový tok"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-bitrate"></a>7.7.6. Datový tok</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-bitrate"></a>7.7.6. Datový tok</h3></div></div></div><p>
   Jako vždy je výběr datového toku otázkou technických parametrů
   zdroje, jak jsou objasněny
   <a class="link" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-resolution-bitrate" title="7.1.5. Volba rozlišení a datového toku">zde</a>,
@@ -110,7 +110,7 @@
   tento film při 900kbps a myslí, že vypadá dobře.
   Můžete snížit datový tok, pokud potřebujete ušetřit místo, nebo jej zvýšit,
   chcete-li zvýšit kvalitu.
-</p></div><div class="sect2" title="7.7.7. Příklad enkódování"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-example"></a>7.7.7. Příklad enkódování</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-example"></a>7.7.7. Příklad enkódování</h3></div></div></div><p>
   Nyní jste připraveni enkódovat video. Jelikož nám leží na srdci kvalita,
   samozřejmě použijeme víceprůchodové enkódování. Chcete-li poněkud
   urychlit enkódování, můžete přidat volbu <tt class="option">turbo</tt>
@@ -152,7 +152,7 @@ me=umh:partitions=all:trellis=1:qp_step=4:qcomp=0.7:direct_pred=auto:keyint=300 
   <span class="application">QuickTime</span> jej nepřehraje, jelikož
   nepodporuje H.264 muxovaný v AVI.
   Takže dalším krokem je přemuxovat video do MP4 konteineru.
-</p></div><div class="sect2" title="7.7.8. Přemuxování do MP4"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-remux"></a>7.7.8. Přemuxování do MP4</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-remux"></a>7.7.8. Přemuxování do MP4</h3></div></div></div><p>
   Existuje spousta způsobů, jak remuxovat AVI do MP4. Můžete použít
   <span class="application">mp4creator</span>, který je součástí
   <a class="ulink" href="http://mpeg4ip.sourceforge.net/" target="_top">MPEG4IP suite</a>.
@@ -203,7 +203,7 @@ mp4creator -optimize narnia.mp4</pre><p>
 3       hint    Payload mpeg4-generic for track 1
 4       hint    Payload H264 for track 2
 </pre><p>
-</p></div><div class="sect2" title="7.7.9. Přidání stop s meta daty"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-metadata"></a>7.7.9. Přidání stop s meta daty</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-metadata"></a>7.7.9. Přidání stop s meta daty</h3></div></div></div><p>
   Pokud chcete přidat stopy, které se objevují v iTunes, můžete použít
   <a class="ulink" href="http://atomicparsley.sourceforge.net/" target="_top">AtomicParsley</a>.
 

@@ -1,8 +1,8 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>B.4. GUI сообщения</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="skin.html" title="Приложение B. Формат скинов MPlayer"><link rel="prev" href="skin-fonts.html" title="B.3. Шрифты"><link rel="next" href="skin-quality.html" title="B.5. Создание качественного скина"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">B.4. GUI сообщения</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="skin-fonts.html">Пред.</a> </td><th width="60%" align="center">Приложение B. Формат скинов <span class="application">MPlayer</span></th><td width="20%" align="right"> <a accesskey="n" href="skin-quality.html">След.</a></td></tr></table><hr></div><div class="sect1" title="B.4. GUI сообщения"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="skin-gui"></a>B.4. GUI сообщения</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>B.4. GUI сообщения</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="skin.html" title="Приложение B. Формат скинов MPlayer"><link rel="prev" href="skin-fonts.html" title="B.3. Шрифты"><link rel="next" href="skin-quality.html" title="B.5. Создание качественного скина"><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">B.4. GUI сообщения</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="skin-fonts.html">Пред.</a> </td><th width="60%" align="center">Приложение B. Формат скинов <span class="application">MPlayer</span></th><td width="20%" align="right"> <a accesskey="n" href="skin-quality.html">След.</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="skin-gui"></a>B.4. GUI сообщения</h2></div></div></div><p>
 Это сообщения, которые могут генерироваться кнопками, ползунками и элементами меню.
-</p><div class="variablelist"><dl><dt><span class="term"><span class="bold"><strong>evNone</strong></span></span></dt><dd><p>
+</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><span class="bold"><strong>evNone</strong></span></span></dt><dd><p>
   Пустое сообщение, не имеет действий (за исключением, возможно, Subversion версий :-)).
-  </p></dd></dl></div><div class="variablelist" title="Управление воспроизведением:"><p class="title"><b>Управление воспроизведением:</b></p><dl><dt><span class="term"><span class="bold"><strong>evPlay</strong></span></span></dt><dd><p>
+  </p></dd></dl></div><div class="variablelist"><p class="title"><b>Управление воспроизведением:</b></p><dl class="variablelist"><dt><span class="term"><span class="bold"><strong>evPlay</strong></span></span></dt><dd><p>
   Старт воспроизведения.
   </p></dd><dt><span class="term"><span class="bold"><strong>evStop</strong></span></span></dt><dd><p>
   Останавливает воспроизведение.
@@ -42,7 +42,7 @@
   Это сообщение ставит воспроизведение на паузу и показывает изображение кнопки с
   назначенным сообщением <code class="literal">evPlaySwitchToPause</code>
   (чтобы показать, что кнопка может быть нажата для продолжения воспроизведения).
-  </p></dd></dl></div><div class="variablelist" title="Перемещение:"><p class="title"><b>Перемещение:</b></p><dl><dt><span class="term"><span class="bold"><strong>evBackward10sec</strong></span></span></dt><dd><p>
+  </p></dd></dl></div><div class="variablelist"><p class="title"><b>Перемещение:</b></p><dl class="variablelist"><dt><span class="term"><span class="bold"><strong>evBackward10sec</strong></span></span></dt><dd><p>
   Перемещение назад на 10 секунд.
   </p></dd><dt><span class="term"><span class="bold"><strong>evBackward1min</strong></span></span></dt><dd><p>
   Перемещение назад на 1 минуту.
@@ -57,7 +57,7 @@
   </p></dd><dt><span class="term"><span class="bold"><strong>evSetMoviePosition</strong></span></span></dt><dd><p>
   Перемещается к позиции (может использоваться ползунком;
   используется относительное (0-100%) положение ползунка).
-  </p></dd></dl></div><div class="variablelist" title="Управление видео:"><p class="title"><b>Управление видео:</b></p><dl><dt><span class="term"><span class="bold"><strong>evHalfSize</strong></span></span></dt><dd><p>
+  </p></dd></dl></div><div class="variablelist"><p class="title"><b>Управление видео:</b></p><dl class="variablelist"><dt><span class="term"><span class="bold"><strong>evHalfSize</strong></span></span></dt><dd><p>
   Установить половинный размер окна.
   </p></dd><dt><span class="term"><span class="bold"><strong>evDoubleSize</strong></span></span></dt><dd><p>
   Установить двойной размер окна.
@@ -66,7 +66,7 @@
   </p></dd><dt><span class="term"><span class="bold"><strong>evNormalSize</strong></span></span></dt><dd><p>
   Установить нормальный размер окна.
   </p></dd><dt><span class="term"><span class="bold"><strong>evSetAspect</strong></span></span></dt><dd><p>
-  </p></dd></dl></div><div class="variablelist" title="Управление звуком:"><p class="title"><b>Управление звуком:</b></p><dl><dt><span class="term"><span class="bold"><strong>evDecVolume</strong></span></span></dt><dd><p>
+  </p></dd></dl></div><div class="variablelist"><p class="title"><b>Управление звуком:</b></p><dl class="variablelist"><dt><span class="term"><span class="bold"><strong>evDecVolume</strong></span></span></dt><dd><p>
   Уменьшить громкость.
   </p></dd><dt><span class="term"><span class="bold"><strong>evIncVolume</strong></span></span></dt><dd><p>
   Увеличить громкость.
@@ -80,7 +80,7 @@
   используется относительное (0-100%) значение ползунка),
   </p></dd><dt><span class="term"><span class="bold"><strong>evEqualizer</strong></span></span></dt><dd><p>
   Включает/выключает эквалайзер.
-  </p></dd></dl></div><div class="variablelist" title="Разное:"><p class="title"><b>Разное:</b></p><dl><dt><span class="term"><span class="bold"><strong>evAbout</strong></span></span></dt><dd><p>
+  </p></dd></dl></div><div class="variablelist"><p class="title"><b>Разное:</b></p><dl class="variablelist"><dt><span class="term"><span class="bold"><strong>evAbout</strong></span></span></dt><dd><p>
   Открыть окно 'О программе'.
   </p></dd><dt><span class="term"><span class="bold"><strong>evPreferences</strong></span></span></dt><dd><p>
   Открывает окно с настройками.

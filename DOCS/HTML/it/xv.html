@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.2. Xv</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Il Visualizzatore di film"><link rel="up" href="video.html" title="Capitolo 4. Dispositivi di uscita video"><link rel="prev" href="mtrr.html" title="4.1. Impostare gli MTRR"><link rel="next" href="dga.html" title="4.3. DGA"><link rel="preface" href="howtoread.html" title="Come leggere questa documentazione"><link rel="chapter" href="intro.html" title="Capitolo 1. Introduzione"><link rel="chapter" href="install.html" title="Capitolo 2. Installazione"><link rel="chapter" href="usage.html" title="Capitolo 3. Utilizzo"><link rel="chapter" href="video.html" title="Capitolo 4. Dispositivi di uscita video"><link rel="chapter" href="ports.html" title="Capitolo 5. Ports"><link rel="chapter" href="mencoder.html" title="Capitolo 6. Utilizzo base di MEncoder"><link rel="chapter" href="encoding-guide.html" title="Capitolo 7. La codifica con MEncoder"><link rel="chapter" href="faq.html" title="Capitolo 8. Frequently Asked Questions"><link rel="appendix" href="bugreports.html" title="Appendice A. Come segnalare i bug (errori)"><link rel="appendix" href="skin.html" title="Appendice B. MPlayer skin format"><link rel="subsection" href="xv.html#tdfx" title="4.2.1. Schede 3dfx"><link rel="subsection" href="xv.html#s3" title="4.2.2. Schede S3"><link rel="subsection" href="xv.html#nvidia" title="4.2.3. Schede nVidia"><link rel="subsection" href="xv.html#ati" title="4.2.4. Schede ATI"><link rel="subsection" href="xv.html#neomagic" title="4.2.5. Schede NeoMagic"><link rel="subsection" href="xv.html#trident" title="4.2.6. Schede Trident"><link rel="subsection" href="xv.html#kyro" title="4.2.7. Schede Kyro/PowerVR"><link rel="subsection" href="xv.html#intel" title="4.2.8. Schede Intel"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.2. Xv</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="mtrr.html">Indietro</a> </td><th width="60%" align="center">Capitolo 4. Dispositivi di uscita video</th><td width="20%" align="right"> <a accesskey="n" href="dga.html">Avanti</a></td></tr></table><hr></div><div class="sect1" title="4.2. Xv"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="xv"></a>4.2. Xv</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.2. Xv</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Il Visualizzatore di film"><link rel="up" href="video.html" title="Capitolo 4. Dispositivi di uscita video"><link rel="prev" href="mtrr.html" title="4.1. Impostare gli MTRR"><link rel="next" href="dga.html" title="4.3. DGA"><link rel="preface" href="howtoread.html" title="Come leggere questa documentazione"><link rel="chapter" href="intro.html" title="Capitolo 1. Introduzione"><link rel="chapter" href="install.html" title="Capitolo 2. Installazione"><link rel="chapter" href="usage.html" title="Capitolo 3. Utilizzo"><link rel="chapter" href="video.html" title="Capitolo 4. Dispositivi di uscita video"><link rel="chapter" href="ports.html" title="Capitolo 5. Ports"><link rel="chapter" href="mencoder.html" title="Capitolo 6. Utilizzo base di MEncoder"><link rel="chapter" href="encoding-guide.html" title="Capitolo 7. La codifica con MEncoder"><link rel="chapter" href="faq.html" title="Capitolo 8. Frequently Asked Questions"><link rel="appendix" href="bugreports.html" title="Appendice A. Come segnalare i bug (errori)"><link rel="appendix" href="skin.html" title="Appendice B. MPlayer skin format"><link rel="subsection" href="xv.html#tdfx" title="4.2.1. Schede 3dfx"><link rel="subsection" href="xv.html#s3" title="4.2.2. Schede S3"><link rel="subsection" href="xv.html#nvidia" title="4.2.3. Schede nVidia"><link rel="subsection" href="xv.html#ati" title="4.2.4. Schede ATI"><link rel="subsection" href="xv.html#neomagic" title="4.2.5. Schede NeoMagic"><link rel="subsection" href="xv.html#trident" title="4.2.6. Schede Trident"><link rel="subsection" href="xv.html#kyro" title="4.2.7. Schede Kyro/PowerVR"><link rel="subsection" href="xv.html#intel" title="4.2.8. Schede Intel"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.2. Xv</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="mtrr.html">Indietro</a> </td><th width="60%" align="center">Capitolo 4. Dispositivi di uscita video</th><td width="20%" align="right"> <a accesskey="n" href="dga.html">Avanti</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="xv"></a>4.2. Xv</h2></div></div></div><p>
 In XFree86 4.0.2 o successivi, puoi utilizzare le funzioni YUV hardware della
 tua scheda usando l'estensione XVideo. Questo è quello che fa l'opzione
 <tt class="option">-vo xv</tt>. Inoltre, il driver supporta l'impostazione di
@@ -17,7 +17,7 @@ Per far sì che funzioni, assicurati di controllare le seguenti:
   Che X carichi l'estensione XVideo, è un qualcosa del genere:
   </p><pre class="programlisting">(II) Loading extension XVideo</pre><p>
   in <tt class="filename">/var/log/XFree86.0.log</tt>
-  </p><div class="note" title="Nota" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Nota</h3><p>
+  </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Nota</h3><p>
    Questo carica solo l'estensione per XFree86. In una buona installazione
    viene sempre caricata, e non significa che il supporto per l'XVideo della
    <span class="bold"><strong>scheda</strong></span> sia presente!
@@ -59,7 +59,7 @@ screen #0
   seguente:
   </p><pre class="screen">  xv      X11/Xv</pre><p>
 </p></li></ol></div><p>
-</p><div class="sect2" title="4.2.1. Schede 3dfx"><div class="titlepage"><div><div><h3 class="title"><a name="tdfx"></a>4.2.1. Schede 3dfx</h3></div></div></div><p>
+</p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="tdfx"></a>4.2.1. Schede 3dfx</h3></div></div></div><p>
 I vecchi driver 3dfx avevano notoriamente dei problemi con l'accelerazione
 XVideo, non erano compatibili con gli spazi colore YV12 e YUY2. Verifica di
 avere XFree86 4.2.0 o superiore, può gestire YV12 e YUY2, mentre le versioni
@@ -71,7 +71,7 @@ se aiuta. Controlla la sezione su <a class="link" href="sdl.html" title="4.4. S
 <span class="bold"><strong>OPPURE</strong></span>, prova il NUOVO driver
 <tt class="option">-vo tdfxfb</tt>! Vedi la sezione
 <a class="link" href="tdfxfb.html" title="4.8. Supporto YUV per 3Dfx">tdfxfb</a>
-</p></div><div class="sect2" title="4.2.2. Schede S3"><div class="titlepage"><div><div><h3 class="title"><a name="s3"></a>4.2.2. Schede S3</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="s3"></a>4.2.2. Schede S3</h3></div></div></div><p>
 Le S3 Savage3D dovrebbero funzionare bene, ma per le Savage4, usa XFree86 4.0.3
 o superiore (nel caso tu abbia problemi di immagini, prova a 16bpp). Per le
 S3 Virge invece: c'è il supporto per xv, ma la scheda in sé è molto lenta,
@@ -82,12 +82,12 @@ Configura il tuo framebuffer (per es. aggiungi
 "<tt class="option">vga=792 video=vesa:mtrr</tt>" alla riga di avvio del kernel) e usa
 <tt class="option">-vo s3fb</tt> (<tt class="option">-vf yuy2</tt> e <tt class="option">-dr</tt>
 aiutano).
-</p><div class="note" title="Nota" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Nota</h3><p>
+</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Nota</h3><p>
 Non è ben chiaro il perché i modelli Savage non abbiano il supporto YV12 e
 facciano la conversione con il driver (lento). Se pensi sia colpa della scheda,
 cerca un driver più recente, o chiedi gentilmente di un driver abilitato
 MMX/3DNow! sulla mailing list MPlayer-users.
-</p></div></div><div class="sect2" title="4.2.3. Schede nVidia"><div class="titlepage"><div><div><h3 class="title"><a name="nvidia"></a>4.2.3. Schede nVidia</h3></div></div></div><p>
+</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="nvidia"></a>4.2.3. Schede nVidia</h3></div></div></div><p>
 nVidia non è sempre una scelta molto buona sotto Linux... Il driver
 open-source di XFree86 supporta la maggior parte di queste schede, ma in alcuni
 casi, dovrai usare il driver proprietario a sorgenti chiusi di nVidia,
@@ -104,7 +104,7 @@ Tuttavia, <span class="application">MPlayer</span> contiene un driver
 Attualmente è a livello di sviluppo beta e ha alcuni problemi. Per
 ulteriori informazioni, vedi la sezione
 <a class="link" href="vidix.html#vidix-nvidia" title="4.15.6. Schede nVidia">VIDIX nVidia</a>.
-</p></div><div class="sect2" title="4.2.4. Schede ATI"><div class="titlepage"><div><div><h3 class="title"><a name="ati"></a>4.2.4. Schede ATI</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="ati"></a>4.2.4. Schede ATI</h3></div></div></div><p>
 Il <a class="ulink" href="http://gatos.sf.net" target="_top">driver GATOS</a>
 (che dovresti usare a meno che tu non abbia una Rage128 o una Radeon) di
 default ha il VSYNC abilitato. Ciò significa che la velocità di decodifica
@@ -119,7 +119,7 @@ puoi felicemente avere un display <span class="bold"><strong>accelerato</strong>
 con o senza l'<span class="bold"><strong>uscita TV</strong></span>, e non servono
 librerie né X.
 Leggi la sezione <a class="link" href="vidix.html" title="4.15. VIDIX">VIDIX</a>.
-</p></div><div class="sect2" title="4.2.5. Schede NeoMagic"><div class="titlepage"><div><div><h3 class="title"><a name="neomagic"></a>4.2.5. Schede NeoMagic</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="neomagic"></a>4.2.5. Schede NeoMagic</h3></div></div></div><p>
 Queste schede si possono trovare in molti portatili. Devi usare XFree86 4.3.0 o
 superiore, o alternativamente usare i
 <a class="ulink" href="http://www.mplayerhq.hu/MPlayer/contrib/NeoMagic-driver/" target="_top">driver con Xv</a>
@@ -141,18 +141,18 @@ Section "Device"
     <span class="emphasis"><em>Option "OverlayMem" "829440"</em></span>
     [...]
 EndSection</pre><p>
-</p></div><div class="sect2" title="4.2.6. Schede Trident"><div class="titlepage"><div><div><h3 class="title"><a name="trident"></a>4.2.6. Schede Trident</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="trident"></a>4.2.6. Schede Trident</h3></div></div></div><p>
 Se vuoi usare Xv con una scheda Trident, assunto il fatto che con 4.1.0 non
 funziona, intalla Xfree 4.2.0. Il 4.2.0 aggiunge il supporto per Xv a schermo
 intero con la scheda Cyberblade XP.
 </p><p>
 Alternativamente, <span class="application">MPlayer</span> contiene un driver
 <a class="link" href="vidix.html" title="4.15. VIDIX">VIDIX</a> per le schede Cyberblade/i1.
-</p></div><div class="sect2" title="4.2.7. Schede Kyro/PowerVR"><div class="titlepage"><div><div><h3 class="title"><a name="kyro"></a>4.2.7. Schede Kyro/PowerVR</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="kyro"></a>4.2.7. Schede Kyro/PowerVR</h3></div></div></div><p>
 Se vuoi usare Xv con una scheda basata su Kyro (per esempio la Hercules
 Prophet 4000XT), dovresti scaricare i driver dal
 <a class="ulink" href="http://www.powervr.com/" target="_top">sito di PowerVR</a>.
-</p></div><div class="sect2" title="4.2.8. Schede Intel"><div class="titlepage"><div><div><h3 class="title"><a name="intel"></a>4.2.8. Schede Intel</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="intel"></a>4.2.8. Schede Intel</h3></div></div></div><p>
 Queste schede si possono trovare in molti portatili. Si consiglia un Xorg
 recente.
 </p><p>

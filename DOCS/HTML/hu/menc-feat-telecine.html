@@ -1,9 +1,9 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>9.2. Mit kezdjünk a telecine-nel és az átlapolással NTSC DVD-ken</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="encoding-guide.html" title="9. fejezet - Kódolás a MEncoderrel"><link rel="prev" href="menc-feat-dvd-mpeg4.html" title='9.1. Nagyon jó minőségű MPEG-4 ("DivX") rip készítése DVD filmből'><link rel="next" href="menc-feat-enc-libavcodec.html" title="9.3. Kódolás a libavcodec codec családdal"><link rel="preface" href="howtoread.html" title="Hogyan olvasd ezt a dokumentációt"><link rel="chapter" href="intro.html" title="1. fejezet - Bevezetés"><link rel="chapter" href="install.html" title="2. fejezet - Telepítés"><link rel="chapter" href="usage.html" title="3. fejezet - Használat"><link rel="chapter" href="tv-input.html" title="4. fejezet - TV bemenet"><link rel="chapter" href="tv-teletext.html" title="5. fejezet - Teletext"><link rel="chapter" href="video.html" title="6. fejezet - Videó kimeneti eszközök"><link rel="chapter" href="ports.html" title="7. fejezet - Portok"><link rel="chapter" href="mencoder.html" title="8. fejezet - A MEncoder használatának alapjai"><link rel="chapter" href="encoding-guide.html" title="9. fejezet - Kódolás a MEncoderrel"><link rel="chapter" href="faq.html" title="10. fejezet - Gyakran ismételt kérdések"><link rel="appendix" href="bugreports.html" title="A. függelék - Hogyan jelentsd a hibákat"><link rel="appendix" href="skin.html" title="B. függelék - MPlayer skin formátum"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-intro" title="9.2.1. Bevezetés"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-ident" title="9.2.2. Hogyan állapítható meg egy videó típusa"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-encode" title="9.2.3. Hogyan lehet elkódolni ezen kategóriákat"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-footnotes" title="9.2.4. Lábjegyzet"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">9.2. Mit kezdjünk a telecine-nel és az átlapolással NTSC DVD-ken</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-dvd-mpeg4.html">Vissza</a> </td><th width="60%" align="center">9. fejezet - Kódolás a <span class="application">MEncoder</span>rel</th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-enc-libavcodec.html">Előre</a></td></tr></table><hr></div><div class="sect1" title="9.2. Mit kezdjünk a telecine-nel és az átlapolással NTSC DVD-ken"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-telecine"></a>9.2. Mit kezdjünk a telecine-nel és az átlapolással NTSC DVD-ken</h2></div></div></div><div class="sect2" title="9.2.1. Bevezetés"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-intro"></a>9.2.1. Bevezetés</h3></div></div></div><p title="Mi az a telecine?"><b>Mi az a telecine? </b>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>9.2. Mit kezdjünk a telecine-nel és az átlapolással NTSC DVD-ken</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="encoding-guide.html" title="9. fejezet - Kódolás a MEncoderrel"><link rel="prev" href="menc-feat-dvd-mpeg4.html" title='9.1. Nagyon jó minőségű MPEG-4 ("DivX") rip készítése DVD filmből'><link rel="next" href="menc-feat-enc-libavcodec.html" title="9.3. Kódolás a libavcodec codec családdal"><link rel="preface" href="howtoread.html" title="Hogyan olvasd ezt a dokumentációt"><link rel="chapter" href="intro.html" title="1. fejezet - Bevezetés"><link rel="chapter" href="install.html" title="2. fejezet - Telepítés"><link rel="chapter" href="usage.html" title="3. fejezet - Használat"><link rel="chapter" href="tv-input.html" title="4. fejezet - TV bemenet"><link rel="chapter" href="tv-teletext.html" title="5. fejezet - Teletext"><link rel="chapter" href="video.html" title="6. fejezet - Videó kimeneti eszközök"><link rel="chapter" href="ports.html" title="7. fejezet - Portok"><link rel="chapter" href="mencoder.html" title="8. fejezet - A MEncoder használatának alapjai"><link rel="chapter" href="encoding-guide.html" title="9. fejezet - Kódolás a MEncoderrel"><link rel="chapter" href="faq.html" title="10. fejezet - Gyakran ismételt kérdések"><link rel="appendix" href="bugreports.html" title="A. függelék - Hogyan jelentsd a hibákat"><link rel="appendix" href="skin.html" title="B. függelék - MPlayer skin formátum"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-intro" title="9.2.1. Bevezetés"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-ident" title="9.2.2. Hogyan állapítható meg egy videó típusa"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-encode" title="9.2.3. Hogyan lehet elkódolni ezen kategóriákat"><link rel="subsection" href="menc-feat-telecine.html#menc-feat-telecine-footnotes" title="9.2.4. Lábjegyzet"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">9.2. Mit kezdjünk a telecine-nel és az átlapolással NTSC DVD-ken</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-dvd-mpeg4.html">Vissza</a> </td><th width="60%" align="center">9. fejezet - Kódolás a <span class="application">MEncoder</span>rel</th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-enc-libavcodec.html">Előre</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-telecine"></a>9.2. Mit kezdjünk a telecine-nel és az átlapolással NTSC DVD-ken</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-intro"></a>9.2.1. Bevezetés</h3></div></div></div><p><b>Mi az a telecine? </b>
 Ha nem érted teljesen, ami ebben a dokumentumban le van írva, olvasd el a
 <a class="ulink" href="http://en.wikipedia.org/wiki/Telecine" target="_top">Wikipedia telecine szócikkét</a>.
 Ez egy érthető és meglehetősen átfogó leírás arról, hogy mi is az
 a telecine.
-</p><p title="Megjegyzés a számokhoz."><b>Megjegyzés a számokhoz. </b>
+</p><p><b>Megjegyzés a számokhoz. </b>
 Sok dokumentáció, beleértve a fent belinkelt cikket is, az NTSC videó mező
 per másodperc értékét 59.94-ként határozza meg, és a megfelelő képkocka
 per másodperc értéket 29.97-nek (telecine-s és átlapolt) és 23.976-nak
@@ -26,7 +26,7 @@ használni.
 </p><p>
 <tt class="option">-ofps 23.976</tt> helytelen.
 <tt class="option">-ofps 24000/1001</tt> használandó helyette.
-</p><p title="A telecine használata."><b>A telecine használata. </b>
+</p><p><b>A telecine használata. </b>
 Az összes videónak, amit NTSC televízión szándékoznak megjeleníteni,
 60000/1001 mező per másodperc sebességűnek kell lennie. A TV-nek készített
 filmeket és show-kat gyakran direkt 60000/1001 mező per másodperces sebességgel
@@ -56,7 +56,7 @@ mozgásnál, mert az egyik mező (mondjuk a páros sorszámú sorok) időben
 Átlapolt videó számítógépen történő lejátszáskor rondán néz ki, mert
 egyrészt a monitornak nagyobb a felbontása, másrészt mert a videót
 kockáról kockára mutatja meg, mezőről mezőre történő lejátszás helyett.
-</p><div class="itemizedlist" title="Megjegyzések:"><p class="title"><b>Megjegyzések:</b></p><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><p class="title"><b>Megjegyzések:</b></p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Ez a rész csak NTSC DVD-re vonatkozik, nem a PAL-ra.
 </p></li><li class="listitem"><p>
   A <span class="application">MEncoder</span> példa sorok a dokumentumban
@@ -70,7 +70,7 @@ kockáról kockára mutatja meg, mezőről mezőre történő lejátszás helyet
 </p></li><li class="listitem"><p>
   Sok megjegyzés vonatkozik erre a leírásra, melyek így vannak jelölve:
   <a class="link" href="menc-feat-telecine.html#menc-feat-telecine-footnotes" title="9.2.4. Lábjegyzet">[1]</a>
-</p></li></ul></div></div><div class="sect2" title="9.2.2. Hogyan állapítható meg egy videó típusa"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-ident"></a>9.2.2. Hogyan állapítható meg egy videó típusa</h3></div></div></div><div class="sect3" title="9.2.2.1. Progresszív"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-progressive"></a>9.2.2.1. Progresszív</h4></div></div></div><p>
+</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-ident"></a>9.2.2. Hogyan állapítható meg egy videó típusa</h3></div></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-progressive"></a>9.2.2.1. Progresszív</h4></div></div></div><p>
 A progresszív videót eredetileg 24000/1001 fps-sel rögzítették és
 változtatás nélkül tárolják a DVD-n.
 </p><p>
@@ -103,7 +103,7 @@ is eltarthat. Minden esetben, ha a demux_mpg frameráta váltást
 </p><p>
 Néha a progresszív videóra "soft-telecine"-ként
 hivatkoznak, mert a DVD lejátszónak kell ezt telecine-elnie.
-</p></div><div class="sect3" title="9.2.2.2. Telecine-lt"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-telecined"></a>9.2.2.2. Telecine-lt</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-telecined"></a>9.2.2.2. Telecine-lt</h4></div></div></div><p>
 A telecine-lt videót eredetileg 24000/1001 fps-sel vették fel, de
 telecine-lve lett a DVD-re írás <span class="emphasis"><em>előtt</em></span>.
 </p><p>
@@ -141,7 +141,7 @@ Ennek a technikának megvan az az előnye, hogy nem kell a forrást
 nézned az azonosításhoz, ami akkor jó, ha automatizálni szeretnéd a
 kódolási folyamatot vagy távolról, lassú kapcsolaton keresztül
 szeretnéd megcsinálni.
-</p></div><div class="sect3" title="9.2.2.3. Átlapolt"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-interlaced"></a>9.2.2.3. Átlapolt</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-interlaced"></a>9.2.2.3. Átlapolt</h4></div></div></div><p>
 Az átlapolt videót eredetileg 60000/1001 mező per másodperc sebességgel
 filmezték és 30000/1001 képkocka per másodperccel került fel a DVD-re. Az
 átlapolási effektus (gyakran "combing"-nak hívják) a mező párok
@@ -156,7 +156,7 @@ lejátszásakor.
 Ha egy átlapolt videót közelebbről megnézel képkocka-léptetéssel a
 <span class="keycap"><b>.</b></span> gombot nyomogatva, megláthatod, hogy minden egyes
 képkocka átlapolt.
-</p></div><div class="sect3" title="9.2.2.4. Kevert progresszív és telecine"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-mixedpt"></a>9.2.2.4. Kevert progresszív és telecine</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-mixedpt"></a>9.2.2.4. Kevert progresszív és telecine</h4></div></div></div><p>
 Az összes "kevert progresszív és telecine" videót eredetileg 24000/1001
 képkocka per másodperccel rögzítették, de egyes részei utólag
 telecine-lve lettek.
@@ -169,18 +169,18 @@ az üzeneteket.
 </p><p>
 Nézd meg a "30000/1001 fps NTSC" részeket, és meggyőződhetsz róla,
 hogy telecine-ltek, nem csak átlapoltak.
-</p></div><div class="sect3" title="9.2.2.5. Kevert progresszív és átlapolt"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-mixedpi"></a>9.2.2.5. Kevert progresszív és átlapolt</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-ident-mixedpi"></a>9.2.2.5. Kevert progresszív és átlapolt</h4></div></div></div><p>
 "Kevert progresszív és átlapolt" tartalomnál a progresszív
 és az átlapolt videót összeillesztették.
 </p><p>
 Ez a kategória ugyan úgy viselkedik, mint a "kevert progresszív és telecine",
 egészen addig, amíg meg nem vizsgálod a 30000/1001 fps-es részeket
 és észre nem veszed, hogy nincs bennük telecine minta.
-</p></div></div><div class="sect2" title="9.2.3. Hogyan lehet elkódolni ezen kategóriákat"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-encode"></a>9.2.3. Hogyan lehet elkódolni ezen kategóriákat</h3></div></div></div><p>
+</p></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-encode"></a>9.2.3. Hogyan lehet elkódolni ezen kategóriákat</h3></div></div></div><p>
 Ahogy említettem az elején, például a <span class="application">MEncoder</span>
 alábbi parancssorai <span class="bold"><strong>nem</strong></span> igazán használhatóak;
 csak demonstrálják a minimum paramétereket az egyes kategóriák megfelelő kódolásához.
-</p><div class="sect3" title="9.2.3.1. Progresszív"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-progressive"></a>9.2.3.1. Progresszív</h4></div></div></div><p>
+</p><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-progressive"></a>9.2.3.1. Progresszív</h4></div></div></div><p>
 A progresszív videóhoz nem kell semmilyen különleges szűrés. Az egyetlen
 paraméterm, amit biztosan használnod kell, az a
 <tt class="option">-ofps 24000/1001</tt>. Egyébként a <span class="application">MEncoder</span>
@@ -194,14 +194,14 @@ a dolgodban, a legbiztonságosabb, ha
 <a class="link" href="menc-feat-telecine.html#menc-feat-telecine-encode-mixedpt" title="9.2.3.4. Kevert progresszív és telecine">kevert progresszív és telecine-lt</a>
 videóként kezeled. A teljesítményvesztés kicsi
 <a class="link" href="menc-feat-telecine.html#menc-feat-telecine-footnotes" title="9.2.4. Lábjegyzet">[3]</a>.
-</p></div><div class="sect3" title="9.2.3.2. Telecine-lt"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-telecined"></a>9.2.3.2. Telecine-lt</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-telecined"></a>9.2.3.2. Telecine-lt</h4></div></div></div><p>
 A telecine visszafordítható, hogy megkapd az eredeti 24000/1001-es
 tartalmat, egy inverz-telecine-nek nevezett eljárással.
 Az <span class="application">MPlayer</span> számos szűrővel rendelkezik ennek
 az elvégzéséhez; a legjobb szűrő a <tt class="option">pullup</tt> le van írva
 a <a class="link" href="menc-feat-telecine.html#menc-feat-telecine-encode-mixedpt" title="9.2.3.4. Kevert progresszív és telecine">kevert progresszív és telecine</a>
 részben.
-</p></div><div class="sect3" title="9.2.3.3. Átlapolt"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-interlaced"></a>9.2.3.3. Átlapolt</h4></div></div></div><p>
+</p></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-interlaced"></a>9.2.3.3. Átlapolt</h4></div></div></div><p>
 A legtöbb gyakorlati esetben nem lehetséges a teljes progresszív videó
 visszanyerése az átlapolt tartalomból. Az egyetlen út ehhez a függőleges
 felbontás felének elvesztése nélkül a frameráta megduplázása és
@@ -270,7 +270,7 @@ mencoder dvd://1 -oac copy -vf tfields=2 -ovc lavc \
   megfelelő méretezés. Emlékezz, hogy be kell állítanod a méretarányt a
   felezett függőleges felbontásnak megfelelően.
   </p><pre class="screen">mencoder dvd://1 -oac copy -vf field=0 -ovc lavc</pre><p>
-</p></li></ol></div></div><div class="sect3" title="9.2.3.4. Kevert progresszív és telecine"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-mixedpt"></a>9.2.3.4. Kevert progresszív és telecine</h4></div></div></div><p>
+</p></li></ol></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-mixedpt"></a>9.2.3.4. Kevert progresszív és telecine</h4></div></div></div><p>
 Ahhoz, hogy egy kevert, progresszív és telecine-s videót teljesen
 progresszív videóvá konvertálj, a telecine-lt részeket
 inverz-telecine-elni kell. Ez háromféle képpen végezhető el,
@@ -281,7 +281,7 @@ dolgodban, és az inverse-telecine legyen a vágás előtt is
 <a class="link" href="menc-feat-telecine.html#menc-feat-telecine-footnotes" title="9.2.4. Lábjegyzet">[1]</a>.
 A <tt class="option">-ofps 24000/1001</tt> kell ide, mert a kimeneti videó 24000/1001
 képkocka per másodperc sebességű lesz.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   A <tt class="option">-vf pullup</tt> a telecine-s részek inverz-telecine-léséhez
   lett tervezve úgy, hogy a progresszív adatokat érintetlenül hagyja.
   A helyes működéshez a <tt class="option">pullup</tt>-ot
@@ -319,10 +319,10 @@ mencoder dvd://1 -oac copy -vf filmdint -ovc lavc -ofps 24000/1001</pre><p>
   </p><pre class="screen">
 mencoder dvd://1 -oac copy -vf softpulldown,ivtc=1 -ovc lavc -ofps 24000/1001
   </pre><p>
-</p></li></ul></div></div><div class="sect3" title="9.2.3.5. Kevert progresszív és átlapolt"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-mixedpi"></a>9.2.3.5. Kevert progresszív és átlapolt</h4></div></div></div><p>
+</p></li></ul></div></div><div class="sect3"><div class="titlepage"><div><div><h4 class="title"><a name="menc-feat-telecine-encode-mixedpi"></a>9.2.3.5. Kevert progresszív és átlapolt</h4></div></div></div><p>
 Két módon kezelheted ezt a kategóriát, mindkettő kompromisszum.
 Az időtartam/hely alapján kell döntened.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Kezeld úgy, mintha progresszív lenne. Az átlapolt részek átlapoltnak
   látszanak és néhány átlapolt mezőt el kell dobni, ami egyenletlen
   ugrásokat eredményez. Használhatsz utófeldolgozó szűrőt, ha akarsz,
@@ -355,7 +355,7 @@ Az időtartam/hely alapján kell döntened.
   Kezeld teljesen átlapoltként. A progresszív részekben néhány
   képkockát meg kell duplázni, ami egyenlőtlen ugrásokat eredményez.
   De hangsúlyozom, a deinterlacing szűrők rontják a progresszív részeket.
-</p></li></ul></div></div></div><div class="sect2" title="9.2.4. Lábjegyzet"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-footnotes"></a>9.2.4. Lábjegyzet</h3></div></div></div><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p title="A vágásról:"><b>A vágásról: </b>
+</p></li></ul></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-telecine-footnotes"></a>9.2.4. Lábjegyzet</h3></div></div></div><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p><b>A vágásról: </b>
   A videó adatot a DVD-ken egy úgynevezett YUV 4:2:0 formátumban tárolják.
   A YUV videóban a luma ("fényerő") és a chroma ("szín")
   külön tárolódik. Mivel az emberi szem valamivel érzéketlenebb a színre,
@@ -389,7 +389,7 @@ Az időtartam/hely alapján kell döntened.
   Az átlapolt (nem telecine-lt) videónál függőlegesen mindig négy
   többszörösével kell vágnod, hacsak nem használod a <tt class="option">-vf
   field</tt>-et a vágás előtt.
-  </p></li><li class="listitem"><p title="A kódolási paraméterekről és a minőségről:"><b>A kódolási paraméterekről és a minőségről: </b>
+  </p></li><li class="listitem"><p><b>A kódolási paraméterekről és a minőségről: </b>
   Csak mert itt javasoltam az <tt class="option">mbd=2</tt>-t, nem jelenti
   azt, hogy máshol ne lehetne használni. A <tt class="option">trell</tt>-lel
   együtt az <tt class="option">mbd=2</tt> egyike a két <code class="systemitem">libavcodec</code> kapcsolóknak, amik legjobban
@@ -398,7 +398,7 @@ Az időtartam/hely alapján kell döntened.
   idejű kódolás). Még számos egyéb opciója van a <code class="systemitem">libavcodec</code>-nek, ami növeli a kódolás
   minőségét (és csökkenti a kódolás sebességét) de az már túlmutat ezen
   dokumentum célkitűzésein.
-  </p></li><li class="listitem"><p title="A pullup teljesítményéről:"><b>A pullup teljesítményéről: </b>
+  </p></li><li class="listitem"><p><b>A pullup teljesítményéről: </b>
   Bátran használhatod a <tt class="option">pullup</tt>-ot (a <tt class="option">softskip</tt>pel
   együtt) a progresszív videókon és ez általában jó ötlet, hacsak a forrás
   nem egyértelműen teljesen progresszív. A teljesítmény veszteség kicsi az

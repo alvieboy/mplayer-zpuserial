@@ -18,6 +18,12 @@
 @ along with mpeg2dec; if not, write to the Free Software
 @ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
+@ Disable pld for platforms which don't support it
+#include "../config.h"
+#if !HAVE_PLD
+.macro pld reg
+.endm
+#endif
 
 	.text
 

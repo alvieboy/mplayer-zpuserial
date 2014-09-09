@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.18. MPEG dekodéry</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Multimediální přehrávač"><link rel="up" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="prev" href="dfbmga.html" title="4.17. DirectFB/Matrox (dfbmga)"><link rel="next" href="other.html" title="4.19. Ostatní vizualizační hardware"><link rel="preface" href="howtoread.html" title="Jak číst tuto dokumentaci"><link rel="chapter" href="intro.html" title="Kapitola 1. Představení"><link rel="chapter" href="install.html" title="Kapitola 2. Instalace"><link rel="chapter" href="usage.html" title="Kapitola 3. Použití"><link rel="chapter" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="chapter" href="ports.html" title="Kapitola 5. Porty"><link rel="chapter" href="mencoder.html" title="Kapitola 6. Základní použití MEncoderu"><link rel="chapter" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="chapter" href="faq.html" title="Kapitola 8. Často Kladené Dotazy (FAQ)"><link rel="appendix" href="bugreports.html" title="Příloha A. Jak hlásit chyby"><link rel="appendix" href="skin.html" title="Příloha B. Formát skinů MPlayeru"><link rel="subsection" href="mpeg_decoders.html#dvb" title="4.18.1. DVB výstup a vstup"><link rel="subsection" href="mpeg_decoders.html#dxr2" title="4.18.2. DXR2"><link rel="subsection" href="mpeg_decoders.html#dxr3" title="4.18.3. DXR3/Hollywood+"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.18. MPEG dekodéry</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="dfbmga.html">Předcházející</a> </td><th width="60%" align="center">Kapitola 4. Výstupní video zařízení/rozhraní</th><td width="20%" align="right"> <a accesskey="n" href="other.html">Další</a></td></tr></table><hr></div><div class="sect1" title="4.18. MPEG dekodéry"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mpeg_decoders"></a>4.18. MPEG dekodéry</h2></div></div></div><div class="sect2" title="4.18.1. DVB výstup a vstup"><div class="titlepage"><div><div><h3 class="title"><a name="dvb"></a>4.18.1. DVB výstup a vstup</h3></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.18. MPEG dekodéry</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Multimediální přehrávač"><link rel="up" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="prev" href="dfbmga.html" title="4.17. DirectFB/Matrox (dfbmga)"><link rel="next" href="other.html" title="4.19. Ostatní vizualizační hardware"><link rel="preface" href="howtoread.html" title="Jak číst tuto dokumentaci"><link rel="chapter" href="intro.html" title="Kapitola 1. Představení"><link rel="chapter" href="install.html" title="Kapitola 2. Instalace"><link rel="chapter" href="usage.html" title="Kapitola 3. Použití"><link rel="chapter" href="video.html" title="Kapitola 4. Výstupní video zařízení/rozhraní"><link rel="chapter" href="ports.html" title="Kapitola 5. Porty"><link rel="chapter" href="mencoder.html" title="Kapitola 6. Základní použití MEncoderu"><link rel="chapter" href="encoding-guide.html" title="Kapitola 7. Enkódování s MEncoderem"><link rel="chapter" href="faq.html" title="Kapitola 8. Často Kladené Dotazy (FAQ)"><link rel="appendix" href="bugreports.html" title="Příloha A. Jak hlásit chyby"><link rel="appendix" href="skin.html" title="Příloha B. Formát skinů MPlayeru"><link rel="subsection" href="mpeg_decoders.html#dvb" title="4.18.1. DVB výstup a vstup"><link rel="subsection" href="mpeg_decoders.html#dxr2" title="4.18.2. DXR2"><link rel="subsection" href="mpeg_decoders.html#dxr3" title="4.18.3. DXR3/Hollywood+"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.18. MPEG dekodéry</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="dfbmga.html">Předcházející</a> </td><th width="60%" align="center">Kapitola 4. Výstupní video zařízení/rozhraní</th><td width="20%" align="right"> <a accesskey="n" href="other.html">Další</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mpeg_decoders"></a>4.18. MPEG dekodéry</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="dvb"></a>4.18.1. DVB výstup a vstup</h3></div></div></div><p>
 <span class="application">MPlayer</span> podporuje karty s čipsetem Siemens DVB od
 výrobců jako Siemens, Technotrend, Galaxis nebo Hauppauge. Poslední DVB
 ovladače jsou dostupné na
@@ -11,12 +11,12 @@ Pokud máte ost hlavičky na nestandardním místě, nastavte cestu pomocí
 </p><pre class="screen">
 ./configure --extra-cflags=<em class="replaceable"><code>zdrojový adresář DVB</code></em>/ost/include
 </pre><p>
-Pak kompilujte a instalujte obvyklým způsobem.</p><p title="POUŽITÍ"><b>POUŽITÍ. </b>
+Pak kompilujte a instalujte obvyklým způsobem.</p><p><b>POUŽITÍ. </b>
 Hardwarové dekódování proudů obsahujících MPEG–1/2 video a/nebo audio lze
 provést tímto příkazem:
 </p><pre class="screen">
 mplayer -ao mpegpes -vo mpegpes <em class="replaceable"><code>soubor.mpg|vob</code></em>
-</pre><p title="POUŽITÍ">
+</pre><p>
 </p><p>
 Dekódování jakéhokoli jiného typu video proudu vyžaduje transkódování MPEG–1,
 což je pomalé a nemusí stát za to, zvlášť s pomalým počítačem.
@@ -69,7 +69,7 @@ Chcete-li zachovat poměr stran MPEG–4 (DivX) souborů a dosáhnout optimáln�
 pro 4:3 TV: -vf dvbscale,scale=-1:0,expand=-1:576:-1:-1:1
 pro 16:9 TV: -vf dvbscale=1024,scale=-1:0,expand=-1:576:-1:-1:1
 </pre><p>
-</p><p title="Digitální TV (vstupní DVB modul)"><b>Digitální TV (vstupní DVB modul). </b>Můžete použít svou DVB kartu pro sledování Digitální TV.</p><p>
+</p><p><b>Digitální TV (vstupní DVB modul). </b>Můžete použít svou DVB kartu pro sledování Digitální TV.</p><p>
 Měli byste mít nainstalovány programy <span class="command"><strong>scan</strong></span> a
 <span class="command"><strong>szap/tzap/czap/azap</strong></span>; všechny jsou zařazeny v balíčku
 ovladačů.
@@ -153,7 +153,7 @@ mencoder -o <em class="replaceable"><code>r1.avi</code></em> -ovc xvid -xvidenco
 </p><p>
 Přečtěte si man stránku pro seznam voleb, které můžete předat vstupnímu
 DVB modulu.
-</p><p title="BUDOUCNOST"><b>BUDOUCNOST. </b>
+</p><p><b>BUDOUCNOST. </b>
 Máte-li otázky, nebo chcete dostávat oznámení o nových vlastnostech a zapojit
 se do diskuse o těchto věcech, připojte se k naší
 <a class="ulink" href="http://lists.mplayerhq.hu/mailman/listinfo/mplayer-dvb" target="_top">MPlayer-DVB</a>
@@ -163,14 +163,14 @@ V budoucnu můžete očekávat schopnost zobrazovat OSD a titulky pomocí nativn
 podpory OSD v DVB kartách, stejně jako plynulejší přehrávání filmů s jinou
 snímkovou rychlostí, než 25 fps a transkódování MPEG–2 na MPEG–4 v reálném čase
 (částečná dekomprese).
-</p></div><div class="sect2" title="4.18.2. DXR2"><div class="titlepage"><div><div><h3 class="title"><a name="dxr2"></a>4.18.2. DXR2</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="dxr2"></a>4.18.2. DXR2</h3></div></div></div><p>
 <span class="application">MPlayer</span> podporuje hardwarově akcelerované
 přehrávání pomocí karty Creative DXR2.
 </p><p>
 Nejdříve musíte mít správně nainstalované DXR2 ovladače. Ovladače a návod
 k jejich instalaci naleznete na stránkách
 <a class="ulink" href="http://dxr2.sf.net/" target="_top">DXR2 Resource Center</a>.
-</p><div class="variablelist" title="POUŽITÍ"><p class="title"><b>POUŽITÍ</b></p><dl><dt><span class="term"><tt class="option">-vo dxr2</tt></span></dt><dd><p>Zapíná TV výstup.</p></dd><dt><span class="term"><tt class="option">-vo dxr2:x11</tt> nebo <tt class="option">-vo dxr2:xv</tt></span></dt><dd><p>Zapíná Overlay výstup v X11.</p></dd><dt><span class="term"><tt class="option">-dxr2 &lt;volba1:volba2:...&gt;</tt></span></dt><dd><p>
+</p><div class="variablelist"><p class="title"><b>POUŽITÍ</b></p><dl class="variablelist"><dt><span class="term"><tt class="option">-vo dxr2</tt></span></dt><dd><p>Zapíná TV výstup.</p></dd><dt><span class="term"><tt class="option">-vo dxr2:x11</tt> nebo <tt class="option">-vo dxr2:xv</tt></span></dt><dd><p>Zapíná Overlay výstup v X11.</p></dd><dt><span class="term"><tt class="option">-dxr2 &lt;volba1:volba2:...&gt;</tt></span></dt><dd><p>
   Tato volba je použita k ovládání DXR2 ovladače.
   </p></dd></dl></div><p>
 Overlay čipset použitý v DXR2 má mizernou kvalitu, ale výchozí nastavení pracuje
@@ -178,7 +178,7 @@ vždy. OSD lze použít spolu s overlay (ne na TV) při jeho vykreslení v klí�
 barvě. S výchozím nastavením klíčovací barvy můžete dosáhnout různých výsledků,
 obvykle uvidíte klíčovací barvu kolem znaků nebo jiné srandovní věci. Pokud ale
 vhodně upravíte klíčování, můžete dosáhnout použitelných výsledků.
-</p><p>Prostudujte si prosím man stránku pro dostupné volby.</p></div><div class="sect2" title="4.18.3. DXR3/Hollywood+"><div class="titlepage"><div><div><h3 class="title"><a name="dxr3"></a>4.18.3. DXR3/Hollywood+</h3></div></div></div><p>
+</p><p>Prostudujte si prosím man stránku pro dostupné volby.</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="dxr3"></a>4.18.3. DXR3/Hollywood+</h3></div></div></div><p>
 <span class="application">MPlayer</span> podporuje hardwarově akcelerované
 přehrávání videa pomocí karet Creative DXR3 a Sigma Designs Hollywood Plus.
 Obě tyto karty používají MPEG dekodér em8300 od Sigma Designs.
@@ -188,7 +188,7 @@ nebo pozdější. Ovladače a návod na jejich instalaci naleznete na stránkác
 <a class="ulink" href="http://dxr3.sf.net/" target="_top">DXR3 &amp; Hollywood Plus for Linux</a>.
 <tt class="filename">configure</tt> by mělo automaticky detekovat vaši kartu a
 kompilace by se měla obejít bez potíží.
-</p><div class="variablelist" title="POUŽITÍ"><p class="title"><b>POUŽITÍ</b></p><dl><dt><span class="term"><tt class="option">-vo dxr3:prebuf:sync:norm=x:<em class="replaceable"><code>zařízení</code></em></tt></span></dt><dd><p>
+</p><div class="variablelist"><p class="title"><b>POUŽITÍ</b></p><dl class="variablelist"><dt><span class="term"><tt class="option">-vo dxr3:prebuf:sync:norm=x:<em class="replaceable"><code>zařízení</code></em></tt></span></dt><dd><p>
 <tt class="option">overlay</tt> aktivuje overlay místo TVOut. Pro správnou funkci
 vyžaduje, abyste měli správně nakonfigurované nastavení overlay. Nejjednodužší
 způsob nastavení overlay, je spuštění autocal. Pak spusťte MPlayer s video

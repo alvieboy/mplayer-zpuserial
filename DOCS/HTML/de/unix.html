@@ -1,9 +1,9 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>5.3. Kommerzielles Unix</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Movie Player"><link rel="up" href="ports.html" title="Kapitel 5. Portierungen"><link rel="prev" href="bsd.html" title="5.2. *BSD"><link rel="next" href="windows.html" title="5.4. Windows"><link rel="preface" href="howtoread.html" title="Wie diese Dokumentation gelesen werden soll"><link rel="chapter" href="intro.html" title="Kapitel 1. Einführung"><link rel="chapter" href="install.html" title="Kapitel 2. Installation"><link rel="chapter" href="usage.html" title="Kapitel 3. Gebrauch"><link rel="chapter" href="video.html" title="Kapitel 4. Videoausgabegeräte"><link rel="chapter" href="ports.html" title="Kapitel 5. Portierungen"><link rel="chapter" href="mencoder.html" title="Kapitel 6. Allgemeiner Gebrauch von MEncoder"><link rel="chapter" href="encoding-guide.html" title="Kapitel 7. Encodieren mit MEncoder"><link rel="chapter" href="faq.html" title="Kapitel 8. Häufig gestellte Fragen"><link rel="appendix" href="bugreports.html" title="Anhang A. Wie Fehler (Bugs) berichtet werden"><link rel="appendix" href="skin.html" title="Anhang B. MPlayers Skinformat"><link rel="subsection" href="unix.html#solaris" title="5.3.1. Solaris"><link rel="subsection" href="unix.html#hp-ux" title="5.3.2. HP-UX"><link rel="subsection" href="unix.html#aix" title="5.3.3. AIX"><link rel="subsection" href="unix.html#qnx" title="5.3.4. QNX"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.3. Kommerzielles Unix</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bsd.html">Zurück</a> </td><th width="60%" align="center">Kapitel 5. Portierungen</th><td width="20%" align="right"> <a accesskey="n" href="windows.html">Weiter</a></td></tr></table><hr></div><div class="sect1" title="5.3. Kommerzielles Unix"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="unix"></a>5.3. Kommerzielles Unix</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>5.3. Kommerzielles Unix</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Movie Player"><link rel="up" href="ports.html" title="Kapitel 5. Portierungen"><link rel="prev" href="bsd.html" title="5.2. *BSD"><link rel="next" href="windows.html" title="5.4. Windows"><link rel="preface" href="howtoread.html" title="Wie diese Dokumentation gelesen werden soll"><link rel="chapter" href="intro.html" title="Kapitel 1. Einführung"><link rel="chapter" href="install.html" title="Kapitel 2. Installation"><link rel="chapter" href="usage.html" title="Kapitel 3. Gebrauch"><link rel="chapter" href="video.html" title="Kapitel 4. Videoausgabegeräte"><link rel="chapter" href="ports.html" title="Kapitel 5. Portierungen"><link rel="chapter" href="mencoder.html" title="Kapitel 6. Allgemeiner Gebrauch von MEncoder"><link rel="chapter" href="encoding-guide.html" title="Kapitel 7. Encodieren mit MEncoder"><link rel="chapter" href="faq.html" title="Kapitel 8. Häufig gestellte Fragen"><link rel="appendix" href="bugreports.html" title="Anhang A. Wie Fehler (Bugs) berichtet werden"><link rel="appendix" href="skin.html" title="Anhang B. MPlayers Skinformat"><link rel="subsection" href="unix.html#solaris" title="5.3.1. Solaris"><link rel="subsection" href="unix.html#hp-ux" title="5.3.2. HP-UX"><link rel="subsection" href="unix.html#aix" title="5.3.3. AIX"><link rel="subsection" href="unix.html#qnx" title="5.3.4. QNX"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.3. Kommerzielles Unix</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bsd.html">Zurück</a> </td><th width="60%" align="center">Kapitel 5. Portierungen</th><td width="20%" align="right"> <a accesskey="n" href="windows.html">Weiter</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="unix"></a>5.3. Kommerzielles Unix</h2></div></div></div><p>
       <span class="application">MPlayer</span> wurde auf einige kommerzielle
       Unix-Varianten portiert. Seit die Entwicklungsumgebungen auf diesen Systemen
       dahin tendieren, verschieden von denen freier Unixes zu sein, musst du möglicherweise
       einige manuelle Anpassungen vornehmen, um das Build lauffähig zu bekommen.
-    </p><div class="sect2" title="5.3.1. Solaris"><div class="titlepage"><div><div><h3 class="title"><a name="solaris"></a>5.3.1. Solaris</h3></div></div></div><p>
+    </p><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="solaris"></a>5.3.1. Solaris</h3></div></div></div><p>
         <span class="application">MPlayer</span> sollte auf Solaris 2.6 oder neuer funktionieren.
         Verwende den Audio-Treiber von SUN mit der Option <tt class="option">-ao sun</tt> für
         den Sound.
@@ -19,7 +19,7 @@
         auf einer 400MHz CPU ansehen. Dazu muss
         <a class="ulink" href="http://www.sun.com/sparc/vis/mediaLib.html" target="_top"><code class="systemitem">mLib</code></a>
         installiert sein.
-      </p><p><span class="bold"><strong>Vorbehalt:</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><span class="bold"><strong>mediaLib</strong></span> wird in
+      </p><p><span class="bold"><strong>Vorbehalt:</strong></span></p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><span class="bold"><strong>mediaLib</strong></span> wird in
             <span class="application">MPlayer</span> momentan aufgrund Fehlerhaftigkeit
             per Voreinstellung <span class="bold"><strong>deaktiviert</strong></span>. SPARC-Benutzer,
             die MPlayer mit mediaLib-Unterstützung bauen, haben große grüne Farbstiche
@@ -53,7 +53,7 @@ make: Fatal error in reader: Makefile, line 25: Unexpected end of line seen</pre
         <tt class="option">--as=<em class="replaceable"><code>/pfad/zum/installierten/gnu-as</code></em></tt>,
         um dem <tt class="filename">configure</tt>-Script zu zeigen, wo es GNU "as" auf
         deinem System finden kann).
-      </p><p>Lösung für gebräuchliche Probleme:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+      </p><p>Lösung für gebräuchliche Probleme:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
             Fehlermeldung von <tt class="filename">configure</tt> auf einem Solaris x86 System,
             wenn man GCC ohne GNU Assembler anwendet:
 </p><pre class="screen">% configure
@@ -93,7 +93,7 @@ MPlayer interrupted by signal 11 in module: init_audio_codec
           </p></li><li class="listitem"><p>
             Aufgrund von Bugs in Solaris 8 kann es dazu kommen, dass du keine DVD-Disks
             größer 4 GB abspielen kannst:
-          </p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p>
+          </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
                 Der sd(7D)-Treiber auf Solaris 8 x86 hat einen Bug, wenn er auf einen Diskblock &gt;4GB
                 auf einem Gerät zugreift, das eine logische blocksize != DEV_BSIZE verwendet (z.B.
                 CD-ROM- und DVD-Medien).
@@ -107,7 +107,7 @@ MPlayer interrupted by signal 11 in module: init_audio_codec
                 (<a class="ulink" href="http://groups.yahoo.com/group/solarisonintel/message/22592" target="_top">http://groups.yahoo.com/group/solarisonintel/message/22592</a>).
                 Dieses hsfs-Problem kann  durch die Installation von Patch 109764-04 (sparc) / 109765-04 (x86)
                 gefixt werden.
-              </p></li></ul></div></li></ul></div></div><div class="sect2" title="5.3.2. HP-UX"><div class="titlepage"><div><div><h3 class="title"><a name="hp-ux"></a>5.3.2. HP-UX</h3></div></div></div><p>
+              </p></li></ul></div></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="hp-ux"></a>5.3.2. HP-UX</h3></div></div></div><p>
         Joe Page unterhält ein detailliertes HP-UX
         <span class="application">MPlayer</span>-<a class="ulink" href="http://users.rcn.com/joepage/mplayer_on_hpux11.htm" target="_top">HOWTO</a>
         von Martin Gansser auf seiner Homepage. Mit diesen Instruktionen sollte das bauen
@@ -142,7 +142,7 @@ ctl     <span class="bold"><strong>1</strong></span>    8/16/5.7.0  sctl  CLAIME
         Beispiel:
       </p><pre class="screen"># ln -s /dev/rdsk/c1t2d0 /dev/dvd</pre><p>
         Unten stehen lösungen für einige verbreitete Probleme:
-      </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+      </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
             Absturz beim Start mit folgender Fehlermeldung:
             </p><pre class="screen">/usr/lib/dld.sl: Unresolved symbol: finite (code) from /usr/local/lib/gcc-lib/hppa2.0n-hp-hpux11.00/3.2/../../../libGL.sl</pre><p>
           </p><p>
@@ -171,7 +171,7 @@ Segmentation fault</pre><p>
             <code class="systemitem">maxdsiz</code>-Parameter für die maximale Anzahl Daten,
             die ein Programm nutzen darf. Er hängt von deiner Anwendung ab, ob der
             Standard von 64MB ausreicht oder nicht.)
-          </p></li></ul></div></div><div class="sect2" title="5.3.3. AIX"><div class="titlepage"><div><div><h3 class="title"><a name="aix"></a>5.3.3. AIX</h3></div></div></div><p>
+          </p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="aix"></a>5.3.3. AIX</h3></div></div></div><p>
         <span class="application">MPlayer</span> wird erfolgreich auf AIX 5.1,
         5.2 und 5.3 erzeugt, verwendet man GCC 3.3 oder höher. Das Erzeugen von
         <span class="application">MPlayer</span> auf AIX 4.3.3 und darunter wurde nicht
@@ -186,9 +186,9 @@ Segmentation fault</pre><p>
       </p><p>
         Die CPU-Erkennung ist noch in Arbeit.
         Die folgenden Architekturen wurden getestet:
-      </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>604e</p></li><li class="listitem"><p>POWER3</p></li><li class="listitem"><p>POWER4</p></li></ul></div><p>
+      </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>604e</p></li><li class="listitem"><p>POWER3</p></li><li class="listitem"><p>POWER4</p></li></ul></div><p>
         Folgende Architekturen wurden nicht getestet, sollten jedoch trotzdem funktionieren:
-      </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>POWER</p></li><li class="listitem"><p>POWER2</p></li><li class="listitem"><p>POWER5</p></li></ul></div><p>
+      </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>POWER</p></li><li class="listitem"><p>POWER2</p></li><li class="listitem"><p>POWER5</p></li></ul></div><p>
         Sound über die Ultimedia Services wird nicht unterstützt, da Ultimedia in
         AIX 5.1 weggelassen wurde; deshalb ist die einzige Option, die Treiber des
         AIX Open Sound System (OSS) von 4Front Technologies auf
@@ -197,7 +197,7 @@ Segmentation fault</pre><p>
         frei zur Verfügung; wie auch immer, momentan gibt es keine
         Soundausgabetreiber für AIX 5.2 oder 5.3. Dies bedeutet, dass
         <span class="bold"><strong>AIX 5.2 und 5.3 momentan keine MPlayer-Tonausgabe beherrschen.</strong></span>
-      </p><p>Lösung für gebräuchliche Probleme:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+      </p><p>Lösung für gebräuchliche Probleme:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
             Wenn du folgende Fehlermeldung von <tt class="filename">configure</tt> erhältst:
 </p><pre class="screen">$ ./configure
   ...
@@ -210,7 +210,7 @@ Segmentation fault</pre><p>
             daher wird die Konvertierung von MPlayer-Ausgaben zu anderen Zeichensätzen momentan nicht
             unterstützt. Die Lösung besteht darin, folgendes zu tun:
             </p><pre class="screen">$ ./configure --charset=noconv</pre><p>
-          </p></li></ul></div></div><div class="sect2" title="5.3.4. QNX"><div class="titlepage"><div><div><h3 class="title"><a name="qnx"></a>5.3.4. QNX</h3></div></div></div><p>
+          </p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="qnx"></a>5.3.4. QNX</h3></div></div></div><p>
         Du musst SDL für QNX herunterladen und installieren. Dann starte
         <span class="application">MPlayer</span> mit den Optionen
         <tt class="option">-vo sdl:driver=photon</tt> und <tt class="option">-ao sdl:nto</tt>,

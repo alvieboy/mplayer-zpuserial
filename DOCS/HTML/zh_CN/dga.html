@@ -1,8 +1,8 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.2. DGA</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - 电影播放器"><link rel="up" href="video.html" title="第 4 章 Video output devices"><link rel="prev" href="xv.html" title="4.1. Xv"><link rel="next" href="svgalib.html" title="4.3. SVGAlib"><link rel="preface" href="howtoread.html" title="如何阅读此文档"><link rel="chapter" href="intro.html" title="第 1 章 介绍"><link rel="chapter" href="install.html" title="第 2 章 Installation"><link rel="chapter" href="usage.html" title="第 3 章 Usage"><link rel="chapter" href="video.html" title="第 4 章 Video output devices"><link rel="chapter" href="ports.html" title="第 5 章 Ports"><link rel="chapter" href="mencoder.html" title="第 6 章 MEncoder的基础用法"><link rel="chapter" href="encoding-guide.html" title="第 7 章 Encoding with MEncoder"><link rel="chapter" href="faq.html" title="第 8 章 Frequently Asked Questions"><link rel="appendix" href="bugreports.html" title="附录 A. 如何报告错误"><link rel="appendix" href="skin.html" title="附录 B. MPlayer skin format"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.2. DGA</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="xv.html">上一页</a> </td><th width="60%" align="center">第 4 章 Video output devices</th><td width="20%" align="right"> <a accesskey="n" href="svgalib.html">下一页</a></td></tr></table><hr></div><div class="sect1" title="4.2. DGA"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="dga"></a>4.2. DGA</h2></div></div></div><p title="PREAMBLE"><b>PREAMBLE. </b>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.2. DGA</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - 电影播放器"><link rel="up" href="video.html" title="第 4 章 Video output devices"><link rel="prev" href="xv.html" title="4.1. Xv"><link rel="next" href="svgalib.html" title="4.3. SVGAlib"><link rel="preface" href="howtoread.html" title="如何阅读此文档"><link rel="chapter" href="intro.html" title="第 1 章 介绍"><link rel="chapter" href="install.html" title="第 2 章 Installation"><link rel="chapter" href="usage.html" title="第 3 章 Usage"><link rel="chapter" href="video.html" title="第 4 章 Video output devices"><link rel="chapter" href="ports.html" title="第 5 章 Ports"><link rel="chapter" href="mencoder.html" title="第 6 章 MEncoder的基础用法"><link rel="chapter" href="encoding-guide.html" title="第 7 章 Encoding with MEncoder"><link rel="chapter" href="faq.html" title="第 8 章 Frequently Asked Questions"><link rel="appendix" href="bugreports.html" title="附录 A. 如何报告错误"><link rel="appendix" href="skin.html" title="附录 B. MPlayer skin format"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.2. DGA</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="xv.html">上一页</a> </td><th width="60%" align="center">第 4 章 Video output devices</th><td width="20%" align="right"> <a accesskey="n" href="svgalib.html">下一页</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="dga"></a>4.2. DGA</h2></div></div></div><p><b>PREAMBLE. </b>
 This document tries to explain in some words what DGA is in general and
 what the DGA video output driver for <span class="application">MPlayer</span>
 can do (and what it can't).
-</p><p title="WHAT IS DGA"><b>WHAT IS DGA. </b>
+</p><p><b>WHAT IS DGA. </b>
 <acronym class="acronym">DGA</acronym> is short for <span class="emphasis"><em>Direct Graphics
 Access</em></span> and is a means for a program to bypass the X server and
 directly modifying the framebuffer memory. Technically spoken this happens
@@ -27,11 +27,11 @@ versa.
 However DGA has some drawbacks. It seems it is somewhat dependent on the
 graphics chip you use and on the implementation of the X server's video
 driver that controls this chip. So it does not work on every system...
-</p><p title="INSTALLING DGA SUPPORT FOR MPLAYER"><b>INSTALLING DGA SUPPORT FOR MPLAYER. </b>
+</p><p><b>INSTALLING DGA SUPPORT FOR MPLAYER. </b>
 First make sure X loads the DGA extension, see in
 <tt class="filename">/var/log/XFree86.0.log</tt>:
 
-</p><pre class="programlisting">(II) Loading extension XFree86-DGA</pre><p title="INSTALLING DGA SUPPORT FOR MPLAYER">
+</p><pre class="programlisting">(II) Loading extension XFree86-DGA</pre><p>
 
 See, XFree86 4.0.x or greater is
 <span class="bold"><strong>highly recommended</strong></span>!
@@ -55,7 +55,7 @@ chmod +s <em class="replaceable"><code>/usr/local/bin/mplayer</code></em>
 </pre><p>
 
 Now it works as a simple user, too.
-</p><div class="caution" title="Security risk" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Security risk</h3><p>
+</p><div class="caution" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Security risk</h3><p>
 This is a <span class="bold"><strong>big</strong></span> security risk!
 <span class="bold"><strong>Never</strong></span> do this on a server or on a computer
 that can be accessed by other people because they can gain root privileges
@@ -64,7 +64,7 @@ through SUID root <span class="application">MPlayer</span>.
 Now use <tt class="option">-vo dga</tt> option, and there you go! (hope so:) You
 should also try if the <tt class="option">-vo sdl:driver=dga</tt> option works for you!
 It's much faster!
-</p><p title="RESOLUTION SWITCHING"><a name="dga-modelines"></a><b>RESOLUTION SWITCHING. </b>
+</p><p><a name="dga-modelines"></a><b>RESOLUTION SWITCHING. </b>
 The DGA driver allows for switching the resolution of the output signal.
 This avoids the need for doing (slow) software scaling and at the same time
 provides a fullscreen image. Ideally it would switch to the exact
@@ -91,13 +91,13 @@ Section "Modes"
   Modeline "352x240"  15.750 352 368 416 432   240 244 246 262 Doublescan
   Modeline "320x240"  12.588 320 336 384 400   240 245 246 262 Doublescan
 EndSection
-</pre><p title="DGA &amp; MPLAYER"><b>DGA &amp; MPLAYER. </b>
+</pre><p><b>DGA &amp; MPLAYER. </b>
 DGA is used in two places with <span class="application">MPlayer</span>: The SDL
 driver can be made to make use of it (<tt class="option">-vo sdl:driver=dga</tt>) and
 within the DGA driver (<tt class="option">-vo dga</tt>). The above said is true
 for both; in the following sections I'll explain how the DGA driver for
 <span class="application">MPlayer</span> works.
-</p><p title="FEATURES"><b>FEATURES. </b>
+</p><p><b>FEATURES. </b>
 The DGA driver is invoked by specifying <tt class="option">-vo dga</tt> at the
 command line. The default behavior is to switch to a resolution matching
 the original resolution of the video as close as possible. It deliberately
@@ -134,7 +134,7 @@ double buffering. When using the DGA driver, onscreen display (OSD) only
 works with double buffering enabled. However, enabling double buffering may
 result in a big speed penalty (on my K6-II+ 525 it used an additional 20%
 of CPU time!) depending on the implementation of DGA for your hardware.
-</p><p title="SPEED ISSUES"><b>SPEED ISSUES. </b>
+</p><p><b>SPEED ISSUES. </b>
 Generally spoken, DGA framebuffer access should be at least as fast as
 using the X11 driver with the additional benefit of getting a fullscreen
 image. The percentage speed values printed by
@@ -156,11 +156,11 @@ Using a depth of 24 bit is a good idea even if your card natively just supports
 </p><p>
 I've seen some AVI files be played back on a Pentium MMX 266. AMD K6-2
 CPUs might work at 400 MHZ and above.
-</p><p title="KNOWN BUGS"><b>KNOWN BUGS. </b>
+</p><p><b>KNOWN BUGS. </b>
 Well, according to some developers of XFree, DGA is quite a beast. They
 tell you better not to use it. Its implementation is not always flawless
 with every chipset driver for XFree out there.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   With XFree 4.0.3 and <tt class="filename">nv.o</tt> there is a bug resulting
   in strange colors.
 </p></li><li class="listitem"><p>

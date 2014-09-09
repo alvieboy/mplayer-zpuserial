@@ -1,9 +1,9 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>9.7. QuickTime-kompatibilis fájlok készítése a MEncoder használatával</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="encoding-guide.html" title="9. fejezet - Kódolás a MEncoderrel"><link rel="prev" href="menc-feat-video-for-windows.html" title="9.6. Kódolás a Video For Windows codec családdal"><link rel="next" href="menc-feat-vcd-dvd.html" title="9.8. A MEncoder használata VCD/SVCD/DVD-kompatibilis fájlok készítéséhez."><link rel="preface" href="howtoread.html" title="Hogyan olvasd ezt a dokumentációt"><link rel="chapter" href="intro.html" title="1. fejezet - Bevezetés"><link rel="chapter" href="install.html" title="2. fejezet - Telepítés"><link rel="chapter" href="usage.html" title="3. fejezet - Használat"><link rel="chapter" href="tv-input.html" title="4. fejezet - TV bemenet"><link rel="chapter" href="tv-teletext.html" title="5. fejezet - Teletext"><link rel="chapter" href="video.html" title="6. fejezet - Videó kimeneti eszközök"><link rel="chapter" href="ports.html" title="7. fejezet - Portok"><link rel="chapter" href="mencoder.html" title="8. fejezet - A MEncoder használatának alapjai"><link rel="chapter" href="encoding-guide.html" title="9. fejezet - Kódolás a MEncoderrel"><link rel="chapter" href="faq.html" title="10. fejezet - Gyakran ismételt kérdések"><link rel="appendix" href="bugreports.html" title="A. függelék - Hogyan jelentsd a hibákat"><link rel="appendix" href="skin.html" title="B. függelék - MPlayer skin formátum"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-why-use-it" title="9.7.1. Miért akarna bárki is QuickTime-kompatibilis fájlokat készíteni?"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-constraints" title="9.7.2. QuickTime 7 korlátok"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-crop" title="9.7.3. Vágás"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-scale" title="9.7.4. Méretezés"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-avsync" title="9.7.5. A/V szinkron"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-bitrate" title="9.7.6. Bitráta"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-example" title="9.7.7. Kódolási példa"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-remux" title="9.7.8. Újrakeverés MP4-ként"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-metadata" title="9.7.9. Metadata tag-ek hozzáadása"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">9.7. <span class="application">QuickTime</span>-kompatibilis fájlok
-készítése a <span class="application">MEncoder</span> használatával</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-video-for-windows.html">Vissza</a> </td><th width="60%" align="center">9. fejezet - Kódolás a <span class="application">MEncoder</span>rel</th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-vcd-dvd.html">Előre</a></td></tr></table><hr></div><div class="sect1" title="9.7. QuickTime-kompatibilis fájlok készítése a MEncoder használatával"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-quicktime-7"></a>9.7. <span class="application">QuickTime</span>-kompatibilis fájlok
-készítése a <span class="application">MEncoder</span> használatával</h2></div></div></div><div class="sect2" title="9.7.1. Miért akarna bárki is QuickTime-kompatibilis fájlokat készíteni?"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-why-use-it"></a>9.7.1. Miért akarna bárki is <span class="application">QuickTime</span>-kompatibilis fájlokat készíteni?</h3></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>9.7. QuickTime-kompatibilis fájlok készítése a MEncoder használatával</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - The Movie Player"><link rel="up" href="encoding-guide.html" title="9. fejezet - Kódolás a MEncoderrel"><link rel="prev" href="menc-feat-video-for-windows.html" title="9.6. Kódolás a Video For Windows codec családdal"><link rel="next" href="menc-feat-vcd-dvd.html" title="9.8. A MEncoder használata VCD/SVCD/DVD-kompatibilis fájlok készítéséhez."><link rel="preface" href="howtoread.html" title="Hogyan olvasd ezt a dokumentációt"><link rel="chapter" href="intro.html" title="1. fejezet - Bevezetés"><link rel="chapter" href="install.html" title="2. fejezet - Telepítés"><link rel="chapter" href="usage.html" title="3. fejezet - Használat"><link rel="chapter" href="tv-input.html" title="4. fejezet - TV bemenet"><link rel="chapter" href="tv-teletext.html" title="5. fejezet - Teletext"><link rel="chapter" href="video.html" title="6. fejezet - Videó kimeneti eszközök"><link rel="chapter" href="ports.html" title="7. fejezet - Portok"><link rel="chapter" href="mencoder.html" title="8. fejezet - A MEncoder használatának alapjai"><link rel="chapter" href="encoding-guide.html" title="9. fejezet - Kódolás a MEncoderrel"><link rel="chapter" href="faq.html" title="10. fejezet - Gyakran ismételt kérdések"><link rel="appendix" href="bugreports.html" title="A. függelék - Hogyan jelentsd a hibákat"><link rel="appendix" href="skin.html" title="B. függelék - MPlayer skin formátum"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-why-use-it" title="9.7.1. Miért akarna bárki is QuickTime-kompatibilis fájlokat készíteni?"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-constraints" title="9.7.2. QuickTime 7 korlátok"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-crop" title="9.7.3. Vágás"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-scale" title="9.7.4. Méretezés"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-avsync" title="9.7.5. A/V szinkron"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-bitrate" title="9.7.6. Bitráta"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-example" title="9.7.7. Kódolási példa"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-remux" title="9.7.8. Újrakeverés MP4-ként"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-metadata" title="9.7.9. Metadata tag-ek hozzáadása"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">9.7. <span class="application">QuickTime</span>-kompatibilis fájlok
+készítése a <span class="application">MEncoder</span> használatával</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-video-for-windows.html">Vissza</a> </td><th width="60%" align="center">9. fejezet - Kódolás a <span class="application">MEncoder</span>rel</th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-vcd-dvd.html">Előre</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-quicktime-7"></a>9.7. <span class="application">QuickTime</span>-kompatibilis fájlok
+készítése a <span class="application">MEncoder</span> használatával</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-why-use-it"></a>9.7.1. Miért akarna bárki is <span class="application">QuickTime</span>-kompatibilis fájlokat készíteni?</h3></div></div></div><p>
   Több oka is van annak, hogy kívánatos lehet
   <span class="application">QuickTime</span>-kompatibilis fájlok készítése.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Azt szertnéd, hogy minden gép le tudja játszani a kódolásod bármelyik
   fő platformon (Windows, Mac OS X, Unices …).
 </p></li><li class="listitem"><p>
@@ -17,7 +17,7 @@ készítése a <span class="application">MEncoder</span> használatával</h2></d
   A <span class="application">QuickTime</span> 7 támogatja a következő
   generációs H.264 codec-et, ami sokkal jobb képminőséget biztosít,
   mint az előző codec generációk (MPEG-2, MPEG-4 …).
-</p></li></ul></div></div><div class="sect2" title="9.7.2. QuickTime 7 korlátok"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-constraints"></a>9.7.2. <span class="application">QuickTime</span> 7 korlátok</h3></div></div></div><p>
+</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-constraints"></a>9.7.2. <span class="application">QuickTime</span> 7 korlátok</h3></div></div></div><p>
   A <span class="application">QuickTime</span> 7 támogatja a H.264 videót
   és az AAC audiót, de nem támogatja ezek AVI konténer formátumba
   történő keverését. Mindamellett használhatod a
@@ -33,7 +33,7 @@ készítése a <span class="application">MEncoder</span> használatával</h2></d
   <span class="application">QuickTime</span> 7 nem támogat, a
   <span class="application">QuickTime</span>-alapú lejátszók egy csodás
   fehér képet fognak mutatni neked a várt videó helyett.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>B-frame-k</strong></span>:
   A <span class="application">QuickTime</span> 7 maximum 1 B-frame-t támogat, pl.
   <tt class="option">-x264encopts bframes=1</tt>. Ez azt jelenti, hogy a
@@ -54,7 +54,7 @@ készítése a <span class="application">MEncoder</span> használatával</h2></d
   <a class="link" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-scale" title="9.7.4. Méretezés">méretezés részt</a>
   a tüneti kezeléshez. A <span class="application">QuickTime</span> X-ben már nincs
   meg ez a korlátozás.
-</p></li></ul></div></div><div class="sect2" title="9.7.3. Vágás"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-crop"></a>9.7.3. Vágás</h3></div></div></div><p>
+</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-crop"></a>9.7.3. Vágás</h3></div></div></div><p>
   Tegyük fel, hogy rip-pelni szeretnéd a "Narnia krónikái" frissen vásárolt
   másolatát. A DVD-d régió 1-es,
   ami azt jelenti, hogy NTSC. Az alábbi példa működik PAL-ra is,
@@ -72,7 +72,7 @@ készítése a <span class="application">MEncoder</span> használatával</h2></d
   Ezután le kell vágnod a fekete sávokat a videó tetején és alján,
   ahogy az <a class="link" href="menc-feat-enc-libavcodec.html#menc-feat-dvd-mpeg4-example-crop">ebben</a>
   az előző részben le van írva.
-</p></div><div class="sect2" title="9.7.4. Méretezés"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-scale"></a>9.7.4. Méretezés</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-scale"></a>9.7.4. Méretezés</h3></div></div></div><p>
   A következő lépés szívszaggató.
   A <span class="application">QuickTime</span> 7 nem támogatja azon MPEG-4 videókat,
   melyekben a sample aspect ratio 1-től különböző, így vagy fel kell méretezned
@@ -88,7 +88,7 @@ készítése a <span class="application">MEncoder</span> használatával</h2></d
   Emlékezz rá, hogy ha vágsz, először vágnod kell, utána méretezni:
 
   </p><pre class="screen">-vf crop=720:352:0:62,scale=-10:-1</pre><p>
-</p></div><div class="sect2" title="9.7.5. A/V szinkron"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-avsync"></a>9.7.5. A/V szinkron</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-avsync"></a>9.7.5. A/V szinkron</h3></div></div></div><p>
   Mivel egy másik konténerbe keversz, mindig ajánlott a <tt class="option">harddup</tt>
   opció használata annak biztosítására, hogy a duplikált kockák a kimeneti
   videóban is duplikálva lesznek. Ezen opció nélkül a
@@ -99,7 +99,7 @@ készítése a <span class="application">MEncoder</span> használatával</h2></d
 </p><p>
   A végleges szűrőlánc így néz ki:
   </p><pre class="screen">-vf crop=720:352:0:62,scale=-10:-1,harddup</pre><p>
-</p></div><div class="sect2" title="9.7.6. Bitráta"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-bitrate"></a>9.7.6. Bitráta</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-bitrate"></a>9.7.6. Bitráta</h3></div></div></div><p>
   Mint mindig, a bitráta megválasztása a forrás technikai tulajdonságaitól függ,
   ahogy az
   <a class="link" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-resolution-bitrate" title="9.1.5. Felbontás és bitráta kiválasztása">itt</a> le van írva,
@@ -110,7 +110,7 @@ készítése a <span class="application">MEncoder</span> használatával</h2></d
   kódolja el ezt a filmet és úgy hiszi, hogy nagyon jól néz ki.
   Csökkentheted a bitrátát, ha több helyet kell megspórolnod vagy növelheted,
   ha javítanod kell a minőséget.
-</p></div><div class="sect2" title="9.7.7. Kódolási példa"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-example"></a>9.7.7. Kódolási példa</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-example"></a>9.7.7. Kódolási példa</h3></div></div></div><p>
   Készen állsz a videó elkódolására. Mivel érdekel a minőség, természetesen
   két-lépéses kódolást futtatsz le. Hogy megspóroljunk némi kódolási időt,
   megadhatod a <tt class="option">turbo</tt> opciót az első lépésben; ez lecsökkenti
@@ -152,7 +152,7 @@ me=umh:partitions=all:trellis=1:qp_step=4:qcomp=0.7:direct_pred=auto:keyint=300 
   <span class="application">QuickTime</span> nem játsza le, mivel nem támogatja
   az AVI-ba kevert H.264-et.
   Ezért a következő lépés a videó MP4 konténerbe történő keverése.
-</p></div><div class="sect2" title="9.7.8. Újrakeverés MP4-ként"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-remux"></a>9.7.8. Újrakeverés MP4-ként</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-remux"></a>9.7.8. Újrakeverés MP4-ként</h3></div></div></div><p>
   Több mód is van az AVI MP4-be történő újrakeverésére. Használhatod az
   <span class="application">mp4creator</span>-t, ami az
   <a class="ulink" href="http://mpeg4ip.sourceforge.net/" target="_top">MPEG4IP suite</a> része.
@@ -202,7 +202,7 @@ mp4creator -optimize narnia.mp4</pre><p>
 3       hint    Payload mpeg4-generic for track 1
 4       hint    Payload H264 for track 2
 </pre><p>
-</p></div><div class="sect2" title="9.7.9. Metadata tag-ek hozzáadása"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-metadata"></a>9.7.9. Metadata tag-ek hozzáadása</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-metadata"></a>9.7.9. Metadata tag-ek hozzáadása</h3></div></div></div><p>
   Ha tag-eket akarsz hozzáfűzni a videódhoz, amiket az iTunes megjelnít, használhatod az
   <a class="ulink" href="http://atomicparsley.sourceforge.net/" target="_top">AtomicParsley</a>-t.
 

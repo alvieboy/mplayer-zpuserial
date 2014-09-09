@@ -1,10 +1,10 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.13. VESA-Ausgabe über das VESA-BIOS</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Movie Player"><link rel="up" href="video.html" title="Kapitel 4. Videoausgabegeräte"><link rel="prev" href="caca.html" title="4.12. libcaca - Color ASCII Art-Bibliothek"><link rel="next" href="x11.html" title="4.14. X11"><link rel="preface" href="howtoread.html" title="Wie diese Dokumentation gelesen werden soll"><link rel="chapter" href="intro.html" title="Kapitel 1. Einführung"><link rel="chapter" href="install.html" title="Kapitel 2. Installation"><link rel="chapter" href="usage.html" title="Kapitel 3. Gebrauch"><link rel="chapter" href="video.html" title="Kapitel 4. Videoausgabegeräte"><link rel="chapter" href="ports.html" title="Kapitel 5. Portierungen"><link rel="chapter" href="mencoder.html" title="Kapitel 6. Allgemeiner Gebrauch von MEncoder"><link rel="chapter" href="encoding-guide.html" title="Kapitel 7. Encodieren mit MEncoder"><link rel="chapter" href="faq.html" title="Kapitel 8. Häufig gestellte Fragen"><link rel="appendix" href="bugreports.html" title="Anhang A. Wie Fehler (Bugs) berichtet werden"><link rel="appendix" href="skin.html" title="Anhang B. MPlayers Skinformat"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.13. VESA-Ausgabe über das VESA-BIOS</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="caca.html">Zurück</a> </td><th width="60%" align="center">Kapitel 4. Videoausgabegeräte</th><td width="20%" align="right"> <a accesskey="n" href="x11.html">Weiter</a></td></tr></table><hr></div><div class="sect1" title="4.13. VESA-Ausgabe über das VESA-BIOS"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="vesa"></a>4.13. VESA-Ausgabe über das VESA-BIOS</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.13. VESA-Ausgabe über das VESA-BIOS</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Movie Player"><link rel="up" href="video.html" title="Kapitel 4. Videoausgabegeräte"><link rel="prev" href="caca.html" title="4.12. libcaca - Color ASCII Art-Bibliothek"><link rel="next" href="x11.html" title="4.14. X11"><link rel="preface" href="howtoread.html" title="Wie diese Dokumentation gelesen werden soll"><link rel="chapter" href="intro.html" title="Kapitel 1. Einführung"><link rel="chapter" href="install.html" title="Kapitel 2. Installation"><link rel="chapter" href="usage.html" title="Kapitel 3. Gebrauch"><link rel="chapter" href="video.html" title="Kapitel 4. Videoausgabegeräte"><link rel="chapter" href="ports.html" title="Kapitel 5. Portierungen"><link rel="chapter" href="mencoder.html" title="Kapitel 6. Allgemeiner Gebrauch von MEncoder"><link rel="chapter" href="encoding-guide.html" title="Kapitel 7. Encodieren mit MEncoder"><link rel="chapter" href="faq.html" title="Kapitel 8. Häufig gestellte Fragen"><link rel="appendix" href="bugreports.html" title="Anhang A. Wie Fehler (Bugs) berichtet werden"><link rel="appendix" href="skin.html" title="Anhang B. MPlayers Skinformat"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.13. VESA-Ausgabe über das VESA-BIOS</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="caca.html">Zurück</a> </td><th width="60%" align="center">Kapitel 4. Videoausgabegeräte</th><td width="20%" align="right"> <a accesskey="n" href="x11.html">Weiter</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="vesa"></a>4.13. VESA-Ausgabe über das VESA-BIOS</h2></div></div></div><p>
   Dieser Treiber ist vom Design her ein <span class="bold"><strong>generischer Treiber</strong></span>
   für alle Grafikkarten, deren Bios VESA VBE 2.0 unterstützt. Ein weiterer
   Vorteil dieses Treibers liegt darin, dass er versucht, den TV-Ausgang anzuschalten.
   <em class="citetitle">VESA BIOS EXTENSION (VBE) Version 3.0 Date: September 16, 1998</em>
   (Seite 70) hat folgendes zu sagen:
-</p><div class="blockquote"><blockquote class="blockquote"><p title="Designs für zwei Controller"><b>Designs für zwei Controller. </b>
+</p><div class="blockquote"><blockquote class="blockquote"><p><b>Designs für zwei Controller. </b>
   VBE 3.0 unterstützt zwei Controller dadurch, dass angenommen wird,
   dass beide Controller vom gleichen OEM (Hardwarehersteller) stammen und
   unter Kontrolle desselben BIOS auf derselben Grafikkarte sitzen. Somit ist
@@ -24,7 +24,7 @@
   Laufen zu bringen.
   (Ich vermute, dass der TV-Ausgang normalerweise auf einer separaten
   Grafikkarte oder zumindest ein separater Ausgang ist.)
-</p><div class="itemizedlist" title="VORTEILE"><p class="title"><b>VORTEILE</b></p><ul class="itemizedlist" type="disc" compact><li class="listitem"><p>
+</p><div class="itemizedlist"><p class="title"><b>VORTEILE</b></p><ul class="itemizedlist compact" style="list-style-type: disc; "><li class="listitem"><p>
   Du hast die Möglichkeit, selbst dann Filme anzusehen, wenn
   <span class="bold"><strong>Linux nichts von deiner Grafikhardware weiß</strong></span>.
 </p></li><li class="listitem"><p>
@@ -52,22 +52,22 @@
   Bildwiederholrate (mit den generischen Timingformeln). Um dieses Feature
   zu aktivieren, müssen <span class="bold"><strong>alle</strong></span>
   Monitoroptionen angegeben werden.
-</p></li></ul></div><div class="itemizedlist" title="NACHTEILE"><p class="title"><b>NACHTEILE</b></p><ul class="itemizedlist" type="disc" compact><li class="listitem"><p>
+</p></li></ul></div><div class="itemizedlist"><p class="title"><b>NACHTEILE</b></p><ul class="itemizedlist compact" style="list-style-type: disc; "><li class="listitem"><p>
   Der Treiber funtkioniert nur auf <span class="bold"><strong>x86-Systemen</strong></span>.
 </p></li><li class="listitem"><p>
   Er kann nur von <code class="systemitem">root</code> benutzt werden.
 </p></li><li class="listitem"><p>
   Momentan ist er nur für <span class="bold"><strong>Linux</strong></span> verfügbar.
-</p></li></ul></div><div class="important" title="Wichtig" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Wichtig</h3><p>
+</p></li></ul></div><div class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Wichtig</h3><p>
   Benutze diesen Treiber nicht mit <span class="bold"><strong>GCC 2.96</strong></span>!
   Das wird nicht funktionieren!
-</p></div><div class="variablelist" title="BEI VESA VERFÜGBARE KOMMANDOZEILENOPTIONEN"><p class="title"><b>BEI VESA VERFÜGBARE KOMMANDOZEILENOPTIONEN</b></p><dl><dt><span class="term"><tt class="option">-vo vesa:<em class="replaceable"><code>opts</code></em></tt></span></dt><dd><p>
+</p></div><div class="variablelist"><p class="title"><b>BEI VESA VERFÜGBARE KOMMANDOZEILENOPTIONEN</b></p><dl class="variablelist"><dt><span class="term"><tt class="option">-vo vesa:<em class="replaceable"><code>opts</code></em></tt></span></dt><dd><p>
   Momentan erkannt: <code class="literal">dga</code>, um den DGA-Modus zu erzwingen
   und <code class="literal">nodga</code>, um ihn zu deaktivieren. Im DGA-Modus kannst du den
   Doppelpuffermodus mit <tt class="option">-double</tt> aktivieren. Anmerkung: Du
   kannst diese Parameter auch weglassen, um die <span class="bold"><strong>automatische
   Erkennung</strong></span> des DGA-Modus zu ermöglichen.
-  </p></dd></dl></div><div class="itemizedlist" title="BEKANNTE PROBLEME UND WIE MAN SIE UMGEHT"><p class="title"><b>BEKANNTE PROBLEME UND WIE MAN SIE UMGEHT</b></p><ul class="itemizedlist" type="disc" compact><li class="listitem"><p>
+  </p></dd></dl></div><div class="itemizedlist"><p class="title"><b>BEKANNTE PROBLEME UND WIE MAN SIE UMGEHT</b></p><ul class="itemizedlist compact" style="list-style-type: disc; "><li class="listitem"><p>
   Wenn du unter Linux eine <span class="bold"><strong>NLS</strong></span>-Schrift
   verwendest und du den VESA-Treiber aus dem Textmodus heraus aufrufst,
   dann wird nach dem Beenden von <span class="application">MPlayer</span> die

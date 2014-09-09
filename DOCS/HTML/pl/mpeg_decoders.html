@@ -1,4 +1,4 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.3. Dekodery MPEG</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Odtwarzacz filmów"><link rel="up" href="video.html" title="Rozdział 4. Urządzenia wyjścia video"><link rel="prev" href="output-trad.html" title="4.2. Wyjścia video dla tradycyjnych kart graficznych"><link rel="next" href="other.html" title="4.4. Inny sprzęt do wizualizacji"><link rel="preface" href="howtoread.html" title="Jak czytać tę dokumentację"><link rel="chapter" href="intro.html" title="Rozdział 1. Wprowadzenie"><link rel="chapter" href="install.html" title="Rozdział 2. Instalacja"><link rel="chapter" href="usage.html" title="Rozdział 3. Sposób użycia"><link rel="chapter" href="video.html" title="Rozdział 4. Urządzenia wyjścia video"><link rel="chapter" href="ports.html" title="Rozdział 5. Porty"><link rel="chapter" href="mencoder.html" title="Rozdział 6. Podstawy używania MEncodera"><link rel="chapter" href="encoding-guide.html" title="Rozdział 7. Kodowanie przy użyciu MEncodera"><link rel="chapter" href="faq.html" title="Rozdział 8. FAQ - Często Zadawane Pytania"><link rel="appendix" href="bugreports.html" title="Dodatek A. Jak zgłaszać błędy"><link rel="appendix" href="skin.html" title="Dodatek B. Format skórki MPlayera"><link rel="subsection" href="mpeg_decoders.html#dvb" title="4.3.1. Wejście i wyjście DVB"><link rel="subsection" href="mpeg_decoders.html#dxr2" title="4.3.2. DXR2"><link rel="subsection" href="mpeg_decoders.html#dxr3" title="4.3.3. DXR3/Hollywood+"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.3. Dekodery MPEG</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="output-trad.html">Poprzedni</a> </td><th width="60%" align="center">Rozdział 4. Urządzenia wyjścia video</th><td width="20%" align="right"> <a accesskey="n" href="other.html">Następny</a></td></tr></table><hr></div><div class="sect1" title="4.3. Dekodery MPEG"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mpeg_decoders"></a>4.3. Dekodery MPEG</h2></div></div></div><div class="sect2" title="4.3.1. Wejście i wyjście DVB"><div class="titlepage"><div><div><h3 class="title"><a name="dvb"></a>4.3.1. Wejście i wyjście DVB</h3></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>4.3. Dekodery MPEG</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Odtwarzacz filmów"><link rel="up" href="video.html" title="Rozdział 4. Urządzenia wyjścia video"><link rel="prev" href="output-trad.html" title="4.2. Wyjścia video dla tradycyjnych kart graficznych"><link rel="next" href="other.html" title="4.4. Inny sprzęt do wizualizacji"><link rel="preface" href="howtoread.html" title="Jak czytać tę dokumentację"><link rel="chapter" href="intro.html" title="Rozdział 1. Wprowadzenie"><link rel="chapter" href="install.html" title="Rozdział 2. Instalacja"><link rel="chapter" href="usage.html" title="Rozdział 3. Sposób użycia"><link rel="chapter" href="video.html" title="Rozdział 4. Urządzenia wyjścia video"><link rel="chapter" href="ports.html" title="Rozdział 5. Porty"><link rel="chapter" href="mencoder.html" title="Rozdział 6. Podstawy używania MEncodera"><link rel="chapter" href="encoding-guide.html" title="Rozdział 7. Kodowanie przy użyciu MEncodera"><link rel="chapter" href="faq.html" title="Rozdział 8. FAQ - Często Zadawane Pytania"><link rel="appendix" href="bugreports.html" title="Dodatek A. Jak zgłaszać błędy"><link rel="appendix" href="skin.html" title="Dodatek B. Format skórki MPlayera"><link rel="subsection" href="mpeg_decoders.html#dvb" title="4.3.1. Wejście i wyjście DVB"><link rel="subsection" href="mpeg_decoders.html#dxr2" title="4.3.2. DXR2"><link rel="subsection" href="mpeg_decoders.html#dxr3" title="4.3.3. DXR3/Hollywood+"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4.3. Dekodery MPEG</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="output-trad.html">Poprzedni</a> </td><th width="60%" align="center">Rozdział 4. Urządzenia wyjścia video</th><td width="20%" align="right"> <a accesskey="n" href="other.html">Następny</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mpeg_decoders"></a>4.3. Dekodery MPEG</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="dvb"></a>4.3.1. Wejście i wyjście DVB</h3></div></div></div><p>
 <span class="application">MPlayer</span> obsługuje karty z układem Siemens DVB,
 od producentów takich, jak: Siemens, Technotrend, Galaxis czy Hauppauge.
 Najnowsze sterowniki DVB są dostępne na
@@ -9,7 +9,7 @@ z zegarem co najmniej 1GHz.
 Configure powinien wykryć Twoją kartę DVB. Jeżeli tak się nie stało,
 możesz wymusić obsługę DVB używając
 </p><pre class="screen">./configure --enable-dvb</pre><p>Jeżeli Twoje nagłówki 'ost' znajdują się w niestandardowym miejscu,
-ustaw ścieżkę przy pomocy</p><pre class="screen">./configure --extra-cflags=<em class="replaceable"><code>katalog ze źródłami DVB</code></em>/ost/include</pre><p>Po czym skompiluj i zainstaluj jak zwykle.</p><p title="ZASTOSOWANIE"><b>ZASTOSOWANIE. </b>
+ustaw ścieżkę przy pomocy</p><pre class="screen">./configure --extra-cflags=<em class="replaceable"><code>katalog ze źródłami DVB</code></em>/ost/include</pre><p>Po czym skompiluj i zainstaluj jak zwykle.</p><p><b>ZASTOSOWANIE. </b>
 Sprzętowego dekodowania (odtwarzanie standardowych plików MPEG-1/2)
 można dokonać tą komendą:
 </p><pre class="screen">mplayer -ao mpegpes -vo mpegpes <em class="replaceable"><code>plik.mpg|vob</code></em></pre><p>
@@ -56,7 +56,7 @@ można uzyskać przy użyciu nowego filtru dvbscale:
 </p><pre class="screen">
 dla TV  4:3: -vf dvbscale,scale=-1:0,expand=-1:576:-1:-1:1
 dla TV 16:9: -vf dvbscale=1024,scale=-1:0,expand=-1:576:-1:-1:1
-</pre><p title="Cyfrowa telewizja (moduł wejścia DVB)"><b>Cyfrowa telewizja (moduł wejścia DVB). </b>Możesz użyć swojej karty DVB do oglądania cyfrowej telewizji.</p><p>
+</pre><p><b>Cyfrowa telewizja (moduł wejścia DVB). </b>Możesz użyć swojej karty DVB do oglądania cyfrowej telewizji.</p><p>
   Powinieneś mieć zainstalowane programy <span class="command"><strong>scan</strong></span> oraz
   <span class="command"><strong>szap/tzap/czap/azap</strong></span>; wszystkie są w paczce ze sterownikami.
 </p><p>
@@ -138,7 +138,7 @@ dla TV 16:9: -vf dvbscale=1024,scale=-1:0,expand=-1:576:-1:-1:1
 </pre><p>
   Na stronie man znajdziesz listę opcji, które możesz przekazać modułowi wejścia
   DVB.
-</p><p title="PRZYSZŁOŚĆ"><b>PRZYSZŁOŚĆ. </b>
+</p><p><b>PRZYSZŁOŚĆ. </b>
 Jeżeli masz pytania lub chcesz otrzymywać przyszłe ogłoszenia,
 a także wziąć udział w dyskusjach na ten temat, przyłącz się do naszej
 listy dyskusyjnej
@@ -150,12 +150,12 @@ przy użyciu wbudowanej obsługi OSD przez karty DVB, a także bardziej płynneg
 odtwarzania filmów innych niż 25fps oraz transkodowania w czasie
 rzeczywistym MPEG-2 i MPEG-4
 (częściowa dekompresja).
-</p></div><div class="sect2" title="4.3.2. DXR2"><div class="titlepage"><div><div><h3 class="title"><a name="dxr2"></a>4.3.2. DXR2</h3></div></div></div><p><span class="application">MPlayer</span> obsługuje sprzętowo przyśpieszane
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="dxr2"></a>4.3.2. DXR2</h3></div></div></div><p><span class="application">MPlayer</span> obsługuje sprzętowo przyśpieszane
 odtwarzanie przy użyciu karty DXR2.</p><p>
 Przede wszystkim będziesz potrzebował poprawnie zainstalowanych sterowników
 DXR2. Sterowniki i instrukcję instalacji możesz znaleźć na stronie
 <a class="ulink" href="http://dxr2.sf.net/" target="_top">Centrum zasobów DXR2 (DXR2 Resource Center)</a>.
-</p><div class="variablelist" title="ZASTOSOWANIE"><p class="title"><b>ZASTOSOWANIE</b></p><dl><dt><span class="term"><tt class="option">-vo dxr2</tt></span></dt><dd><p>Włącz wyjście TV.</p></dd><dt><span class="term"><tt class="option">-vo dxr2:x11</tt> lub <tt class="option">-vo dxr2:xv</tt></span></dt><dd><p>Włącz wyjście nakładki w X11.</p></dd><dt><span class="term"><tt class="option">-dxr2 &lt;opcja1:opcja2:...&gt;</tt></span></dt><dd><p>Ta opcja używana jest do sterowania sterownikiem DXR2.</p></dd></dl></div><p>
+</p><div class="variablelist"><p class="title"><b>ZASTOSOWANIE</b></p><dl class="variablelist"><dt><span class="term"><tt class="option">-vo dxr2</tt></span></dt><dd><p>Włącz wyjście TV.</p></dd><dt><span class="term"><tt class="option">-vo dxr2:x11</tt> lub <tt class="option">-vo dxr2:xv</tt></span></dt><dd><p>Włącz wyjście nakładki w X11.</p></dd><dt><span class="term"><tt class="option">-dxr2 &lt;opcja1:opcja2:...&gt;</tt></span></dt><dd><p>Ta opcja używana jest do sterowania sterownikiem DXR2.</p></dd></dl></div><p>
 Układ nakładki (overlay chipset) używany w DXR2 jest dość kiepskiej jakości,
 ale standardowe ustawienia powinny działać u wszystkich.
 OSD może być użyte z nakładką (nie na TV) poprzez rysowanie go kolorem
@@ -164,7 +164,7 @@ Ze standardowymi ustawieniami koloru kluczowego możesz uzyskać różne rezulta
 zwykle będziesz widział kolor kluczowy dookoła znaków lub inny śmieszny efekt.
 Jeżeli dobrze dostosujesz ustawienia koloru kluczowego, powinieneś uzyskać
 akceptowalne wyniki.
-</p><p>Listę dostępnych opcji znajdziesz na stronie man.</p></div><div class="sect2" title="4.3.3. DXR3/Hollywood+"><div class="titlepage"><div><div><h3 class="title"><a name="dxr3"></a>4.3.3. DXR3/Hollywood+</h3></div></div></div><p>
+</p><p>Listę dostępnych opcji znajdziesz na stronie man.</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="dxr3"></a>4.3.3. DXR3/Hollywood+</h3></div></div></div><p>
 <span class="application">MPlayer</span> obsługuje sprzętowo przyśpieszane
 odtwarzanie na kartach Creative DXR3 oraz Sigma Designs Hollywood Plus.
 Obie te karty używają układu dekodującego em8300 firmy Sigma Designs.
@@ -175,7 +175,7 @@ Sterowniki i instrukcję ich instalacji możesz znaleźć na stronie
 <a class="ulink" href="http://dxr3.sf.net/" target="_top">DXR3 &amp; Hollywood Plus dla Linuksa</a>.
 <tt class="filename">configure</tt> powinno wykryć Twoją kartę automatycznie,
 kompilacja powinna przebiec bez problemu.
-</p><div class="variablelist" title="ZASTOSOWANIE"><p class="title"><b>ZASTOSOWANIE</b></p><dl><dt><span class="term"><tt class="option">-vo dxr3:prebuf:sync:norm=x:<em class="replaceable"><code>device</code></em></tt></span></dt><dd><p>
+</p><div class="variablelist"><p class="title"><b>ZASTOSOWANIE</b></p><dl class="variablelist"><dt><span class="term"><tt class="option">-vo dxr3:prebuf:sync:norm=x:<em class="replaceable"><code>device</code></em></tt></span></dt><dd><p>
 <tt class="option">overlay</tt> włącza nakładkę zamiast wyjścia TV.
 Do działania wymaga poprawnie skonfigurowanych ustawień nakładki.
 Najłatwiejszym sposobem konfiguracji nakładki jest odpalenie autocal.

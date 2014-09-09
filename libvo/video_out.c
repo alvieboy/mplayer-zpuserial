@@ -136,6 +136,7 @@ extern const vo_functions_t video_out_quartz;
 extern const vo_functions_t video_out_pnm;
 extern const vo_functions_t video_out_md5sum;
 extern const vo_functions_t video_out_mng;
+extern const vo_functions_t video_out_zpuino;
 
 /* The following declarations are _not_ const because functions pointers
  * get overloaded during (re)initialization. */
@@ -297,6 +298,7 @@ const vo_functions_t* const video_out_drivers[] =
 #ifdef CONFIG_MNG
         &video_out_mng,
 #endif
+        &video_out_zpuino,
         NULL
 };
 

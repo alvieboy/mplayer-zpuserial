@@ -1,9 +1,9 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>B.4. Messages de la GUI</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Le Lecteur Vidéo"><link rel="up" href="skin.html" title="Annexe B. Format de skins MPlayer"><link rel="prev" href="skin-fonts.html" title="B.3. Polices"><link rel="next" href="skin-quality.html" title="B.5. Créer des skins de qualité"><link rel="preface" href="howtoread.html" title="Comment lire cette documentation"><link rel="chapter" href="intro.html" title="Chapitre 1. Introduction"><link rel="chapter" href="install.html" title="Chapitre 2. Installation"><link rel="chapter" href="usage.html" title="Chapitre 3. Utilisation"><link rel="chapter" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="chapter" href="ports.html" title="Chapitre 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapitre 6. Utilisation basique de MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="chapter" href="faq.html" title="Chapitre 8. Foire Aux Questions"><link rel="appendix" href="bugreports.html" title="Annexe A. Comment rapporter les bogues"><link rel="appendix" href="skin.html" title="Annexe B. Format de skins MPlayer"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">B.4. Messages de la GUI</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="skin-fonts.html">Précédent</a> </td><th width="60%" align="center">Annexe B. Format de skins <span class="application">MPlayer</span></th><td width="20%" align="right"> <a accesskey="n" href="skin-quality.html">Suivant</a></td></tr></table><hr></div><div class="sect1" title="B.4. Messages de la GUI"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="skin-gui"></a>B.4. Messages de la GUI</h2></div></div></div><p>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>B.4. Messages de la GUI</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Le Lecteur Vidéo"><link rel="up" href="skin.html" title="Annexe B. Format de skins MPlayer"><link rel="prev" href="skin-fonts.html" title="B.3. Polices"><link rel="next" href="skin-quality.html" title="B.5. Créer des skins de qualité"><link rel="preface" href="howtoread.html" title="Comment lire cette documentation"><link rel="chapter" href="intro.html" title="Chapitre 1. Introduction"><link rel="chapter" href="install.html" title="Chapitre 2. Installation"><link rel="chapter" href="usage.html" title="Chapitre 3. Utilisation"><link rel="chapter" href="video.html" title="Chapitre 4. Sorties vidéo"><link rel="chapter" href="ports.html" title="Chapitre 5. Ports"><link rel="chapter" href="mencoder.html" title="Chapitre 6. Utilisation basique de MEncoder"><link rel="chapter" href="encoding-guide.html" title="Chapitre 7. L'encodage avec MEncoder"><link rel="chapter" href="faq.html" title="Chapitre 8. Foire Aux Questions"><link rel="appendix" href="bugreports.html" title="Annexe A. Comment rapporter les bogues"><link rel="appendix" href="skin.html" title="Annexe B. Format de skins MPlayer"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">B.4. Messages de la GUI</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="skin-fonts.html">Précédent</a> </td><th width="60%" align="center">Annexe B. Format de skins <span class="application">MPlayer</span></th><td width="20%" align="right"> <a accesskey="n" href="skin-quality.html">Suivant</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="skin-gui"></a>B.4. Messages de la GUI</h2></div></div></div><p>
 Ce sont les messages qui peuvent être générés par les boutons, podomètres et
 entrées du menu.
-</p><div class="variablelist"><dl><dt><span class="term"><span class="bold"><strong>evNone</strong></span></span></dt><dd><p>
+</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><span class="bold"><strong>evNone</strong></span></span></dt><dd><p>
 Message vide, sans effet. (à part peut-être dans les versions CVS :-)).
-    </p></dd></dl></div><div class="variablelist" title="Contrôle de lecture:"><p class="title"><b>Contrôle de lecture:</b></p><dl><dt><span class="term"><span class="bold"><strong>evPlay</strong></span></span></dt><dd><p>
+    </p></dd></dl></div><div class="variablelist"><p class="title"><b>Contrôle de lecture:</b></p><dl class="variablelist"><dt><span class="term"><span class="bold"><strong>evPlay</strong></span></span></dt><dd><p>
 Commence la lecture.
     </p></dd><dt><span class="term"><span class="bold"><strong>evStop</strong></span></span></dt><dd><p>
 Stoppe la lecture.
@@ -42,7 +42,7 @@ avoir un bouton play/pause commun. Les deux messages peuvent être assignés aux
 boutons affichés exactement à la même position dans la fenêtre. Ces messages mettent
 la lecture en pause et le bouton <code class="literal">evPlaySwitchToPause</code> s'affiche
 (pour indiquer que le bouton peut être pressé pour continuer la lecture).
-    </p></dd></dl></div><div class="variablelist" title="Déplacement dans le flux:"><p class="title"><b>Déplacement dans le flux:</b></p><dl><dt><span class="term"><span class="bold"><strong>evBackward10sec</strong></span></span></dt><dd><p>
+    </p></dd></dl></div><div class="variablelist"><p class="title"><b>Déplacement dans le flux:</b></p><dl class="variablelist"><dt><span class="term"><span class="bold"><strong>evBackward10sec</strong></span></span></dt><dd><p>
 Recule de 10 secondes.
     </p></dd><dt><span class="term"><span class="bold"><strong>evBackward1min</strong></span></span></dt><dd><p>
 Recule de 1 minute.
@@ -57,7 +57,7 @@ Avance de 10 minutes.
     </p></dd><dt><span class="term"><span class="bold"><strong>evSetMoviePosition</strong></span></span></dt><dd><p>
 Se place à la position (utilisable avec un podomètre; utilise la valeur relative
 (0-100%) du podomètre).
-    </p></dd></dl></div><div class="variablelist" title="Contrôle vidéo:"><p class="title"><b>Contrôle vidéo:</b></p><dl><dt><span class="term"><span class="bold"><strong>evHalfSize</strong></span></span></dt><dd><p>
+    </p></dd></dl></div><div class="variablelist"><p class="title"><b>Contrôle vidéo:</b></p><dl class="variablelist"><dt><span class="term"><span class="bold"><strong>evHalfSize</strong></span></span></dt><dd><p>
 Réduit de moitié la taille de la fenêtre vidéo.
   </p></dd><dt><span class="term"><span class="bold"><strong>evDoubleSize</strong></span></span></dt><dd><p>
 Double la taille de la fenêtre vidéo.
@@ -66,7 +66,7 @@ Passe en mode plein écran.
     </p></dd><dt><span class="term"><span class="bold"><strong>evNormalSize</strong></span></span></dt><dd><p>
 Met la vidéo à sa taille réelle.
     </p></dd><dt><span class="term"><span class="bold"><strong>evSetAspect</strong></span></span></dt><dd><p>
-    </p></dd></dl></div><div class="variablelist" title="Contrôle audio:"><p class="title"><b>Contrôle audio:</b></p><dl><dt><span class="term"><span class="bold"><strong>evDecVolume</strong></span></span></dt><dd><p>
+    </p></dd></dl></div><div class="variablelist"><p class="title"><b>Contrôle audio:</b></p><dl class="variablelist"><dt><span class="term"><span class="bold"><strong>evDecVolume</strong></span></span></dt><dd><p>
 Diminue le volume.
     </p></dd><dt><span class="term"><span class="bold"><strong>evIncVolume</strong></span></span></dt><dd><p>
 Augmente le volume.
@@ -80,7 +80,7 @@ Fixe la balance (utilisable avec un podomètre; utilise la valeur relative (0-10
 du podomètre).
     </p></dd><dt><span class="term"><span class="bold"><strong>evEqualizer</strong></span></span></dt><dd><p>
 Active/désactive l'équalizer.
-    </p></dd></dl></div><div class="variablelist" title="Divers:"><p class="title"><b>Divers:</b></p><dl><dt><span class="term"><span class="bold"><strong>evAbout</strong></span></span></dt><dd><p>
+    </p></dd></dl></div><div class="variablelist"><p class="title"><b>Divers:</b></p><dl class="variablelist"><dt><span class="term"><span class="bold"><strong>evAbout</strong></span></span></dt><dd><p>
 Ouvre la fenêtre 'A Propos'.
     </p></dd><dt><span class="term"><span class="bold"><strong>evPreferences</strong></span></span></dt><dd><p>
 Ouvre la fenêtre de préférences.

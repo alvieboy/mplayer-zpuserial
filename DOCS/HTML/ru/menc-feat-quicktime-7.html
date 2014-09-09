@@ -1,13 +1,13 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.7. Использование MEncoder для создания совместимых с QuickTime файлов</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="prev" href="menc-feat-video-for-windows.html" title="7.6. Кодирование семейством кодеков Video For Windows"><link rel="next" href="menc-feat-vcd-dvd.html" title="7.8. Использование MEncoder для создания VCD/SVCD/DVD-совместимых файлов."><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-why-use-it" title="7.7.1. Зачем необходимо создавать совместимые с QuickTime файлы?"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-constraints" title="7.7.2. Ограничения QuickTime 7"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-crop" title="7.7.3. Обрезание"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-scale" title="7.7.4. Масштабирование"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-avsync" title="7.7.5. A/V синхронизация"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-bitrate" title="7.7.6. Битпоток"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-example" title="7.7.7. Пример кодирования"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-remux" title="7.7.8. Ремультиплексирование в MP4"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-metadata" title="7.7.9. Добавление тегов метаданных"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.7. Использование <span class="application">MEncoder</span>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>7.7. Использование MEncoder для создания совместимых с QuickTime файлов</title><link rel="stylesheet" type="text/css" href="default.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="MPlayer - Медиа Проигрыватель"><link rel="up" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="prev" href="menc-feat-video-for-windows.html" title="7.6. Кодирование семейством кодеков Video For Windows"><link rel="next" href="menc-feat-vcd-dvd.html" title="7.8. Использование MEncoder для создания VCD/SVCD/DVD-совместимых файлов."><link rel="preface" href="howtoread.html" title="Как читать эту документацию"><link rel="chapter" href="intro.html" title="Глава 1. Введение"><link rel="chapter" href="install.html" title="Глава 2. Установка"><link rel="chapter" href="usage.html" title="Глава 3. Использование"><link rel="chapter" href="video.html" title="Глава 4. Устройства вывода видео"><link rel="chapter" href="ports.html" title="Глава 5. Портинг"><link rel="chapter" href="mencoder.html" title="Глава 6. Основы использования MEncoder"><link rel="chapter" href="encoding-guide.html" title="Глава 7. Кодирование с MEncoder"><link rel="chapter" href="faq.html" title="Глава 8. Часто Задаваемые вопросы"><link rel="appendix" href="bugreports.html" title="Приложение A. Как сообщать об ошибках"><link rel="appendix" href="skin.html" title="Приложение B. Формат скинов MPlayer"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-why-use-it" title="7.7.1. Зачем необходимо создавать совместимые с QuickTime файлы?"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-constraints" title="7.7.2. Ограничения QuickTime 7"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-crop" title="7.7.3. Обрезание"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-scale" title="7.7.4. Масштабирование"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-avsync" title="7.7.5. A/V синхронизация"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-bitrate" title="7.7.6. Битпоток"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-example" title="7.7.7. Пример кодирования"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-remux" title="7.7.8. Ремультиплексирование в MP4"><link rel="subsection" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-metadata" title="7.7.9. Добавление тегов метаданных"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">7.7. Использование <span class="application">MEncoder</span>
 для создания совместимых с <span class="application">QuickTime</span>
-файлов</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-video-for-windows.html">Пред.</a> </td><th width="60%" align="center">Глава 7. Кодирование с <span class="application">MEncoder</span></th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-vcd-dvd.html">След.</a></td></tr></table><hr></div><div class="sect1" title="7.7. Использование MEncoder для создания совместимых с QuickTime файлов"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-quicktime-7"></a>7.7. Использование <span class="application">MEncoder</span>
+файлов</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="menc-feat-video-for-windows.html">Пред.</a> </td><th width="60%" align="center">Глава 7. Кодирование с <span class="application">MEncoder</span></th><td width="20%" align="right"> <a accesskey="n" href="menc-feat-vcd-dvd.html">След.</a></td></tr></table><hr></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="menc-feat-quicktime-7"></a>7.7. Использование <span class="application">MEncoder</span>
 для создания совместимых с <span class="application">QuickTime</span>
-файлов</h2></div></div></div><div class="sect2" title="7.7.1. Зачем необходимо создавать совместимые с QuickTime файлы?"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-why-use-it"></a>7.7.1. Зачем необходимо создавать совместимые с <span class="application">QuickTime</span>
+файлов</h2></div></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-why-use-it"></a>7.7.1. Зачем необходимо создавать совместимые с <span class="application">QuickTime</span>
 файлы?</h3></div></div></div><p>
   Есть несколько причин, по которым создание
   <span class="application">QuickTime</span>-совместимых файлов может быть
   желательно.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   Вы хотите, чтобы любой компьютерно неграмотный человек мог смотреть
   результат Вашего кодирования на большинстве платформ (Windows, Mac OS X, Unices …).
 </p></li><li class="listitem"><p>
@@ -22,7 +22,7 @@
   <span class="application">QuickTime</span> 7 поддерживает кодек нового поколения
   H.264, который даёт существенно лучшее качество изображения, чем
   предыдущие поколения кодеков (MPEG-2, MPEG-4 …).
-</p></li></ul></div></div><div class="sect2" title="7.7.2. Ограничения QuickTime 7"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-constraints"></a>7.7.2. Ограничения <span class="application">QuickTime</span> 7</h3></div></div></div><p>
+</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-constraints"></a>7.7.2. Ограничения <span class="application">QuickTime</span> 7</h3></div></div></div><p>
   <span class="application">QuickTime</span> 7 поддерживает H.264 видео и
   AAC аудио, но не поддерживает их мультиплексирование в формат
   контейнера AVI.
@@ -38,7 +38,7 @@
   <span class="application">QuickTime</span> 7,
   плееры, основанные на <span class="application">QuickTime</span>,
   покажут Вам милый белый экран вместо ожидаемого Вами видео.
-</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
   <span class="bold"><strong>B-кадры</strong></span>:
   <span class="application">QuickTime</span> 7 поддерживает максимум 1 B-кадр,
   т.е. <tt class="option">-x264encopts bframes=1</tt>. Это означает, что
@@ -59,7 +59,7 @@
   в MPEG-4 файлах; он предполагает SAR=1. Прочтите
   <a class="link" href="menc-feat-quicktime-7.html#menc-feat-quicktime-7-scale" title="7.7.4. Масштабирование">раздел о масштабировании</a>
   для обхода проблемы.
-</p></li></ul></div></div><div class="sect2" title="7.7.3. Обрезание"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-crop"></a>7.7.3. Обрезание</h3></div></div></div><p>
+</p></li></ul></div></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-crop"></a>7.7.3. Обрезание</h3></div></div></div><p>
   Предположим, что Вы хотите сделать рип свежекупленной копии "Хроник
   Нарнии" и Ваш регион DVD 1, что означает, что это NTSC.
   Пример ниже будет также применим к PAL, за исключением того, что Вам
@@ -77,7 +77,7 @@
   Затем Вам необходимо усечь чёрные полосы сверху и снизу видео, как
   описано в <a class="link" href="menc-feat-enc-libavcodec.html#menc-feat-dvd-mpeg4-example-crop">этом</a>
   разделе.
-</p></div><div class="sect2" title="7.7.4. Масштабирование"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-scale"></a>7.7.4. Масштабирование</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-scale"></a>7.7.4. Масштабирование</h3></div></div></div><p>
   Следующий шаг действительно душераздирающий.
   <span class="application">QuickTime</span> 7 не поддерживает MPEG-4 видео
   с коэффициентом соотношения сторон пиксела, отличным от 1. Так что Вам
@@ -98,7 +98,7 @@
   масштабировать:
 
   </p><pre class="screen">-vf crop=720:352:0:62,scale=-10:-1</pre><p>
-</p></div><div class="sect2" title="7.7.5. A/V синхронизация"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-avsync"></a>7.7.5. A/V синхронизация</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-avsync"></a>7.7.5. A/V синхронизация</h3></div></div></div><p>
   Поскольку Вы будете мультиплексировать в другой контейнер, Вы должны
   всегда использовать опцию <tt class="option">harddup</tt>, чтобы убедиться,
   что дублирующиеся кадры будут действительно дублироваться в полученном
@@ -111,7 +111,7 @@
 </p><p>
   В итоге, цепочка фильтров выглядит следующим образом:
   </p><pre class="screen">-vf crop=720:352:0:62,scale=-10:-1,harddup</pre><p>
-</p></div><div class="sect2" title="7.7.6. Битпоток"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-bitrate"></a>7.7.6. Битпоток</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-bitrate"></a>7.7.6. Битпоток</h3></div></div></div><p>
   Как обычно, выбор битпотока зависит от технических свойств исходного
   материала, как объясняется
   <a class="link" href="menc-feat-dvd-mpeg4.html#menc-feat-dvd-mpeg4-resolution-bitrate" title="7.1.5. Выбор разрешения и битпотока">здесь</a>,
@@ -123,7 +123,7 @@
   решил кодировать фильм на 900 кбит/сек, и считает, что он выглядит
   очень хорошо. Вы можете уменьшить битпоток, если Вам нужно сохранить
   больше места, или увеличить, если Вам нужно улучшить качество.
-</p></div><div class="sect2" title="7.7.7. Пример кодирования"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-example"></a>7.7.7. Пример кодирования</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-example"></a>7.7.7. Пример кодирования</h3></div></div></div><p>
   Теперь Вы готовы к кодированию видео. Поскольку Вы заботитесь
   о качестве, Вы , разумеется, будете делать двупроходное кодирование.
   Для некоторого сокращения времени кодирования, Вы можете указать
@@ -167,7 +167,7 @@ me=umh:partitions=all:trellis=1:qp_step=4:qcomp=0.7:direct_pred=auto:keyint=300 
   <span class="application">QuickTime</span> не сможет его воспроизвести,
   т.к. не поддерживает H.264, мультиплексированный в AVI.
   Так что следующий шаг — ремультиплексирование видео в контейнер MP4.
-</p></div><div class="sect2" title="7.7.8. Ремультиплексирование в MP4"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-remux"></a>7.7.8. Ремультиплексирование в MP4</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-remux"></a>7.7.8. Ремультиплексирование в MP4</h3></div></div></div><p>
   Существует несколько способов ремультиплексирования AVI файлов
   в MP4. Вы можете использовать <span class="application">mp4creator</span>,
   являющийся частью
@@ -221,7 +221,7 @@ mp4creator -optimize нарния.mp4</pre><p>
 3       hint    Payload mpeg4-generic for track 1
 4       hint    Payload H264 for track 2
 </pre><p>
-</p></div><div class="sect2" title="7.7.9. Добавление тегов метаданных"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-metadata"></a>7.7.9. Добавление тегов метаданных</h3></div></div></div><p>
+</p></div><div class="sect2"><div class="titlepage"><div><div><h3 class="title"><a name="menc-feat-quicktime-7-metadata"></a>7.7.9. Добавление тегов метаданных</h3></div></div></div><p>
   Если Вы хотите добавить в видео теги, которые отображаются в iTunes, Вы
   можете использовать
   <a class="ulink" href="http://atomicparsley.sourceforge.net/" target="_top">AtomicParsley</a>.
