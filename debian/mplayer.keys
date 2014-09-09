@@ -1,0 +1,111 @@
+application/x-ogg
+	short_list_application_ids_for_novice_user_level=xmms,freeamp,mplayer
+	short_list_application_ids_for_intermediate_user_level=xmms,freeamp,mplayer
+	short_list_application_ids_for_advanced_user_level=xmms,freeamp,mplayer
+
+application/ogg
+	short_list_application_ids_for_novice_user_level=xmms,freeamp,mplayer
+	short_list_application_ids_for_intermediate_user_level=xmms,freeamp,mplayer
+	short_list_application_ids_for_advanced_user_level=xmms,freeamp,mplayer
+
+audio/mpeg
+	short_list_application_ids_for_novice_user_level=xmms,freeamp,mplayer
+	short_list_application_ids_for_intermediate_user_level=xmms,freeamp,mplayer
+	short_list_application_ids_for_advanced_user_level=xmms,freeamp,mplayer
+
+audio/x-mpegurl
+	short_list_application_ids_for_novice_user_level=xmms-no-uris,freeamp-no-uris,mplayer
+	short_list_application_ids_for_intermediate_user_level=xmms-no-uris,freeamp-no-uris,mplayer
+	short_list_application_ids_for_advanced_user_level=xmms-no-uris,freeamp-no-uris,mplayer
+
+audio/x-ms-wax
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=mplayer
+	short_list_application_ids_for_intermediate_user_level=mplayer
+	short_list_application_ids_for_advanced_user_level=mplayer
+
+audio/x-ms-wma
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=mplayer
+	short_list_application_ids_for_intermediate_user_level=mplayer
+	short_list_application_ids_for_advanced_user_level=mplayer
+
+audio/x-pls
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=mplayer
+	short_list_application_ids_for_intermediate_user_level=mplayer
+	short_list_application_ids_for_advanced_user_level=mplayer
+
+audio/x-scpls
+	short_list_application_ids_for_novice_user_level=xmms,freeamp,mplayer
+	short_list_application_ids_for_intermediate_user_level=xmms,freeamp,mplayer
+	short_list_application_ids_for_advanced_user_level=xmms,freeamp,mplayer
+
+audio/x-wav
+	short_list_application_ids_for_novice_user_level=grecord,xmms,freeamp,mplayer
+	short_list_application_ids_for_intermediate_user_level=grecord,xmms,freeamp,mplayer
+	short_list_application_ids_for_advanced_user_level=grecord,xmms,freeamp,mplayer
+
+video/mpeg
+	short_list_application_ids_for_novice_user_level=mplayer,vlc,xmps,plaympeg,omsomi,mpeg_play,gtv
+	short_list_application_ids_for_intermediate_user_level=mplayer,vlc,xmps,plaympeg,omsomi,mpeg_play,gtv
+	short_list_application_ids_for_advanced_user_level=mplayer,vlc,xmps,plaympeg,omsomi,mpeg_play,gtv
+
+video/quicktime
+	short_list_application_ids_for_novice_user_level=mplayer,xanim
+	short_list_application_ids_for_intermediate_user_level=mplayer,xanim
+	short_list_application_ids_for_advanced_user_level=mplayer,xanim
+
+video/x-mpeg2
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=mplayer
+	short_list_application_ids_for_intermediate_user_level=mplayer
+	short_list_application_ids_for_advanced_user_level=mplayer
+
+video/x-mpeg
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=mplayer,xmms,freeamp
+	short_list_application_ids_for_intermediate_user_level=mplayer,xmms,freeamp
+	short_list_application_ids_for_advanced_user_level=mplayer,xmms,freeamp
+
+video/x-ms-afs
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=mplayer
+	short_list_application_ids_for_intermediate_user_level=mplayer
+	short_list_application_ids_for_advanced_user_level=mplayer
+
+video/x-ms-asf
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=mplayer,xmps
+	short_list_application_ids_for_intermediate_user_level=mplayer,xmps
+	short_list_application_ids_for_advanced_user_level=mplayer,xmps
+
+video/x-msvideo
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=mplayer,xmps,omsomi,gtv,xanim
+	short_list_application_ids_for_intermediate_user_level=mplayer,xmps,omsomi,gtv,xanim
+	short_list_application_ids_for_advanced_user_level=mplayer,xmps,omsomi,gtv,xanim
+
+video/x-ms-wma
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=mplayer
+	short_list_application_ids_for_intermediate_user_level=mplayer
+	short_list_application_ids_for_advanced_user_level=mplayer
+
+video/x-ms-wmv
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=mplayer
+	short_list_application_ids_for_intermediate_user_level=mplayer
+	short_list_application_ids_for_advanced_user_level=mplayer
+
+video/x-ms-wmx
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=mplayer
+	short_list_application_ids_for_intermediate_user_level=mplayer
+	short_list_application_ids_for_advanced_user_level=mplayer
+
+video/x-ms-wvx
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=mplayer
+	short_list_application_ids_for_intermediate_user_level=mplayer
+	short_list_application_ids_for_advanced_user_level=mplayer

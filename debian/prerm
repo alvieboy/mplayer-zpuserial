@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+if [ "$1" = "remove" ] ; then
+	update-alternatives --remove mplayer /usr/bin/mplayer
+fi
+
+#DEBHELPER#
+
+exit 0

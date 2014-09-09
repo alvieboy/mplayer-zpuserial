@@ -1,0 +1,9 @@
+Document: mplayer-doc
+Title: Mplayer documentation
+Author: Cabuccino
+Abstract: Documentation for MPlayer - The Movie Player for LINUX
+Section: Graphics
+
+Format: HTML
+Index: /usr/share/doc/mplayer-doc/HTML/en/index.html
+Files: /usr/share/doc/mplayer-doc/HTML/en/*.html

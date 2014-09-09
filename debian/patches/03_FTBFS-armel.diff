@@ -1,0 +1,17 @@
+Index: mplayer-dmo-1.0~rc4+svn20120108/libmpeg2/motion_comp_arm_s.S
+===================================================================
+--- mplayer-dmo-1.0~rc4+svn20120108.orig/libmpeg2/motion_comp_arm_s.S	2011-02-25 17:08:16.000000000 +0100
++++ mplayer-dmo-1.0~rc4+svn20120108/libmpeg2/motion_comp_arm_s.S	2012-01-08 15:56:39.920745237 +0100
+@@ -18,6 +18,12 @@
+ @ along with mpeg2dec; if not, write to the Free Software
+ @ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ 
++@ Disable pld for platforms which don't support it
++#include "../config.h"
++#if !HAVE_PLD
++.macro pld reg
++.endm
++#endif
+ 
+ 	.text
+ 

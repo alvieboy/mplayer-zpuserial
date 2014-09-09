@@ -1,0 +1,73 @@
+Source: mplayer-dmo
+Section: graphics
+Priority: extra
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Homepage: http://www.mplayerhq.hu/
+Standards-Version: 3.9.4
+Build-Depends-Indep: xsltproc, docbook-xml, docbook-xsl
+Build-Conflicts: libesd0-dev, libggiwmh0-dev, libggi2-dev
+Build-Depends: debhelper (>> 9), libncurses5-dev, libxv-dev, quilt, libdca-dev,
+ libsdl1.2-dev, liblircclient-dev, libvorbis-dev, libsctp-dev, libcdio-paranoia-dev,
+ libmad0-dev, libasound2-dev [linux-any], libfaad-dev, liblzo2-dev, gawk, libfribidi-dev,
+ libxvmc-dev, libjpeg-dev, libaudiofile-dev, libsmbclient-dev, libpng-dev,
+ libgif-dev, ccache, libaa1-dev, libmp3lame-dev, libdv-dev,
+ libxvidcore-dev, libcaca-dev, liblivemedia-dev (>= 1:2013.01.15-dmo1), libvorbisidec-dev,
+ libfreetype6-dev, libgl1-mesa-dev | libgl-dev, libfaac-dev, libopenjpeg-dev,
+ libx264-dev (>= 1:0.svn20110617), ladspa-sdk, libbs2b-dev, libxss-dev, libgsm1-dev,
+ libtheora-dev, libglu1-mesa-dev, vstream-client-dev, libvpx-dev, libass-dev,
+ libxxf86dga-dev, libjack-dev, libmpcdec-dev, libxinerama-dev,
+ libaudio-dev, libtwolame-dev, libpulse-dev, libspeex-dev, libenca-dev,
+ libopenal-dev, libopencore-amrwb-dev, libopencore-amrnb-dev, libdirac-dev (>= 1.0.2-2),
+ libschroedinger-dev, liba52-0.7.4-dev, libdts-dev, libbz2-dev, libmng-dev,
+ librtmp-dev, libfontconfig-dev, libdvdread-dev, libdvdnav-dev, libiso9660-dev (>= 0.83),
+ libegl1-mesa-dev
+
+Package: mplayer
+Architecture: ppc64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: libdvdcss, mplayer-doc, pulseaudio, jackd
+Conflicts: mplayer-custom, libconfhelper-perl, mplayer-gui
+Replaces: mplayer-custom, mplayer-ppc64, mplayer-nogui
+Description: Ultimate Movie Player For Linux.
+ It plays most mpeg, avi and asf files, supported by many native and win32
+ DLL codecs. You can watch VCD, DVD and even DivX movies too. The other
+ big feature of mplayer is the wide range of supported output drivers. It
+ works with X11, Xv, DGA, OpenGL, SVGAlib, fbdev, but you can use SDL (and
+ this way all drivers of SDL) and some lowlevel card-specific drivers (for
+ Matrox/3dfx/SiS) too! Most of them supports software or hardware scaling,
+ so you can enjoy movies in fullscreen.
+ .
+ This version is for ppc64 CPU.
+
+Package: mencoder
+Architecture: ppc64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: libdvdcss, mplayer-doc
+Conflicts: mencoder-custom, mplayer-ppc64 (<= 1:1.0-pre6)
+Replaces: mencoder-custom, mplayer-ppc64 (<= 1:1.0-pre6), mencoder-ppc64, mplayer
+Description: MPlayer's Movie Encoder.
+ A simple movie encoder, designed to encode MPlayer-playable movies
+ (AVI/ASF/OGG/DVD/VCD/VOB/MPG/MOV/VIV/FLI/RM/NUV/NET) to other
+ MPlayer-playable formats. It can encode with various codecs, like DivX4 (1
+ or 2 passes), libavcodec, PCM/MP3/VBRMP3 audio. Also has stream copying and
+ video resizing abilities.
+
+Package: mplayer-nogui
+Architecture: ppc64
+Depends: ${misc:Depends}, mplayer
+Suggests: w32codecs (>= 0.91-1), libdvdcss, mplayer-doc, pulseaudio, jackd
+Conflicts: mplayer-ppc64, mplayer-custom, libconfhelper-perl
+Replaces: mplayer, mplayer-ppc64, mplayer-custom
+Description: Ultimate Movie Player For Linux.
+ This is a transitional dummy package. The mplayer package his now build
+ without the graphic user interface. This mplayer-nogui package is now
+ obsolete, and can safely be removed from the system.
+
+Package: mplayer-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: Documentation for mplayer.
+ This package contains the documentation Chinese, English, French, German,
+ Hungarian, Italian and Polish.

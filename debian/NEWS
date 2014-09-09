@@ -1,0 +1,5 @@
+mplayer (1:1.0.rc2svn20080417-0.0) unstable; urgency=low
+
+  Now the -ac option for EAC3 audio track is called ffac3 (was ffeac3).
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 18 Apr 2008 11:30:51 +0200

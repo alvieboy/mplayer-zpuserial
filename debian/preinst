@@ -1,0 +1,36 @@
+#!/bin/sh -e
+
+# Move configfile in /etc/mplayer
+
+if [ ! -d /etc/mplayer ]; then
+	mkdir /etc/mplayer
+	if [ -e /etc/codecs.conf ]; then
+		mv /etc/codecs.conf /etc/mplayer/codecs.conf
+	fi
+	if [ -e /etc/input.conf ]; then
+		mv /etc/input.conf /etc/mplayer/input.conf
+	fi
+	if [ -e /etc/menu.conf ]; then
+		mv /etc/menu.conf /etc/mplayer/menu.conf
+	fi
+	if [ -e /etc/mplayer.conf ]; then
+		mv /etc/mplayer.conf /etc/mplayer/mplayer.conf
+	fi
+else
+	if [ -e /etc/codecs.conf ]; then
+		mv /etc/codecs.conf /etc/mplayer/codecs.conf
+	fi
+	if [ -e /etc/input.conf ]; then
+		mv /etc/input.conf /etc/mplayer/input.conf
+	fi
+	if [ -e /etc/menu.conf ]; then
+		mv /etc/menu.conf /etc/mplayer/menu.conf
+	fi
+	if [ -e /etc/mplayer.conf ]; then
+		mv /etc/mplayer.conf /etc/mplayer/mplayer.conf
+	fi
+fi
+
+#DEBHELPER#
+
+exit 0

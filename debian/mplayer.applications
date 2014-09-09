@@ -1,0 +1,9 @@
+mplayer
+	command=mplayer
+	name=MPlayer
+	can_open_multiple_files=true
+	expects_uris=no
+	requires_terminal=false
+	all_gnome_vfs_schemes_supported=yes
+	supported_uri_schemes=http,ftp,rtsp,mms,file
+	mime_types=application/x-ogg,application/ogg,audio/mpeg,audio/x-mpegurl,audio/x-ms-wax,audio/x-ms-wma,audio/x-pls,audio/x-scpls,audio/x-wav,video/mpeg,video/quicktime,video/x-mpeg2,video/x-mpeg,video/x-ms-afs,video/x-ms-asf,video/x-msvideo,video/x-ms-wma,video/x-ms-wmv,video/x-ms-wmx,video/x-ms-wvx

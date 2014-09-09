@@ -1,0 +1,13 @@
+Index: mplayer-dmo-1.0~rc3+svn20100726/libao2/ao_jack.c
+===================================================================
+--- mplayer-dmo-1.0~rc3+svn20100726.orig/libao2/ao_jack.c	2010-06-29 14:39:47.000000000 +0200
++++ mplayer-dmo-1.0~rc3+svn20100726/libao2/ao_jack.c	2010-07-26 17:03:47.000000000 +0200
+@@ -51,7 +51,7 @@
+ LIBAO_EXTERN(jack)
+ 
+ //! maximum number of channels supported, avoids lots of mallocs
+-#define MAX_CHANS 8
++#define MAX_CHANS 128
+ static jack_port_t *ports[MAX_CHANS];
+ static int num_ports; ///< Number of used ports == number of channels
+ static jack_client_t *client;

@@ -1,0 +1,2396 @@
+mplayer-dmo (3:1.1.1-dmo4.wheezy1) stable; urgency=low
+
+  * In mplayer-doc don't compress all .txt files in the tech directorie
+    (Thanks to Brenda J.  Butler).
+  * Backport for stable.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Tue, 20 Aug 2013 09:11:15 +0200
+
+mplayer-dmo (3:1.1.1-dmo4) unstable; urgency=low
+
+  * Rebuild against liblivemedia-dev 2013.01.15
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Sun, 14 Jul 2013 18:18:14 +0200
+
+mplayer-dmo (3:1.1.1-dmo3) unstable; urgency=low
+
+  * Rebuild against an old liblivemedia version to re-enable rtsp support.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Sun, 14 Jul 2013 10:35:39 +0200
+
+mplayer-dmo (3:1.1.1-dmo2) unstable; urgency=low
+
+  * Drop libsvga1 support.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Sat, 06 Jul 2013 18:17:32 +0200
+
+mplayer-dmo (3:1.1.1-dmo1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Wed, 22 May 2013 10:03:07 +0200
+
+mplayer-dmo (3:1.1-dmo9) unstable; urgency=low
+
+  * Rebuild against libx264-130
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Thu, 28 Feb 2013 13:35:53 +0100
+
+mplayer-dmo (3:1.1-dmo8) unstable; urgency=low
+
+  * Rebuild against libx264-129
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Mon, 12 Nov 2012 15:33:57 +0100
+
+mplayer-dmo (3:1.1-dmo7) unstable; urgency=low
+
+  * Rebuild against libx264-128.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Sun, 23 Sep 2012 17:03:02 +0200
+
+mplayer-dmo (3:1.1-dmo6) unstable; urgency=low
+
+  * mplayer should conflicts with mplayer-gui.
+  * Added libsvga1-dev in Build-depends for amd64/i386 arches.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Sun, 12 Aug 2012 10:05:09 +0200
+
+mplayer-dmo (3:1.1-dmo5) unstable; urgency=low
+
+  * Remove libggi2-dev and libggiwmh0-dev from Build-Depends.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Wed, 04 Jul 2012 17:07:07 +0200
+
+mplayer-dmo (3:1.1-dmo4) unstable; urgency=low
+
+  * Added docbook-xml and docbook-xsl in Build-Depends-Indep.
+  * Added libvorbisidec-dev, libass-dev, libcrystalhd-dev [amd64 i386],
+    libgsm-dev and libegl1-mesa-dev in Build-Depends.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Sat, 30 Jun 2012 17:01:44 +0200
+
+mplayer-dmo (3:1.1-dmo3) unstable; urgency=low
+
+  * Build with libcdio instead of cdparanoia for all arches.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Tue, 19 Jun 2012 08:08:10 +0200
+
+mplayer-dmo (3:1.1-dmo2) unstable; urgency=low
+
+  * Rebuild against libcdio-cdda0
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Fri, 15 Jun 2012 10:37:16 +0200
+
+mplayer-dmo (3:1.1-dmo1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Tue, 12 Jun 2012 08:33:07 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20120601-dmo1) unstable; urgency=low
+
+  * New svn release (34980).
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Fri, 01 Jun 2012 07:27:18 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20120514-dmo1) unstable; urgency=low
+
+  * New svn release (34896).
+  * This release fix the build for kfreebsd arches.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Mon, 14 May 2012 09:49:17 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20120511-dmo2) unstable; urgency=low
+
+  * libsctp-dev isn't for kfreebsd arches.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Sat, 12 May 2012 09:04:05 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20120511-dmo1) unstable; urgency=low
+
+  * New svn release (34894).
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Fri, 11 May 2012 08:44:14 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20120430-dmo1) unstable; urgency=low
+
+  * New svn release (34883).
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 30 Apr 2012 16:16:25 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20120324-0.1) unstable; urgency=low
+
+  * Fix mailcap (replaces gmplayer by mplayer) and add an entry for mp4
+    (Thanks to Christophe Rhodes).
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 13 Apr 2012 10:40:20 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20120324-0.0) unstable; urgency=low
+
+  * New svn release (34823).
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 24 Mar 2012 15:25:12 +0100
+
+mplayer-dmo (3:1.0~rc4+svn20120313-0.0) unstable; urgency=low
+
+  * New svn release (34809).
+  * Added libmpg123-dev in Build-Depends.
+  * Build with external libdvdread and libdvdnav.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 13 Mar 2012 12:20:44 +0100
+
+mplayer-dmo (3:1.0~rc4+svn20120216-0.0) unstable; urgency=low
+
+  * New svn release (34728).
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 16 Feb 2012 11:11:07 +0100
+
+mplayer-dmo (3:1.0~rc4+svn20120201-0.0) unstable; urgency=low
+
+  * New svn release (34643).
+  * Added libegl1-imx in Build-Conflicts for armhf as this package doesn't
+    exist in debian.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 01 Feb 2012 14:35:13 +0100
+
+mplayer-dmo (3:1.0~rc4+svn20120108-0.1) unstable; urgency=low
+
+  * Call update-alternatives --remove in prerm script (Thanks to Andreas
+    Beckmann).
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 26 Jan 2012 18:27:33 +0100
+
+mplayer-dmo (3:1.0~rc4+svn20120108-0.0) unstable; urgency=low
+
+  * New svn release (34531).
+  * Added armhf support.
+  * Update mplayer-nogui description.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 08 Jan 2012 14:09:50 +0100
+
+mplayer-dmo (3:1.0~rc4+svn20111213-0.0) unstable; urgency=low
+
+  * New svn release (34442).
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 13 Dec 2011 17:39:05 +0100
+
+mplayer-dmo (3:1.0~rc4+svn20111203-0.2) unstable; urgency=low
+
+  * Fix again the powerpc build.
+  * Added libfontconfig-dev in Build-depends for amd64 Packages (Thanks to
+    Matthew Gabeler-Lee for the bug report).
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 04 Dec 2011 20:06:19 +0100
+
+mplayer-dmo (3:1.0~rc4+svn20111203-0.1) unstable; urgency=low
+
+  * Don't install desktop and icon files.
+  * Fix powerpc with altivec installation.
+  * Fix ia64 installation (try to install debian/mplayer-nogui.applications).
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 03 Dec 2011 15:36:07 +0100
+
+mplayer-dmo (3:1.0~rc4+svn20111203-0.0) unstable; urgency=low
+
+  * New svn release (34377).
+  * Now the mplayer package is built without the graphic user interface and
+    thus make the mplayer-nogui package a transition package who install
+    mplayer.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 03 Dec 2011 08:09:50 +0100
+
+mplayer-dmo (3:1.0~rc4+svn20111024-0.0) unstable; urgency=low
+
+  * New svn release (34245).
+  * Build with --disable-decoder=amrnb to enable dts mode.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 24 Oct 2011 11:46:57 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20111018-0.0) unstable; urgency=low
+
+  * New svn release (34212).
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 18 Oct 2011 11:48:18 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20110926-0.1) unstable; urgency=low
+
+  * debian/control libasound2-dev should be for Linux arches only.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 27 Sep 2011 20:44:28 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20110926-0.0) unstable; urgency=low
+
+  * New svn release (34132).
+  * Removed 03_scrennsaver and 05_libass-crash included upstream.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 26 Sep 2011 14:52:52 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20110809-0.1) unstable; urgency=low
+
+  * New patch 05_libass-crash. Included libass isn't fixed for the crash
+    with latest freetype.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 09 Aug 2011 17:07:54 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20110809-0.0) unstable; urgency=low
+
+  * New svn release (33953).
+  * Removed 05_broken-sound-gcc-4.6 patch.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 09 Aug 2011 16:26:53 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20110505-0.2) unstable; urgency=low
+
+  * Remove deprecated libesd support.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 10 Jul 2011 11:08:40 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20110505-0.1) unstable; urgency=low
+
+  * Rebuild against libx264-115.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 02 Jun 2011 10:53:53 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20110505-0.0) unstable; urgency=low
+
+  * New svn release (33367).
+  * New patch 05_broken-sound-gcc-4.6 to fix broken mp3 sound with gcc 4.6
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 05 May 2011 08:43:17 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20110429-0.0) unstable; urgency=low
+
+  * New svn release (33341).
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 29 Apr 2011 19:21:18 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20110308-0.2) unstable; urgency=low
+
+  * Added libartsc0-dev in Build-Conflicts to not depends on deprecated
+    libartsc0.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 15 Apr 2011 13:19:02 +0200
+
+mplayer-dmo (3:1.0~rc4+svn20110308-0.1) unstable; urgency=low
+
+  * Added support for libbluray and mips packages.
+  * Build without --enable-zr because v4l1 has been removed in 2.6.38
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 22 Mar 2011 16:52:40 +0100
+
+mplayer-dmo (3:1.0~rc4+svn20110308-0.0) unstable; urgency=low
+
+  * New svn release (33057).
+  * This release fix ac3 encding.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 08 Mar 2011 20:32:52 +0100
+
+mplayer-dmo (3:1.0~rc4+svn20110225-0.1) unstable; urgency=low
+
+  * Restore the include in mplayer.conf lost in the previous upload and put
+    font configuration before profiles configuration (Thanks to ario
+    'BitKoenig' Holbe)
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 04 Mar 2011 18:45:37 +0100
+
+mplayer-dmo (3:1.0~rc4+svn20110225-0.0) unstable; urgency=low
+
+  * New svn release (32969).
+  * Added support for kfreebsd-amd64.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 25 Feb 2011 17:30:50 +0100
+
+mplayer-dmo (3:1.0~rc4-0.1) unstable; urgency=low
+
+  * Bump version.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 09 Feb 2011 14:23:10 +0100
+
+mplayer-dmo (2:1.0~rc4-0.0) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 02 Feb 2011 16:23:25 +0100
+
+mplayer-dmo (2:1.0~rc3++svn20100804-0.2) unstable; urgency=low
+
+  * Rebuild against libx264-112.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 21 Jan 2011 13:42:39 +0100
+
+mplayer-dmo (2:1.0~rc3++svn20100804-0.1) unstable; urgency=high
+
+  * Fix for CVE-2010-3429.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 04 Oct 2010 17:14:35 +0200
+
+mplayer-dmo (2:1.0~rc3++svn20100804-0.0) unstable; urgency=low
+
+  * New svn release (31918).
+  * debian/rules move --extra-libs-mencoder option from CONFIG_MISC to
+    CONFIG_AUDIO.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 04 Aug 2010 09:01:44 +0200
+
+mplayer-dmo (2:1.0~rc3+svn20100726-0.0) unstable; urgency=low
+
+  * New svn release (31826).
+  * Add an extra "--extra-libs-mencoder=-lvorbisenc" option otherwise
+    mencoder doesn't link.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 26 Jul 2010 17:23:46 +0200
+
+mplayer-dmo (2:1.0~rc3+svn20100603-0.0) unstable; urgency=low
+
+  * New svn release (31309).
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 03 Jun 2010 14:27:44 +0200
+
+mplayer-dmo (2:1.0~rc3+svn20100530-0.1) unstable; urgency=low
+
+  * Rebuild against official libva-dev package.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 31 May 2010 10:03:24 +0200
+
+mplayer-dmo (2:1.0~rc3+svn20100530-0.0) unstable; urgency=low
+
+  * New svn release (31279).
+  * Added nvidia-vdpau-driver in Suggests: for i386 and amd64 packages.
+  * Added libvpx-dev in Build-depends to enable VP8 video codec.
+  * Added librtmp-dev in Build-depends to enable RTMPDump Streaming Media.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 30 May 2010 12:22:51 +0200
+
+mplayer-dmo (2:1.0~rc3+svn20100519-0.0) unstable; urgency=low
+
+  * New svn release (31179).
+  * Added a Replaces: mplayer for mencoder as the official package ship
+    the uneeded mencoder manpage (See bug #580168).
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 19 May 2010 09:18:10 +0200
+
+mplayer-dmo (2:1.0~rc3+svn20100512-0.0) unstable; urgency=low
+
+  * New svn release (31169).
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 12 May 2010 16:25:37 +0200
+
+mplayer-dmo (2:1.0~rc3+svn20100503-0.0) unstable; urgency=low
+
+  * New svn release (31128).
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 03 May 2010 14:54:22 +0200
+
+mplayer-dmo (1:1.0.rc2svn20100501-0.0) unstable; urgency=low
+
+  * New svn release (31110).
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 01 May 2010 16:56:15 +0200
+
+mplayer-dmo (1:1.0.rc2svn20100407-0.0) unstable; urgency=low
+
+  * New svn release (31026).
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 07 Apr 2010 10:14:27 +0200
+
+mplayer-dmo (1:1.0.rc2svn20100325-0.0) unstable; urgency=low
+
+  * New svn release (30956).
+  * Added libopenjpeg-dev in Build-depends.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 25 Mar 2010 09:47:01 +0100
+
+mplayer-dmo (1:1.0.rc2svn20100313-0.0) unstable; urgency=low
+
+  * New svn release (30886).
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 13 Mar 2010 09:37:40 +0100
+
+mplayer-dmo (1:1.0.rc2svn20100219-0.0) unstable; urgency=low
+
+  * New svn release (30656).
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 19 Feb 2010 16:00:24 +0100
+
+mplayer-dmo (1:1.0.rc2svn20100211-0.0) unstable; urgency=low
+
+  * New svn release (30534).
+  * Added support for kfreebsd-i386.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 11 Feb 2010 16:47:34 +0100
+
+mplayer-dmo (1:1.0.rc2svn20100126-0.1) unstable; urgency=low
+
+  * Remove ia64 packages optimized for itanium1 as this gcc optimization
+    will be gone in the next gcc.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 27 Jan 2010 14:55:50 +0100
+
+mplayer-dmo (1:1.0.rc2svn20100126-0.0) unstable; urgency=low
+
+  * New svn release (30435).
+  * Remove g++-4.4 in build-depends for sparc and powerpc now that 4.4 is
+    the default gcc/g++.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 26 Jan 2010 10:45:34 +0100
+
+mplayer-dmo (1:1.0.rc2svn20100115-0.0) unstable; urgency=low
+
+  * New svn release (30310).
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 15 Jan 2010 13:55:55 +0100
+
+mplayer-dmo (1:1.0.rc2svn20100104-0.1) unstable; urgency=low
+
+  * New patch 06_scrennsaver to enable the -stop-xscreensaver option.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 05 Jan 2010 14:20:30 +0100
+
+mplayer-dmo (1:1.0.rc2svn20100104-0.0) unstable; urgency=low
+
+  * New svn release (30200).
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 04 Jan 2010 14:35:30 +0100
+
+mplayer-dmo (1:1.0.rc2svn20091220-0.0) unstable; urgency=low
+
+  * New svn release (30075).
+  * Add pulseaudio and jackd in suggests for mplayer.
+  * Removed 06_pulse-vol patch included upstream.
+  * Removed em8300-headers from build-depends.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 20 Dec 2009 10:33:31 +0100
+
+mplayer-dmo (1:1.0.rc2svn20091208-0.0) unstable; urgency=low
+
+  * New svn release (29980).
+  * Remove arts support.
+  * In /etc/mplayer/mplayer.conf add an include to another global
+    configuration file /etc/mplayer/mplayer.conf.local and move this include
+    before DVDNAV settings (Thanks to Harald Dunkel).
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 08 Dec 2009 15:48:08 +0100
+
+mplayer-dmo (1:1.0.rc2svn20091129-0.0) unstable; urgency=low
+
+  * New svn release (29972).
+  * New patch 06_pulse-vol to not start mplayer with the volume at 100% with
+    -ao pulse (Thanks to Cameron Hutchison).
+  * Build against the new libvdpau-dev package in contrib.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 29 Nov 2009 09:01:10 +0100
+
+mplayer-dmo (1:1.0.rc2svn20091126-0.0) unstable; urgency=low
+
+  * New svn release (29934).
+  * Added libbz2-dev, libmng-dev in Build-depends.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 26 Nov 2009 09:32:41 +0100
+
+mplayer-dmo (1:1.0.rc2svn20091118-0.0) unstable; urgency=low
+
+  * New svn release (29934).
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 18 Nov 2009 20:21:47 +0100
+
+mplayer-dmo (1:1.0.rc2svn20091101-0.0) unstable; urgency=low
+
+  * New svn release (29809).
+  * Build sparc packages with gcc/g++ 4.4
+  * Added liba52-0.7.4-dev and libdts-dev in Build-Depends.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 01 Nov 2009 12:14:15 +0100
+
+mplayer-dmo (1:1.0.rc2svn20091021-0.0) unstable; urgency=low
+
+  * New svn release (29789).
+  * Build with 'CONFIG_SMALL 1' for ia64.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 21 Oct 2009 13:48:57 +0200
+
+mplayer-dmo (1:1.0.rc2svn20091015-0.0) unstable; urgency=low
+
+  * New svn release (29775).
+  * Build with --disable-openal to remove 'Inconsistency detected by ld.so'
+    error message. This break other tool who are waiting for a normal exit
+    code.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 15 Oct 2009 15:26:11 +0200
+
+mplayer-dmo (1:1.0.rc2svn20091001-0.1) unstable; urgency=low
+
+  * Build powerpc packages with gcc/g++ 4.4
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 09 Oct 2009 17:13:23 +0200
+
+mplayer-dmo (1:1.0.rc2svn20091001-0.0) unstable; urgency=low
+
+  * New svn release (29746).
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 01 Oct 2009 23:42:25 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090928-0.1) unstable; urgency=low
+
+  * Ooooooops x264 was disabled because libx264-76 is needed and we have
+    only -75 in unstable. Then rebuild against libx264-76.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 28 Sep 2009 09:41:05 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090928-0.0) unstable; urgency=low
+
+  * New svn release (29725).
+  * Build G4 packages with G4 optimization and not 7450.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 28 Sep 2009 09:01:27 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090922-0.0) unstable; urgency=low
+
+  * Added libxss-dev in Build-depends.
+  * Build with --enable-zr and --enable-ivtv for i386 and amd64.
+  * Build with support for GGI libggiwmh extension.
+  * Fix bashism in debian/rules when writing datas in version.h
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 22 Sep 2009 20:23:32 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090920-0.0) unstable; urgency=low
+
+  * New svn release (29694).
+  * Fix mplayer version displayed in stdout (Thanks to Cameron Hutchison for
+    the bug report).
+  * Added support for libbs2b audio filter.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 20 Sep 2009 11:27:52 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090906-0.1) unstable; urgency=low
+
+  * Rebuild, the amd64 package was broken.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 07 Sep 2009 08:58:55 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090906-0.0) unstable; urgency=low
+
+  * New svn release (29652).
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 06 Sep 2009 14:45:32 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090823-0.0) unstable; urgency=low
+
+  * New svn release (29545).
+  * Build against official dirac package.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 23 Aug 2009 18:00:33 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090817-0.0) unstable; urgency=low
+
+  * New svn release (29532).
+  * New patch (03_eac3-spectral) to add EAC3 Spectral support.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 18 Aug 2009 16:54:38 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090712-0.2) unstable; urgency=low
+
+  * Replaces nvidia-libvdpau by nvidia-libvdpau1 in Suggests for all
+    packages.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 13 Jul 2009 13:05:34 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090712-0.1) unstable; urgency=low
+
+  * Replace nvidia-libvdpau by nvidia-libvdpau1 in Suggests.
+  * Update 02_configure.diff for new amr libraries name.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 13 Jul 2009 08:01:26 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090712-0.0) unstable; urgency=low
+
+  * New svn release (29417).
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 12 Jul 2009 14:14:47 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090629-0.0) unstable; urgency=low
+
+  * New svn release (29408).
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 29 Jun 2009 11:17:47 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090613-0.1) unstable; urgency=low
+
+  * Remove all libav*-dev packages from Build-Depends. 
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 13 Jun 2009 14:06:16 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090613-0.0) unstable; urgency=low
+
+  * New svn release (29358).
+  * Replace nvidia-glx-dev by nvidia-libvdpau-dev in Build-Depends for i386
+    and amd64 arches and add nvidia-libvdpau in Suggests. Now VDPAU is also
+    enabled for amd64 arch if nvidia-libvdpau is installed.
+  * Don't build dynamically against ffmpeg libraries because some filters
+    (at least uspp and spp) are gone.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 13 Jun 2009 12:10:54 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090604-0.2) unstable; urgency=low
+
+  * Replace nvidia-glx-dev by nvidia-libvdpau-dev in Build-Depends for i386
+    and amd64 arches. Now VDPAU is also enabled for amd64 arch.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 12 Jun 2009 22:47:20 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090604-0.1) unstable; urgency=low
+
+  * debian/control.marillat change architecture to any instead of i386.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 04 Jun 2009 17:05:02 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090604-0.0) unstable; urgency=low
+
+  * New svn release (29347).
+  * Build with the internal libdvdread. libdvdread in Debian is broken for some
+    arch (powerpc at least) see bug 531621.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 04 Jun 2009 11:11:36 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090521-0.0) unstable; urgency=low
+
+  * New svn release (29317).
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 21 May 2009 14:10:07 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090508-0.1) unstable; urgency=low
+
+  * Fix typo in debian/control.mipsel
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 08 May 2009 16:55:27 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090508-0.0) unstable; urgency=low
+
+  * New svn release (29274).
+  * Fix typo in debian/control.others (Thanks to Harald Dunkel).
+  * Increase jack audio channels to 128, patch from Adrian Knoth.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 08 May 2009 12:05:38 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090430-0.0) unstable; urgency=low
+
+  * New svn release (29241).
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 30 Apr 2009 10:27:12 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090412-0.0) unstable; urgency=low
+
+  * New svn release (29170).
+  * VDPAU support is back for i386 only. For amd64 wait to see this bug
+    fixed (#519792).
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 12 Apr 2009 09:50:29 +0200
+
+mplayer-dmo (1:1.0.rc2svn20090330-0.0) unstable; urgency=low
+
+  * New svn release (29105).
+  * Documentation is now correctly generated.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 30 Mar 2009 10:33:51 +0200
+
+mplayer (1:1.0.rc2svn20090316-0.2) unstable; urgency=low
+
+  * Added patch from Guido Günther to add {video,audio}/ogg in desktop file.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 19 Mar 2009 10:11:34 +0100
+
+mplayer (1:1.0.rc2svn20090316-0.1) unstable; urgency=low
+
+  * Added libdirac-dev and libschroedinger-dev in Build-Depends.
+  * Replace libungif4-dev by libgif-dev in Build-Depends.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 19 Mar 2009 08:31:06 +0100
+
+mplayer (1:1.0.rc2svn20090316-0.0) unstable; urgency=low
+
+  * News svn release (28974).
+  * This release fix rtsp stream reading.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 16 Mar 2009 15:41:09 +0100
+
+mplayer (1:1.0.rc2svn20090311-0.0) unstable; urgency=low
+
+  * Rebuild against latest libdirectfb-dev.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 11 Mar 2009 11:10:45 +0100
+
+mplayer (1:1.0.rc2svn20090301-0.0) unstable; urgency=low
+
+  * News svn release (28785).
+  * Build without --disable-dvdread-internal
+  * Repalce libdvdread-dev by libdvdnav-dev (>= 4.1.3-3).
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 01 Mar 2009 19:27:11 +0100
+
+mplayer (1:1.0.rc2svn20080706-0.1) unstable; urgency=low
+
+  * Don't build PPC packges with --disable-vidix-internal
+    --disable-vidix-external but with onky --disable-vidix
+  * Build with --disable-dvdread-internal for all packages.
+  * Disable vis optimization for sparc (doesn't build).
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 10 Jul 2008 15:30:50 +0200
+
+mplayer (1:1.0.rc2svn20080706-0.0) unstable; urgency=low
+
+  * News svn release (27216).
+  * Build against the new libmp3lame package.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 06 Jul 2008 17:55:20 +0200
+
+mplayer (1:1.0.rc2svn20080531-0.1) unstable; urgency=low
+
+  * New patch 05_armel-fix.patch to fix armel build.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 06 Jun 2008 11:48:24 +0200
+
+mplayer (1:1.0.rc2svn20080531-0.0) unstable; urgency=low
+
+  * News svn release (26940).
+  * Good news the AC3 decoder is back.
+  * Fix installation for .desktop and .xpm files.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 01 Jun 2008 15:03:32 +0200
+
+mplayer (1:1.0.rc2svn20080417-0.1) unstable; urgency=low
+
+  * Include pixmap and desktop files.
+  * Doesn't build with --enable-directfb in CONFIG_FB otherwise the
+    configure script doesn't find libdirectfb.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 04 May 2008 00:01:56 +0200
+
+mplayer (1:1.0.rc2svn20080417-0.0) unstable; urgency=low
+
+  * News svn release 26455.
+  * Add support for armel and mipsel (no GTK+ version).
+  * Build witg gcc 4.2 because on a ICE on powerpc.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 18 Apr 2008 17:59:44 +0200
+
+mplayer (1:1.0.rc2svn20071207-0.3) unstable; urgency=low
+
+  * In mplayer.conf use 'alsa,' instead of 'alsa' for vo option. Seems to be
+    better for exotic alsa setup (Thanks to Clayton).
+  * New patch to call gmpalyer with %U instead of %F needed to open files
+    with spaces (Thanks to Maxime).
+  * Rebuild against the latest libx264-dev (58) package.
+  * Call dh_desktop for mplayer package instead of manual call to
+    update-desktop-database.
+  * Replace GTK By GTK+ in description.
+  * Change section for doc-base file.
+  * Remove useless ldconfig call in postinst and postrm for mplayer.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 09 Mar 2008 10:39:02 +0100
+
+mplayer (1:1.0.rc2svn20071207-0.2) unstable; urgency=low
+
+  * mplayer-doc should be in doc section.
+  * Fix ia64 build.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 16 Dec 2007 15:19:14 +0100
+
+mplayer (1:1.0.rc2svn20071207-0.1) unstable; urgency=low
+
+  * Build amd64 packages with --enable-runtime-cpudetection
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 10 Dec 2007 00:14:15 +0100
+
+mplayer (1:1.0.rc2svn20071207-0.0) unstable; urgency=low
+
+  * News svn release 25315.
+  * Added E-AC3 patch from http://www.db-instable.org/misc and mplayer
+    codecs.conf from http://forum.doom9.org/showthread.php?t=129050
+    This command line should works :
+    mplayer -vc ffvc1 -demuxer lavf -fps 30000/1001 -ac ffeac3 FILE.EVO
+  * Removed pulse patch included by upstream.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 07 Dec 2007 12:04:40 +0100
+
+mplayer (1:1.0.rc2-0.2) unstable; urgency=low
+
+  * Remove 04_screensaver patch. try to bother upstream author for a better
+    solution.
+  * Replace Apps by Applications in Debian menu.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 02 Nov 2007 15:15:19 +0100
+
+mplayer (1:1.0.rc2-0.1) unstable; urgency=low
+
+  * Rebuild agains the current libcaca and libcucu pacjages.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 11 Oct 2007 20:08:48 +0200
+
+mplayer (1:1.0.rc2-0.0) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 11 Oct 2007 14:46:34 +0200
+
+mplayer (1:1.0-rc1svn20071006-0.0) unstable; urgency=low
+
+  * New svn release 24712.
+  * Added patch found in bug #404975 to diasble gnome-screensaver while
+    playing movies (Thanks to Manphiz for the working patch).
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 06 Oct 2007 10:19:58 +0200
+
+mplayer (1:1.0-rc1svn20070917-0.2) unstable; urgency=low
+
+  * Fix the broken alpha patch.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 20 Sep 2007 14:55:50 +0200
+
+mplayer (1:1.0-rc1svn20070917-0.1) unstable; urgency=low
+
+  * Add a patch to fix alpha build.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 20 Sep 2007 11:43:54 +0200
+
+mplayer (1:1.0-rc1svn20070917-0.0) unstable; urgency=low
+
+  * New svn release 24554.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 17 Sep 2007 15:36:47 +0200
+
+mplayer (1:1.0-rc1svn20070903-0.1) unstable; urgency=low
+
+  * Build sparc package with -mcpu=ultrasparc -mtune=ultrasparc
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 11 Sep 2007 13:30:34 +0200
+
+mplayer (1:1.0-rc1svn20070903-0.0) unstable; urgency=low
+
+  * New svn release 24331.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 03 Sep 2007 12:41:26 +0200
+
+mplayer (1:1.0-rc1svn20070823-0.1) unstable; urgency=low
+
+  * I've finally found why the powerpc package wasn't build.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 23 Aug 2007 18:29:00 +0200
+
+mplayer (1:1.0-rc1svn20070823-0.0) unstable; urgency=low
+
+  * New svn release 24123.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 23 Aug 2007 14:33:55 +0200
+
+mplayer (1:1.0-rc1svn20070812-0.0) unstable; urgency=low
+
+  * New svn release 24045.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 12 Aug 2007 11:54:36 +0200
+
+mplayer (1:1.0-rc1svn20070801-0.0) unstable; urgency=low
+
+  * New svn release 23992.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 01 Aug 2007 17:55:58 +0200
+
+mplayer (1:1.0-rc1svn20070720-0.0) unstable; urgency=low
+
+  * New svn release 23833.
+  * Need to build with --enable-png because png autodection is broken.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 20 Jul 2007 11:48:10 +0200
+
+mplayer (1:1.0-rc1svn20070719-0.0) unstable; urgency=low
+
+  * New svn release 23825.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 19 Jul 2007 10:43:48 +0200
+
+mplayer (1:1.0-rc1svn20070618-0.0) unstable; urgency=low
+
+  * New svn release 23579.
+  * Add ppc64 support from Thibaut Varene.
+  * Build staticaly against libavcodec mplayer is 10% faster.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 18 Jun 2007 22:25:22 +0200
+
+mplayer (1:1.0-rc1svn20070501-0.1) unstable; urgency=low
+
+  * Use real dpatch for patches.
+  * Rewrote 04_Makefile patch (doesn't work on powerpc).
+  * Vidix s disabled for powerpc. From the configure script :
+      # this is broken currently, undefined references to inw, outw etc.
+      #  ppc && linux && _vidix_internal=yes
+  * Replaces libjack0.100.0-dev by libjack-dev in Build-Depends.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 07 May 2007 14:51:24 +0200
+
+mplayer (1:1.0-rc1svn20070501-0.0) unstable; urgency=low
+
+  * New svn release 23187.
+  * XvMC work again with the latest libav libraries.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 01 May 2007 16:15:58 +0200
+
+mplayer (1:1.0-rc1svn20070225-0.4) unstable; urgency=low
+
+  * Removed transition package.
+  * Removed unneeded packages in Build-Depends.
+  * Install the right mime file for *-nogui packages.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 21 Apr 2007 09:53:08 +0200
+
+mplayer (1:1.0-rc1svn20070225-0.3) unstable; urgency=medium
+
+  * Replace liblzo-dev by liblzo2-dev in Build-Dpends.
+  * Add a Build-Conflicts to nvidia-glx-dev otherwise OpenGL support is not
+    built.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 31 Mar 2007 10:01:17 +0200
+
+mplayer (1:1.0-rc1svn20070225-0.2) unstable; urgency=low
+
+  * mplayer-itanium2 should provides mplayer.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 11 Mar 2007 08:40:07 +0100
+
+mplayer (1:1.0-rc1svn20070225-0.1) unstable; urgency=low
+
+  * Fix a typo in the powerpc hack.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 27 Feb 2007 14:23:42 +0100
+
+mplayer (1:1.0-rc1svn20070225-0.0) unstable; urgency=low
+
+  * New svn release 22346.
+  * Sdl vidéo support is back.
+  * debian/rules Some perl hacks, because --disable-altivec doesn't work.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 26 Feb 2007 17:48:19 +0100
+
+mplayer (1:1.0-rc1svn20070222-0.0) unstable; urgency=low
+
+  * Newsvn release 22309.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 22 Feb 2007 15:03:10 +0100
+
+mplayer (1:1.0-rc1cvs20070118-0.3) unstable; urgency=low
+
+  * Added a little hack to configure to output a -mtune option for the ia64
+    arch. My sed hack in debian/rules to add itanium optimization should
+    work now.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 28 Jan 2007 19:19:05 +0100
+
+mplayer (1:1.0-rc1cvs20070118-0.2) unstable; urgency=low
+
+  * Rename the mplayer-powerpc package to mplayer and mencoder-powerpc to
+    mencoder and keep the *-powerpc packages to install normal packages.
+  * Don't try to link the powerpc packages against the ffmpeg libraries.
+  * Add itanium2 packages. Packages name are : mplayer for itanium 1 and
+    mplayer-itanium2 for guess what ? Same for mencoder.
+  * Added libspeex-dev in Build-Depends.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 27 Jan 2007 16:10:17 +0100
+
+mplayer (1:1.0-rc1cvs20070118-0.1) unstable; urgency=low
+
+  * Don't add s3fb support for sparc, hppa and powerpc.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 20 Jan 2007 16:24:13 +0100
+
+mplayer (1:1.0-rc1cvs20070118-0.0) unstable; urgency=low
+
+  * SVN release.
+  * Add libpulse-dev in Builde-Depends.
+  * Build with --enable-radio and --enable-radio-capture
+  * Enable s3fb output with --enable-s3fb
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 19 Jan 2007 15:06:48 +0100
+
+mplayer (1:1.0-rc1-0.1) unstable; urgency=low
+
+  * Ideas from Thibaut Varene :
+     o Add support for ccache.
+     o Add support for make -j.
+  * Add support for Pulseaudio (old project was Polypaudio) from
+    Jean-Christophe Dubacq.
+  * Add mplayer-skin in Conflicts for nogui package.
+  * Add libconfhelper-perl in Conflicts for all packages.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 24 Nov 2006 14:59:26 +0100
+
+mplayer (1:1.0-rc1-0.0) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 29 Oct 2006 10:16:39 +0100
+
+mplayer (1:1.0-pre8cvs20061002-0.0) unstable; urgency=low
+
+  * New svn release.
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  2 Oct 2006 11:01:31 +0200
+
+mplayer (1:1.0-pre8cvs20060919-0.0) unstable; urgency=low
+
+  * New svn release.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 19 Sep 2006 11:19:51 +0200
+
+mplayer (1:1.0-pre8-0.2) unstable; urgency=low
+
+  * --with-xanimlibdir=/usr/lib/codecs and --with-reallibdir=/usr/lib/codecs \
+    need to be defined for i386.
+  * Remove the libpostproc directory to link against the dynamic library.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 16 Aug 2006 18:03:52 +0200
+
+mplayer (1:1.0-pre8-0.1) unstable; urgency=low
+
+  * Add --with-reallibdir=/usr/local/lib/codecs for PPC arch. Yes /usr/local
+    because for now a codec package for ppc doesn't exist and thus users can
+    install the dll files in /usr/local
+  * Re-enable joystick support.
+  * Install mime type for the nogui package.
+  * Rebuild against the latest libdirectfb-0.9-25 package.
+  * Add libtwolame-dev in Builde-depends.
+  * Little patch to build against the latest x264 package.
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  2 Aug 2006 17:06:36 +0200
+
+mplayer (1:1.0-pre8-0.0) unstable; urgency=low
+
+  * New Pre release.
+  * This release is compiled with --disable-joystick
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 12 Jun 2006 15:51:53 +0200
+
+mplayer (1:1.0-pre7cvs20060430-0.4) unstable; urgency=low
+
+  * debian/rules Fix options for alpha and hppa arch.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 13 May 2006 08:18:34 +0200
+
+mplayer (1:1.0-pre7cvs20060430-0.3) unstable; urgency=low
+
+  * Re-arrange Build-Depends to work with sbuild.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 12 May 2006 17:59:47 +0200
+
+mplayer (1:1.0-pre7cvs20060430-0.2) unstable; urgency=low
+
+  * Make libaa1-dev the first package in Buil-Depends (aalib1-dev |
+    libaa1-dev), otherwise builder don't llike that.
+  * Added hppa and alpha support.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 11 May 2006 16:15:13 +0200
+
+mplayer (1:1.0-pre7cvs20060430-0.1) unstable; urgency=low
+
+  * debian/rules small patch from Guido to fix the devscripts bug #364256.
+  * Add a nogui package for sparc.
+  * Add ia64 support from Thibaut Varene.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 10 May 2006 08:51:34 +0200
+
+mplayer (1:1.0-pre7cvs20060430-0.0) unstable; urgency=low
+
+  * New CVS release.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 30 Apr 2006 15:19:42 +0200
+
+mplayer (1:1.0-pre7cvs20060416-0.1) unstable; urgency=low
+
+  * Remove --enable-vorbis option.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 18 Apr 2006 15:00:30 +0200
+
+mplayer (1:1.0-pre7cvs20060416-0.0) unstable; urgency=low
+
+  * New CVS release.
+  * Remove unneeded --enable-xinerama --enable-fribidi --enable-freetype options.
+  * Remove the mplayer.xpm Debian icon menu, now provided by upstream.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 16 Apr 2006 17:58:53 +0200
+
+mplayer (1:1.0-pre7cvs20060325-0.3) unstable; urgency=low
+
+  * Build with --enable-lirc.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 27 Mar 2006 08:53:00 +0200
+
+mplayer (1:1.0-pre7cvs20060325-0.2) unstable; urgency=low
+
+  * Bug in -0.1 should be fixed in debian/control.marillat not debian/control
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 26 Mar 2006 23:42:34 +0200
+
+mplayer (1:1.0-pre7cvs20060325-0.1) unstable; urgency=low
+
+  * mencoder should replaces/conflicts with mencoder-586.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 26 Mar 2006 14:44:47 +0200
+
+mplayer (1:1.0-pre7cvs20060325-0.0) unstable; urgency=low
+
+  * New CVS release.
+  * Remove 386, 586 and k6 packages. Now we only have mplayer, mplayer-nogui
+    and mencoder packages build with --enable-runtime-cpudetection. Don't
+    ask, I'll not change my mind for that.
+  * Install all translated man pages.
+  * Remove unnecessary --enable option.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 26 Mar 2006 14:21:52 +0200
+
+mplayer (1:1.0-pre7cvs20060219-0.2) unstable; urgency=low
+
+  * Remove --enable-live, otherwise the configure script doesn't find the
+    right path for include files.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 23 Feb 2006 01:53:32 +0100
+
+mplayer (1:1.0-pre7cvs20060219-0.1) unstable; urgency=low
+
+  * Rebuild against the latest ffmpegcvs to fix AC3 crash.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 22 Feb 2006 16:58:05 +0100
+
+mplayer (1:1.0-pre7cvs20060219-0.0) unstable; urgency=low
+
+  * New CVS release.
+  * Enable libavformat.
+  * Remove all my patches except the configure patch because the livemedia
+    header aren't installed as expected.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 20 Feb 2006 22:16:17 +0100
+
+mplayer (1:1.0-pre7cvs20060103-0.1) unstable; urgency=low
+
+  * Add em8300-headers in Build-Depends.
+  * Remove xlibs-dev from Build-Depends.                                            
+  * Remove polyp audio support.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 17 Jan 2006 10:47:32 +0100
+
+mplayer (1:1.0-pre7cvs20060103-0.0) unstable; urgency=low
+
+  * New CVS release.
+  * Move the default skin in a separate package.
+  * Enable XvMC support and add libxvmc-dev in Build-Depends.
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  7 Jan 2006 15:51:46 +0100
+
+mplayer (1:1.0-pre7cvs20051102-0.1) unstable; urgency=low
+
+  * Add libxinerama-dev in Build-depends for all arch.
+  * Don't package my desktop file, use upstream file instead.
+  * Doesn't build the 3dfx driver, we already have the more up to date
+    tdfxfb and tdfx_vid drivers.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 29 Nov 2005 13:49:37 +0100
+
+mplayer (1:1.0-pre7cvs20051102-0.0) unstable; urgency=low
+
+  * New CVS release.
+  * Add libxxf86dga-dev, libjack-dev and libx264-dev in Build-depends for amd64.
+  * Add libxv-dev, libfaac-dev and libdts-dev for all arch in Build-depends.
+  * Add Musepack support.
+  * Clean up the Debian diff.
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  2 Nov 2005 11:08:39 +0100
+
+mplayer (1:1.0-pre7cvs20051101-0.0) unstable; urgency=low
+
+  * CVS release.
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  1 Nov 2005 21:54:39 +0100
+
+mplayer (1:1.0-pre7cvs20051016-0.1) unstable; urgency=low
+
+  * Don't use afm=libmad by default in mplayer.conf libmad does an horrible
+    noise when you move in a file.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 18 Oct 2005 15:38:17 +0200
+
+mplayer (1:1.0-pre7cvs20051016-0.0) unstable; urgency=low
+
+  * CVS release.
+  * The -pp option is back.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 16 Oct 2005 17:19:07 +0200
+
+mplayer (1:1.0-pre7cvs20051008-0.1) unstable; urgency=low
+
+  * Add libpolyp-dev and ladspa-sdk in Build-Depends for amd64.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 10 Oct 2005 21:56:51 +0200
+
+mplayer (1:1.0-pre7cvs20051008-0.0) unstable; urgency=low
+
+  * CVS release.
+  * Remove useless xmms support.
+  * Don't make gmplayer symbolic link for the nogui package.
+  * Don't call "gmplayer < /dev/null" in Debian menu.
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  8 Oct 2005 17:37:19 +0200
+
+mplayer (1:1.0-pre7cvs20050716-0.1) unstable; urgency=low
+
+  * Forget to update build-dependencies for others arches.
+  * Add ladspa-sdk in build-depends.
+  * Added polypaudio sound server support.
+  * Applied ppc patches from Guido.
+  * Add vstream support for TiVo.
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  7 Aug 2005 10:02:48 +0200
+
+mplayer (1:1.0-pre7cvs20050716-0.0) unstable; urgency=low
+
+  * CVS release.
+  * Add libxxf86dga-dev to xlibs-static-dev in Build-depends.
+  * Replaces libbio2jack0-dev by libjack-dev | libjack0.100.0-dev in Build-depends.
+  * Updated README.Debian
+  * dxr3 is disabled (doesn't compile)
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 16 Jul 2005 18:54:58 +0200
+
+mplayer (1:1.0-pre7-0.3) unstable; urgency=low
+
+  * Add mplayer in replaces for mencoder sparc.
+  * Really build the sparc package against libjack0.100.0-dev
+  * Don't need to Build-depends on libdvdread-dev | libdvdread2-dev only
+    libdvdread-dev is needed.
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  4 Jul 2005 17:12:48 +0200
+
+mplayer (1:1.0-pre7-0.2) unstable; urgency=low
+
+  * Rename the sparc package mplayer (was mplayer-sparc). Do the same for
+    mencoder.
+  * Install mencoder binary in the right package for sparc.
+
+ -- Christian Marillat <marillat@debian.org>  Fri,  1 Jul 2005 08:48:25 +0200
+
+mplayer (1:1.0-pre7-0.1) unstable; urgency=low
+
+  * Removed dummy packages mplayer-k7, mplayer-686, mencoder-k7
+  * Don't need to Recommends: mplayer-fonts, now that mplayer use fontconfig.
+  * New desktop file from Konrad Materka.
+  * Build against the latest libjack-dev package.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 30 Jun 2005 15:26:10 +0200
+
+mplayer (1:1.0-pre7-0.0) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 17 Apr 2005 15:02:22 +0200
+
+mplayer (1:1.0-pre6cvs20050417-0.0) unstable; urgency=low
+
+  * CVS release.
+  * pp filters are back.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 17 Apr 2005 12:05:35 +0200
+
+mplayer (1:1.0-pre6cvs20050409-0.1) unstable; urgency=low
+
+  * Rebuild for testing
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 10 Apr 2005 22:28:31 +0200
+
+mplayer (1:1.0-pre6cvs20050409-0.0) unstable; urgency=low
+
+  * CVS release.
+  * Include libavcodec source for ppc.
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  9 Apr 2005 21:36:42 +0200
+
+mplayer (1:1.0-pre6cvs20050402-0.0) unstable; urgency=low
+
+  * CVS release
+  * Build with --disable-shared-pp
+  * Update libpostproc-dev build-dependecy to (>= 2:20050331-0.4).
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  2 Apr 2005 21:47:48 +0200
+
+mplayer (1:1.0-pre6-0.6) unstable; urgency=low
+
+  * Add Guido changes for powerpc patches.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 30 Mar 2005 11:01:12 +0200
+
+mplayer (1:1.0-pre6-0.5) unstable; urgency=low
+
+  * debian/control.amd64 don't need to recommends mplayer-fonts, now mplayer
+    use fontconfig for subtitles.
+  * Build the custom package with --enable-xvmc
+  * Add a nogui package for amd64.
+  * Renamed the mplayer-amd64 to mplayer and mencoder-amd64 to mencoder.
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  7 Mar 2005 10:58:47 +0100
+
+mplayer (1:1.0-pre6-0.4) unstable; urgency=low
+
+  * Add patches from Dan Korostelev :
+     o Call (if exist) update-desktop-database in postinst and postrm.
+     o New desktop file.
+  * debian/control.others Build-Depends on libavcodeccvs-dev
+  * Add jack support. Thanks to Bastian Kleineidam for the updated bio2jack
+    packages.
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  1 Mar 2005 11:24:16 +0100
+
+mplayer (1:1.0-pre6-0.3) unstable; urgency=low
+
+  * Enable all optimizations for amd64.
+  * New patch 51_vector_keyword from Guido.
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  6 Jan 2005 14:42:51 +0100
+
+mplayer (1:1.0-pre6-0.2) unstable; urgency=low
+
+  * Don't remove xmms dependency. xmms is really needed, except for people
+    who are using mplayer-nogui like me :)
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 29 Dec 2004 16:05:04 +0100
+
+mplayer (1:1.0-pre6-0.1) unstable; urgency=low
+
+  * Build agains the latest libavcodeccvs to fix AC3 crash.
+  * Add ladspa support.
+  * Don't install codecs.conf file in /etc/mplayer Instead put this file in
+    the example directory in case somebody wants to do some hacking.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 27 Dec 2004 16:31:23 +0100
+
+mplayer (1:1.0-pre6-0.0) unstable; urgency=low
+
+  * New upstream release.
+  * Did again the liblivemedia patches.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 25 Dec 2004 10:58:57 +0100
+
+mplayer (1:1.0-pre5try2-0.2) unstable; urgency=low
+
+  * Hack to remove xmms dependency.
+  * New patch to build against liblivemedia-dev.
+  * Another patch from cvs to build against liblivemedia-dev.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 24 Dec 2004 14:04:55 +0100
+
+mplayer (1:1.0-pre5try2-0.1) unstable; urgency=low
+
+  * Replace liblive.com-dev by liblivemedia-dev in Build-Depends.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 18 Dec 2004 14:06:02 +0100
+
+mplayer (1:1.0-pre5try2-0.0) unstable; urgency=low
+
+  * New upstream release.
+  * Add amd64 compilation options in the README.Debian
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 18 Dec 2004 12:57:19 +0100
+
+mplayer (1:1.0-pre5-0.12) unstable; urgency=low
+
+  * Build the 586 package with sse support.
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  9 Dec 2004 13:56:41 +0100
+
+mplayer (1:1.0-pre5-0.11) unstable; urgency=low
+
+  * Fix multiple entries in the doc-base file thanks to Laurent Bonnaud
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  8 Dec 2004 18:49:09 +0100
+
+mplayer (1:1.0-pre5-0.10) unstable; urgency=low
+
+  * Applied patches from Guido for sparc.
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  6 Dec 2004 15:24:02 +0100
+
+mplayer (1:1.0-pre5-0.9) unstable; urgency=low
+
+  * Fix the desktop file (multiple entries) Thanks to Michael Mellor.
+  * Build against libavcodeccvs-dev.
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  5 Dec 2004 10:10:35 +0100
+
+mplayer (1:1.0-pre5-0.8) unstable; urgency=low
+
+  * Use the included libavcodec for the powerpc package. Thanks to Guido.
+  * Hack to re-enable the -pp option.
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  4 Nov 2004 16:00:04 +0100
+
+mplayer (1:1.0-pre5-0.7) unstable; urgency=low
+
+  * Add patch from Guido for ppc target.
+  * Doesn't compile the no-gui package with xmms support.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 18 Oct 2004 18:48:22 +0200
+
+mplayer (1:1.0-pre5-0.6) unstable; urgency=low
+
+  * Enable xmms support and add xmms in Suggests.
+  * Don't use liblivemedia-dev but my liblive.com-dev package. Doesn't work
+    at all with liblivemedia-dev
+  * Binaries upload this time.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 13 Oct 2004 10:53:41 +0200
+
+mplayer (1:1.0-pre5-0.5) unstable; urgency=low
+
+  * Build dynamically against libavcodec.
+  * Fix custom target.
+  * Fix a simple debclean.
+  * Replace liblive.com-dev by liblivemedia-dev the official Debian package.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 10 Oct 2004 19:01:28 +0200
+
+mplayer (1:1.0-pre5-0.4) unstable; urgency=low
+
+  * debian/rules more simplified, and amd64 fix.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 19 Aug 2004 11:13:04 +0200
+
+mplayer (1:1.0-pre5-0.3) unstable; urgency=low
+
+  * debian/rules fix typo in CONFIG_CONTROL to re-enable lirc and joystick support.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 12 Aug 2004 13:42:57 +0200
+
+mplayer (1:1.0-pre5-0.2) unstable; urgency=low
+
+  * debian/rules more simplified.
+  * Add nas-dev | libaudio-dev and xlibs-dev | xlib6g-dev in build-depends
+    to enable NAS for the testing package.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 10 Aug 2004 16:16:37 +0200
+
+mplayer (1:1.0-pre5-0.1) unstable; urgency=low
+
+  * debian/rules Simplified, thanks to Guido.
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  1 Aug 2004 10:52:20 +0200
+
+mplayer (1:1.0-pre5-0.0) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 18 Jul 2004 19:07:54 +0200
+
+mplayer (1:1.0-pre4cvs20040702-0.1) unstable; urgency=low
+
+  * Applied patch for amd64 from Oliver Cordes.
+  * Add libfontconfig-dev in Build-Depends.
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  4 Jul 2004 15:06:17 +0200
+
+mplayer (1:1.0-pre4cvs20040702-0.0) unstable; urgency=low
+
+  * CVS release
+  * Change default ao option to alsa (was alsa1x) in /etc/mplayer/mplayer.conf
+  * Add libtheora support;
+
+ -- Christian Marillat <marillat@debian.org>  Fri,  2 Jul 2004 08:40:38 +0200
+
+mplayer (1:1.0-pre4cvs20040620-0.0) unstable; urgency=low
+
+  * Cvs release
+    o Fix fullscreen with metacity
+    o Use fontconfig for subtitle (Better for fribidi)
+  * Set expects_uris to no in applications files (Thanks to markus koller)
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 20 Jun 2004 19:43:25 +0200
+
+mplayer (1:1.0-pre4-0.4) unstable; urgency=low
+
+  * Remove gmplayer definitions in mplayer.applications file for the nogui
+    package.
+  * Remove duplicate entries in default mplayer.conf file.
+  * Build against xvid 1.0.0
+  * Add support for FreeBidi.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 18 May 2004 15:31:40 +0200
+
+mplayer (1:1.0-pre4-0.3) unstable; urgency=low
+
+  * Really apply my svga hack.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 13 May 2004 16:20:26 +0200
+
+mplayer (1:1.0-pre4-0.2) unstable; urgency=low
+
+  * Rewrote my hack to depends on svgalib-dummy1.
+  * Add support for libcaca.
+  * Applied patch from Guido
+      o Build against libxvidcore4 on ppc.
+      o Remove altivec patch, fixed upstream.
+  * Don't need to Build-Depends on libmatroska-dev (now included in mplayer)
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 13 May 2004 14:47:22 +0200
+
+mplayer (1:1.0-pre4-0.1) unstable; urgency=low
+
+  * Rebuild a clean diff.gz (May be I was drunk for doing a so broken file)
+
+ -- Christian Marillat <marillat@debian.org>  Fri,  7 May 2004 18:10:17 +0200
+
+mplayer (1:1.0-pre4-0.0) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  1 May 2004 17:11:50 +0200
+
+mplayer (1:1.0-pre3cvs20040422-0.0) unstable; urgency=low
+
+  * New CVS release.
+  * In /etc/mplayer/mplayer.conf add a ',' at the end of ao and vo option,
+    thus if the defined driver doesn't exist mplayer should fallback to
+    others drivers.
+  * Move mplayer.applications file in the right place and add mime, keys,
+    and applications files for the nogui package.
+  * Build against the latest libdv4-dev.
+  * Remove skin entries in mplayer.conf for the nogui package.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 22 Apr 2004 15:40:25 +0200
+
+mplayer (1:1.0-pre3cvs20040404-0.2) unstable; urgency=low
+
+  * debian/rules fix to use always the right control file. Fix missing
+    dvdread and directfb support in sarge.
+  * Update README.Debian
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 13 Apr 2004 15:59:43 +0200
+
+mplayer (1:1.0-pre3cvs20040404-0.1) unstable; urgency=low
+
+  * Updated README.Debian for ppc from Guido.
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  7 Apr 2004 00:38:53 +0200
+
+mplayer (1:1.0-pre3cvs20040404-0.0) unstable; urgency=low
+
+  * New CVS to fix security hole
+  * Downgrade again compilation for the k6 package.
+  * Build with DirectFB support.
+  * Added usual patch for ppc from Guido.
+  * Updated README.Debian
+  * Build with DVB support.
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  4 Apr 2004 18:47:30 +0200
+
+mplayer (1:1.0-pre3cvs20040323-0.1) unstable; urgency=low
+
+  * Generate html documentation
+  * Build packages with --enable-tv-v4l2
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 24 Mar 2004 20:34:14 +0100
+
+mplayer (1:1.0-pre3cvs20040323-0.0) unstable; urgency=low
+
+  * New CVS release.
+  * Fix bogus Conflicts
+  * Set default -ao option to alsa1x
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 23 Mar 2004 14:33:25 +0100
+
+mplayer (1:1.0-pre3cvs20040314-0.0) unstable; urgency=low
+
+  * Cvs release with fix for k6 and 686 packages.
+  * 686 and k7 packages are now empty packages who install the k6 or the
+    586 package.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 14 Mar 2004 16:39:55 +0100
+
+mplayer (1:1.0-pre3-0.4) unstable; urgency=low
+
+  * Another try to fix the segfault :)
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  3 Mar 2004 16:22:29 +0100
+
+mplayer (1:1.0-pre3-0.3) unstable; urgency=low
+
+  * Remove w32codecs-lite in suggests
+  * Applied patch from Guido Guenther for ppc packages.
+  * Seems to not crash anymore. I don't know whats wrong in -0.2
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  3 Mar 2004 14:41:16 +0100
+
+mplayer (1:1.0-pre3-0.2) unstable; urgency=low
+
+  * Add mplayer-doc in suggest for all packages.
+  * Enable xanim support
+  * New package mplayer-nogui build without the GTK User Interface
+  * Make alsa9 the default -ao option
+  * Make xv the default -vo option for the nogui package
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  1 Mar 2004 11:51:04 +0100
+
+mplayer (1:1.0-pre3-0.1) unstable; urgency=low
+
+  * Fix doc-base entry for the mplayer-doc package
+  * Use the news upstream tarball who fix compilation on ppc, sparc or m68k.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 23 Dec 2003 19:09:53 +0100
+
+mplayer (1:1.0-pre3-0.0) unstable; urgency=low
+
+  * New pre release.
+  * Build with aRts support now that the latest libarts doesn't depends on
+    Qt.
+  * Change command in menu files to work with wmaker, thanks to Philippe Monroux
+  * Don't build the i386 mencoder package.
+  * Install control file for mplayer-doc
+  * Doesn't use the included mpdvdkit2 but libdvdread and libdvdcss if
+    installed.
+  * Use /usr/lib/win32 instead of /usr/lib/RealPlayer8/Codecs for realplayer
+    codecs.
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  9 Dec 2003 10:10:43 +0100
+
+mplayer (1:1.0-pre2-0.1) unstable; urgency=low
+
+  * Fix doc-base file to point to the new documentation location
+  * Add --enable-shared-pp for the custom target
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 14 Oct 2003 09:50:07 +0200
+
+mplayer (1:1.0-pre2-0.0) unstable; urgency=low
+
+  * New upstream pre release.
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  8 Oct 2003 10:11:44 +0200
+
+mplayer (1:1.0-pre1cvs20031005-0.3) unstable; urgency=low
+
+  * Add patch from Guido to enable flac and fadd
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  7 Oct 2003 16:08:48 +0200
+
+mplayer (1:1.0-pre1cvs20031005-0.2) unstable; urgency=low
+
+  * Arf, build the 686 package without sse2. I should not follow what users
+    said.
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  6 Oct 2003 09:32:09 +0200
+
+mplayer (1:1.0-pre1cvs20031005-0.1) unstable; urgency=low
+
+  * Build with --enable-external-flac
+  * Updated README.Debian with configure output
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  5 Oct 2003 21:45:50 +0200
+
+mplayer (1:1.0-pre1cvs20031005-0.0) unstable; urgency=low
+
+  * New CVS release.
+  * Disable DVB support, Debian package is broken.
+  * Force sse2 for the 686 package, the configure script seems to be broken.
+  * Doesn't crash with rar file in 3.0 format.
+  * Merge more changes from Guido Guenther for ppc packages.
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  5 Oct 2003 21:11:52 +0200
+
+mplayer (1:1.0-pre1cvs20031001-0.1) unstable; urgency=low
+
+  * Build with --enable-sse2 for i686 configure script seems to be broken.
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  4 Oct 2003 09:04:33 +0200
+
+mplayer (1:1.0-pre1cvs20031001-0.0) unstable; urgency=low
+
+  * New CVS release, not sure if the security patch was applied in the
+    previous package.
+  * Build with --enable-externalfaad and with external libavcodec to reduce
+    package size.
+    o mplayer 386 binary size in previous package 5709736
+    o mplayer 386 binary size in that package     3722568
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  1 Oct 2003 19:16:33 +0200
+
+mplayer (1:1.0-pre1cvs20030929-0.0) unstable; urgency=low
+
+  * CVS version who fix exploitable remote buffer overflow vulnerability.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 29 Sep 2003 21:41:17 +0200
+
+mplayer (1:1.0-pre1.2) unstable; urgency=low
+
+  * Applied patch from Guido Guenther to build powerpc and g4 packages.
+    Thanks.
+  * Added mplayer.keys and mplayer.applications files for gnome-vfs, these
+    files are used by GNOME apps, like nautilus. Should work (not tested). 
+    Thanks to mammique
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 24 Sep 2003 19:20:48 +0200
+
+mplayer (1:1.0-pre1.1) unstable; urgency=low
+
+  * debian/rules add --language=all for custom target.
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  4 Sep 2003 14:37:22 +0200
+
+mplayer (1:1.0-pre1.0) unstable; urgency=low
+
+  * New upstream release.
+  * dvdnav has been disabled
+  * Build with matroska support
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  3 Sep 2003 07:10:18 +0200
+
+mplayer (1:0.91-0.1) unstable; urgency=low
+
+  * Build with --enable-smb
+  * Add replaces for -k6 on -k7 packages
+  * Change Build-depends to libdvdnav-dev (<= 1.5)
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 26 Aug 2003 12:04:19 +0200
+
+mplayer (1:0.91-0.0) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control.* Add  | w32codecs-lite in Suggests
+  * Add application/ogg in mime files
+  * Apparently the K6 package is more a K7 than a K6 package, then I've
+    changed the package name to K6.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 14 Aug 2003 22:15:40 +0200
+
+mplayer (1:0.90-0.8) unstable; urgency=low
+
+  * Fix typo in menu file (missing ") Thanks to Jonathon Sim.
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  7 Aug 2003 05:07:55 +0200
+
+mplayer (1:0.90-0.7) unstable; urgency=low
+
+  * Build against libdvdread3-dev
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  6 Aug 2003 21:23:53 +0200
+
+mplayer (1:0.90-0.6) unstable; urgency=low
+
+  * debian/control update libdvdnav-dev dependecies to -0.2
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 31 Jul 2003 13:06:51 +0200
+
+mplayer (1:0.90-0.5) unstable; urgency=low
+
+  * Should Build-Depends on libdvdnav-dev 0.1.3-1.1 only.
+  * debian/control Update w32codecs version to 0.91-1 and remove realplayer,
+    xanim-modules and qt6codecs from suggests.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 19 Jul 2003 15:55:40 +0200
+
+mplayer (1:0.90-0.4) unstable; urgency=low
+
+  * debian/control* Replace xlibmesa-dev by the unstable -dev package
+  * debian/rules typo (replace a mplayer-386 by a mplayer-custom)
+  * Ooops, re-enable the png patch.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 17 Jul 2003 10:34:05 +0200
+
+mplayer (1:0.90-0.3) unstable; urgency=low
+
+  * Remove libdvdread2-dev from Build-Depends already provided by
+    libdvdnav-dev
+  * Make the icon background transparent
+  * Add an icon for the Debian menu
+  * debian/rules Fix typos s/sustom/custom/ and remove libpostproc in
+    custom target. Thanks to Joel Kociolek.
+  * Really add Debian menu icon for all packages.
+  * Install symbolsg.fnt for the custom package.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 10 Jul 2003 07:52:28 +0200
+
+mplayer (1:0.90-0.2) unstable; urgency=low
+
+  * build against libpng10-dev
+  * Build the 386 package with --enable-runtime-cpudetection. This is a
+    preliminary test for the 1.0 version. I intent for 1.0 to release only
+    one package with this option enabled.
+  * Build against the latest libvorbis for sarge.
+  * Build without nvidia-glx, this enable openGL support.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 14 May 2003 10:37:21 +0200
+
+mplayer (1:0.90-0.1) unstable; urgency=low
+
+  * Fix mplayer.png installation in custom target.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 19 Apr 2003 21:03:48 +0200
+
+mplayer (1:0.90-0.0) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 13 Apr 2003 11:58:41 +0200
+
+mplayer (0.90rc5-0.1) unstable; urgency=low
+
+  * Doesn't build against libdirectfb, because this library depends on
+    libpng3 and this break gtk pixmap themes who are compiled against
+    libpng2. If you want the directfb support build your own package.
+  * Install the new default skin
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  8 Apr 2003 12:44:30 +0200
+
+mplayer (0.90rc5-0.0) unstable; urgency=low
+
+  * New 0.9 pre release.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 18 Mar 2003 16:46:37 +0100
+
+mplayer (0.90rc4-0.3) unstable; urgency=low
+
+  * Hack to add svgalib-dummyg1 dependency
+  * Build against the latest libvorbis
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 16 Mar 2003 08:32:50 +0100
+
+mplayer (0.90rc4-0.2) unstable; urgency=low
+
+  * Remove the libmagick-dev hack and add libimlib2-dev in Build-depends
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 20 Feb 2003 23:22:13 +0100
+
+mplayer (0.90rc4-0.1) unstable; urgency=low
+
+  * Add libaudiofile-dev in Build-Depends.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 12 Feb 2003 14:51:39 +0100
+
+mplayer (0.90rc4-0.0) unstable; urgency=low
+
+  * New 0.9 pre release.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 10 Feb 2003 15:29:54 +0100
+
+mplayer (0.90rc3-0.0) unstable; urgency=low
+
+  * New 0.9 pre release.
+  * Build with --enable-joystick
+  * Added Danish comment in desktop file thanks to Morten Brix Pedersen
+  * Add more cleanup for ppc build. Thanks to Nicolai Langfeldt and Yves Combe
+  * Updated the default theme to 1.7
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 26 Jan 2003 10:55:16 +0100
+
+mplayer (0.90rc2-0.2) unstable; urgency=low
+
+  * Add realplayer in suggests
+  * Add mencvcd script in mplayer packages in example directory
+  * Need to build-depends on gawk
+  * Move configfiles in /etc/mplayer
+  * Add desktop files for GNOME and KDE.
+  * In /etc/mplayer/mplayer.conf the audio output default is now sdl, should
+    work with GNOME and KDE environment.
+  * Removed i386 options in the custom target
+  * Rebuild with gcc 3.2
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 15 Jan 2003 01:24:55 +0100
+
+mplayer (0.90rc2-0.1) unstable; urgency=low
+
+  * Only create /dev/dhahelper in non devfs system.
+  * Don't build with --enable-linux-devfs
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 27 Dec 2002 13:54:27 +0100
+
+mplayer (0.90rc2-0.0) unstable; urgency=low
+
+  * New 0.9 pre release.
+  * Build with --enable-tv-v4l needed for woody packages (pbuilder don't
+    create /dev/video).
+  * Create /dev/dhahelper in postinst and remove /dev/dhahelper in postrm,
+    (dhahelper is not yet finished).
+  * Build against the latest liblive.com-dev 20021221
+  * Create the v4l devices in postinst.
+  * Removed the obsolete gui option in /etc/mplayer.conf
+  * No new libpostproc0 package (no change in the code).
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 25 Dec 2002 22:36:14 +0100
+
+mplayer (0.90rc1-0.3) unstable; urgency=low
+
+  * debian/control add libmagick5-dev | libmagick-dev and remove libpng-dev
+    in Build-depends to be sure to always build the package with the right
+    libpng (2) in woody.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 17 Dec 2002 12:34:50 +0100
+
+mplayer (0.90rc1-0.2) unstable; urgency=low
+
+  * Ooooops forgot to install the default /etc/menu.conf file
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  9 Dec 2002 18:02:11 +0100
+
+mplayer (0.90rc1-0.1) unstable; urgency=low
+
+  * Comment gui=no, then both gmplayer and mplayer now works correctly.
+  * Add qt6codecs in Suggests
+  * Merged Nicolas Boos changes :
+     * Replace libdv2-dev by libdv-dev in Build-depends
+     * Remove libdirectfb8 | libdirectfb-0.9-13 from Build-depends
+     * Added "--enable-win32 --with-win32libdir=/usr/bin/win32" to configure
+       and remove w32codecs from Build-depends
+  * Replace mplayer by gmplayer in mime types. This is better to stop
+    mplayer if something is wrong.
+  * Call gmplayer in menu files instead of mplayer.
+  * Build with --enable-new-conf --enable-menu for OSD menu system
+  * Remove --enable-streaming, enabled by default.
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  9 Dec 2002 16:23:10 +0100
+
+mplayer (0.90rc1-0.0) unstable; urgency=low
+
+  * New 0.9 pre release.
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  8 Dec 2002 02:12:48 +0100
+
+mplayer (0.90pre10-0.2) unstable; urgency=low
+
+  * Disable the gui in /etc/mplayer.conf
+
+ -- Christian Marillat <marillat@debian.org>  Fri,  6 Dec 2002 14:23:30 +0100
+
+mplayer (0.90pre10-0.1) unstable; urgency=low
+
+  * debian/rules Add realplayer and xanim paths for stable/testing build
+  * Enable the Gui in /etc/mplayer.conf
+  * Change the cache to 1 MB in /etc/mplayer.conf
+  * Build with --enable-freetype and add (disabled) default in /etc/mplayer.conf
+  * Add a mime file for mplayer packages. This work correctly with galeon but
+    not with mozilla, because mozilla try to copy the file in /tmp instead
+    of passing the full URL to mplayer.
+  * Add a doc-base file for mplayer-doc.
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  3 Dec 2002 18:31:31 +0100
+
+mplayer (0.90pre10-0.0) unstable; urgency=low
+
+  * New 0.9 pre release.
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 11 Nov 2002 15:15:51 +0100
+
+mplayer (0.90pre9-0.1) unstable; urgency=low
+
+  * Disable mmx2 for k6 and 686 again. This is still broken.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 31 Oct 2002 02:08:03 +0100
+
+mplayer (0.90pre9-0.0) unstable; urgency=low
+
+  * New 0.9 pre release.
+  * Build-depends on liblzo-dev
+  * Remove libfame-dev from Build-depends
+  * Enable mmx2 for k6 and 686 packages.
+  * Need a more recent liblive.com-dev package.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 26 Oct 2002 16:00:46 +0200
+
+mplayer (0.90pre8-0.3) unstable; urgency=low
+
+  * debian/control Replace libdirectfb-0.9-12 by libdirectfb-0.9-13
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 10 Oct 2002 17:49:49 +0200
+
+mplayer (0.90pre8-0.2) unstable; urgency=low
+
+  * Build against the latest libdirectfb-dev package 0.9.13-1
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 10 Oct 2002 16:56:08 +0200
+
+mplayer (0.90pre8-0.1) unstable; urgency=low
+
+  * debian/control Remove libpng-dev and add libdirectfb10 | libdirectfb-0.9-12
+    in build-depends
+  * debian/control replace libdv-dev by libdv2-dev
+  * Build-Conflicts with libarts. Can be installed with KDE3.
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 26 Sep 2002 18:23:05 +0200
+
+mplayer (0.90pre8-0.0) unstable; urgency=low
+
+  * New 0.9 pre release.
+  * debian/control replace divx-codecs by w32codecs
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 19 Sep 2002 20:21:12 +0200
+
+mplayer (0.90pre7-0.1) unstable; urgency=low
+
+  * custom target is build with --enable-gui
+  * Add libpng-dev in build-depends
+  * Build with --enable-live for real video streaming.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 15 Sep 2002 17:47:10 +0200
+
+mplayer (0.90pre7-0.0) unstable; urgency=low
+
+  * New 0.9 pre release.
+  * Remove em8300 build-conflicts, seems to doesn't work with some config.
+  * The latest dvdnav works.
+  * Update upstream home page.
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  5 Sep 2002 17:18:20 +0200
+
+mplayer (0.90pre6-0.4) unstable; urgency=low
+
+  * Replace all libdvdcss* by libdvdcss on move to suggests.
+  * Compiled against GL
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 20 Aug 2002 14:07:06 +0200
+
+mplayer (0.90pre6-0.3) unstable; urgency=low
+
+  * Build the k6 package with --disable-mmx2
+  * Remove xanim-modules build-dependdency
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 16 Aug 2002 17:11:39 +0200
+
+mplayer (0.90pre6-0.2) unstable; urgency=low
+
+  * uudecode skin for the custom package.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 10 Aug 2002 17:46:47 +0200
+
+mplayer (0.90pre6-0.1) unstable; urgency=low
+
+  * Add libfame-dev in build-denpendcy
+  * Update default skin to latest version.
+  * Default codec is now 5 (libavcodec) in mplayer.conf
+  * Add the libarts hack
+  * Latest sid dvdnav 0.1.3 doesn't work with mplayer, then ndvdnav support
+    is removed
+  * Don't build cutom package for myself.
+  * Update -doc description
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  8 Aug 2002 21:06:04 +0200
+
+mplayer (0.90pre6-0.0) unstable; urgency=low
+
+  * New 0.9 pre release.
+  * Add  libdvdcss2 in recommends.
+  * Use libxvidencore0 instead of libdivxencore0/libdivxdecore0
+
+ -- Christian Marillat <marillat@debian.org>  Tue,  6 Aug 2002 15:44:43 +0200
+
+mplayer (0.90pre5-0.7) unstable; urgency=low
+
+  * Add a lot of missing build-dependencies.
+
+ -- Christian Marillat <marillat@debian.org>  Fri,  2 Aug 2002 21:48:38 +0200
+
+mplayer (0.90pre5-0.6) unstable; urgency=low
+
+  * Remove em8300 in Build-Conflicts
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 22 Jul 2002 11:23:10 +0200
+
+mplayer (0.90pre5-0.5) unstable; urgency=low
+
+  * debian/rules Fix typos Thanks to Gregor Hoffleit
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 11 Jul 2002 17:03:10 +0200
+
+mplayer (0.90pre5-0.4) unstable; urgency=low
+
+  * Build the 686 package with --disable-mmx2
+  * Build statically against libavcodec.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 10 Jul 2002 07:14:50 +0200
+
+mplayer (0.90pre5-0.3) unstable; urgency=low
+
+  * debian/rules fix broken dh_shlibdeps call.
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  7 Jul 2002 18:36:07 +0200
+
+mplayer (0.90pre5-0.2) unstable; urgency=low
+
+  * Added libarts1 dependency (Big hack)
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  7 Jul 2002 17:44:49 +0200
+
+mplayer (0.90pre5-0.1) unstable; urgency=low
+
+  * Build with libdvdnav
+  * Build mencoder packages.
+  * Default video output is x11, otherwise the gui doesn't work.
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  6 Jul 2002 15:59:24 +0200
+
+mplayer (0.90pre5-0.0) unstable; urgency=low
+
+  * New 0.9 pre release.
+  * Build with --enable-xinerama
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  8 Jun 2002 12:09:37 +0200
+
+mplayer (0.90pre4-0.0) unstable; urgency=low
+
+  * New 0.9 pre release.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 18 May 2002 18:49:16 +0200
+
+mplayer (0.90pre3-0.0) unstable; urgency=low
+
+  * New 0.9 pre release.
+
+ -- Christian Marillat <marillat@debian.org>  Sat,  4 May 2002 11:02:50 +0200
+
+mplayer (0.90pre2-0.4) unstable; urgency=low
+
+  * Shit s/alsa-headers/alsa-headers-0.5/
+
+ -- Christian Marillat <marillat@debian.org>  Fri,  3 May 2002 01:27:56 +0200
+
+mplayer (0.90pre2-0.3) unstable; urgency=low
+
+  * debian/control.marillat remove some build-dependencies libsdl1.1-dev alsa-headers-0.5
+
+ -- Christian Marillat <marillat@debian.org>  Fri,  3 May 2002 01:20:41 +0200
+
+mplayer (0.90pre2-0.2) unstable; urgency=low
+
+  * Correct manpage path.
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  2 May 2002 22:26:25 +0200
+
+mplayer (0.90pre2-0.1) unstable; urgency=low
+
+  * New 0.9 pre release.
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  1 May 2002 15:29:01 +0200
+
+mplayer (0.90pre1-0.2) unstable; urgency=low
+
+  * Remove some build-dependencies libsdl1.1-dev alsa-headers-0.5
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  1 May 2002 15:05:46 +0200
+
+mplayer (0.90pre1-0.1) unstable; urgency=low
+
+  * News upstream release.
+  * Added support for dxr3.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 23 Apr 2002 11:46:33 +0200
+
+mplayer (0.60-cvs20020420-1) unstable; urgency=low
+
+  * New cvs release.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 19 Apr 2002 22:58:13 +0200
+
+mplayer (0.60-10) unstable; urgency=low
+
+  * Build without directfb support. This doesn't work with 0.9.9
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 25 Mar 2002 16:49:46 +0100
+
+mplayer (0.60-9) unstable; urgency=low
+
+  * Only sources changes.
+      Inverted libsdl1.1-dev | libsdl1.2-dev
+      Add 2 control files, for beter user build.
+  * Did some changes in /etc/mplayer.conf:
+      Add 8 MB for disk cache.
+      Commented out autoq=63
+      Use opendivx codec by default (vfm 3)
+  * Remove unused /usr/share/mplayer/codecs.conf
+  * Remove unused directory /usr/share/mplayer/font
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 22 Feb 2002 15:57:32 +0100
+
+mplayer (0.60-8) unstable; urgency=low
+
+  * Added divx-codecs and xanim-modules in Build-depends.
+  * debian:rules Reverted my hack, in -7, when removing empty packages.
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 12 Feb 2002 11:22:15 +0100
+
+mplayer (0.60-7) unstable; urgency=low
+
+  * Rebuild against the latest libdirectfb8 package.
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 10 Feb 2002 16:03:04 +0100
+
+mplayer (0.60-6) unstable; urgency=low
+
+  * debian/rules Build only the custom target if you'are not me :-)
+
+ -- Christian Marillat <marillat@debian.org>  Sun,  3 Feb 2002 18:39:20 +0100
+
+mplayer (0.60-5) unstable; urgency=low
+
+  * Add a new target mplayer-custom. This target is only for your computer.
+    If you want more or less option edit debian/rules.
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 30 Jan 2002 16:46:15 +0100
+
+mplayer (0.60-4) unstable; urgency=low
+
+  * Move libdvdcss0 on Recommends: and remove libdvdcss1 from Depends
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 28 Jan 2002 14:01:42 +0100
+
+mplayer (0.60-3) unstable; urgency=low
+
+  * Move all documenattions in -doc package
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 22 Jan 2002 13:52:47 +0100
+
+mplayer (0.60-2) unstable; urgency=low
+
+  * Compiled against the latest directfb0
+
+ -- Christian Marillat <marillat@debian.org>  Mon, 21 Jan 2002 18:12:08 +0100
+
+mplayer (0.60-1) unstable; urgency=low
+
+  * New upstream release.
+  * Build with --enable-directfb
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  3 Jan 2002 17:03:52 +0100
+
+mplayer (0.50-cvs20011220-1) unstable; urgency=low
+
+  * New cvs release who fix a md5sum problem.
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 21 Dec 2001 00:58:14 +0100
+
+mplayer (0.50-cvs20011219-1) unstable; urgency=low
+
+  * New cvs release.
+  * Build-depends on sharutils
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 18 Dec 2001 16:06:12 +0100
+
+mplayer (0.50-cvs20011206-1) unstable; urgency=low
+
+  * New cvs release.
+  * Build with --enable-3dfx --enable-tdfxfb --enable-directfb
+  * Install english documentation in all pacakes.
+  * More generic hack to change cpu optimization
+
+ -- Christian Marillat <marillat@debian.org>  Thu,  6 Dec 2001 16:45:40 +0100
+
+mplayer (0.50-cvs20011114-1) unstable; urgency=low
+
+  * New cvs release.
+  * Support for morgan mjpeg
+
+ -- Christian Marillat <marillat@debian.org>  Wed, 14 Nov 2001 10:56:23 +0100
+
+mplayer (0.50-cvs20011110-1) unstable; urgency=low
+
+  * New cvs release.
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 10 Nov 2001 14:50:48 +0100
+
+mplayer (0.50-cvs20011107-1) unstable; urgency=low
+
+  * New cvs release.
+  * very nice, New option -cache <n>
+  * Build with --enable-largefiles
+  * Build with mad support (MPEG audio decoder library)
+  * Build against libffmpeg0
+
+ -- Christian Marillat <marillat@debian.org>  Wed,  7 Nov 2001 15:49:48 +0100
+
+mplayer (0.50-cvs20011019-1) unstable; urgency=low
+
+  * New cvs release.
+  * New French doc.
+  * Recompiled against the new libsdl1.2debian
+
+ -- Christian Marillat <marillat@debian.org>  Fri, 19 Oct 2001 14:32:15 +0200
+
+mplayer (0.50-1) unstable; urgency=low
+
+  * New upstream release.
+  * Enable streaming
+
+ -- Christian Marillat <marillat@debian.org>  Mon,  8 Oct 2001 18:23:54 +0200
+
+mplayer (0.18-cvs20010911-1) unstable; urgency=low
+
+  * New cvs release.
+  * First attempt with gui interface. The binary is called gmplayer (Not very
+    usable at all, but ...) The CLI is still here.
+  * DVD support with liblibdvdread added since the latest release.
+  * Add Debian menu
+  * In /etc/mplayer.conf :
+       Use sdl:x11 for video driver
+       Use double-buffering
+       Use opendivx by default (More fast)
+
+ -- Christian Marillat <marillat@debian.org>  Tue, 11 Sep 2001 14:26:26 +0200
+
+mplayer (0.18-cvs20010812-3) unstable; urgency=low
+
+  * Add 3 new packages mplayer-386, mplayer-686, mplayer-k6
+  * Move documentation in mplayer-doc
+
+ -- Christian Marillat <marillat@debian.org>  Sat, 25 Aug 2001 15:15:15 +0200
+
+mplayer (0.18-cvs20010812-2) unstable; urgency=low
+
+  * Build with lirc support
+  * Build with ffmpeg support
+
+ -- Christian Marillat <marillat@debian.org>  Thu, 16 Aug 2001 15:06:22 +0200
+
+mplayer (0.18-cvs20010812-1) unstable; urgency=low
+
+  * New cvs release.
+  * Compiled with opendivx.
+  * Updated /etc/mplayer.conf
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 12 Aug 2001 18:30:28 +0200
+
+mplayer (0.18-cvs20010722-1) unstable; urgency=low
+
+  * cvs realease.
+  * Really compiled with libcss
+  * Compiled with --enable-fbdev
+  * setgid fibmap_mplayer
+
+ -- Christian Marillat <marillat@debian.org>  Sun, 22 Jul 2001 11:31:49 +0200
+
+mplayer (0.18-0.1) unstable; urgency=low
+
+  * Don't compress codecs.conf
+  * Change all doc paths (replace DOCS by /usr/share/doc/mplayer)
+  * Build with libcss
+  * Build with --enable-xmga
+
+ -- Christian Marillat <marillat@debian.org>  Fri,  6 Jul 2001 20:45:26 +0200
+
+mplayer (0.18-0.0) unstable; urgency=low
+
+  * News upstream release.
+
+ -- Christian Marillat <marillat@debian.org>  Fri,  6 Jul 2001 14:24:19 +0200
+
+mplayer (0.17a-0.0) unstable; urgency=low
+
+  * Real upstream version number.
+
+ -- Christian Marillat <marillat.christian@wanadoo.fr>  Wed, 23 May 2001 01:24:44 +0200
+
+mplayer (0.17-0.0) unstable; urgency=low
+
+  * new upstream release.
+
+ -- Christian Marillat <marillat.christian@wanadoo.fr>  Sat, 28 Apr 2001 16:55:23 +0200
+
+mplayer (0.11-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Christian Marillat <marillat.christian@wanadoo.fr>  Mon, 26 Feb 2001 12:24:04 +0100

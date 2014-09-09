@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+if [ "$1" = "configure" ] ; then
+	update-alternatives --install /usr/bin/mplayer mplayer "/usr/bin/mplayer1" "45"
+fi
+
+#DEBHELPER#
+
+exit 0
